@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_main">#5DA7A3</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="purple">#2B2E68</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_white">#F2F2F2</color>
+    <color name="light_white1">#D3D2D2</color>
+    <color name="light_black">#4A4B4D</color>
+    <color name="light_black1">#444444</color>
+    <color name="light_blue">#5D5DE6</color>
+    <color name="green">#94CFCC</color>
+    <color name="grey">#7C7D7E</color>
+    <color name="grey_light">#DFDFDF</color>
+    <color name="light_grey">#838383</color>
+    <color name="grey1">#999999</color>
+    <color name="light_grey1">#929292</color>
+    <color name="light_silver">#B6B7B7</color>
+    <color name="grey2">#C5C4C4</color>
+    <color name="green1">#398D16</color>
+    <color name="light_white2">#F1F1F1</color>
+    <color name="green2">#5DA7A3</color>
+    <color name="light_black2">#4A4B4D</color>
+    <color name="light_black3">#4A4B4D</color>
+
+    <color name="color_accent_grey_light_new2">#E9E9E9</color>
+    <color name="grey3">#949494</color>
+    <color name="grey4">#707070</color>
+    <color name="grey5">#949494</color>
+    <color name="color_main_light">#94CFCC</color>
+    <color name="light_white3">#F6F6F6</color>
+    <color name="grey6">#7C7D7E</color>
+    <color name="orange">#FFF3DE</color>
+    <color name="orange1">#FC6011</color>
+    <color name="green3">#E2EDE3</color>
+    <color name="green4">#5DA7A3</color>
+    <color name="blue">#315CB1</color>
+
+    <color name="today_border">#e4e4e4</color>
+    <color name="today_background">#85f7f7f7</color>
+    <color name="colorPrimary">#5DA7A3</color>
+    <color name="secundaryTextColor">#757575</color>
+    <color name="primaryTextColor">#4d4d4d</color>
+    <color name="colorHover">#30818181</color>
+    <color name="light_white4">#F8F8F8</color>
+
+    <color name="lightGrey">#aaaaaa</color>
+    <color name="veryLightGrey">#f0f0f0</color>
+    <color name="yellow">#ffee00</color>
+    <color name="dialogBackground">#60000000</color>
+
+    <color name="color_accent_red_dark">#FB0007</color>
+    <color name="color_accent_green">#6AC58C</color>
+    <color name="color_accent_red">#F47458</color>
+
+    <color name="green_very_light">#CEF2F0</color>
+    <color name="green_very_dark">#123836
+    </color>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.iroid.jeetmeet">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.webkit.PermissionRequest" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:name=".base.MyApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/jeet"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/jeet"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JeetMeetMaterial.NoActionBar"
+        tools:targetApi="n">
+
+        <activity android:name=".ui.main.parent_panel.chat.ParentChatActivity"/>
+        <activity android:name=".ui.main.student_panel.chat.activity.TeacherChatDetailsActivity" />
+        <activity android:name=".ui.main.student_panel.chat.activity.AdminChatDetailsActivity" />
+        <activity android:name=".ui.main.student_panel.chat.activity.StudentChatActivity" />
+        <activity android:name="com.iroid.jeetmeet.ui.main.parent_panel.sidemenu.activity.ParentSideMenuActivity" />
+        <activity android:name=".ui.main.parent_panel.home.activity.ParentDashboardActivity" />
+        <activity android:name=".ui.main.student_panel.sidemenu.activity.StudentSideMenuActivity" />
+        <activity android:name=".ui.main.parent_panel.sidemenu.myAccount.PaymentActivity"/>
+        <activity
+            android:name=".start_up.auth.activity.AuthActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".start_up.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.main.student_panel.home.activity.StudentDashboardActivity" />
+    </application>
+
+</manifest>

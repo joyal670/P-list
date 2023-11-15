@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.iroid.healthdomain.data.model_class.user_profile.UserData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="56dp"
+            android:layout_height="@dimen/min_margin_6_dp"
+            android:layout_marginTop="@dimen/min_margin_6_dp"
+            android:background="@drawable/curved_drawable"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_your_details"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dimen_24_dp"
+            android:textSize="@dimen/font_24_sp"
+            app:layout_constraintEnd_toEndOf="@+id/view3"
+            app:layout_constraintStart_toStartOf="@+id/view3"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/weightLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_24_dp"
+            android:hint="Enter Weight"
+            app:boxCornerRadiusTopEnd="@dimen/min_margin_6_dp"
+            app:boxCornerRadiusTopStart="@dimen/min_margin_6_dp"
+            app:layout_constraintEnd_toEndOf="@+id/headerText"
+            app:layout_constraintStart_toStartOf="@+id/headerText"
+            app:layout_constraintTop_toBottomOf="@+id/headerText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/weightText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal|numberSigned"
+                android:text="@{model.weight}" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12_dp"
+            android:hint="Enter Height"
+            app:boxCornerRadiusTopEnd="@dimen/min_margin_6_dp"
+            app:boxCornerRadiusTopStart="@dimen/min_margin_6_dp"
+            app:layout_constraintEnd_toEndOf="@+id/weightLayout"
+            app:layout_constraintStart_toStartOf="@+id/weightLayout"
+            app:layout_constraintTop_toBottomOf="@+id/weightLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/heightText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal|numberSigned"
+                android:text="@{model.height}" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/updateProfileButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24_dp"
+            android:layout_marginBottom="@dimen/dimen_32_dp"
+            android:background="@drawable/selector_button_pink"
+            android:maxWidth="@dimen/button_max_width"
+            android:minWidth="@dimen/button_max_width"
+            android:text="@string/update"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

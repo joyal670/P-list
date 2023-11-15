@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.iroid.healthdomain.ui.home.mainActivity.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment">
+
+        <action
+            android:id="@+id/action_homeFragment_to_personFragment"
+            app:destination="@id/personFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/personFragment"
+        android:name="com.iroid.healthdomain.ui.home.mainActivity.person.PersonFragment"
+        android:label="PersonFragment"
+        tools:layout="@layout/person_fragment">
+
+        <argument
+            android:name="pass_value"
+            app:argType="com.iroid.healthdomain.data.model_class.contacts_api.ContactData"
+            android:defaultValue="@null"
+            app:nullable="true"/>
+
+    </fragment>
+
+</navigation>

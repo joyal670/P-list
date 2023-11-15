@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpIntroSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dotsIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_15dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginBottom="@dimen/margin_30dp"
+        app:dotsColor="@color/gray_light"
+        app:dotsCornerRadius="@dimen/margin_5dp"
+        app:dotsSize="9dp"
+        app:dotsSpacing="@dimen/margin_4dp"
+        app:dotsWidthFactor="2.0"
+        app:progressMode="false"
+        app:selectedDotColor="@color/color_accent_green" />
+
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin_20dp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/heebo_bold"
+        android:padding="@dimen/margin_8dp"
+        android:text="@string/tvSkip"
+        android:textAllCaps="true"
+        android:textColor="@color/color_accent_grey_light_new"
+        android:textSize="@dimen/text_size_16sp"
+        tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_20dp"
+        android:fontFamily="@font/heebo_bold"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_12sp"
+        app:backgroundTint="@color/green_light_1"
+        app:cornerRadius="@dimen/radius_22dp"
+        app:strokeColor="@color/green_light_1"
+        tools:ignore="RelativeOverlap" />
+</RelativeLayout>

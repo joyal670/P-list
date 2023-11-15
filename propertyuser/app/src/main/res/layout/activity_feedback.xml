@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.filter.FilterActivity">
+
+    <include
+        layout="@layout/toolbar_main"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_56dp"
+        android:fillViewport="true"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/etFeedBack"
+                android:layout_width="match_parent"
+                android:layout_height="297dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_40dp"
+                android:maxLines="10"
+                android:hint="@string/etFeedBack"
+                android:paddingStart="@dimen/margin_16dp"
+                android:paddingTop="@dimen/margin_10dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:background="@drawable/bg_square_border_gray_1"
+                android:textColor="@color/gray_200"
+                android:textSize="@dimen/text_size_14sp"
+                android:fontFamily="@font/manrope_regular"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSendFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_17dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:fontFamily="@font/manrope_bold"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="@string/btnSendFeedback"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14sp"
+                app:backgroundTint="@color/green_light_1"
+                app:cornerRadius="@dimen/radius_2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etFeedBack"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

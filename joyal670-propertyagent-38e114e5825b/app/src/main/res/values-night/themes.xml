@@ -1,0 +1,106 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PropertyAgent" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_accent</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/heebo_medium</item>
+    </style>
+    <style name="Theme.PropertyAgent.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="Theme.MyApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.PropertyAgentMaterial" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_accent</item>
+        <item name="colorPrimaryDark">@color/white_light</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.PropertyAgentMaterial.NoActionBarOwner" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_accent_blue_statusbar</item>
+        <item name="colorPrimaryDark">@color/color_accent_blue_statusbar</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.PropertyAgentMaterial.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_accent</item>
+        <item name="colorPrimaryDark">@color/white_light</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:windowDisablePreview">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Hyperlink">
+        <item name="android:textColor">@color/color_accent_grey</item>
+        <item name="android:background">@drawable/hyperlink_underline</item>
+    </style>
+    <style name="TabLayoutStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/heebo_semibold</item>
+    </style>
+
+    <style name="CustomTextAppearance" parent="TextAppearance.MaterialCalendarWidget.Date">
+        <item name="android:textColor">@color/date_text_selector</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Shopping.BottomSheetDialog</item>
+    </style>
+
+    <style name="Shopping.BottomSheetDialog" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="android:Theme.Dialog">
+        <!-- Fill the screen -->
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+
+    </style>
+    <style name="SearchBarTheme">
+        <item name="android:fontFamily">@font/heebo_regular</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SearchBarTheme1">
+        <item name="android:fontFamily">@font/heebo_regular</item>
+        <item name="android:textColorPrimary">@color/black_light1</item>
+        <item name="android:textColorSecondary">@color/black_light1</item>
+        <item name="android:textColorHint">@color/black_light1</item>
+        <item name="android:textColor">@color/black_light1</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+    </style>
+
+    <style name="ToolbarTheme">
+        <item name="android:fontFamily">@font/heebo_regular</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="SpinnerTheme">
+        <item name="android:fontFamily">@font/heebo_regular</item>
+        <item name="android:textColorPrimary">@color/black_light1</item>
+        <item name="android:textColorSecondary">@color/black_light1</item>
+    </style>
+
+</resources>

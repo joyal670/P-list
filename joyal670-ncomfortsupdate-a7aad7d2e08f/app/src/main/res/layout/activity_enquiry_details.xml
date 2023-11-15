@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <include layout="@layout/activity_enquiry_details_shimmer" />
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <LinearLayout
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tool">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_20dp">
+
+                        <com.furkanakdemir.surroundcardview.SurroundCardView
+                            android:id="@+id/cardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_20dp"
+                            app:cardCornerRadius="@dimen/margin_5dp"
+                            app:cardElevation="@dimen/margin_10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:scv_startPoint="top_start"
+                            app:scv_duration="1000"
+                            app:scv_surrounded="false"
+                            app:scv_width="@dimen/margin_2dp">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintLayout2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/margin_20dp">
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="126dp"
+                                    android:layout_height="90dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/no_image"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:ignore="ContentDescription" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_15dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/tvEnquiryPrice"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/heebo_regular"
+                                        android:maxLines="1"
+                                        android:text="@string/sar_250_00"
+                                        android:textColor="@color/text_dark_grey"
+                                        android:textSize="@dimen/text_size_16sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvEnquiryDetails"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/heebo_regular"
+                                        android:maxLines="3"
+                                        android:text="@string/_2_bed_apartment_2_months_free_free_maintenance"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/text_light_grey"
+                                        android:textSize="@dimen/text_size_14sp" />
+
+                                    <TextView
+                                        android:id="@+id/tvEnquiryType"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin_4dp"
+                                        android:fontFamily="@font/heebo_regular"
+                                        android:maxLines="3"
+                                        android:text="@string/appartment_for_rent"
+                                        android:textColor="@color/burnt_sienna"
+                                        android:textSize="@dimen/text_size_13sp" />
+
+                                </LinearLayout>
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </com.furkanakdemir.surroundcardview.SurroundCardView>
+
+
+                        <LinearLayout
+                            android:id="@+id/layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/margin_20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/ivUser"
+                                android:layout_width="@dimen/margin_44dp"
+                                android:layout_height="@dimen/margin_44dp"
+                                android:src="@drawable/ic_dummy_profile" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_10dp"
+                                android:layout_marginEnd="@dimen/margin_10dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/tvUserName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start|center"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/heebo_regular"
+                                        android:gravity="start"
+                                        android:text="@string/thomas_m_bain"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_14sp"
+                                        android:textStyle="bold" />
+
+                                    <ImageView
+                                        android:id="@+id/ivTwoWayChat"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="?selectableItemBackground"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:padding="@dimen/margin_5dp"
+                                        android:src="@drawable/ic_two_way_chat" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_10dp"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/margin_5dp"
+                                        android:layout_marginEnd="@dimen/margin_5dp"
+                                        android:fontFamily="@font/heebo_regular"
+                                        android:gravity="start"
+                                        android:text="@string/email_id"
+                                        android:textColor="@color/text_light_grey"
+                                        android:textSize="@dimen/text_size_13sp" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/tvUserEmail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/heebo_regular"
+                                        android:gravity="start"
+                                        android:text="@string/thomasmbain_dayre_com"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/text_dark_grey"
+                                        android:textSize="@dimen/text_size_13sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_8dp"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/margin_5dp"
+                                        android:layout_marginEnd="@dimen/margin_5dp"
+                                        android:fontFamily="@font/heebo_regular"
+                                        android:gravity="start"
+                                        android:text="@string/mobile_number"
+                                        android:textColor="@color/text_light_grey"
+                                        android:textSize="@dimen/text_size_13sp" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/tvUserPhoneNo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/heebo_regular"
+                                        android:gravity="start"
+                                        android:text="@string/_971_542155874"
+                                        android:textColor="@color/text_dark_grey"
+                                        android:textSize="@dimen/text_size_13sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_8dp"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/margin_5dp"
+                                        android:layout_marginEnd="@dimen/margin_5dp"
+                                        android:fontFamily="@font/heebo_regular"
+                                        android:gravity="start"
+                                        android:text="@string/location"
+                                        android:textColor="@color/text_light_grey"
+                                        android:textSize="@dimen/text_size_13sp" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/tvUserLocation"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/heebo_regular"
+                                        android:gravity="start"
+                                        android:text="@string/al_sufouhal_sufouh_1_dubai_united_arab"
+                                        android:textColor="@color/text_dark_grey"
+                                        android:textSize="@dimen/text_size_13sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_8dp"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/margin_5dp"
+                                        android:layout_marginEnd="@dimen/margin_5dp"
+                                        android:fontFamily="@font/heebo_regular"
+                                        android:gravity="start"
+                                        android:text="@string/date_with_colon"
+                                        android:textColor="@color/text_light_grey"
+                                        android:textSize="@dimen/text_size_13sp" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/tvEnquiryDate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/heebo_regular"
+                                        android:gravity="start"
+                                        android:text="@string/_2545220"
+                                        android:textColor="@color/text_dark_grey"
+                                        android:textSize="@dimen/text_size_13sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_8dp"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/margin_5dp"
+                                        android:layout_marginEnd="@dimen/margin_5dp"
+                                        android:fontFamily="@font/heebo_regular"
+                                        android:gravity="start"
+                                        android:text="@string/status"
+                                        android:textColor="@color/text_light_grey"
+                                        android:textSize="@dimen/text_size_13sp" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/textView2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/heebo_regular"
+                                        android:gravity="start"
+                                        android:text="@string/pending"
+                                        android:textColor="@color/burnt_sienna"
+                                        android:textSize="@dimen/text_size_13sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_20dp"
+                                    android:fontFamily="@font/heebo_regular"
+                                    android:gravity="start"
+                                    android:text="@string/message"
+                                    android:textColor="@color/text_light_grey"
+                                    android:textSize="@dimen/text_size_13sp"
+                                    android:visibility="gone" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_10dp"
+                                    android:fontFamily="@font/heebo_regular"
+                                    android:gravity="start"
+                                    android:text="@string/dumy_message"
+                                    android:textColor="@color/text_dark_grey"
+                                    android:textSize="@dimen/text_size_13sp"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="@dimen/margin_20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="@dimen/margin_20dp"
+                            android:background="@color/seperator_light"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/layout" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/contentPending"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_20dp"
+                            android:visibility="visible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view3"
+                            app:layout_constraintVertical_bias="0.0">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/rejectBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/heebo_medium"
+                                android:text="@string/reject"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_13sp"
+                                app:backgroundTint="@color/pomegranate"
+                                app:cornerRadius="@dimen/margin_5dp"
+                                app:icon="@drawable/ic_baseline_cancel_24"
+                                app:iconGravity="start"
+                                app:iconTint="@color/white"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/approveBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/heebo_medium"
+                                android:text="@string/approve"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_13sp"
+                                app:backgroundTint="@color/de_york"
+                                app:cornerRadius="@dimen/margin_5dp"
+                                app:icon="@drawable/ic_baseline_check_24"
+                                app:iconGravity="start"
+                                app:iconTint="@color/white"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lvPaymentSplitUp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_20dp"
+                            android:layout_marginBottom="@dimen/margin_20dp"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/contentPending">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/paymentCard"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_60dp"
+                                android:layout_marginStart="@dimen/margin_16dp"
+                                android:layout_marginEnd="@dimen/margin_16dp"
+                                app:cardBackgroundColor="@color/primary_color"
+                                app:cardCornerRadius="@dimen/margin_5dp">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/tvPaymentSplitUp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|start"
+                                    android:layout_marginStart="@dimen/margin_20dp"
+                                    android:layout_marginEnd="@dimen/margin_20dp"
+                                    android:drawableEnd="@drawable/ic_arrow_down"
+                                    android:fontFamily="@font/heebo_medium"
+                                    android:text="@string/payment_splitup"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_14sp" />
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TableLayout
+                                android:id="@+id/paymentSplitUpTable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_16dp"
+                                android:layout_marginTop="@dimen/margin_5dp"
+                                android:layout_marginEnd="@dimen/margin_16dp"
+                                android:visibility="gone">
+
+                                <TableRow>
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".25"
+                                        android:background="@drawable/border"
+                                        android:fontFamily="@font/heebo_bold"
+                                        android:gravity="center"
+                                        android:maxLines="1"
+                                        android:text="@string/payment_type"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_14sp" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".25"
+                                        android:background="@drawable/border"
+                                        android:fontFamily="@font/heebo_bold"
+                                        android:gravity="center"
+                                        android:maxLines="1"
+                                        android:text="@string/days"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_14sp" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".25"
+                                        android:background="@drawable/border"
+                                        android:fontFamily="@font/heebo_bold"
+                                        android:gravity="center"
+                                        android:maxLines="1"
+                                        android:text="@string/amount"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_14sp" />
+
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvPaymentSplitUp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_16dp"
+                                android:layout_marginEnd="@dimen/margin_16dp"
+                                android:visibility="gone"
+                                tools:listitem="@layout/item_payment_split_up" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lvPaymentHistory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_20dp"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/lvPaymentSplitUp">
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/paymentHistoryCard"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_60dp"
+                                android:layout_marginStart="@dimen/margin_16dp"
+                                android:layout_marginEnd="@dimen/margin_16dp"
+                                app:cardBackgroundColor="@color/primary_color"
+                                app:cardCornerRadius="@dimen/margin_5dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/tvPaymentHistory"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|start"
+                                    android:layout_marginStart="@dimen/margin_20dp"
+                                    android:layout_marginEnd="@dimen/margin_20dp"
+                                    android:drawableEnd="@drawable/ic_arrow_down"
+                                    android:fontFamily="@font/heebo_medium"
+                                    android:text="@string/payment_history"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_14sp" />
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TableLayout
+                                android:id="@+id/paymentHistoryTable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_16dp"
+                                android:layout_marginTop="@dimen/margin_5dp"
+                                android:layout_marginEnd="@dimen/margin_16dp"
+                                android:visibility="gone">
+
+                                <TableRow>
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".25"
+                                        android:background="@drawable/border"
+                                        android:ellipsize="start"
+                                        android:fontFamily="@font/heebo_bold"
+                                        android:gravity="center"
+                                        android:maxLines="1"
+                                        android:text="@string/type"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_14sp" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".25"
+                                        android:background="@drawable/border"
+                                        android:fontFamily="@font/heebo_bold"
+                                        android:gravity="center"
+                                        android:maxLines="1"
+                                        android:text="@string/amount"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_14sp" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".25"
+                                        android:background="@drawable/border"
+                                        android:fontFamily="@font/heebo_bold"
+                                        android:gravity="center"
+                                        android:maxLines="1"
+                                        android:text="@string/date"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_14sp" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".25"
+                                        android:background="@drawable/border"
+                                        android:fontFamily="@font/heebo_bold"
+                                        android:gravity="center"
+                                        android:maxLines="1"
+                                        android:text="@string/file"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_14sp" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".25"
+                                        android:background="@drawable/border"
+                                        android:fontFamily="@font/heebo_bold"
+                                        android:gravity="center"
+                                        android:maxLines="1"
+                                        android:text="@string/status2"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text_size_14sp" />
+
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvPaymentHistory"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_16dp"
+                                android:layout_marginEnd="@dimen/margin_16dp"
+                                android:visibility="gone"
+                                tools:listitem="@layout/item_payment_split_up" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lvPaymentStatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_20dp"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/lvPaymentHistory">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/updateStatusCard"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_60dp"
+                                android:layout_marginStart="@dimen/margin_16dp"
+                                android:layout_marginEnd="@dimen/margin_16dp"
+                                app:cardBackgroundColor="@color/primary_color"
+                                app:cardCornerRadius="@dimen/margin_5dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/tvUpdateStatus"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|start"
+                                    android:layout_marginStart="@dimen/margin_20dp"
+                                    android:layout_marginEnd="@dimen/margin_20dp"
+                                    android:fontFamily="@font/heebo_medium"
+                                    android:text="@string/update_payments"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_14sp" />
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lvViewContract"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_20dp"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/lvPaymentStatus">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/viewContractCard"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_60dp"
+                                android:layout_marginStart="@dimen/margin_16dp"
+                                android:layout_marginEnd="@dimen/margin_16dp"
+                                app:cardBackgroundColor="@color/primary_color"
+                                app:cardCornerRadius="@dimen/margin_5dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/tvViewContract"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|start"
+                                    android:layout_marginStart="@dimen/margin_20dp"
+                                    android:layout_marginEnd="@dimen/margin_20dp"
+                                    android:drawableEnd="@drawable/ic_arrow_down"
+                                    android:fontFamily="@font/heebo_medium"
+                                    android:text="@string/view_contract"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_14sp" />
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <LinearLayout
+                                android:id="@+id/lvContract"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_16dp"
+                                android:layout_marginEnd="@dimen/margin_16dp"
+                                android:background="@color/athens_gray"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TableRow
+                                        android:paddingTop="@dimen/margin_10dp"
+                                        android:paddingBottom="@dimen/margin_10dp">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_weight=".25"
+                                            android:fontFamily="@font/heebo_medium"
+                                            android:gravity="center"
+                                            android:maxLines="1"
+                                            android:text="@string/start_date"
+                                            android:textSize="@dimen/text_size_14sp" />
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/black" />
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_weight=".25"
+                                            android:fontFamily="@font/heebo_bold"
+                                            android:gravity="center"
+                                            android:maxLines="1"
+                                            android:text="@string/_19_11_2021"
+                                            android:textSize="@dimen/text_size_14sp" />
+
+                                    </TableRow>
+
+                                </TableLayout>
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TableRow
+                                        android:paddingTop="@dimen/margin_10dp"
+                                        android:paddingBottom="@dimen/margin_10dp">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_weight=".25"
+                                            android:fontFamily="@font/heebo_medium"
+                                            android:gravity="center"
+                                            android:maxLines="1"
+                                            android:text="@string/end_date"
+                                            android:textSize="@dimen/text_size_14sp" />
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/black" />
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_weight=".25"
+                                            android:fontFamily="@font/heebo_bold"
+                                            android:gravity="center"
+                                            android:maxLines="1"
+                                            android:text="@string/_19_11_2021"
+                                            android:textSize="@dimen/text_size_14sp" />
+
+                                    </TableRow>
+
+                                </TableLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="@dimen/margin_15dp"
+                                    android:layout_marginTop="@dimen/margin_5dp"
+                                    android:layout_marginEnd="@dimen/margin_15dp"
+                                    android:background="@color/black" />
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginStart="@dimen/margin_10dp"
+                                    android:layout_marginTop="@dimen/margin_5dp"
+                                    android:layout_marginEnd="@dimen/margin_10dp"
+                                    android:layout_marginBottom="@dimen/margin_5dp"
+                                    android:fontFamily="@font/heebo_medium"
+                                    android:text="@string/view_file"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_13sp"
+                                    app:backgroundTint="@color/burnt_sienna" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

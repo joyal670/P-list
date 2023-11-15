@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+    android:id="@+id/MyProperty_fragment"
+    android:title="@string/my_properties"
+    android:icon="@drawable/ic_property_gold"/>
+
+    <item
+        android:id="@+id/Enquiry_fragment"
+        android:title="@string/enquiries"
+        android:icon="@drawable/ic_message_gold"/>
+
+</menu>

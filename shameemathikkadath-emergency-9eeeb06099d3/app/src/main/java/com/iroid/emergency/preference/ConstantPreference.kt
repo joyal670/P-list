@@ -1,0 +1,26 @@
+    package com.iroid.emergency.preference
+
+object ConstantPreference {
+    const val USER_NAME="user_name"
+    const val USER_MOBILE="user_mobile"
+    const val USER_TYPE="user_type"
+    const val USER_TOKEN="user_token"
+    const val IS_LOGIN="is_login"
+    const val PASS_BUNDLE="pass_bundle"
+    const val TYPE="type"
+    const val PROFILE="profile"
+    const val ARG_ACCEPTED="arg_accepted"
+    const val SUBMISSION="submission"
+    const val SECONDARY_TYPE="SECONDARY"
+    const val PRIMARY_TYPE="PRIMARY"
+    const val ACCEPTED="ACCEPTED"
+    const val REJECTED="REJECTED"
+    const val FAQ="faq"
+    const val FEEDBACK="feedback"
+    const val IS_LOCATION_ENABLED="is_location_enabled"
+    const val ABOUT="about"
+    const val USER_LAT="about"
+    const val USER_LAN="user_lan"
+    const val TYPE_REJECTED="type_rejected"
+    const val TYPE_ACCEPTED="Accepted"
+}

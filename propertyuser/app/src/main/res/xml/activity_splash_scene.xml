@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000">
+       <KeyFrameSet>
+           <KeyAttribute
+               android:alpha="0"
+               motion:framePosition="10"
+               motion:motionTarget="@+id/ivSplash" />
+           <KeyAttribute
+               android:alpha=".3"
+               motion:framePosition="20"
+               motion:motionTarget="@+id/ivSplash" />
+
+           <KeyAttribute
+               android:alpha=".7"
+               motion:framePosition="30"
+               motion:motionTarget="@+id/ivSplash" />
+
+           <KeyAttribute
+               android:alpha="1"
+               motion:framePosition="100"
+               motion:motionTarget="@+id/ivSplash" />
+
+
+       </KeyFrameSet>
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/ivSplash"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:transitionEasing="linear"
+            android:alpha=".1" />
+        <Constraint
+            android:id="@+id/ivLogo"
+            motion:layout_constraintEnd_toEndOf="@id/ivSplash"
+            android:layout_width="230dp"
+            android:layout_height="290dp"
+            motion:layout_constraintBottom_toBottomOf="@id/ivSplash"
+            motion:layout_constraintTop_toTopOf="@id/ivSplash"
+            motion:layout_constraintStart_toStartOf="@id/ivSplash"
+            android:scaleX="1.2"
+            android:scaleY="1.2" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/ivSplash"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:alpha="1"/>
+        <Constraint
+            android:id="@+id/ivLogo"
+            motion:layout_constraintEnd_toEndOf="@id/ivSplash"
+            android:layout_width="230dp"
+            android:layout_height="290dp"
+            motion:layout_constraintBottom_toBottomOf="@id/ivSplash"
+            motion:layout_constraintTop_toTopOf="@id/ivSplash"
+            motion:layout_constraintStart_toStartOf="@id/ivSplash" />
+    </ConstraintSet>
+</MotionScene>

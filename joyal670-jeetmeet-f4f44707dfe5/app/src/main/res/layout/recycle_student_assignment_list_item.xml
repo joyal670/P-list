@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/athens_gray">
+
+    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/margin_10dp"
+        app:cardElevation="0dp"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvDate"
+                android:layout_width="@dimen/margin_50dp"
+                android:layout_height="@dimen/margin_60dp"
+                android:text="@string/_9"
+                app:backgroundTint="@color/pomegranate"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_12sp"
+                android:textAllCaps="false"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:cornerRadius="@dimen/margin_10dp"
+                android:fontFamily="@font/barlow_medium"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvStudentAssignmentDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/assignment_deadline"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/dove_gray"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:fontFamily="@font/barlow_medium"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
+

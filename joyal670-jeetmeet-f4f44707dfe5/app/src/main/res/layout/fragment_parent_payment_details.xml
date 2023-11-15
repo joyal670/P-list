@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/athens_gray"
+    android:orientation="vertical">
+
+    <com.skydoves.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        app:expandable_animation="accelerate"
+        app:expandable_isExpanded="false"
+        app:expandable_parentLayout="@layout/layout_payment_details_parent"
+        app:expandable_secondLayout="@layout/layout_payment_details_second"
+        app:expandable_showSpinner="true"
+        app:expandable_spinner="@drawable/ic_arrow_down"
+        app:expandable_spinner_animate="true"
+        app:expandable_spinner_gravity="end"
+        app:expandable_spinner_margin="14dp"
+        app:expandable_spinner_size="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPayment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin_70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/expandable"
+        tools:listitem="@layout/recycle_parent_payment_details_list_item" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/payFromAdvanceBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/barlow_medium"
+            android:gravity="center"
+            android:maxLines="1"
+            android:minWidth="@dimen/margin_100dp"
+            android:text="@string/debit_from_advance"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13sp"
+            android:visibility="gone"
+            app:backgroundTint="@color/comet"
+            app:layout_constraintEnd_toStartOf="@id/pay_later"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pay_later"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/barlow_medium"
+            android:gravity="center"
+            android:maxLines="1"
+            android:minWidth="@dimen/margin_100dp"
+            android:text="@string/payLater"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13sp"
+            android:visibility="gone"
+            app:backgroundTint="@color/comet"
+            app:layout_constraintEnd_toStartOf="@id/payNowBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/payNowBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/barlow_medium"
+            android:gravity="center"
+            android:maxLines="1"
+            android:minWidth="@dimen/margin_100dp"
+            android:text="@string/pay_now"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13sp"
+            android:visibility="gone"
+            app:backgroundTint="@color/pomegranate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

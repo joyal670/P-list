@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F6FF">
+
+    <include layout="@layout/toolbar_main_owner" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10dp"
+            android:padding="@dimen/margin_10dp"
+            android:visibility="visible"
+            app:cardCornerRadius="@dimen/margin_10dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_8dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/margin_65dp"
+                            android:layout_marginStart="@dimen/margin_8dp"
+                            android:layout_marginEnd="@dimen/margin_8dp"
+                            android:layout_marginBottom="@dimen/margin_5dp"
+                            android:layout_weight=".4"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:id="@+id/ivPropertyImage"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:scaleType="centerCrop" />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_4dp"
+                            android:layout_marginEnd="@dimen/margin_8dp"
+                            android:layout_weight="1.6"
+                            android:gravity="start"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvPropertyName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/heebo_medium"
+                                android:gravity="start"
+                                android:text=""
+                                android:textColor="@color/color_accent_grey_light_new"
+                                android:textSize="@dimen/text_size_13sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:orientation="horizontal"
+                                android:paddingTop="@dimen/margin_3dp"
+                                android:paddingBottom="@dimen/margin_3dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/heebo_medium"
+                                    android:gravity="start"
+                                    android:text="@string/property_code"
+                                    android:textColor="@color/color_accent_grey_light_new"
+                                    android:textSize="@dimen/text_size_13sp" />
+
+                                <TextView
+                                    android:id="@+id/tvPropertyCode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_3dp"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/heebo_bold"
+                                    android:gravity="start"
+                                    android:maxLines="1"
+                                    android:text=""
+                                    android:textColor="@color/color_accent_grey_new"
+                                    android:textSize="@dimen/text_size_13sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tvPropertyLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_3dp"
+                                android:drawablePadding="@dimen/margin_5dp"
+                                android:fontFamily="@font/heebo_medium"
+                                android:gravity="start|top"
+                                android:text=""
+                                android:maxLines="1"
+                                android:textColor="@color/color_accent_grey"
+                                android:textSize="@dimen/text_size_14sp"
+                                app:drawableStartCompat="@drawable/ic_locationmarker_grey" />
+
+                            <TextView
+                                android:id="@+id/tvPropertyAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_3dp"
+                                android:fontFamily="@font/heebo_bold"
+                                android:gravity="start"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <TextView
+                                android:id="@+id/tvPropertyType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_3dp"
+                                android:fontFamily="@font/heebo_medium"
+                                android:gravity="start"
+                                android:text=""
+                                android:textColor="@color/color_accent_grey_light_new"
+                                android:textSize="@dimen/text_size_12sp" />
+
+                            <LinearLayout
+                                android:id="@+id/rent_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_3dp"
+                                android:gravity="start"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/heebo_medium"
+                                    android:gravity="start"
+                                    android:text="@string/rent_start"
+                                    android:textColor="@color/color_accent_grey_light_new"
+                                    android:textSize="@dimen/text_size_12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/heebo_medium"
+                                    android:gravity="start"
+                                    android:text="  :  "
+                                    android:textColor="@color/color_accent_grey_light_new"
+                                    android:textSize="@dimen/text_size_13sp" />
+
+                                <TextView
+                                    android:id="@+id/tvStartDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/heebo_medium"
+                                    android:gravity="start"
+                                    android:text=""
+                                    android:textColor="@color/color_accent_grey_light_new"
+                                    android:textSize="@dimen/text_size_12sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="#F0F6FF"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/paymentPeroid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_5dp"
+                            android:layout_marginTop="@dimen/margin_8dp"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/margin_4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/heebo_medium"
+                                android:gravity="start"
+                                android:text="@string/payment_period"
+                                android:textColor="@color/color_accent_grey_light_new"
+                                android:textSize="@dimen/text_size_11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/heebo_bold"
+                                android:gravity="start"
+                                android:text="  :  "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_13sp" />
+
+                            <TextView
+                                android:id="@+id/tvPropertyPeriod"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/heebo_bold"
+                                android:gravity="start"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_11sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_5dp"
+                            android:gravity="start"
+                            android:visibility="gone"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/margin_4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/heebo_medium"
+                                android:gravity="start"
+                                android:text="@string/payment_amount"
+                                android:textColor="@color/color_accent_grey_light_new"
+                                android:textSize="@dimen/text_size_11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/heebo_medium"
+                                android:gravity="start"
+                                android:text="  :  "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_13sp" />
+
+                            <TextView
+                                android:id="@+id/tvPropertyAmount1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/heebo_bold"
+                                android:gravity="start"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_11sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/last_payment_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_5dp"
+                            android:layout_marginBottom="@dimen/margin_8dp"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/margin_4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/heebo_medium"
+                                android:gravity="start"
+                                android:text="@string/last_payment"
+                                android:textColor="@color/color_accent_grey_light_new"
+                                android:textSize="@dimen/text_size_11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/heebo_medium"
+                                android:gravity="start"
+                                android:text="  :  "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_13sp" />
+
+                            <TextView
+                                android:id="@+id/tvEndDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/heebo_bold"
+                                android:gravity="start"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_11sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_20dp"
+                        android:fontFamily="@font/heebo_bold"
+                        android:gravity="start"
+                        android:text="@string/payment_history"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/owner_ShownHidePayemnt_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/margin_40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-25dp"
+                        android:layout_marginEnd="@dimen/margin_4dp"
+                        android:backgroundTint="#4F4F4F"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="center"
+                        android:text="@string/hide"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_12sp"
+                        app:cornerRadius="@dimen/margin_20dp" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/indivigual_payment_history_list_item_recycerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:itemCount="3"
+                    android:visibility="visible"
+                    tools:listitem="@layout/recycle_indivigual_payment_history_list_item" />
+
+                <include
+                    android:id="@+id/llEmptyData"
+                    layout="@layout/layout_no_payment"
+                    android:visibility="gone"
+                    android:layout_marginBottom="@dimen/margin_20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/llEmptyDataNotification"
+        layout="@layout/layout_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

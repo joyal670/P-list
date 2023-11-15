@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.main.event.event_booking_slides.EventBookingSlideActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_main" />
+
+        <LinearLayout
+            android:id="@+id/linearNoDataFound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/includeNoPropertyFound"
+                layout="@layout/layout_no_package_found"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpagerPackage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/indicatorPackage"
+            android:layout_width="wrap_content"
+            android:layout_height="9dp"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_6dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            app:dotsColor="@color/lightGray"
+            app:dotsCornerRadius="5dp"
+            app:dotsSize="25dp"
+            app:dotsSpacing="4dp"
+            app:dotsWidthFactor="1.0"
+            app:progressMode="false"
+            app:selectedDotColor="@color/green_solid" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+

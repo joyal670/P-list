@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin_40dp"
+    tools:context=".ui.main.sideMenu.feedback.fragment.FeedbackFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvMain"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:layout_marginEnd="@dimen/margin_15dp"
+                android:backgroundTint="@color/white"
+                app:boxCornerRadiusBottomEnd="@dimen/margin_10dp"
+                app:boxCornerRadiusBottomStart="@dimen/margin_10dp"
+                app:boxCornerRadiusTopEnd="@dimen/margin_10dp"
+                app:boxCornerRadiusTopStart="@dimen/margin_10dp"
+                app:boxStrokeErrorColor="@color/seperator_light"
+                app:boxStrokeColor="@color/seperator_light">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tvFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_300dp"
+                    android:drawablePadding="@dimen/margin_20dp"
+                    android:fontFamily="@font/heebo_regular"
+                    android:gravity="start"
+                    android:hint="@string/say_what_you_think_about_this_app"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sendFeedbackBtn"
+                android:layout_width="@dimen/margin_150dp"
+                android:layout_height="@dimen/margin_55dp"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/heebo_medium"
+                android:maxLines="1"
+                android:text="@string/send_feedback"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

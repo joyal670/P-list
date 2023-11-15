@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin_4dp"
+    android:layout_marginStart="@dimen/margin_4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCommonPlaceItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_semibold"
+        android:text="@string/btnCommonPlaceItem"
+        android:textAllCaps="false"
+        android:maxLines="1"
+        android:minLines="1"
+        android:textColor="@color/black_light1"
+        android:textSize="@dimen/text_size_12sp"
+        app:backgroundTint="@color/light_white"
+        app:cornerRadius="@dimen/radius_22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        app:strokeColor="@color/gray_91"
+        app:strokeWidth="@dimen/margin_2dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

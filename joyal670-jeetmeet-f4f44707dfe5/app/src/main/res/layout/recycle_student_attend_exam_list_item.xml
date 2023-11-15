@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/athens_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@color/athens_gray"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_27dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/barlow_regular"
+            android:gravity="start"
+            android:text="@string/date_17_mar_2020"
+            android:textColor="@color/textView_grey"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_27dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/barlow_regular"
+            android:gravity="end"
+            android:text="@string/_09_30_am_04_30_pm"
+            android:textColor="@color/textView_grey"
+            android:textSize="@dimen/text_size_13sp" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/margin_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_marginEnd="@dimen/margin_5dp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvExamTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/barlow_bold"
+                    android:gravity="start"
+                    android:text="@string/aptitude_test"
+                    android:textColor="@color/textView_grey"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/barlow_regular"
+                        android:text="@string/exam_category"
+                        android:textColor="@color/textView_grey"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:fontFamily="@font/barlow_bold"
+                        android:text="@string/full_collen"
+                        android:textColor="@color/textView_grey"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvExamCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/barlow_bold"
+                        android:text="@string/test"
+                        android:textColor="@color/textView_grey"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/barlow_regular"
+                        android:text="@string/class_amp_division"
+                        android:textColor="@color/textView_grey"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:fontFamily="@font/barlow_bold"
+                        android:text="@string/full_collen"
+                        android:textColor="@color/textView_grey"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvClass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/barlow_bold"
+                        android:text="@string/_4_a"
+                        android:textColor="@color/textView_grey"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/barlow_regular"
+                        android:text="@string/subject"
+                        android:textColor="@color/textView_grey"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:fontFamily="@font/barlow_bold"
+                        android:text="@string/full_collen"
+                        android:textColor="@color/textView_grey"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvSubject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/barlow_bold"
+                        android:text="@string/mathe_matics"
+                        android:textColor="@color/textView_grey"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/barlow_regular"
+                        android:text="@string/room"
+                        android:textColor="@color/textView_grey"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:fontFamily="@font/barlow_bold"
+                        android:text="@string/full_collen"
+                        android:textColor="@color/textView_grey"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvRoom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/barlow_bold"
+                        android:text="@string/room_4"
+                        android:textColor="@color/textView_grey"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:fontFamily="@font/barlow_regular"
+                    android:gravity="start"
+                    android:text="@string/instruction"
+                    android:textColor="@color/textView_grey"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvInstructions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:fontFamily="@font/barlow_regular"
+                    android:gravity="start"
+                    android:text="@string/lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industry_s_standard_dummy_text_ever_since"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home_owner"
+        android:icon="@drawable/ic_vector_home_owner"
+        android:title="@string/home"
+        android:enabled="true"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/navigation_property_owner"
+        android:icon="@drawable/ic_vector_bar_chart_owner"
+        android:title="@string/property"
+        android:enabled="true"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/navigation_payment_owner"
+        android:icon="@drawable/ic_vector_credit_card_owner"
+        android:title="@string/payment"
+        android:enabled="true"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/navigation_notifications_owner"
+        android:icon="@drawable/ic_vector_bell_owner"
+        android:title="@string/notification"
+        android:enabled="true"
+        app:showAsAction="withText"/>
+
+
+</menu>

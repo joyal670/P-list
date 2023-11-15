@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/bg_nav"
+    android:gravity="center_vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_marginBottom="@dimen/padding_small"
+       android:layout_alignParentBottom="true"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:orientation="horizontal"
+           android:paddingLeft="@dimen/activity_horizontal_margin"
+           android:paddingRight="@dimen/activity_horizontal_margin"
+           android:paddingTop="@dimen/activity_vertical_margin">
+
+           <RelativeLayout
+               android:layout_width="64dp"
+               android:layout_height="64dp"
+               android:background="@drawable/ic_home_drawable">
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:id="@+id/profile_image"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:padding="4dp"
+                   android:src="@drawable/ic_profile"
+                   app:civ_border_width="0dp" />
+           </RelativeLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center_vertical"
+               android:orientation="vertical"
+               android:paddingStart="@dimen/spacing_small">
+
+               <TextView
+                   android:id="@+id/usernames"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingBottom="@dimen/spacing_tiny"
+                   android:text="@string/home"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                   android:textSize="@dimen/font_large" />
+
+               <TextView
+                   android:id="@+id/emailid"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/home"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <androidx.appcompat.widget.SwitchCompat
+           android:id="@+id/switchDutyStatus"
+           android:layout_width="wrap_content"
+           android:layout_gravity="end"
+           android:textColor="@color/white"
+           android:text="Available  "
+           android:padding="@dimen/padding_normal"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_dark" />
+</RelativeLayout>

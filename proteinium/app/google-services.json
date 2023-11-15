@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "853422139435",
+    "project_id": "proteinium-5f4a7",
+    "storage_bucket": "proteinium-5f4a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853422139435:android:5275ad72182d118e7a626e",
+        "android_client_info": {
+          "package_name": "com.proteinium"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853422139435-rfqfjf735uanomnm5158412o5or61so9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.proteinium",
+            "certificate_hash": "97cf227dda52824a2395df31f15c3900416eac78"
+          }
+        },
+        {
+          "client_id": "853422139435-upjvv0erdn9hg5p2du9e82mc1t7i1neo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.proteinium",
+            "certificate_hash": "6933b67357449bdb4290586e7e2309cd81b36976"
+          }
+        },
+        {
+          "client_id": "853422139435-mbv8ke14jsfdk57t6jloc8022fk4njn6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoCPuw7C1eZ4fIG1EnUV2i3AaYL4BAwNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853422139435-mbv8ke14jsfdk57t6jloc8022fk4njn6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "853422139435-d101fj42d9jol8jq897onvbql91uhlbh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.proteiniumkw.proteinium"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853422139435:android:e43ad205a8d8bd277a626e",
+        "android_client_info": {
+          "package_name": "com.proteinium.proteiniumdietapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853422139435-id7n4dv4ahvne98f6fqjkr2387gcjf86.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.proteinium.proteiniumdietapp",
+            "certificate_hash": "6933b67357449bdb4290586e7e2309cd81b36976"
+          }
+        },
+        {
+          "client_id": "853422139435-mbv8ke14jsfdk57t6jloc8022fk4njn6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoCPuw7C1eZ4fIG1EnUV2i3AaYL4BAwNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853422139435-mbv8ke14jsfdk57t6jloc8022fk4njn6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "853422139435-d101fj42d9jol8jq897onvbql91uhlbh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.proteiniumkw.proteinium"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

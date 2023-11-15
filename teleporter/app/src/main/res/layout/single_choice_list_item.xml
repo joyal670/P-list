@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ashtechlabs.teleporter.util.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/spacing_small"
+    android:paddingBottom="@dimen/spacing_tiny"
+    android:paddingTop="@dimen/spacing_tiny">
+
+    <com.ashtechlabs.teleporter.util.InertCheckBox
+        android:id="@+id/singleitemCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/spacing_tiny"
+        android:button="@drawable/single_radio_chice"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/singleitemId"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/spacing_normal"
+        android:layout_toEndOf="@+id/singleitemCheckBox"
+        android:focusable="false"
+        android:textSize="@dimen/font_normal" />
+
+</com.ashtechlabs.teleporter.util.CheckableRelativeLayout>

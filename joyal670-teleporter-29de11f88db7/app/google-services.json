@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "1057935122764",
+    "firebase_url": "https://teleporter-163606.firebaseio.com",
+    "project_id": "teleporter-163606",
+    "storage_bucket": "teleporter-163606.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057935122764:android:b8b9ea200b7d840c",
+        "android_client_info": {
+          "package_name": "com.ashtechlabs.teleporter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057935122764-7dqlg210inson04rnp9a9skecn251212.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1057935122764-3mts01jb15p1obmk874lc7jdcrju94dp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ashtechlabs.teleporter",
+            "certificate_hash": "ee72ae339acfceaa63681691dda4e2229361db1d"
+          }
+        },
+        {
+          "client_id": "1057935122764-erlihl492vp5bh957e6ear1j30ohr87p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCgmTYHMKtqS4bDonfWH0dWDMqHYnQ0lE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1057935122764-7dqlg210inson04rnp9a9skecn251212.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

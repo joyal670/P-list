@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ashtechlabs.teleporter.ui.dashboard.storage_dashboard.update_rate.UpdateRateWarehouseActivity"
+    tools:showIn="@layout/activity_update_rate_warehouse">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:paddingEnd="@dimen/activity_margin_horizontal"
+        android:paddingStart="@dimen/activity_margin_horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/drawable_padding"-->
+            <!--app:cardBackgroundColor="@android:color/transparent"-->
+            <!--app:cardCornerRadius="@dimen/rounded_edit_text_corner_radius">-->
+
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/bg_rounded_edit_text"-->
+            <!--android:orientation="vertical"-->
+            <!--android:padding="@dimen/padding_normalmedium">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/transportation"-->
+            <!--android:textColor="@color/white" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+
+            <!--app:cardBackgroundColor="@android:color/transparent">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/air"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/padding"-->
+            <!--android:background="@drawable/ic_air" />-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_margin="5dp"-->
+            <!--app:cardBackgroundColor="@android:color/transparent">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/cargo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/padding"-->
+            <!--android:background="@drawable/ic_cargo" />-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_margin="5dp"-->
+            <!--app:cardBackgroundColor="@android:color/transparent">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/truck"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/padding"-->
+            <!--android:background="@drawable/ic_truck" />-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--app:cardBackgroundColor="@android:color/transparent">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/trolley"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/padding"-->
+            <!--android:background="@drawable/ic_trolley" />-->
+            <!--</android.support.v7.widget.CardView>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<Space-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/spacing_small" />-->
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/rounded_edit_text_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded_edit_text"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_normalmedium">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/warehouse_name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_normal"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_small" />
+
+                    <TextView
+                        android:id="@+id/editLocation"
+                        style="@style/RoundedEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_normal"
+                        android:drawableStart="@drawable/ic_location"
+                        android:hint="@string/select_warehouse"
+                        android:paddingEnd="@dimen/rounded_edit_text_padding_end" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_small" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_small" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/rounded_edit_text_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded_edit_text"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_normalmedium">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/select_date"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_normal"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_small" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/txtDateFrom"
+                            style="@style/RoundedEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/padding_normal"
+                            android:drawableStart="@drawable/ic_date"
+                            android:hint="@string/from"
+                            android:paddingEnd="@dimen/rounded_edit_text_padding_end" />
+
+
+                    </RelativeLayout>
+
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_small" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/txtDateTo"
+                            style="@style/RoundedEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/padding_normal"
+                            android:drawableStart="@drawable/ic_date"
+                            android:hint="@string/to" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_small" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/rounded_edit_text_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded_edit_text"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_normalmedium">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/storagetype"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_normal"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_small" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/cbGeneral"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/selector_check_box"
+                                android:paddingStart="@dimen/padding_large"
+                                android:textColor="@color/gray_light" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_small"
+                                android:text="@string/general"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/cbHazardous"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/selector_check_box"
+                                android:paddingStart="@dimen/padding_large"
+                                android:textColor="@color/gray_light" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_small"
+                                android:text="@string/hazardous"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/cbPerishable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/selector_check_box"
+                                android:paddingEnd="@dimen/padding_large"
+                                android:textColor="@color/gray_light" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_small"
+                                android:text="@string/perishable"
+                                android:textColor="@color/white" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_small" />
+
+                    <LinearLayout
+                        android:id="@+id/layRadiopersiable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="-2dp"
+                            android:layout_marginEnd="@dimen/triangle_margin"
+                            android:src="@drawable/ic_subscibe_arrow" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bck_perishable">
+
+                            <com.whygraphics.multilineradiogroup.MultiLineRadioGroup
+                                android:id="@+id/rgPerishable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/padding_normal"
+                                android:layout_marginStart="@dimen/padding_normal"
+                                android:layout_marginTop="@dimen/padding_normal"
+                                android:backgroundTint="@color/orange"
+                                app:max_in_row="3">
+
+                                <RadioButton
+                                    android:id="@+id/rbCool"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/blue"
+                                    android:text="Cool"
+                                    android:textColor="@color/gray_light" />
+
+                                <RadioButton
+                                    android:id="@+id/rbCold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/blue"
+                                    android:text="Cold"
+                                    android:textColor="@color/gray_light" />
+
+                                <RadioButton
+                                    android:id="@+id/rbFrozen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/blue"
+                                    android:text="Frozen"
+                                    android:textColor="@color/gray_light" />
+
+                            </com.whygraphics.multilineradiogroup.MultiLineRadioGroup>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/padding_normal"
+                                            android:orientation="horizontal"
+                                            android:padding="@dimen/drawable_padding">
+
+                                            <EditText
+                                                android:id="@+id/editMinAmount"
+                                                style="@style/RoundedEditText"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:drawablePadding="@dimen/padding_normal"
+                                                android:drawableStart="@drawable/ic_amount"
+                                                android:hint="@string/min_amount"
+                                                android:imeOptions="actionNext"
+                                                android:inputType="numberDecimal" />
+
+                                            <Space
+                                                android:layout_width="@dimen/spacing_small"
+                                                android:layout_height="wrap_content" />
+
+                                            <EditText
+                                                android:id="@+id/editPerKgAmount"
+                                                style="@style/RoundedEditText"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:drawablePadding="@dimen/padding_normal"
+                                                android:drawableStart="@drawable/ic_weight"
+                                                android:hint="Per Kg.Amount"
+                                                android:imeOptions="actionNext"
+                                                android:inputType="numberDecimal"
+                                                android:textColorHint="@color/gray_light" />
+                                        </LinearLayout>
+
+                                        <Space
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/spacing_small" />
+
+                                        <AutoCompleteTextView
+                                            android:id="@+id/etRateValidity"
+                                            style="@style/RoundedEditText"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="@dimen/drawable_padding"
+                                            android:layout_marginStart="@dimen/drawable_padding"
+                                            android:drawablePadding="@dimen/padding_normal"
+                                            android:drawableStart="@drawable/ic_date"
+                                            android:hint="@string/validity" />-->
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_small" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_small" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/rounded_edit_text_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded_edit_text"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_normalmedium">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/insurance"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_normal"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_normal"
+                        android:layout_marginTop="@dimen/padding_normal"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/drawable_padding">
+
+                        <EditText
+                            android:id="@+id/etInsurancePercentage"
+                            style="@style/RoundedEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/padding_normal"
+                            android:hint="@string/insurance_precentage"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal" />
+
+                        <Space
+                            android:layout_width="@dimen/spacing_small"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/etMinInsuranceAmt"
+                            style="@style/RoundedEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/padding_normal"
+                            android:drawableStart="@drawable/ic_time"
+                            android:hint="@string/min_amount"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_small" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/rounded_edit_text_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded_edit_text"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_normalmedium">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/rate_card"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_normal"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_small" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/drawable_padding">
+
+                        <EditText
+                            android:id="@+id/editPerCBMAmount"
+                            style="@style/RoundedEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/padding_normal"
+                            android:drawableStart="@drawable/ic_amount"
+                            android:hint="@string/per_cbm_available"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal"
+                            android:paddingEnd="@dimen/rounded_edit_text_padding_end" />
+
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_small" />
+
+                        <EditText
+                            android:id="@+id/editTotalCBM"
+                            style="@style/RoundedEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/padding_normal"
+                            android:drawableStart="@drawable/ic_weight"
+                            android:hint="@string/cbm_available"
+                            android:imeOptions="actionDone"
+                            android:inputType="numberDecimal"
+                            android:paddingEnd="@dimen/rounded_edit_text_padding_end" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_small" />
+
+                        <TextView
+                            android:id="@+id/tvRateValidity"
+                            style="@style/RoundedEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/padding_normal"
+                            android:drawableStart="@drawable/ic_date"
+                            android:hint="@string/validity" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_small" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_small" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/rounded_edit_text_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded_edit_text"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_larger">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/currency"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_normal"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_small" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_rounded_edit_text"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:id="@+id/tvCurrency"
+                            style="@style/RoundedEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@null"
+                            android:drawablePadding="@dimen/padding_normal"
+                            android:drawableStart="@drawable/ic_amount"
+                            android:hint="@string/select_currency" />
+
+                        <ImageView
+                            android:id="@+id/ivCurrency"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:paddingStart="@dimen/padding_large"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_add" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:gravity="center|bottom"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    style="@style/RoundedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/update"
+                    android:textAllCaps="true" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

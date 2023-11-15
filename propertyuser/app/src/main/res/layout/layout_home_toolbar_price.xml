@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_line_home"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:layerType="software"
+        android:src="@drawable/line_00ad42"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFilterHomePrice"
+        android:text="@string/tvPriceTitle"
+        android:textColor="@color/white_smoke"
+        android:fontFamily="@font/manrope_bold"
+        android:textSize="@dimen/text_size_14sp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_line_home"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_10dp"/>
+    <TextView
+        android:id="@+id/tvMinPriceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_semibold"
+        android:text="@string/tvMinPriceTitle"
+        android:textColor="@color/white_smoke"
+        android:textSize="@dimen/text_size_14sp"
+        android:textDirection="locale"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvMinPrice"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMinPrice"
+        android:layout_marginBottom="@dimen/margin_70dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        />
+    <TextView
+        android:id="@+id/tvMinPrice"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_26dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:background="@drawable/bg_square_border_gray"
+        android:fontFamily="@font/manrope_regular"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/margin_16dp"
+        android:paddingEnd="@dimen/margin_16dp"
+        android:text="@string/tvMinPrice"
+        android:textColor="@color/dark_gray2"
+        android:textSize="@dimen/text_size_14sp"
+        android:textDirection="locale"
+        android:drawableEnd="@drawable/ic__arrow_down_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvMaxPrice"
+        app:layout_constraintTop_toBottomOf="@+id/tvFilterHomePrice" />
+    <TextView
+        android:id="@+id/tvMaxPriceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_semibold"
+        android:text="@string/tvMaxPriceTitle"
+        android:textColor="@color/white_smoke"
+        android:textSize="@dimen/text_size_14sp"
+        android:textDirection="locale"
+        app:layout_constraintStart_toStartOf="@+id/tvMaxPrice"
+        app:layout_constraintTop_toTopOf="@+id/tvMaxPrice"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMaxPrice"
+        android:layout_marginBottom="@dimen/margin_70dp"
+
+        />
+    <TextView
+        android:id="@+id/tvMaxPrice"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_26dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:background="@drawable/bg_square_border_gray"
+        android:fontFamily="@font/manrope_regular"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/margin_16dp"
+        android:paddingEnd="@dimen/margin_16dp"
+        android:text="@string/tvMinPrice"
+        android:textColor="@color/dark_gray2"
+        android:textSize="@dimen/text_size_14sp"
+        android:textDirection="locale"
+        android:drawableEnd="@drawable/ic__arrow_down_24"
+        app:layout_constraintStart_toEndOf="@+id/tvMinPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFilterHomePrice" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

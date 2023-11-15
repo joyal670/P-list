@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_10dp"
+    app:cardCornerRadius="@dimen/margin_10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:background="@color/white">
+
+            <com.property.propertyagent.utils.RoundRectCornerImageView
+                android:id="@+id/ivPropertyImage"
+                android:layout_width="59dp"
+                android:layout_height="@dimen/margin_65dp"
+                android:src="@drawable/sample_apartment"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/margin_7dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivPropertyImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/margin_10dp">
+
+                <TextView
+                    android:id="@+id/tvPropertyNameService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/property_name"
+                    android:textColor="@color/color_accent_grey_light_new"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_medium"
+                        android:text="@string/property_code"
+                        android:padding="@dimen/margin_3dp"
+                        android:textColor="@color/color_accent_grey_light_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_medium"
+                        android:text="  :  "
+                        android:textColor="@color/color_accent_grey_light_new"
+                        android:textSize="@dimen/text_size_13sp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tvPropertyCodeService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_bold"
+                        android:text="@string/_2545220"
+                        android:padding="@dimen/margin_3dp"
+                        android:textColor="@color/color_accent_grey_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvPropertyLocationService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_locationmarker_grey"
+                    android:drawablePadding="@dimen/margin_3dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/al_majma_ah_15362_saudi_arabia"
+                    android:textColor="@color/color_accent_grey"
+                    android:layout_marginTop="@dimen/margin_3dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/tvPropertyToService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/appartment_for_rent"
+                    android:layout_marginTop="@dimen/margin_3dp"
+                    android:textColor="@color/color_accent_grey_light_new"
+                    android:textSize="@dimen/text_size_12sp" />
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heebo_medium"
+                android:text="@string/service_request"
+                android:textColor="@color/color_accent_grey_light_new"
+                android:layout_marginStart="@dimen/margin_7dp"
+                android:textSize="@dimen/text_size_11sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_15dp">
+
+                <ImageView
+                    android:id="@+id/ivServiceImage"
+                    android:layout_width="28dp"
+                    android:layout_height="@dimen/margin_25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_group_setting_blue" />
+
+                <TextView
+                    android:id="@+id/tvServiceName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/appliance_repair"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:textColor="@color/color_accent_blue_statusbar"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_18dp"
+                android:layout_marginStart="@dimen/margin_5dp"
+                android:weightSum="3"
+                android:padding="@dimen/margin_3dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/date_amp_time"
+                    android:gravity="end"
+                    android:textColor="@color/color_accent_grey_light_new"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/margin_7dp"
+                    android:paddingTop="2dp">
+
+
+                    <TextView
+                        android:id="@+id/tvServiceDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="center"
+                        android:text="@string/_15_05_2020"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:textColor="@color/color_accent_grey_new"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:background="@color/color_accent_grey_new" />
+
+                    <TextView
+                        android:id="@+id/tvServiceTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="center"
+                        android:text="@string/_10_00am"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:textColor="@color/color_accent_grey_new"
+                        android:textSize="@dimen/text_size_11sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_5dp"
+                android:weightSum="3"
+                android:visibility="gone"
+                android:padding="@dimen/margin_3dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/address"
+                    android:gravity="end"
+                    android:textColor="@color/color_accent_grey_light_new"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:id="@+id/tvFullAddressService"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/margin_7dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/akshya_nagar_1st_block_1st_cross_rammurthy_nagar_bangalore_560016"
+                    android:textColor="@color/color_accent_grey_new"
+                    android:textSize="@dimen/text_size_12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/margin_5dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:weightSum="3"
+                android:padding="@dimen/margin_3dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/details_new"
+                    android:gravity="end"
+                    android:textColor="@color/color_accent_grey_light_new"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:id="@+id/tvDescriptionService"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heebo_medium"
+                    android:paddingStart="@dimen/margin_7dp"
+                    android:text="@string/lorem_ipsum_has_been_the_industry_s_standard_dummy_text_ever_since_the_1500s_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_typespecimen_book"
+                    android:textColor="@color/color_accent_grey_light_new"
+                    android:textSize="@dimen/text_size_12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_15dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAcceptService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:backgroundTint="@color/color_accent_green_button"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/accept"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:textColor="@color/white" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRejectService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reject"
+                    android:fontFamily="@font/heebo_medium"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/color_accent_red_button"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

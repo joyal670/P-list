@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/white" />
+
+    <corners android:radius="@dimen/padding_large" />
+
+    <shape android:shape="oval" android:visible="true">
+        <solid android:color="@color/circle_delivery_item_selected" />
+        <size android:width="10dp" android:height="10dp" />
+    </shape>
+</shape>

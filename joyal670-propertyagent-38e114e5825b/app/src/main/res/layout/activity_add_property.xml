@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_main_owner" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="center|bottom"
+                android:background="@color/color_accent_blue_statusbar"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_40dp"
+                    android:layout_marginEnd="@dimen/margin_40dp"
+                    android:background="@drawable/ic_ellipse_owner" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_140dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-100dp"
+                android:src="@drawable/ic_owner_home" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_weight="1.7"
+                        android:fontFamily="@font/heebo_medium"
+                        android:text="@string/property_to"
+                        android:textColor="@color/color_accent_grey_light_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <com.alimaddi.segmentedbutton.SegmentedButtonGroup
+                        android:id="@+id/sgRentBuy"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/margin_30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginEnd="140dp"
+                        android:layout_weight="1.5"
+                        android:background="@color/white"
+                        android:elevation="2dp"
+                        app:borderColor="@color/blue_background"
+                        app:borderWidth="1dp"
+                        app:dividerPadding="10dp"
+                        app:dividerWidth="1dp"
+                        app:position="0"
+                        app:radius="30dp"
+                        app:ripple="true"
+                        app:rippleColor="@color/white"
+                        app:selectedBackground="@color/blue_background">
+
+                        <com.alimaddi.segmentedbutton.SegmentedButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="10dp"
+                            app:drawableGravity="top"
+                            app:selectedTextColor="@color/white"
+                            app:text="@string/Rent"
+                            app:textColor="@color/black"
+                            app:textSize="@dimen/text_size_12sp" />
+
+                        <com.alimaddi.segmentedbutton.SegmentedButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="10dp"
+                            app:drawableGravity="top"
+                            app:selectedTextColor="@color/white"
+                            app:text="@string/buy"
+                            app:textColor="@color/black"
+                            app:textSize="@dimen/text_size_12sp" />
+
+                    </com.alimaddi.segmentedbutton.SegmentedButtonGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.15"
+                        android:fontFamily="@font/heebo_medium"
+                        android:text="@string/property_category"
+                        android:textColor="@color/color_accent_grey_light_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <com.alimaddi.segmentedbutton.SegmentedButtonGroup
+                        android:id="@+id/sgRC"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/margin_35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:layout_weight="1.75"
+                        android:background="@color/white"
+                        android:elevation="2dp"
+                        app:borderColor="@color/blue_background"
+                        app:borderWidth="1dp"
+                        app:dividerPadding="10dp"
+                        app:dividerWidth="1dp"
+                        app:position="0"
+                        app:radius="30dp"
+                        app:ripple="true"
+                        app:rippleColor="@color/white"
+                        app:selectedBackground="@color/blue_background">
+
+                        <com.alimaddi.segmentedbutton.SegmentedButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="10dp"
+                            app:drawableGravity="top"
+                            app:selectedTextColor="@color/white"
+                            app:text="@string/residential"
+                            app:textColor="@color/black"
+                            app:textSize="@dimen/text_size_12sp" />
+
+                        <com.alimaddi.segmentedbutton.SegmentedButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="10dp"
+                            app:drawableGravity="top"
+                            app:selectedTextColor="@color/white"
+                            app:text="@string/commercial"
+                            app:textColor="@color/black"
+                            app:textSize="@dimen/text_size_12sp" />
+
+                    </com.alimaddi.segmentedbutton.SegmentedButtonGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/heebo_medium"
+                        android:text="@string/property_type"
+                        android:textColor="@color/color_accent_grey_light_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <com.skydoves.powerspinner.PowerSpinnerView
+                        android:id="@+id/propertyType_spinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/bg_round_border"
+                        android:gravity="start|center"
+                        android:hint="@string/select_type"
+                        android:padding="10dp"
+                        android:text="@string/select_type"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textDirection="locale"
+                        android:textSize="14.5sp"
+                        android:theme="@style/ToolbarTheme"
+                        app:spinner_arrow_gravity="end"
+                        app:spinner_arrow_padding="8dp"
+                        app:spinner_arrow_tint="@color/black"
+                        app:spinner_divider_color="@color/gray"
+                        app:spinner_divider_show="true"
+                        app:spinner_divider_size="0.5dp"
+                        app:spinner_popup_animation="dropdown"
+                        app:spinner_popup_background="@color/white"
+                        app:spinner_popup_elevation="14dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:background="@color/color_accent_grey_light_new2" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:backgroundTint="@color/white"
+                    app:hintEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/etPropertyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/margin_20dp"
+                        android:fontFamily="@font/heebo_regular"
+                        android:hint="@string/etPropertyName"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/property_addres"
+                    android:textColor="@color/color_accent_grey_light_new"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:backgroundTint="@color/white"
+                    app:hintEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/etxStreetAddress1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/margin_20dp"
+                        android:fontFamily="@font/heebo_regular"
+                        android:hint="@string/street_address_1"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:backgroundTint="@color/white"
+                    app:hintEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/etxStreetAddress2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/margin_20dp"
+                        android:fontFamily="@font/heebo_regular"
+                        android:hint="@string/street_address_2"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:backgroundTint="@color/white"
+                    app:hintEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/etLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/margin_20dp"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/heebo_regular"
+                        android:hint="@string/etLocation"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:background="@drawable/bg_round_border"
+                    android:orientation="horizontal">
+
+                    <com.skydoves.powerspinner.PowerSpinnerView
+                        android:id="@+id/country_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:gravity="start|center"
+                        android:hint="@string/select_country"
+                        android:padding="6dp"
+                        android:text="@string/select_country"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textDirection="locale"
+                        android:theme="@style/ToolbarTheme"
+                        app:spinner_arrow_gravity="end"
+                        app:spinner_arrow_padding="8dp"
+                        app:spinner_arrow_tint="@color/black"
+                        app:spinner_divider_color="@color/gray"
+                        app:spinner_divider_show="true"
+                        app:spinner_divider_size="0.5dp"
+                        app:spinner_popup_animation="dropdown"
+                        app:spinner_popup_background="@color/white"
+                        app:spinner_popup_elevation="14dp" />
+
+
+                    <!--                      <Spinner
+                                              android:id="@+id/country_spinner"
+                                              android:layout_width="match_parent"
+                                              android:layout_height="@dimen/margin_50dp"
+                                              android:layout_centerVertical="true"
+                                              android:layout_gravity="center"
+                                              android:layout_marginStart="5dp"
+                                              android:background="@android:color/transparent"
+                                              android:gravity="center"
+                                              android:prompt="@string/state_province"
+                                              android:spinnerMode="dropdown"
+                                              android:theme="@style/ToolbarTheme"
+                                              app:theme="@style/ToolbarTheme" />
+
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentEnd="true"
+                          android:layout_centerVertical="true"
+                          android:layout_gravity="center"
+                          android:paddingEnd="@dimen/margin_8dp"
+                          android:src="@drawable/ic_arrow_drop_down" />-->
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:background="@drawable/bg_round_border"
+                    android:orientation="horizontal">
+
+                    <com.skydoves.powerspinner.PowerSpinnerView
+                        android:id="@+id/state_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:gravity="start|center"
+                        android:hint="@string/select_state"
+                        android:padding="6dp"
+                        android:text="@string/select_state"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textDirection="locale"
+                        android:theme="@style/ToolbarTheme"
+                        app:spinner_arrow_gravity="end"
+                        app:spinner_arrow_padding="8dp"
+                        app:spinner_arrow_tint="@color/black"
+                        app:spinner_divider_color="@color/gray"
+                        app:spinner_divider_show="true"
+                        app:spinner_divider_size="0.5dp"
+                        app:spinner_popup_animation="dropdown"
+                        app:spinner_popup_background="@color/white"
+                        app:spinner_popup_elevation="14dp" />
+
+
+                    <!--     <Spinner
+                             android:id="@+id/state_spinner"
+                             android:layout_width="match_parent"
+                             android:layout_height="@dimen/margin_50dp"
+                             android:layout_centerVertical="true"
+                             android:layout_gravity="center"
+                             android:layout_marginStart="5dp"
+                             android:background="@android:color/transparent"
+                             android:gravity="center"
+                             android:prompt="@string/state_province"
+                             android:spinnerMode="dropdown"
+                             android:theme="@style/ToolbarTheme"
+                             app:theme="@style/ToolbarTheme" />
+
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentEnd="true"
+                             android:layout_centerVertical="true"
+                             android:layout_gravity="center"
+                             android:paddingEnd="@dimen/margin_8dp"
+                             android:src="@drawable/ic_arrow_drop_down" />-->
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/state_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:background="@drawable/bg_round_border"
+                    android:orientation="horizontal">
+
+                    <com.skydoves.powerspinner.PowerSpinnerView
+                        android:id="@+id/city_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:gravity="start|center"
+                        android:hint="@string/select_city"
+                        android:padding="6dp"
+                        android:text="@string/select_city"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textDirection="locale"
+                        android:theme="@style/ToolbarTheme"
+                        app:spinner_arrow_gravity="end"
+                        app:spinner_arrow_padding="8dp"
+                        app:spinner_arrow_tint="@color/black"
+                        app:spinner_divider_color="@color/gray"
+                        app:spinner_divider_show="true"
+                        app:spinner_divider_size="0.5dp"
+                        app:spinner_popup_animation="dropdown"
+                        app:spinner_popup_background="@color/white"
+                        app:spinner_popup_elevation="14dp" />
+
+
+                    <!--                 <Spinner
+                                         android:id="@+id/city_spinner"
+                                         android:layout_width="match_parent"
+                                         android:layout_height="@dimen/margin_50dp"
+                                         android:layout_centerVertical="true"
+                                         android:layout_gravity="center"
+                                         android:layout_marginStart="5dp"
+                                         android:background="@android:color/transparent"
+                                         android:gravity="center"
+                                         android:prompt="@string/state_province"
+                                         android:spinnerMode="dropdown"
+                                         android:theme="@style/ToolbarTheme"
+                                         app:theme="@style/ToolbarTheme" />
+
+                                     <ImageView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_alignParentEnd="true"
+                                         android:layout_centerVertical="true"
+                                         android:layout_gravity="center"
+                                         android:paddingEnd="@dimen/margin_8dp"
+                                         android:src="@drawable/ic_arrow_drop_down" />-->
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:background="@drawable/bg_round_border"
+                    android:orientation="horizontal">
+
+                    <com.skydoves.powerspinner.PowerSpinnerView
+                        android:id="@+id/zip_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:gravity="start|center"
+                        android:hint="@string/select_zipcode"
+                        android:padding="6dp"
+                        android:text="@string/select_zipcode"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textDirection="locale"
+                        android:theme="@style/ToolbarTheme"
+                        app:spinner_arrow_gravity="end"
+                        app:spinner_arrow_padding="8dp"
+                        app:spinner_arrow_tint="@color/black"
+                        app:spinner_divider_color="@color/gray"
+                        app:spinner_divider_show="true"
+                        app:spinner_divider_size="0.5dp"
+                        app:spinner_popup_animation="dropdown"
+                        app:spinner_popup_background="@color/white"
+                        app:spinner_popup_elevation="14dp" />
+
+
+                    <!--  <Spinner
+                          android:id="@+id/zip_spinner"
+                          android:layout_width="match_parent"
+                          android:layout_height="@dimen/margin_50dp"
+                          android:layout_centerVertical="true"
+                          android:layout_gravity="center"
+                          android:layout_marginStart="5dp"
+                          android:background="@android:color/transparent"
+                          android:gravity="center"
+                          android:prompt="@string/state_province"
+                          android:spinnerMode="dropdown"
+                          android:theme="@style/ToolbarTheme"
+                          app:theme="@style/ToolbarTheme" />
+
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentEnd="true"
+                          android:layout_centerVertical="true"
+                          android:layout_gravity="center"
+                          android:paddingEnd="@dimen/margin_8dp"
+                          android:src="@drawable/ic_arrow_drop_down" />-->
+
+                </RelativeLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/add_property_nextBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginBottom="@dimen/margin_25dp"
+                    android:backgroundTint="@color/blue_background"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

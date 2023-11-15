@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.proteinium.proteiniumdietapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+<!--    <uses-permission-->
+<!--        android:name="android.permission.QUERY_ALL_PACKAGES"-->
+<!--        tools:ignore="QueryAllPackagesPermission" />-->
+
+    <queries>
+        <package android:name="com.whatsapp" />
+    </queries>
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:configChanges="locale"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        tools:replace="android:theme"
+        android:networkSecurityConfig="@xml/network_configuration"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.Protenium.NoActionBar">
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.main.home.home.add_deliveryaddress.EditAddedAddressActivity"></activity>
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.main.home.calender.meals_selection.activity.MenuActivity" />
+        <activity
+            android:name="com.proteinium.proteiniumdietapp.ui.main.home.home.detailed_page.MealPlanActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="proteiniumkw.com" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.main.home.home.notification.NotificationActivity" />
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.main.home.home.order_confirm.OrderConfirm_Activity" />
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.main.home.home.checkout_page.CheckoutActivity" />
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.main.home.home.add_deliveryaddress.AddDelivery_Activity" />
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.main.home.myaccount.settings.SettingsActivity" />
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.main.home.myaccount.subscriptionhistory.subscriptionhistorydetails.SubscriptionAddActivity" />
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.main.home.myaccount.subscriptionhistory.subscriptionhistorydetails.SubscriptionDetailedActivity" />
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.main.home.myaccount.subscriptionhistory.activity.SubscriptionHistoryActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="subscription_expiry" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.main.home.myaccount.dislikes.activity.DislikesActivity" />
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.main.home.myaccount.myprofile.MyProfileActivity" />
+        <activity
+            android:name="com.proteinium.proteiniumdietapp.ui.main.home.more.termsAndConditions.TermsAndConditionsActivity"
+            android:configChanges="locale" />
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.main.home.more.privacypolicy.PrivacyPolicyActivity" />
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.main.home.more.contactus.ContactUsActivity" />
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.main.home.more.aboutus.AboutUsActivity" />
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.start_up.auth.AuthActivity" />
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.start_up.language_selection.LangaugeSelectionActivity" />
+        <activity android:name=".ui.main.home.calender.meals_selection.activity.InfoActivity" />
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.start_up.splash.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.proteinium.proteiniumdietapp.ui.main.home.HomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="rate_food" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo" />
+        <service
+            android:name="com.proteinium.proteiniumdietapp.ui.fcm.PushNotification"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+
+    </application>
+
+</manifest>

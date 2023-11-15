@@ -1,0 +1,17 @@
+<com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigationDrawer"
+    app:appbarColor="@color/pomegranate"
+    app:appbarTitleTextColor="@color/white"
+    app:HamMenuIconTintColor="@color/white"
+    app:primaryMenuItemTextSize="@dimen/text_size_10sp"
+    app:secondaryMenuItemTextSize="@dimen/text_size_7sp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <FrameLayout
+      android:id="@+id/main_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+</com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer>

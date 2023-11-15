@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@+id/card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="310dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="12dp"
+    android:layout_marginTop="@dimen/margin_12dp"
+    android:layout_marginStart="@dimen/margin_16dp"
+    android:layout_marginEnd="@dimen/margin_16dp"
+    android:layout_marginBottom="@dimen/margin_10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    xmlns:fab="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Media -->
+        <LinearLayout
+            android:id="@+id/linearTransparent"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="?selectableItemBackground"
+            android:elevation="1dp"/>
+        <ImageView
+            android:id="@+id/ivPropertyImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/building_1"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/iconFavourite"
+            android:layout_width="30dp"
+            android:layout_height="41dp"
+            app:backgroundTint="@color/lightGray"
+            app:cornerRadius="100dp"
+            app:icon="@drawable/ic_favorite1"
+            app:iconTint="@color/white"
+            app:iconGravity="textStart"
+            app:iconSize="@dimen/margin_14dp"
+            app:iconPadding="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:strokeColor="@color/lightGray"
+            android:layout_margin="@dimen/margin_16dp"
+            app:rippleColor="@color/flamingo"
+
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/iconFavouriteSelected"
+            android:layout_width="30dp"
+            android:layout_height="41dp"
+            app:backgroundTint="@color/flamingo"
+            app:cornerRadius="100dp"
+            app:icon="@drawable/ic_favorite2"
+            app:iconTint="@color/white"
+            app:iconGravity="textStart"
+            app:iconSize="@dimen/margin_14dp"
+            app:iconPadding="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:strokeColor="@color/lightGray"
+            android:layout_margin="@dimen/margin_16dp"
+            app:rippleColor="@color/flamingo"
+            android:visibility="gone"
+
+            />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="154dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/black_and_white_transparency">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/constraintLinearOne"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivGreenTag"
+                android:layout_marginTop="@dimen/margin_12dp">
+                <LinearLayout
+                    android:id="@+id/linearSubOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginEnd="@dimen/margin_16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvPropertyAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/manrope_bold"
+                        android:maxLength="14"
+                        android:maxLines="1"
+                        android:text="@string/tvPropertyAmount"
+                        android:textColor="@color/black_light"
+                        android:textSize="@dimen/text_size_12sp"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/tvPropertyDiscountAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/manrope_semibold"
+                        android:maxLength="12"
+                        android:maxLines="1"
+                        android:text="@string/tvDiscountAmount"
+                        android:textColor="@color/lightGray1"
+                        android:textSize="@dimen/text_size_10sp"
+                        android:layout_gravity="center_vertical"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linarRating"
+                        android:background="@drawable/border_rounded_green"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:id="@+id/tvRating"
+                            android:text="@string/tvRating"
+                            android:padding="@dimen/margin_5dp"
+                            android:drawablePadding="@dimen/margin_5dp"
+                            android:fontFamily="@font/manrope_bold"
+                            android:textSize="@dimen/text_size_10sp"
+                            android:textColor="@color/white"
+                            android:drawableEnd="@drawable/ic_star"
+                            android:drawableRight="@drawable/ic_star"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvBHK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_3dp"
+                        android:layout_marginEnd="@dimen/margin_3dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/manrope_semibold"
+                        android:maxLength="7"
+                        android:maxLines="1"
+                        android:text="@string/tvBHK"
+                        android:textColor="@color/dark_gray1"
+                        android:textSize="@dimen/text_size_10sp"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivGreenTag"
+                android:background="@drawable/ic_green_tag"
+                android:scaleY="1.1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAppartmentText"
+                android:text="@string/tvAppartmentText"
+                android:textColor="@color/gray_brown"
+                android:fontFamily="@font/manrope_regular"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLinearOne"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/margin_2dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginLeft="@dimen/margin_16dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLinarTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAppartmentText"
+                android:layout_marginTop="@dimen/margin_3dp">
+
+                <TextView
+                    android:id="@+id/tvBedCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    android:drawableLeft="@drawable/ic_bed"
+                    android:drawablePadding="@dimen/margin_5dp"
+                    android:fontFamily="@font/manrope_regular"
+                    android:text="@string/tvBedCount"
+                    android:textColor="@color/gray_brown"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvBathCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    android:drawableLeft="@drawable/ic_bath"
+                    android:drawablePadding="@dimen/margin_5dp"
+                    android:fontFamily="@font/manrope_regular"
+                    android:text="@string/tvBathCount"
+                    android:textColor="@color/gray_brown"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintStart_toEndOf="@+id/tvBedCount"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvDiameter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    android:drawableLeft="@drawable/ic_diameter"
+                    android:drawablePadding="@dimen/margin_5dp"
+                    android:fontFamily="@font/manrope_regular"
+                    android:text="@string/tvDiameter"
+                    android:textColor="@color/gray_brown"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintStart_toEndOf="@+id/tvBathCount"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnViewDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_bold"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="@string/btnViewDetails"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:cornerRadius="@dimen/radius_22dp"
+                android:textSize="@dimen/text_size_12sp"
+                app:backgroundTint="@color/dark_gray4"
+                app:strokeColor="@color/dark_gray4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLinarTwo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_16dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

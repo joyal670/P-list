@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.filter.FilterActivity">
+
+    <include
+        layout="@layout/toolbar_main"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/includeNoInternet"
+        layout="@layout/layout_no_network"
+        android:layout_marginTop="@dimen/margin_56dp"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearNoDataFoundStatusDetails"
+        android:layout_marginTop="@dimen/margin_56dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:visibility="gone">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/includeNoDataFound"
+            layout="@layout/layout_no_data_found"
+            />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedStatusDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_56dp"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearMainOne"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tvOrderId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/manrope_medium"
+                android:maxLines="1"
+                android:text="@string/tvOrderId"
+                android:textColor="@color/dark_gray4"
+                android:textSize="@dimen/text_size_13sp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tvServiceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/manrope_medium"
+                android:maxLines="2"
+                android:text="@string/tvServiceName_new"
+                android:textColor="@color/dark_gray4"
+                android:textSize="@dimen/text_size_13sp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearTimeDate"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp">
+
+                <TextView
+                    android:id="@+id/tvTimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/manrope_medium"
+                    android:maxLines="1"
+                    android:text="@string/tvTime_new"
+                    android:textColor="@color/dark_gray4"
+                    android:textSize="@dimen/text_size_13sp" />
+                <TextView
+                    android:id="@+id/tvTimeStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/manrope_medium"
+                    android:maxLines="1"
+                    android:text="@string/tvTimeStatus"
+                    android:textColor="@color/dark_gray4"
+                    android:textSize="@dimen/text_size_13sp" />
+                <View
+                    android:id="@+id/vLine"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/dark_gray4"
+                    android:layout_marginTop="@dimen/margin_2dp"
+                    android:layout_marginBottom="@dimen/margin_2dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:layout_marginEnd="@dimen/margin_8dp"/>
+                <TextView
+                    android:id="@+id/tvDateStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/manrope_medium"
+                    android:maxLines="1"
+                    android:text="@string/tvDateStatus"
+                    android:textColor="@color/dark_gray4"
+                    android:textSize="@dimen/text_size_13sp" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvPropertyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/manrope_medium"
+                android:maxLines="2"
+                android:text="@string/tvPropertyName_new"
+                android:textColor="@color/dark_gray4"
+                android:textSize="@dimen/text_size_13sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivSilverLine"
+                android:src="@drawable/ic_line_gray"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"/>
+
+            <TextView
+                android:id="@+id/tvStatusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/manrope_bold"
+                android:maxLines="2"
+                android:text="@string/tvStatusText_new"
+                android:textColor="@color/dark_gray4"
+                android:textSize="@dimen/text_size_13sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rvStatusDetailList"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    tools:listitem="@layout/list_status_timeline_detailed_item"
+                    android:focusable="false"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancelRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:fontFamily="@font/manrope_bold"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="@string/btnCancelRequest"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14sp"
+                app:backgroundTint="@color/flamingo"
+                app:cornerRadius="@dimen/radius_20dp"
+                android:visibility="gone"
+                 />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

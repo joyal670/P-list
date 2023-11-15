@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="0dp"
+    app:elevation="0dp"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_notification"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color_main"
+        android:gravity="center_horizontal"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetRight="0dp"
+        android:theme="@style/ToolbarTheme"
+        android:contentInsetEnd="0dp"
+        app:contentInsetStartWithNavigation="0dp">
+
+        <TextView
+            android:id="@+id/tvToolbarTitle_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_marginEnd="?android:attr/actionBarSize"
+            android:textColor="@color/white"
+            android:fontFamily="@font/segoe_ui"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_16sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</com.google.android.material.appbar.AppBarLayout>

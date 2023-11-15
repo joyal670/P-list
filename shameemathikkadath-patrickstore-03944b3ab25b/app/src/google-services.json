@@ -1,0 +1,121 @@
+{
+  "project_info": {
+    "project_number": "235005925100",
+    "project_id": "patricsk-c5043",
+    "storage_bucket": "patricsk-c5043.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235005925100:android:fbcb510f873dd1b2a8f7c9",
+        "android_client_info": {
+          "package_name": "app.com.patricksdeliveryboy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235005925100-t9g893nikd8u6gpp4p6jrr3fv60kl11h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.com.patricksdeliveryboy",
+            "certificate_hash": "f4fbbc629921ef1026490c5f6243ff549e617ba5"
+          }
+        },
+        {
+          "client_id": "235005925100-5d5v9fpabcrpn1v2mkr9sklgtg4fhuak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgU5b5uf37JgcuHT9gIaOH8UhNw8zfarw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235005925100-5d5v9fpabcrpn1v2mkr9sklgtg4fhuak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235005925100:android:eaf84be1078c18fca8f7c9",
+        "android_client_info": {
+          "package_name": "com.inmenzo.patrics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235005925100-iqf33i2ajl8llle8c3pl8pcnn1jiq5gb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inmenzo.patrics",
+            "certificate_hash": "cc50e81afb667c3b6893ff6104f3c6143b4177e0"
+          }
+        },
+        {
+          "client_id": "235005925100-5d5v9fpabcrpn1v2mkr9sklgtg4fhuak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgU5b5uf37JgcuHT9gIaOH8UhNw8zfarw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235005925100-5d5v9fpabcrpn1v2mkr9sklgtg4fhuak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235005925100:android:adea5695af8a3c15a8f7c9",
+        "android_client_info": {
+          "package_name": "com.iroid.patrickstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235005925100-tel0ktld4e0vpko9b012nmsehedfgnnc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iroid.patrickstore",
+            "certificate_hash": "6933b67357449bdb4290586e7e2309cd81b36976"
+          }
+        },
+        {
+          "client_id": "235005925100-5d5v9fpabcrpn1v2mkr9sklgtg4fhuak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgU5b5uf37JgcuHT9gIaOH8UhNw8zfarw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235005925100-5d5v9fpabcrpn1v2mkr9sklgtg4fhuak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

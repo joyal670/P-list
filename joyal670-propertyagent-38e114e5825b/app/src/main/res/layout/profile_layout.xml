@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_profilebg"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civProfilePicRequestDialog"
+            android:layout_width="@dimen/margin_100dp"
+            android:layout_height="104dp"
+            android:layout_gravity="center"
+            android:src="@drawable/sample_profile" />
+
+        <TextView
+            android:id="@+id/tvProfileNameRequestDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/heebo_bold"
+            android:maxLines="1"
+            android:text="@string/jayanth"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/tvUserTypeRequestDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/heebo_medium"
+            android:text="@string/user"
+            android:textColor="@color/color_accent_grey"
+            android:textSize="@dimen/text_size_10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivPhoneRequestDialog"
+                android:layout_width="@dimen/margin_35dp"
+                android:layout_height="@dimen/margin_35dp"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:padding="@dimen/margin_5dp"
+                android:src="@drawable/ic_phoneoutgoing" />
+
+            <ImageView
+                android:id="@+id/ivWhatsappRequestDialog"
+                android:layout_width="@dimen/margin_35dp"
+                android:layout_height="@dimen/margin_35dp"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:padding="@dimen/margin_5dp"
+                android:src="@drawable/ic_whatsapp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

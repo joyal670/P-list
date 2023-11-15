@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_12dp"
+    android:layout_marginTop="@dimen/margin_15dp"
+    android:layout_marginEnd="@dimen/margin_12dp"
+    android:layout_marginBottom="@dimen/margin_6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivPropertyImageRequestNew"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_6dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivPropertyImageRequestNew"
+                app:layout_constraintTop_toTopOf="@+id/ivPropertyImageRequestNew">
+
+                <TextView
+                    android:id="@+id/tvPropertyToRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text=""
+                    android:textColor="@color/color_accent_grey"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/location"
+                    android:textColor="@color/color_accent_grey"
+                    android:textSize="@dimen/text_size_10sp" />
+
+                <TextView
+                    android:id="@+id/myrequest_item_locationName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text=""
+                    android:textColor="@color/color_accent_grey"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/request_from"
+                    android:textColor="@color/color_accent_grey"
+                    android:textSize="@dimen/text_size_10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_3dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.property.propertyagent.utils.RoundRectCornerImageView
+                        android:id="@+id/ivProfileImageRequest"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/margin_28dp"
+                        android:layout_gravity="start|center"
+                        android:layout_weight=".5"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_color_line_user" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_weight="2.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvProfileNameRequest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/heebo_medium"
+                            android:text="@string/profile_name"
+                            android:textColor="@color/color_accent_grey"
+                            android:textSize="@dimen/text_size_13sp" />
+
+                        <TextView
+                            android:id="@+id/tvProfileTypeRequest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/heebo_medium"
+                            android:text=""
+                            android:textColor="@color/color_accent_grey"
+                            android:textSize="@dimen/text_size_10sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/myrequest_item_viewProfile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="center"
+                        android:text="@string/view_profile"
+                        android:textColor="@color/color_accent_grey"
+                        android:textSize="@dimen/text_size_10sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearBottomDateTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_3dp"
+                android:layout_marginEnd="@dimen/margin_5dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/linearBottomAcceptDenied"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/heebo_medium"
+                            android:text="@string/tvDateRequest"
+                            android:textColor="@color/color_accent_grey"
+                            android:textSize="@dimen/text_size_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvDateRequest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/heebo_medium"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/color_accent_grey"
+                            android:textSize="@dimen/text_size_11sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/heebo_medium"
+                            android:text="@string/tvTimeRequest"
+                            android:textColor="@color/color_accent_grey"
+                            android:textSize="@dimen/text_size_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvTimeRequest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/heebo_medium"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/color_accent_grey"
+                            android:textSize="@dimen/text_size_11sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearBottomAcceptDenied"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/linearBottomDateTime"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/linearBottomDateTime">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAcceptRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:backgroundTint="@color/color_accent_green"
+                    android:fontFamily="@font/heebo_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/accept"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDeniedRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:backgroundTint="@color/color_accent_red"
+                    android:fontFamily="@font/heebo_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/denied"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_accent_grey_light_new2" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

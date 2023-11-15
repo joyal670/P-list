@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.iroid.patrickstore">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:exported="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="n">
+        <activity
+            android:name=".ui.terms_and_conditions.TermsAndConditionActivity"
+            android:exported="false" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:theme="@style/Theme.PatrickStore.SplashTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.home.HomeActivity" />
+        <activity android:name=".ui.address.AddressActivity" />
+        <activity android:name=".ui.viewall.ViewAllActivity" />
+        <activity android:name=".ui.seller.SellerActivity" />
+        <activity android:name=".ui.shop_details.ShopDetailsActivity" />
+        <activity android:name=".ui.cart.car_list.CartActivity" />
+        <activity android:name=".ui.allcategories.AllCategoryActivity" />
+        <activity android:name=".ui.dailydeal.DailyDealActivity" />
+        <activity android:name=".ui.my_account.MyAccountActivity" />
+        <activity android:name=".ui.my_account.my_reviews.MyReviewsActivity"/>
+        <activity android:name=".ui.address.addaddress.AddAddressActivity" />
+        <activity android:name=".ui.search.SearchActivity" />
+        <activity android:name=".ui.whisllist.WishListActivity" />
+        <activity android:name=".ui.login.LoginActivity" />
+        <activity android:name=".ui.productdetail.ProductDetailActivity" />
+        <activity android:name=".ui.forgotpassword.ForgotPasswordActivity" />
+        <activity android:name=".ui.cart.order_summary.OrderSummaryActivity" />
+        <activity android:name=".ui.my_account.my_orders.order_details.OrderDetailActivity"/>
+        <activity android:name=".ui.location.LocationActivity" />
+        <activity android:name=".ui.offer.OfferActivity" />
+        <activity android:name=".ui.allcategories.CategoriesActivity" />
+        <activity android:name=".ui.signup.SignUpActivity" />
+        <activity android:name=".ui.wholesalemarket.WholeSaleActivity" /> <!-- <activity android:name=".ui.cart.order_summary.OrderSummaryActivity" /> -->
+        <activity android:name=".ui.cart.confirm_order.ConfirmOrderActivity" />
+        <activity android:name=".ui.my_account.reward_points.WalletActivity" />
+        <activity android:name=".ui.shop_details.services.service_details.ServiceDetailsActivity" />
+        <activity android:name=".ui.forgotpassword.otp.OtpActivity" />
+        <activity android:name=".ui.edit_profile.EditProfileActivity" />
+        <activity android:name=".ui.service_order.ServiceOrderActivity"/>
+        <activity android:name=".ui.service_order.ServiceOrderDetailActivity"/>
+        <activity android:name=".ui.service_category.ServiceCategoryActivity"/>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="me.kariot.invoicegenerator.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

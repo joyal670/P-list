@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.my_account.reward_points.RewardPointsFragment">
+<include layout="@layout/layout_no_data"
+    android:id="@+id/noData"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/constraintCashback"
+       android:visibility="gone"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_width="0dp"
+       android:background="@color/colorGreen2"
+       android:layout_height="wrap_content">
+       <TextView
+           android:padding="18dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/barlow_medium"
+           android:textColor="@color/colorWhite"
+           android:textSize="@dimen/text_size_medium"
+           android:text="@string/total_cash_back"/>
+       <TextView
+           android:id="@+id/textView23"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/rupee_symbol"
+           android:textColor="@color/colorWhite"
+           android:textSize="32sp"
+           android:layout_marginEnd="@dimen/margin_small"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toStartOf="@+id/tvTotal"
+           android:layout_marginRight="@dimen/margin_small" />
+       <TextView
+           android:paddingEnd="@dimen/margin_18dp"
+           android:id="@+id/tvTotal"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/barlow_medium"
+           android:textColor="@color/colorWhite"
+           android:textSize="@dimen/text_32dp"
+           android:text="640"
+           tools:ignore="RtlCompat" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+ <androidx.recyclerview.widget.RecyclerView
+     android:id="@+id/rvCashBackItem"
+     android:visibility="gone"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/constraintCashback"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     android:layout_width="0dp"
+     android:layout_height="0dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

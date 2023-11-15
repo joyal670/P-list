@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.iroid.emergency.main.home.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_fragmentAccepted"
+            app:destination="@id/fragmentAccepted"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" >
+            <argument
+                android:name="request_id"
+                app:argType="string"
+                android:defaultValue=""/>
+            <argument
+                android:name="name"
+                app:argType="string"
+                android:defaultValue=""/>
+            <argument
+                android:name="mobile"
+                app:argType="string"
+                android:defaultValue=""/>
+            <argument
+                android:name="address"
+                app:argType="string"
+                android:defaultValue=""/>
+            <argument
+                android:name="lat"
+                app:argType="string"
+                android:defaultValue=""/>
+            <argument
+                android:name="lan"
+                app:argType="string"
+                android:defaultValue=""/>
+
+            <argument
+                android:name="sourcelat"
+                app:argType="string"
+                android:defaultValue=""/>
+            <argument
+                android:name="sourcelan"
+                app:argType="string"
+                android:defaultValue=""/>
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAccepted"
+        android:name="com.iroid.emergency.main.home.accept_request.AcceptRequestFragment"
+        android:label="FragmentAccepted"
+        tools:layout="@layout/fragment_accept">
+        <action
+            android:id="@+id/action_fragmentAccepted_to_operationCompleteFragment"
+            app:destination="@id/operationCompleteFragment"  app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" >
+            <argument
+                android:name="request_id"
+                app:argType="string"
+                android:defaultValue=""/>
+            <argument
+                android:name="name"
+                app:argType="string"
+                android:defaultValue=""/>
+            <argument
+                android:name="mobile"
+                app:argType="string"
+                android:defaultValue=""/>
+            <argument
+                android:name="address"
+                app:argType="string"
+                android:defaultValue=""/>
+            <argument
+                android:name="lat"
+                app:argType="string"
+                android:defaultValue=""/>
+            <argument
+                android:name="lan"
+                app:argType="string"
+                android:defaultValue=""/>
+
+
+        </action>
+        <action
+            android:id="@+id/action_fragmentAccepted_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/operationCompleteFragment"
+        android:name="com.iroid.emergency.main.home.operation_complete.OperationCompleteFragment"
+        android:label="OperationCompleteFragment"
+        tools:layout="@layout/fragment_operation_complete">
+        <action
+            android:id="@+id/action_operationCompleteFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+
+
+</navigation>

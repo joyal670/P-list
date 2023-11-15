@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_steps"
+    app:startDestination="@id/StepOneFragment">
+    <fragment
+        android:id="@+id/StepOneFragment"
+        android:name="com.iroid.healthdomain.ui.profile_set_up.StepOneFragment"
+        android:label="@string/step_one_fragment_label"
+        tools:layout="@layout/fragment_step_one">
+        <action
+            android:id="@+id/action_StepOneFragment_to_StepTwoFragment"
+            app:destination="@id/StepTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/StepTwoFragment"
+        android:name="com.iroid.healthdomain.ui.profile_set_up.StepTwoFragment"
+        android:label="@string/step_two_fragment_label"
+        tools:layout="@layout/fragment_step_two">
+        <action
+            android:id="@+id/action_StepTwoFragment_to_StepThreeFragment"
+            app:destination="@id/StepThreeFragment" />
+        <argument
+            android:name="accountModel"
+            app:argType="com.iroid.healthdomain.data.model_class.AccountModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/StepThreeFragment"
+        android:name="com.iroid.healthdomain.ui.profile_set_up.StepThreeFragment"
+        android:label="@string/step_three_fragment_label"
+        tools:layout="@layout/fragment_step_three">
+        <action
+            android:id="@+id/action_StepThreeFragment_to_StepFourFragment"
+            app:destination="@id/StepFourFragment" />
+        <argument
+            android:name="accountModel"
+            app:argType="com.iroid.healthdomain.data.model_class.AccountModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/StepFourFragment"
+        android:name="com.iroid.healthdomain.ui.profile_set_up.StepFourFragment"
+        android:label="@string/step_four_fragment_label"
+        tools:layout="@layout/fragment_step_four">
+        <action
+            android:id="@+id/action_StepFourFragment_to_StepOneFragment"
+            app:destination="@id/StepOneFragment" />
+        <argument
+            android:name="accountModel"
+            app:argType="com.iroid.healthdomain.data.model_class.AccountModel" />
+    </fragment>
+
+</navigation>

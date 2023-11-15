@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/padding_very_small"
+        android:drawableLeft="@drawable/bullet_primary"
+        android:textSize="@dimen/text_size_normal"
+        android:layout_marginTop="@dimen/margin_very_small"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:text="But I must explain to you how all "
+        android:drawableStart="@drawable/bullet_primary"
+        android:layout_marginLeft="@dimen/margin_normal" />
+
+</LinearLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/athens_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:gravity="center|end"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_15dp"
+            android:layout_marginEnd="@dimen/margin_15dp"
+            android:fontFamily="@font/barlow_regular"
+            android:gravity="end"
+            android:text="@string/status"
+            android:textColor="@color/dove_gray"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/reqBookStatus"
+            android:layout_width="@dimen/margin_86dp"
+            android:layout_height="@dimen/margin_45dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/barlow_regular"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/available"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10sp"
+            app:backgroundTint="@color/killarney"
+            app:cornerRadius="@dimen/margin_6dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/margin_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_5dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/barlow_regular"
+                        android:gravity="start"
+                        android:text="@string/name"
+                        android:textColor="@color/dove_gray"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvBookName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/margin_3dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/barlow_bold"
+                        android:maxLines="1"
+                        android:text="@string/the_happiness_equation"
+                        android:textColor="@color/dove_gray"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:gravity="start"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_10dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/barlow_regular"
+                        android:gravity="center"
+                        android:text="@string/category"
+                        android:textColor="@color/dove_gray"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvBookCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_3dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/barlow_bold"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="@string/general"
+                        android:textColor="@color/dove_gray"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_5dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/barlow_regular"
+                        android:gravity="start"
+                        android:text="@string/author"
+                        android:textColor="@color/dove_gray"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvBookAuthor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/margin_3dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/barlow_bold"
+                        android:maxLines="1"
+                        android:text="@string/neil_pasricha"
+                        android:textColor="@color/dove_gray"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:gravity="start"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_10dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/barlow_regular"
+                        android:gravity="start"
+                        android:text="@string/price"
+                        android:textColor="@color/dove_gray"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvBookPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_3dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/barlow_bold"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:text="@string/_1000_00"
+                        android:textColor="@color/dove_gray"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/sampleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_5dp"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/barlow_regular"
+                        android:gravity="start"
+                        android:text="@string/rack_no"
+                        android:textColor="@color/dove_gray"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvBookRackNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/margin_3dp"
+                        android:fontFamily="@font/barlow_bold"
+                        android:text="@string/_13"
+                        android:textColor="@color/dove_gray"
+                        android:textSize="@dimen/text_size_14sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivBook"
+                        android:layout_width="@dimen/margin_24dp"
+                        android:layout_height="@dimen/margin_24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_30dp"
+                        app:srcCompat="@drawable/ic_pdf" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

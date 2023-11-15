@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginStart="@dimen/margin_35dp"
+            android:layout_marginEnd="@dimen/margin_35dp">
+
+            <TextView
+                android:id="@+id/tvSignInSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvSkip"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/light_black"
+                android:layout_marginTop="@dimen/margin_27dp"
+                android:paddingTop="@dimen/margin_5dp"
+                android:paddingBottom="@dimen/margin_5dp"
+                android:paddingEnd="@dimen/margin_5dp"
+                android:paddingStart="@dimen/margin_10dp"
+                android:clickable="true"
+                android:background="?selectableItemBackground"
+                android:gravity="end"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:layout_gravity="end"
+                />
+
+            <TextView
+                android:id="@+id/tvSignInSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                android:textSize="@dimen/text_size_30sp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/margin_100dp"
+                android:gravity="center"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_your_details"
+                android:textSize="@dimen/text_size_14sp"
+                android:textAllCaps="false"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/segoe_ui"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                app:hintEnabled="false"
+                android:backgroundTint="@color/white">
+
+                <EditText
+                    android:id="@+id/etSignInName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:hint="@string/tvEmail"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size_14sp"
+                    tools:ignore="RtlCompat"
+                    android:textAlignment="viewStart"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/light_black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:background="@drawable/border_rounded_light_white"
+                    android:paddingStart="40dp"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                app:hintEnabled="false"
+                android:backgroundTint="@color/white">
+
+                <EditText
+                    android:id="@+id/etSignInPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:hint="@string/tvPassword"
+                    android:textAllCaps="false"
+                    android:gravity="start"
+                    android:textSize="@dimen/text_size_14sp"
+                    tools:ignore="RtlCompat"
+                    android:textAlignment="viewStart"
+                    android:inputType="textPassword"
+                    android:textColor="@color/light_black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:background="@drawable/border_rounded_light_white"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:paddingStart="40dp"
+                    android:paddingEnd="40dp"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signInBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_60dp"
+                app:strokeColor="@color/black"
+                android:textAllCaps="false"
+                android:text="@string/sign_in"
+                android:textSize="@dimen/text_size_14sp"
+                android:fontFamily="@font/segoe_ui"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:cornerRadius="@dimen/margin_24dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tvSignInForgotPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_your_password"
+                android:textSize="@dimen/text_size_14sp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:background="?selectableItemBackground"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/don_t_have_an_account"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/grey"
+                    android:gravity="center"
+                    android:fontFamily="@font/segoe_ui"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tvSignInSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:textColor="@color/green"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

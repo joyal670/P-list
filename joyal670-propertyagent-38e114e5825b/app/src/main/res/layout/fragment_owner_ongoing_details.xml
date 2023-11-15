@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_10dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_5dp"
+                android:visibility="visible"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5dp">
+
+                    <com.property.propertyagent.utils.RoundRectCornerImageView
+                        android:id="@+id/ivPropertyImageOngoingDetails"
+                        android:layout_width="60dp"
+                        android:layout_height="@dimen/margin_80dp"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:src="@drawable/sample_apartment"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ivPropertyImageOngoingDetails"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/tvPropertyName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/heebo_medium"
+                            android:text=""
+                            android:textColor="@color/color_accent_grey"
+                            android:textSize="@dimen/text_size_13sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/heebo_bold"
+                                android:text="@string/property_code"
+                                android:textColor="@color/color_accent_grey"
+                                android:textSize="@dimen/text_size_13sp" />
+
+                            <TextView
+                                android:id="@+id/tvPropertyCodeOwnerOngoingDetails"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/heebo_bold"
+                                android:text=""
+                                android:textColor="@color/color_accent_grey"
+                                android:textSize="@dimen/text_size_13sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <TextView
+                                android:id="@+id/tvPropertyAmount1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:fontFamily="@font/heebo_medium"
+                                android:gravity="top"
+                                android:maxLines="1"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_17sp"
+                                tools:ignore="InefficientWeight" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvPropertyAmount2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/margin_4dp"
+                            android:fontFamily="@font/heebo_medium"
+                            android:gravity="top"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/color_accent_grey_light_new1"
+                            android:textSize="@dimen/text_size_13sp" />
+
+                        <TextView
+                            android:id="@+id/tvPropertyToOwnerOngoingDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:fontFamily="@font/heebo_medium"
+                            android:text=""
+                            android:textColor="@color/color_accent_grey_light"
+                            android:textSize="@dimen/text_size_14sp" />
+
+                        <TextView
+                            android:id="@+id/tvPropertyLocationOwnerOngoingDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4dp"
+                            android:drawablePadding="@dimen/margin_4dp"
+                            android:fontFamily="@font/heebo_medium"
+                            android:gravity="center_vertical"
+                            android:maxLines="2"
+                            android:minLines="2"
+                            android:textColor="@color/color_accent_grey"
+                            android:textSize="@dimen/text_size_14sp"
+                            app:drawableStartCompat="@drawable/ic_location" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/fragment_owner_ongoing_featuresTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:drawablePadding="@dimen/margin_10dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/features"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <LinearLayout
+                    android:id="@+id/layoutFeatures"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_bed_new"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/tvBedOwnerOngoingDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/heebo_medium"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="@dimen/text_size_11sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_bath_new"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/tvBathOwnerOngoingDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/heebo_medium"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="@dimen/text_size_11sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_area_new"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/tvAreaOwnerOngoingDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/heebo_medium"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="@dimen/text_size_11sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutFurnished"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_sofa_new"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/tvFurnishedOwnerOngoingDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/heebo_medium"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="@dimen/text_size_11sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_block_new"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/tvFloorOwnerOngoingDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/heebo_medium"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="@dimen/text_size_11sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/fragment_owner_ongoing_EditDetailsBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:backgroundTint="@color/color_accent_green"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/edit_details"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_12dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:background="@color/color_accent_grey_light_new2" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_10dp">
+
+                    <ImageView
+                        android:id="@+id/ivProfileOwnerOngoingDetails"
+                        android:layout_width="40dp"
+                        android:layout_height="@dimen/margin_45dp"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/margin_5dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_frame"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:layout_marginStart="@dimen/margin_12dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toStartOf="@+id/linearcallWhatsappOwnerOngoinDetails"
+                        app:layout_constraintStart_toEndOf="@+id/ivProfileOwnerOngoingDetails"
+                        app:layout_constraintTop_toTopOf="@+id/ivProfileOwnerOngoingDetails">
+
+                        <TextView
+                            android:id="@+id/tvOwnerNameOwnerOngoingDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/heebo_bold"
+                            android:text=""
+                            android:textColor="@color/color_accent_grey"
+                            android:textSize="@dimen/text_size_14sp" />
+
+                        <TextView
+                            android:id="@+id/tvOwnerEmailOwnerOngoingDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/heebo_medium"
+                            android:text=""
+                            android:textColor="@color/color_accent_grey"
+                            android:textSize="@dimen/text_size_13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearcallWhatsappOwnerOngoinDetails"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivProfileOwnerOngoingDetails"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/ivProfileOwnerOngoingDetails">
+
+                        <ImageView
+                            android:id="@+id/fragment_owner_ongoing_CallBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".5"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:padding="@dimen/margin_5dp"
+                            android:src="@drawable/ic_phoneoutgoing"
+                            tools:ignore="ContentDescription" />
+
+                        <ImageView
+                            android:id="@+id/fragment_owner_ongoing_WhatsappBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".5"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:padding="@dimen/margin_5dp"
+                            android:src="@drawable/ic_whatsapp"
+                            tools:ignore="ContentDescription" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:background="@color/color_accent_grey_light_new2" />
+
+                <LinearLayout
+                    android:id="@+id/layoutOwnerContract"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:drawablePadding="@dimen/margin_10dp"
+                        android:fontFamily="@font/heebo_bold"
+                        android:text="@string/owner_contract"
+                        android:textColor="@color/color_accent_grey"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/heebo_medium"
+                            android:text="@string/contract_period"
+                            android:textColor="@color/color_accent_grey"
+                            android:textSize="@dimen/text_size_12sp" />
+
+                        <TextView
+                            android:id="@+id/tvContractStart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_4dp"
+                            android:fontFamily="@font/heebo_bold"
+                            android:text=""
+                            android:textColor="@color/color_accent_grey"
+                            android:textSize="@dimen/text_size_12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_6dp"
+                            android:fontFamily="@font/heebo_medium"
+                            android:text="@string/to"
+                            android:textColor="@color/color_accent_grey"
+                            android:textSize="@dimen/text_size_12sp" />
+
+                        <TextView
+                            android:id="@+id/tvContractEnd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_4dp"
+                            android:fontFamily="@font/heebo_bold"
+                            android:text=""
+                            android:textColor="@color/color_accent_grey"
+                            android:textSize="@dimen/text_size_12sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_15dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_15dp"
+                        android:background="@color/color_accent_grey_light_new2" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnGetOwnerContract"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:backgroundTint="@color/color_accent_green"
+                        android:fontFamily="@font/heebo_medium"
+                        android:text="@string/read_contract"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_15dp"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:layout_marginEnd="@dimen/margin_15dp"
+                        android:background="@color/color_accent_grey_light_new2" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:drawablePadding="@dimen/margin_10dp"
+                    android:fontFamily="@font/heebo_bold"
+                    android:text="@string/Status"
+                    android:textColor="@color/color_accent_grey"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivGreenTick1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_ellipse_yellow"
+                            tools:ignore="ContentDescription" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/dotted_line"
+                            android:layerType="software"
+                            android:minHeight="?attr/actionBarSize" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginBottom="@dimen/margin_8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvStatusOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="@dimen/margin_5dp"
+                            android:text="@string/start_visit"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="@dimen/margin_5dp"
+                            android:text="@string/visit_property"
+                            android:textColor="@color/color_accent_grey"
+                            android:textSize="@dimen/text_size_12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivGreenTick2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_ellipse_yellow"
+                            tools:ignore="ContentDescription" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/dotted_line"
+                            android:layerType="software"
+                            android:minHeight="?attr/actionBarSize" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginBottom="@dimen/margin_8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvStatusTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="@dimen/margin_5dp"
+                            android:text="@string/edit_submit_details"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_15sp" />
+
+                        <TextView
+                            android:id="@+id/tvStatus2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="@dimen/margin_5dp"
+                            android:text="@string/status_pending"
+                            android:textColor="@color/color_accent_yellow"
+                            android:textSize="@dimen/text_size_12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivGreenTick3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_ellipse_yellow"
+                            tools:ignore="ContentDescription" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvStatusThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="@dimen/margin_5dp"
+                            android:text="@string/admin_approval"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/margin_5dp">
+
+                            <TextView
+                                android:id="@+id/tvFinalStatusTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/heebo_medium"
+                                android:text="@string/status_pending"
+                                android:textColor="@color/color_accent_yellow"
+                                android:textSize="@dimen/text_size_13sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

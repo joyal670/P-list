@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+   <!-- <color name="purple_500">#FF268032</color>
+    <color name="purple_700">#FF145A1E</color>-->
+    <color name="purple_500">#FFFFFFFF</color>
+    <color name="purple_700">#FFFFFFFF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="challenge_text_color">#f4870c</color>
+
+    <color name="splash_green">#FF43AF52</color>
+    <color name="color_pink">#FFFF3A59</color>
+    <color name="bg_et_phone_number">#FFF7F7F7</color>
+    <color name="bg_line">#FFDEDEDE</color>
+    <color name="line_otp">#FFC5CACF</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="text_color_dark">#FF464646</color>
+    <color name="text_color_light">#5E5E5E</color>
+
+    <color name="text_blue">#FF3E8CC7</color>
+    <color name="color_grey">#FFBABABA</color>
+    <color name="color_light_grey">#979797</color>
+
+    <color name="txt_bg_pink">#E38D9B</color>
+    <color name="txt_bg_green">#54CA8E</color>
+
+    <color name="segment_violet">#6903E6</color>
+    <color name="color_btn_red">#B6182B</color>
+
+
+    <color name="bg_card">#F2F4F4</color>
+    <color name="dark_green">#044E0E</color>
+    <color name="notification_badge_color">#f9383d</color>
+
+
+    <color name="green_color">#29B91F</color>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".start_up.auth.fragment.LoginFragment">
+
+    <FrameLayout
+        android:id="@+id/frameLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_600dp"
+        android:background="@drawable/ic_loginbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/margin_100dp"
+        android:layout_height="@dimen/margin_100dp"
+        android:layout_marginTop="@dimen/margin_50dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_check_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_50dp"
+        android:fontFamily="@font/barlow_medium"
+        android:gravity="center"
+        android:text="@string/welcome_back"
+        android:textColor="@color/light_white4"
+        android:textSize="@dimen/text_size_22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/LottieAnimationView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_250dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout">
+
+        <View
+            android:layout_width="@dimen/margin_80dp"
+            android:layout_height="1dp"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_horizontal_dotted_line"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/barlow_medium"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/login_with"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16sp"
+            />
+
+        <View
+            android:layout_width="@dimen/margin_80dp"
+            android:layout_height="1dp"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_horizontal_dotted_line"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_40dp"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin_50dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.shobhitpuri.custombuttons.GoogleSignInButton
+            android:id="@+id/ivGoogle"
+            android:layout_width="@dimen/margin_300dp"
+            android:layout_height="@dimen/margin_60dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/google_sign_in"
+            app:isDarkTheme="false" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/ivFacebook"
+            android:layout_width="@dimen/margin_300dp"
+            android:layout_height="@dimen/margin_60dp"
+            android:paddingTop="@dimen/margin_15dp"
+            android:paddingBottom="@dimen/margin_15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginBottom="@dimen/margin_30dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="92dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_20dp"
+    android:layout_marginEnd="@dimen/margin_20dp"
+    android:layout_marginTop="@dimen/margin_10dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvFeaturedItem"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        app:cardCornerRadius="@dimen/radius_10dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/silver"
+        app:strokeWidth="1dp">
+
+        <ImageView
+            android:id="@+id/ivCardPropertyItemFeatures"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_ac" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvPropertyFeaturedItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/manrope_medium"
+        android:gravity="center"
+        android:maxLines="3"
+        android:text="@string/tvPropertyFeaturedItemName"
+        android:textColor="@color/light_black_gray"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintEnd_toEndOf="@id/cvFeaturedItem"
+        app:layout_constraintStart_toStartOf="@+id/cvFeaturedItem"
+        app:layout_constraintTop_toBottomOf="@id/cvFeaturedItem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

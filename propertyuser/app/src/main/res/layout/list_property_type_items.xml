@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0dp">
+        <CheckBox android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_26dp"
+            android:id="@+id/checkbox"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:paddingStart="@dimen/margin_5dp"
+            android:fontFamily="@font/manrope_semibold"
+            app:buttonTint="@color/green_solid"
+            style="@style/CustomCheckbox02"
+            android:paddingEnd="@dimen/margin_5dp"
+            android:paddingBottom="@dimen/margin_3dp"
+            android:layout_marginBottom="@dimen/margin_6dp"/>
+</com.google.android.material.card.MaterialCardView>

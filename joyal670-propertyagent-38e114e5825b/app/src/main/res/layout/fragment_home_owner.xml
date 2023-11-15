@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baoyz.widget.PullRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9F2FF">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/svSearchView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:background="@color/white"
+                    android:drawablePadding="@dimen/margin_20dp"
+                    android:focusedByDefault="false"
+                    android:gravity="center|start"
+                    android:hint="@string/search_properties"
+                    android:fontFamily="@font/heebo_regular"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    app:drawableStartCompat="@drawable/ic_search_owner_grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin_3dp"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/homefrgOwner_noOfProperty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/color_accent_blue_statusbar"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/margin_5dp"
+                    android:paddingBottom="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/tvNoOfProperty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_bold"
+                        android:text="@string/_0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_22sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_3dp"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="center"
+                        android:text="@string/number_of_properties"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/homefrgOwner_occupiedProperty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#27AE60"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvOccoupiedProperty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_bold"
+                        android:text="@string/_0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_22sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="center"
+                        android:text="@string/occupied_properties"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/homefrgOwner_vacantProperty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#FFBA1B"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvVacaentProperty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_bold"
+                        android:text="@string/_0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_22sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="center"
+                        android:text="@string/vacant_properties"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/homefrgOwner_underMaintanceProperty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#EB5757"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvUnderMaintaceProperty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_bold"
+                        android:text="@string/_0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_22sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="center"
+                        android:text="@string/under_maintenance"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_25dp"
+                android:fontFamily="@font/heebo_medium"
+                android:gravity="start"
+                android:text="@string/statistics"
+                android:textColor="@color/color_accent_grey_light_new" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="-35dp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/homefrgOwner_MonthPickerBtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/heebo_medium"
+                    android:paddingStart="@dimen/margin_5dp"
+                    android:paddingEnd="@dimen/margin_5dp"
+                    android:text="@string/year"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_accent_grey_light_new"
+                    android:textSize="@dimen/text_size_13sp"
+                    app:cornerRadius="@dimen/margin_20dp"
+                    app:icon="@drawable/ic_calendar_black"
+                    app:iconGravity="textStart"
+                    app:iconTint="@color/color_accent_grey_light_new" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnYearlyReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:backgroundTint="#4F4F4F"
+                    android:fontFamily="@font/heebo_medium"
+                    android:paddingStart="@dimen/margin_5dp"
+                    android:paddingEnd="@dimen/margin_5dp"
+                    android:text="@string/report"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_13sp"
+                    app:cornerRadius="@dimen/margin_20dp"
+                    app:icon="@drawable/ic_download_white"
+                    app:iconGravity="textStart"
+                    app:iconTint="@color/white" />
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="@dimen/margin_15dp"
+                app:cardCornerRadius="@dimen/margin_10dp">
+
+                <com.github.aachartmodel.aainfographics.aachartcreator.AAChartView
+                    android:id="@+id/aa_chart_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/owner_home_spinner"
+                android:layout_width="@dimen/margin_150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="@string/select_property"
+                android:textSize="@dimen/text_size_12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:theme="@style/SpinnerTheme"
+                app:fontFamily="@font/heebo_medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="-45dp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/homefrgOwner_MonthPickerBtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/heebo_medium"
+                    android:paddingStart="@dimen/margin_5dp"
+                    android:paddingEnd="@dimen/margin_5dp"
+                    android:text="@string/month"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_accent_grey_light_new"
+                    android:textSize="@dimen/text_size_13sp"
+                    app:cornerRadius="@dimen/margin_20dp"
+                    app:icon="@drawable/ic_calendar_black"
+                    app:iconGravity="textStart"
+                    app:iconTint="@color/color_accent_grey_light_new" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMonthlyReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:backgroundTint="#4F4F4F"
+                    android:fontFamily="@font/heebo_medium"
+                    android:paddingStart="@dimen/margin_5dp"
+                    android:paddingEnd="@dimen/margin_5dp"
+                    android:text="@string/report"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_13sp"
+                    app:cornerRadius="@dimen/margin_20dp"
+                    app:icon="@drawable/ic_download_white"
+                    app:iconGravity="textStart"
+                    app:iconTint="@color/white" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/svSearchView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                android:backgroundTint="@color/color_accent_blue_statusbar"
+                android:fontFamily="@font/heebo_medium"
+                android:paddingStart="@dimen/margin_5dp"
+                android:paddingEnd="@dimen/margin_5dp"
+                android:text="@string/search"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_13sp"
+                android:visibility="gone"
+                app:cornerRadius="@dimen/margin_20dp"
+                app:icon="@drawable/ic_search_owner"
+                app:iconGravity="textStart"
+                app:iconTint="@color/white" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_margin="@dimen/margin_15dp"
+                app:cardCornerRadius="@dimen/margin_10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/halfpiechart1"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_marginTop="@dimen/margin_5dp" />
+
+                    <TextView
+                        android:id="@+id/tvProperty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="-90dp"
+                        android:layout_marginBottom="@dimen/margin_20dp"
+                        android:fontFamily="@font/heebo_bold"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/color_accent_grey"
+                        android:textSize="@dimen/text_size_16sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/owner_home_propertyTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="-50dp"
+                        android:layout_marginBottom="@dimen/margin_3dp"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/color_accent_grey_lighter"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</com.baoyz.widget.PullRefreshLayout>

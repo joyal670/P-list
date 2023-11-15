@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.iroid.healthdomain.data.model_class.contacts_api.ContactData" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_card"
+        tools:context=".ui.home.mainActivity.person.PersonFragment">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/userProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_12_dp"
+            app:cardCornerRadius="@dimen/dimen_8_dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_8_dp"
+                android:paddingBottom="@dimen/dimen_16_dp">
+
+                <ImageView
+                    android:id="@+id/img_fav"
+                    android:layout_width="@dimen/dimen_32_dp"
+                    android:layout_height="@dimen/dimen_32_dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageView5"
+                    loadCircularImageProfile="@{model.profile_image_url}"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:backgroundTint="@color/color_grey"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_fav"
+                    tools:src="@tools:sample/avatars" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/materialTextView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@{model.name}"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_24_sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/userChallenges"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/dimen_12_dp"
+            app:cardCornerRadius="@dimen/dimen_8_dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toTopOf="@+id/inviteButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userProfile">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_8_dp"
+                android:paddingBottom="@dimen/dimen_16_dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/materialTextView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/past_challenges"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_light"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_16_sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPastChallenges"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/materialTextView15" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvNoData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Past Challenges"
+                    android:textAllCaps="false"
+                    android:visibility="gone"
+                    android:textSize="@dimen/font_16_sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/materialTextView15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/inviteButton"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="@dimen/dimen_200_dp"
+            android:layout_height="?actionBarSize"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/color_pink"
+            android:text="Challenge"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <!--<com.google.android.material.card.MaterialCardView
+            android:id="@+id/userProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_12_dp"
+            app:cardCornerRadius="@dimen/dimen_8_dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_8_dp"
+                android:paddingBottom="@dimen/dimen_16_dp"
+                tools:context=".ui.home.my_health.challenges.ChallengesFragment">
+
+                <ImageView
+                    android:id="@+id/img_fav"
+                    android:layout_width="@dimen/dimen_32_dp"
+                    android:layout_height="@dimen/dimen_32_dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/materialTextView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16_dp"
+                    android:text="Challenges"
+                    android:visibility="invisible"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_32_sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+&lt;!&ndash;                <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                    android:id="@+id/circularIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_margin="@dimen/dimen_16_dp"
+                    app:direction="clockwise"
+                    app:dotColor="@color/color_pink"
+                    app:dotWidth="@dimen/dimen_12_dp"
+                    app:drawDot="false"
+                    app:enableProgressAnimation="true"
+                    app:fillBackground="false"
+                    app:layout_constraintEnd_toEndOf="@+id/materialTextView12"
+                    app:layout_constraintStart_toStartOf="@+id/materialTextView12"
+                    app:layout_constraintTop_toBottomOf="@+id/materialTextView12"
+                    app:progressBackgroundColor="@color/white"
+                    app:progressCap="round"
+                    app:progressColor="@color/color_pink"
+                    app:progressStrokeWidth="@dimen/dimen_12_dp"
+                    app:startAngle="140"
+                    app:textColor="@color/black"
+                    app:textSize="56dp" />&ndash;&gt;
+
+
+                <pl.pawelkleczkowski.customgauge.CustomGauge
+                    android:id="@+id/circularIndicator"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:gaugeEndValue="100"
+                    app:gaugePointEndColor="@color/color_pink"
+                    app:gaugePointStartColor="@color/color_pink"
+                    app:gaugeStartAngle="135"
+                    app:gaugeStartValue="0"
+                    android:layout_margin="@dimen/dimen_16_dp"
+                    app:gaugeStrokeCap="ROUND"
+                    app:gaugeStrokeColor="@color/color_grey"
+                    app:gaugeStrokeWidth="10dp"
+                    app:gaugeSweepAngle="270"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/materialTextView12" />
+
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="@dimen/dimen_16_dp"
+                    loadCircularImage="@{model.profile_image_url}"
+                    tools:src="@tools:sample/avatars"
+                    android:background="@drawable/ic_round_account"
+                    android:backgroundTint="@color/color_grey"
+                    app:layout_constraintBottom_toBottomOf="@+id/circularIndicator"
+                    app:layout_constraintEnd_toEndOf="@+id/circularIndicator"
+                    app:layout_constraintStart_toStartOf="@+id/circularIndicator"
+                    app:layout_constraintTop_toBottomOf="@+id/circularIndicator" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/materialTextView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="HDS"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_16_sp"
+                    app:layout_constraintEnd_toEndOf="@+id/circularIndicator"
+                    app:layout_constraintStart_toStartOf="@+id/circularIndicator"
+                    app:layout_constraintTop_toTopOf="@+id/circularIndicator" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.hds}"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_24_sp"
+                    android:layout_marginTop="@dimen/min_margin_6_dp"
+                    app:layout_constraintEnd_toEndOf="@+id/materialTextView15"
+                    app:layout_constraintStart_toStartOf="@+id/materialTextView15"
+                    app:layout_constraintTop_toBottomOf="@+id/materialTextView15" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/materialTextView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@{model.points +` points`}"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/font_16_sp"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView5"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView5"
+                    app:layout_constraintStart_toStartOf="@+id/imageView5" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/materialTextView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8_dp"
+                    android:text="@{model.name}"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_24_sp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView5"
+                    app:layout_constraintStart_toStartOf="@+id/imageView5"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16_dp"
+                    android:text="Detail"
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_grey"
+                    android:visibility="gone"
+                    app:cornerRadius="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/materialTextView13"
+                    app:layout_constraintStart_toStartOf="@+id/materialTextView13"
+                    app:layout_constraintTop_toBottomOf="@+id/materialTextView13" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_32_dp"
+            android:text="Don't have  sweat out"
+            android:textAllCaps="true"
+            android:textSize="@dimen/font_16_sp"
+            app:layout_constraintEnd_toEndOf="@+id/userProfile"
+            app:layout_constraintStart_toStartOf="@+id/userProfile"
+            app:layout_constraintTop_toBottomOf="@+id/userProfile" />
+
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="@dimen/dimen_200_dp"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="@dimen/dimen_16_dp"
+            android:backgroundTint="@color/color_pink"
+            android:text="Challenge"
+            android:id="@+id/inviteButton"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView14"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView14"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView14" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

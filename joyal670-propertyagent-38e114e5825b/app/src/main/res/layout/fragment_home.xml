@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baoyz.widget.PullRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/idhomefgrlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/homefrg_TotalPropertyLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_12dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/bg_round_border"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_frame"
+                        tools:ignore="ContentDescription,NestedWeights" />
+
+                    <TextView
+                        android:id="@+id/agentTotalAssignedPropertyCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/margin_8dp"
+                        android:layout_weight=".5"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/color_accent_green"
+                        android:textSize="@dimen/text_size_30sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="center"
+                        android:text="@string/total_assigned_properties"
+                        android:textColor="@color/color_accent_grey"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_12dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/bg_round_border"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_frame_2"
+                        tools:ignore="ContentDescription,NestedWeights" />
+
+                    <TextView
+                        android:id="@+id/tvZone"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/margin_12dp"
+                        android:layout_weight=".5"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="center|bottom"
+                        android:text=""
+                        android:textColor="@color/color_accent_green"
+                        android:textSize="@dimen/text_size_20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="center"
+                        android:text="@string/zone"
+                        android:textColor="@color/color_accent_grey"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/idhomefgrlayout2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:background="@drawable/bg_round_border"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                app:layout_constraintTop_toBottomOf="@+id/idhomefgrlayout1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/heebo_medium"
+                    android:paddingStart="@dimen/margin_32dp"
+                    android:text="@string/today_s_appoinment"
+                    android:textSize="@dimen/text_size_13sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tvTodaysAppointment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text=""
+                    android:textColor="@color/color_accent_green" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/idhomefgrlayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_13dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="13dp"
+                android:background="@drawable/bg_round_border_green"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_5dp"
+                app:layout_constraintTop_toBottomOf="@+id/idhomefgrlayout2">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_marginStart="@dimen/margin_5dp"
+                            android:layout_weight="0.25"
+                            android:fontFamily="@font/heebo_medium"
+                            android:gravity="start"
+                            android:text="@string/location"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_14sp" />
+
+                        <TextView
+                            android:layout_weight="0.25"
+                            android:fontFamily="@font/heebo_medium"
+                            android:gravity="start"
+                            android:text="@string/type"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_14sp" />
+
+                        <TextView
+                            android:layout_marginStart="@dimen/margin_3dp"
+                            android:layout_weight="0.25"
+                            android:fontFamily="@font/heebo_medium"
+                            android:gravity="start"
+                            android:text="@string/tvTimeHome"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_14sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:backgroundTint="@color/color_accent_green"
+                            android:fontFamily="@font/heebo_medium"
+                            android:text="@string/start_tour"
+                            android:textAllCaps="false"
+                            android:visibility="invisible" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/idhomefgrlayout3"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/homefrgRecycerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_12dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:layout_marginEnd="@dimen/margin_12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/idhomefgrlayout3"
+                    tools:itemCount="2"
+                    android:visibility="visible"
+                    tools:listitem="@layout/recycle_product_list_item" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idhomefgrlayout3"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/no_apoinments" />
+
+                <TextView
+                    android:id="@+id/tvNoAppoinments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heebo_regular"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginTop="-20dp"
+                    android:text="@string/no_appointment_available"
+                    android:textColor="@color/color_accent_grey"
+                    android:textSize="@dimen/text_size_13sp"
+                    app:layout_constraintTop_toBottomOf="@+id/homefrgRecycerview" />
+
+                <TextView
+                    android:id="@+id/idhomefgrlayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_12dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:gravity="start"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:text="@string/rent_overdue"
+                    android:textColor="@color/color_accent_grey"
+                    android:textSize="@dimen/text_size_13sp"
+                    app:layout_constraintTop_toBottomOf="@+id/homefrgRecycerview" />
+
+                <LinearLayout
+                    android:id="@+id/idhomefgrlayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:layout_marginEnd="13dp"
+                    android:background="@drawable/bg_round_border_green"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/idhomefgrlayout4">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="UselessParent">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_weight="0.25"
+                                android:fontFamily="@font/heebo_medium"
+                                android:gravity="center"
+                                android:text="@string/name"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <TextView
+                                android:layout_weight="0.25"
+                                android:fontFamily="@font/heebo_medium"
+                                android:gravity="center"
+                                android:text="@string/property"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <TextView
+                                android:layout_weight="0.25"
+                                android:fontFamily="@font/heebo_medium"
+                                android:gravity="center"
+                                android:text="@string/amount"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_weight="0.09"
+                                android:backgroundTint="@color/color_accent_green"
+                                android:fontFamily="@font/heebo_medium"
+                                android:text="@string/start_tour"
+                                android:textAllCaps="false"
+                                android:visibility="invisible" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/homefrgRecycerview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_12dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:layout_marginEnd="@dimen/margin_12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/idhomefgrlayout5"
+                    tools:itemCount="1"
+                    android:visibility="visible"
+                    tools:listitem="@layout/recycle_product_name_list_item" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView2"
+                    android:layout_width="220dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginTop="-90dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/rent_pending" />
+
+                <TextView
+                    android:id="@+id/tvNoRentOverDue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heebo_regular"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginTop="-70dp"
+                    android:text="@string/no_rent_overdue"
+                    android:textColor="@color/color_accent_grey"
+                    android:textSize="@dimen/text_size_13sp"
+                    app:layout_constraintTop_toBottomOf="@+id/homefrgRecycerview" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</com.baoyz.widget.PullRefreshLayout>

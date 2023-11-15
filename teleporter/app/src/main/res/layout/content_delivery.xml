@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_delivery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ashtechlabs.teleporter.ui.delivery.DeliveryActivity"
+    tools:showIn="@layout/activity_delivery">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/spacing_huge"
+        android:paddingStart="@dimen/spacing_huge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_edit_text"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_larger">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/select_delivery_location"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_large" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    card_view:cardCornerRadius="@dimen/rounded_edit_text_corner_radius"
+                    android:layout_height="wrap_content"
+                    card_view:cardBackgroundColor="@android:color/transparent">
+
+                    <EditText
+                        style="@style/RoundedEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_normal"
+                        android:drawableStart="@drawable/ic_username"
+                        android:hint="@string/from" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <EditText
+                    style="@style/RoundedEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/padding_normal"
+                    android:drawableStart="@drawable/ic_username"
+                    android:hint="@string/to" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_edit_text"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_larger">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/select_weight_unit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_large" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        style="@style/RoundedEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/padding_normal"
+                        android:drawableStart="@drawable/ic_username"
+                        android:hint="@string/weight" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_small"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        style="@style/RoundedEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/padding_normal"
+                        android:drawableStart="@drawable/ic_username"
+                        android:hint="@string/unit" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_edit_text"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_larger">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/select_delivery_date"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_large" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editText"
+                        style="@style/RoundedEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/padding_normal"
+                        android:drawableStart="@drawable/ic_username"
+                        android:hint="@string/date" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_small"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        style="@style/RoundedEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/padding_normal"
+                        android:drawableStart="@drawable/ic_username"
+                        android:hint="@string/time" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_small" />
+
+            <Button
+                android:id="@+id/btLogin"
+                style="@style/RoundedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:text="@string/send_request"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

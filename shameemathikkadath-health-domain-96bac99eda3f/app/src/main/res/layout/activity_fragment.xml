@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.iroid.healthdomain.data.dummyModel.FitModel" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/font_16_sp"
+        app:cardElevation="0dp"
+        app:cardUseCompatPadding="true"
+        tools:context=".ui.home.my_health.history_and_activity.activity.ActivityFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/min_margin_6_dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/ic_jogging"
+                app:layout_constraintBottom_toBottomOf="@+id/materialTextView9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/materialTextView9" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/steps"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_24_sp"
+                app:layout_constraintBottom_toBottomOf="@+id/materialTextView7"
+                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="@+id/materialTextView7" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@{viewModel.steps}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_36_sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/materialTextView8"
+                app:layout_constraintEnd_toStartOf="@+id/materialTextView8"
+                app:layout_constraintTop_toTopOf="@+id/materialTextView8" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:indeterminateTint="@color/color_pink"
+                android:layout_width="@dimen/dimen_32_dp"
+                android:layout_height="@dimen/dimen_32_dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/color_pink"
+                app:layout_constraintBottom_toBottomOf="@+id/materialTextView8"
+                app:layout_constraintEnd_toStartOf="@+id/materialTextView8"
+                app:layout_constraintTop_toTopOf="@+id/materialTextView8" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/steps"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

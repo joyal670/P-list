@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/margin_small"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_normal">
+
+        <ImageView
+            android:id="@+id/ivDeliveryBoy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_height_120dp"
+            android:src="@drawable/delivery_boy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/tvTip1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bookmark_herat_image2"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:padding="@dimen/margin_small"
+            android:text="10"
+            android:textAlignment="gravity"
+            app:drawableStartCompat="@drawable/ic_tip"
+            app:layout_constraintEnd_toStartOf="@+id/tvTip2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivDeliveryBoy" />
+
+        <CheckBox
+            android:id="@+id/tvTip2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bookmark_herat_image2"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:padding="@dimen/margin_small"
+            android:text="20"
+            android:textAlignment="gravity"
+            app:drawableStartCompat="@drawable/ic_tip"
+            app:layout_constraintEnd_toStartOf="@+id/tvTip3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/tvTip1"
+            app:layout_constraintTop_toBottomOf="@+id/ivDeliveryBoy" />
+
+        <CheckBox
+            android:id="@+id/tvTip3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bookmark_herat_image2"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:padding="@dimen/margin_small"
+            android:text="30"
+            android:textAlignment="gravity"
+            app:drawableStartCompat="@drawable/ic_tip"
+            app:layout_constraintEnd_toStartOf="@+id/tvTip4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/tvTip2"
+            app:layout_constraintTop_toBottomOf="@+id/ivDeliveryBoy" />
+
+        <CheckBox
+            android:id="@+id/tvTip4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bookmark_herat_image2"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:padding="@dimen/margin_small"
+            android:text="40"
+            android:textAlignment="gravity"
+            app:drawableStartCompat="@drawable/ic_tip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/tvTip3"
+            app:layout_constraintTop_toBottomOf="@+id/ivDeliveryBoy" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvTip1"
+            tools:layout_editor_absoluteX="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnIgnore"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/barlow_regular"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                app:layout_constraintEnd_toStartOf="@+id/btnSubmit"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/barlow_regular"
+                android:text="@string/ignore"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btnIgnore"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

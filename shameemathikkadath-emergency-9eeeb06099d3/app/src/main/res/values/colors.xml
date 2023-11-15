@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFFFFF</color>
+    <color name="purple_500">#FFFFFF</color>
+    <color name="red_color">#F70000</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightGray">#C1C1C1</color>
+    <color name="lightRed">#FED9D9</color>
+    <color name="black_1">#161616</color>
+    <color name="boarder">#E8E8E8</color>
+    <color name="edit_text_black">#1A1A1A</color>
+    <color name="bg_screen">#FAFAFA</color>
+    <color name="light_black">#353232</color>
+    <color name="accepted_color">#008F9D</color>
+    <color name="strokeColor">#D2D2D2</color>
+    <color name="tabTextColor">#525252</color>
+    <color name="color_accent_green">#6AC58C</color>
+    <color name="color_orange">#FFA500</color>
+    <color name="dialogBackground">#60000000</color>
+    <color name="setting_back">#EFEFEF</color>
+    <color name="editButtonColor">#E76D6C</color>
+    <color name="editBg">#F0F0F0</color>
+    <color name="bgName">#F2F2F2</color>
+    <color name="ligt_green">#3FB958</color>
+    <color name="light_bg">#E7E7E7</color>
+    <color name="complete_button_color">#242424</color>
+    <color name="star_color">#E76D6C</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="color_pink">#FFFF3A59</color>
+    <color name="splash_green">#FF43AF52</color>
+    <color name="challenge_text_color">#f4870c</color>
+
+</resources>

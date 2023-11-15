@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:nestedScrollingEnabled="true">
+
+    <include
+        android:id="@+id/noInternetLayout"
+        layout="@layout/no_internet"
+        android:visibility="gone" />
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.Material.NoActionBar.AppBarOverlay"
+        android:visibility="gone">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginBottom="@dimen/margin_80dp"
+            app:expandedTitleMarginEnd="@dimen/margin_20dp"
+            app:expandedTitleMarginStart="@dimen/margin_20dp"
+            app:expandedTitleTextAppearance="@style/CollaspingToolbarTheme"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:titleEnabled="true"
+            app:toolbarId="@+id/toolbar_detailed">
+
+            <ImageView
+                android:id="@+id/vpDetailsImage"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="fitXY"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_80dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/margin_50dp"
+                android:alpha=".5"
+                android:background="@color/black"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50dp"
+                android:layout_gravity="bottom"
+                android:alpha=".5"
+                android:background="@color/black"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7" />
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_detailed"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ToolbarTheme"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:popupTheme="@style/Theme.Material.NoActionBar.AppBarOverlay"
+                app:titleTextColor="@color/white">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvMealPlanCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="?attr/actionBarSize"
+                        android:fontFamily="@font/segoe_ui_semibold"
+                        android:textColor="@color/white"
+                        android:singleLine="true"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_size_18sp"
+                        app:layout_constraintEnd_toStartOf="@+id/ivInfo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ImageView
+                        android:id="@+id/ivShare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/margin_40dp"
+                        android:layout_gravity="end|top"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:elevation="8dp"
+                        android:padding="@dimen/margin_10dp"
+                        android:src="@drawable/ic_share_icon"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/margin_40dp"
+                        android:layout_gravity="end|top"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:elevation="8dp"
+                        android:padding="@dimen/margin_10dp"
+                        android:src="@drawable/ic_icon_information"
+                        app:layout_constraintEnd_toStartOf="@+id/ivShare"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/mainLayout"
+        layout="@layout/content_scrolling_details"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llProceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:fontFamily="@font/segoe_ui"
+                android:gravity="start"
+                android:text="@string/total"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tvTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:gravity="start"
+                android:text="@string/kwd_5000_00"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/contentProceedBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_gravity="center|end"
+            android:layout_marginStart="@dimen/margin_15dp"
+            android:layout_marginEnd="@dimen/margin_15dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="0dp"
+            android:text="@string/proceed_to_pay"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size_14sp"
+            app:cornerRadius="@dimen/margin_24dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/toolbar_btn"
+        android:layout_width="@dimen/margin_170dp"
+        android:layout_height="@dimen/margin_50dp"
+        android:background="@drawable/round_btn"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="@string/kwd_256_00"
+        android:textAllCaps="true"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14sp"
+        android:visibility="gone"
+        app:layout_anchor="@id/mainLayout"
+        app:layout_anchorGravity="top|end"
+        app:layout_collapseMode="parallax"
+        app:layout_collapseParallaxMultiplier="0.7" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvPlanName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:layout_gravity="top"
+        android:textSize="@dimen/text_size_18sp"
+        android:gravity="start"
+        android:fontFamily="@font/segoe_ui_semibold"
+        app:layout_anchor="@id/toolbar_btn"
+        app:layout_insetEdge="start"
+        app:layout_anchorGravity="start|top"
+        app:layout_collapseMode="parallax"
+        app:layout_collapseParallaxMultiplier="0.7"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

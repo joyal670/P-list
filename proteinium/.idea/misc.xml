@@ -1,0 +1,82 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/proteinium/app/src/main/res/drawable/bootom_navigation_selected_item_color.xml" value="0.24177631578947367" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/proteinium/app/src/main/res/drawable/ic_baseline_add.xml" value="0.24177631578947367" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/proteinium/app/src/main/res/drawable/ic_baseline_remove.xml" value="0.24177631578947367" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/proteinium/app/src/main/res/layout/activity_home.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/proteinium/app/src/main/res/layout/activity_main_calender_horizontal.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/proteinium/app/src/main/res/layout/activity_meal_plan.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/proteinium/app/src/main/res/layout/content_scrolling_details.xml" value="0.22" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/proteinium/app/src/main/res/layout/fragment_calender.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/proteinium/app/src/main/res/layout/recycerview_dislikes.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/proteinium/app/src/main/res/layout/recycerview_extras.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/proteinium/app/src/main/res/layout/recycerview_offdays.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/proteinium/app/src/main/res/layout/recycerview_selectplan_layout.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/proteinium/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23157894736842105" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/drawable/ic_change_password.xml" value="0.1535" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/drawable/ic_et_profile.xml" value="0.1535" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/drawable/ic_no_subcriptiom.xml" value="0.149" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/drawable/ic_order_confirm.xml" value="0.1945" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/drawable/ic_primary.xml" value="0.1535" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/drawable/ic_profile.xml" value="0.1535" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/drawable/ic_warning_white_32dp.xml" value="0.111" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/drawable/ratingstars.xml" value="0.111" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/drawable/round_btn.xml" value="0.1535" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/drawable/shape_placeholder.xml" value="0.1" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activit_payment.xml" value="0.22" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_add_devlivery_.xml" value="0.16259057971014493" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_checkout_.xml" value="0.1" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_contact_us.xml" value="0.13451086956521738" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_dislikes.xml" value="0.11820652173913043" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_edit_added_devlivery_.xml" value="0.22" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_home.xml" value="0.11820652173913043" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_main_calender_horizontal.xml" value="0.13360507246376813" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_meal_plan.xml" value="0.1" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_meals_selection.xml" value="0.1" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_my_profile.xml" value="0.25" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_order_confirm_.xml" value="0.25" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_privacy_policy.xml" value="0.11820652173913043" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_settings.xml" value="0.12273550724637682" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_subscription_add.xml" value="0.11277173913043478" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_subscription_detailed.xml" value="0.15217391304347827" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_subscription_history.xml" value="0.1" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_terms_and_conditions.xml" value="0.1322463768115942" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/activity_web.xml" value="0.13134057971014493" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/alert_meal_selection.xml" value="0.21" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/alert_remove_an_item.xml" value="0.25" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/calendar_item.xml" value="0.33" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/change_password.xml" value="0.18" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/content_scrolling_details.xml" value="0.2" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/edit_profile.xml" value="0.33" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/fragment_calender.xml" value="0.16" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/fragment_forgot_password.xml" value="0.2706209453197405" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/fragment_login.xml" value="0.15896739130434784" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/fragment_meals.xml" value="0.16530797101449277" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/fragment_more.xml" value="0.13451086956521738" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/fragment_signup.xml" value="0.33" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/item_extras.xml" value="0.25" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/logout_layout.xml" value="0.22" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/no_internet.xml" value="0.1" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/no_subscrption.xml" value="0.25" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/recycerview_address.xml" value="0.16510416666666666" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/recycerview_address_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/recycerview_extra.xml" value="0.11197916666666667" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/recycerview_extras.xml" value="1.0" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/recycerview_meals.xml" value="0.5" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/recycerview_subscriptionhistory.xml" value="0.1" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/select_language.xml" value="0.2" />
+        <entry key="..\:/shameem/protenium_new/app/src/main/res/layout/toolbar_sub.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK" />
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.16" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".agent_panel.ui.main.sidemenu.property.propertydetails.PropertyDetailsPage1Activity">
+
+    <include
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center|bottom"
+                android:background="@color/color_accent_green"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_40dp"
+                    android:layout_marginEnd="@dimen/margin_40dp"
+                    android:background="@drawable/ic_ellipse_agent"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-85dp"
+                android:src="@drawable/ic_owner_home"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.5"
+                        android:fontFamily="@font/heebo_medium"
+                        android:text="@string/property_to"
+                        android:textColor="@color/color_accent_grey_light_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <com.alimaddi.segmentedbutton.SegmentedButtonGroup
+                        android:id="@+id/agentRentOrBuy"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/margin_30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginEnd="140dp"
+                        android:layout_weight="1.5"
+                        android:background="@color/white"
+                        android:elevation="2dp"
+                        app:borderColor="@color/color_accent_green"
+                        app:borderWidth="1dp"
+                        app:dividerPadding="10dp"
+                        app:dividerWidth="1dp"
+                        app:position="0"
+                        app:radius="30dp"
+                        app:ripple="true"
+                        app:rippleColor="@color/white"
+                        app:selectedBackground="@color/color_accent_green">
+
+                    <com.alimaddi.segmentedbutton.SegmentedButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="10dp"
+                            app:drawableGravity="top"
+                            app:selectedTextColor="@color/white"
+                            app:text="@string/Rent"
+                            app:textColor="@color/black"
+                            app:textSize="@dimen/text_size_12sp" />
+
+                        <com.alimaddi.segmentedbutton.SegmentedButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="10dp"
+                            app:drawableGravity="top"
+                            app:selectedTextColor="@color/white"
+                            app:text="@string/buy"
+                            app:textColor="@color/black"
+                            app:textSize="@dimen/text_size_12sp" />
+
+                    </com.alimaddi.segmentedbutton.SegmentedButtonGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/heebo_medium"
+                        android:text="@string/property_category"
+                        android:textColor="@color/color_accent_grey_light_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <com.alimaddi.segmentedbutton.SegmentedButtonGroup
+                        android:id="@+id/agentCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/margin_35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:layout_weight="2"
+                        android:background="@color/white"
+                        android:elevation="2dp"
+                        app:borderColor="@color/color_accent_green"
+                        app:borderWidth="1dp"
+                        app:dividerPadding="10dp"
+                        app:dividerWidth="1dp"
+                        app:position="0"
+                        app:radius="30dp"
+                        app:ripple="true"
+                        app:rippleColor="@color/white"
+                        app:selectedBackground="@color/color_accent_green">
+
+                        <com.alimaddi.segmentedbutton.SegmentedButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="10dp"
+                            app:drawableGravity="top"
+                            app:selectedTextColor="@color/white"
+                            app:text="@string/residential"
+                            app:textColor="@color/black"
+                            app:textSize="@dimen/text_size_12sp" />
+
+                        <com.alimaddi.segmentedbutton.SegmentedButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="10dp"
+                            app:drawableGravity="top"
+                            app:selectedTextColor="@color/white"
+                            app:text="@string/commercial"
+                            app:textColor="@color/black"
+                            app:textSize="@dimen/text_size_12sp" />
+
+                    </com.alimaddi.segmentedbutton.SegmentedButtonGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:clickable="false"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/heebo_medium"
+                        android:text="@string/property_type"
+                        android:textColor="@color/color_accent_grey_light_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <com.skydoves.powerspinner.PowerSpinnerView
+                        android:id="@+id/agent_propertyType_spinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/bg_round_border"
+                        android:clickable="false"
+                        android:gravity="start|center"
+                        android:textAlignment="viewStart"
+                        android:hint="@string/select_type"
+                        android:padding="10dp"
+                        android:text="@string/select_type"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textDirection="locale"
+                        android:textSize="14.5sp"
+                        android:theme="@style/ToolbarTheme"
+                        app:spinner_arrow_gravity="end"
+                        app:spinner_arrow_padding="8dp"
+                        app:spinner_arrow_tint="@color/black"
+                        app:spinner_divider_color="@color/gray"
+                        app:spinner_divider_show="true"
+                        app:spinner_divider_size="0.5dp"
+                        app:spinner_popup_animation="dropdown"
+                        app:spinner_popup_background="@color/white"
+                        app:spinner_popup_elevation="14dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:background="@color/color_accent_grey_light_new2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/property_addres"
+                    android:textColor="@color/color_accent_grey_light_new"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:backgroundTint="@color/white"
+                    app:hintEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/agentAddress1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:textAlignment="viewStart"
+                        android:drawablePadding="@dimen/margin_20dp"
+                        android:fontFamily="@font/heebo_regular"
+                        android:hint="@string/street_address_1"
+                        android:importantForAutofill="no"
+                        tools:ignore="TextFields" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:backgroundTint="@color/white"
+                    app:hintEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/agentAddress2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:textAlignment="viewStart"
+                        android:drawablePadding="@dimen/margin_20dp"
+                        android:fontFamily="@font/heebo_regular"
+                        android:hint="@string/street_address_2"
+                        android:importantForAutofill="no"
+                        tools:ignore="TextFields" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:backgroundTint="@color/white"
+                    android:visibility="visible"
+                    app:hintEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/etLocationAgent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/margin_20dp"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/heebo_regular"
+                        android:hint="@string/etLocation"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        tools:ignore="Autofill,Deprecated,KeyboardInaccessibleWidget,TextFields" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:background="@drawable/bg_round_border"
+                    android:orientation="horizontal">
+
+                    <com.skydoves.powerspinner.PowerSpinnerView
+                        android:id="@+id/country_spinnerAgent"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:textAlignment="viewStart"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:gravity="start|center"
+                        android:hint="@string/select_country"
+                        android:padding="6dp"
+                        android:text="@string/select_country"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textDirection="locale"
+                        android:theme="@style/ToolbarTheme"
+                        app:spinner_arrow_gravity="end"
+                        app:spinner_arrow_padding="8dp"
+                        app:spinner_arrow_tint="@color/black"
+                        app:spinner_divider_color="@color/gray"
+                        app:spinner_divider_show="true"
+                        app:spinner_divider_size="0.5dp"
+                        app:spinner_popup_animation="dropdown"
+                        app:spinner_popup_background="@color/white"
+                        app:spinner_popup_elevation="14dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:background="@drawable/bg_round_border"
+                    android:orientation="horizontal">
+
+                    <com.skydoves.powerspinner.PowerSpinnerView
+                        android:id="@+id/state_spinnerAgent"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:gravity="start|center"
+                        android:hint="@string/select_state"
+                        android:textAlignment="viewStart"
+                        android:padding="6dp"
+                        android:text="@string/select_state"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textDirection="locale"
+                        android:theme="@style/ToolbarTheme"
+                        app:spinner_arrow_gravity="end"
+                        app:spinner_arrow_padding="8dp"
+                        app:spinner_arrow_tint="@color/black"
+                        app:spinner_divider_color="@color/gray"
+                        app:spinner_divider_show="true"
+                        app:spinner_divider_size="0.5dp"
+                        app:spinner_popup_animation="dropdown"
+                        app:spinner_popup_background="@color/white"
+                        app:spinner_popup_elevation="14dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/state_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:background="@drawable/bg_round_border"
+                    android:orientation="horizontal">
+
+                    <com.skydoves.powerspinner.PowerSpinnerView
+                        android:id="@+id/city_spinnerAgent"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:gravity="start|center"
+                        android:hint="@string/select_city"
+                        android:padding="6dp"
+                        android:text="@string/select_city"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textDirection="locale"
+                        android:theme="@style/ToolbarTheme"
+                        app:spinner_arrow_gravity="end"
+                        app:spinner_arrow_padding="8dp"
+                        app:spinner_arrow_tint="@color/black"
+                        app:spinner_divider_color="@color/gray"
+                        app:spinner_divider_show="true"
+                        app:spinner_divider_size="0.5dp"
+                        app:spinner_popup_animation="dropdown"
+                        app:spinner_popup_background="@color/white"
+                        app:spinner_popup_elevation="14dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:background="@drawable/bg_round_border"
+                    android:orientation="horizontal">
+
+                    <com.skydoves.powerspinner.PowerSpinnerView
+                        android:id="@+id/zip_spinnerAgent"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:gravity="start|center"
+                        android:hint="@string/select_zipcode"
+                        android:padding="6dp"
+                        android:text="@string/select_zipcode"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textAlignment="viewStart"
+                        android:textDirection="locale"
+                        android:theme="@style/ToolbarTheme"
+                        app:spinner_arrow_gravity="end"
+                        app:spinner_arrow_padding="8dp"
+                        app:spinner_arrow_tint="@color/black"
+                        app:spinner_divider_color="@color/gray"
+                        app:spinner_divider_show="true"
+                        app:spinner_divider_size="0.5dp"
+                        app:spinner_popup_animation="dropdown"
+                        app:spinner_popup_background="@color/white"
+                        app:spinner_popup_elevation="14dp" />
+                </RelativeLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/agent_property_nextBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginBottom="@dimen/margin_10dp"
+                    android:backgroundTint="@color/color_accent_green"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/layoutBuilderUpdates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_20dp"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="start"
+                        android:text="@string/cover_images"
+                        android:textColor="@color/color_accent_grey_light_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <LinearLayout
+                        android:id="@+id/lv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvBuildingImagesFromResponse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_10dp"
+                            android:layout_marginTop="@dimen/margin_7dp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/addBuildingImgBtn"
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="@dimen/margin_65dp"
+                                android:layout_height="@dimen/margin_80dp"
+                                android:layout_marginStart="@dimen/margin_10dp"
+                                android:layout_marginTop="@dimen/margin_5dp"
+                                android:fontFamily="@font/heebo_bold"
+                                app:icon="@drawable/ic_plus_green"
+                                app:iconGravity="textStart"
+                                app:iconTint="@color/color_accent_green"
+                                app:strokeColor="@color/color_accent_green" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvBuildingImages"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_10dp"
+                                android:layout_marginTop="@dimen/margin_7dp"
+                                tools:itemCount="1" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvApartmentHead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_20dp"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="start"
+                        android:text="@string/apartments"
+                        android:textColor="@color/color_accent_grey_light_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvBuildingApartments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_7dp"
+                        android:backgroundTint="@color/light_gray"
+                        tools:itemCount="1" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnVerifyBuilding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_20dp"
+                        android:layout_marginBottom="@dimen/margin_25dp"
+                        android:backgroundTint="@color/color_accent_green"
+                        android:fontFamily="@font/heebo_medium"
+                        android:text="@string/verify"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

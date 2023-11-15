@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_120dp"
+                    android:background="@color/color_accent_blue_statusbar" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivProfileOwner"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-50dp"
+                    android:background="@drawable/circular_image"
+                    android:padding="@dimen/margin_4dp"
+                    android:src="@drawable/sample_profile" />
+
+                <TextView
+                    android:id="@+id/tvProfileNameOwner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:fontFamily="@font/heebo_bold"
+                    android:gravity="center"
+                    android:text="@string/anne_e_chavez"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/tvProfileEmailOwner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_2dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:gravity="center"
+                    android:text="@string/anneechavez_dayrep_com"
+                    android:textColor="@color/color_accent_grey_light"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <LinearLayout
+                    android:id="@+id/homeOwnerHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvHomeOwner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_15dp"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="start"
+                        android:padding="@dimen/margin_10dp"
+                        android:text="@string/home"
+                        android:textColor="@color/color_accent_grey_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_25dp"
+                        android:layout_marginTop="@dimen/margin_8dp"
+                        android:layout_marginEnd="@dimen/margin_25dp"
+                        android:background="@color/color_accent_grey_light_line" />
+
+
+                    <TextView
+                        android:id="@+id/tvProfileOwner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_15dp"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="start"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:padding="@dimen/margin_10dp"
+                        android:text="@string/my_profile"
+                        android:textColor="@color/color_accent_grey_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_25dp"
+                        android:layout_marginTop="@dimen/margin_8dp"
+                        android:layout_marginEnd="@dimen/margin_25dp"
+                        android:background="@color/color_accent_grey_light_line" />
+
+
+                    <TextView
+                        android:id="@+id/tvServicesOwner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_15dp"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="start"
+                        android:padding="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:text="@string/service_management"
+                        android:textColor="@color/color_accent_grey_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_25dp"
+                        android:layout_marginTop="@dimen/margin_8dp"
+                        android:layout_marginEnd="@dimen/margin_25dp"
+                        android:background="@color/color_accent_grey_light_line" />
+
+                    <TextView
+                        android:id="@+id/tvServiceRequestOwner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_15dp"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="start"
+                        android:padding="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:text="@string/requested_service"
+                        android:textColor="@color/color_accent_grey_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_25dp"
+                        android:layout_marginTop="@dimen/margin_8dp"
+                        android:layout_marginEnd="@dimen/margin_25dp"
+                        android:background="@color/color_accent_grey_light_line" />
+
+                    <TextView
+                        android:id="@+id/tvReportsOwner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_15dp"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="start"
+                        android:padding="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:text="@string/reports"
+                        android:textColor="@color/color_accent_grey_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_25dp"
+                        android:layout_marginTop="@dimen/margin_8dp"
+                        android:layout_marginEnd="@dimen/margin_25dp"
+                        android:background="@color/color_accent_grey_light_line" />
+
+                    <TextView
+                        android:id="@+id/tvChangePasswordOwner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_15dp"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="start"
+                        android:padding="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:text="@string/change_password"
+                        android:textColor="@color/color_accent_grey_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_25dp"
+                        android:layout_marginTop="@dimen/margin_8dp"
+                        android:layout_marginEnd="@dimen/margin_25dp"
+                        android:background="@color/color_accent_grey_light_line" />
+
+
+                    <TextView
+                        android:id="@+id/tvLogoutOwner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_15dp"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="start"
+                        android:padding="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:text="@string/logout"
+                        android:textColor="@color/color_accent_grey_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

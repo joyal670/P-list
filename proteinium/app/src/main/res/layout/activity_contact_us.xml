@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".proteiniumdietapp.ui.main.home.more.contactus.ContactUsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_main"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_sub"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/border_rounded_top_white">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/etcontactName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_marginStart="@dimen/margin_30dp"
+                        android:layout_marginTop="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_30dp"
+                        android:background="@drawable/border_rounded_light_white"
+                        android:fontFamily="@font/segoe_ui"
+                        android:hint="@string/your_name"
+                        android:inputType="textPersonName"
+                        android:paddingStart="40dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/text_size_14sp" />
+
+
+                    <EditText
+                        android:id="@+id/etcontactPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_marginStart="@dimen/margin_30dp"
+                        android:layout_marginTop="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_30dp"
+                        android:background="@drawable/border_rounded_light_white"
+                        android:fontFamily="@font/segoe_ui"
+                        android:hint="@string/phone_number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingStart="40dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <EditText
+                        android:id="@+id/etcontactEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_marginStart="@dimen/margin_30dp"
+                        android:layout_marginTop="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_30dp"
+                        android:background="@drawable/border_rounded_light_white"
+                        android:fontFamily="@font/segoe_ui"
+                        android:hint="@string/tvEmail"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="40dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/text_size_14sp" />
+
+
+                    <EditText
+                        android:id="@+id/etcontactMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_120dp"
+                        android:layout_marginStart="@dimen/margin_30dp"
+                        android:layout_marginTop="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_30dp"
+                        android:background="@drawable/border_rounded_light_white"
+                        android:fontFamily="@font/segoe_ui"
+                        android:gravity="top"
+                        android:hint="@string/tvMessage"
+                        android:inputType="textMultiLine"
+                        android:maxHeight="@dimen/margin_50dp"
+                        android:paddingStart="40dp"
+                        android:paddingTop="@dimen/margin_15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/contactSubmitBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_30dp"
+                        android:layout_marginTop="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_30dp"
+                        android:fontFamily="@font/segoe_ui_semibold"
+                        android:gravity="center"
+                        android:text="@string/tvsubmit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_14sp"
+                        app:cornerRadius="@dimen/margin_24dp"
+                        app:strokeColor="@color/black" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+            <TextView
+                android:id="@+id/tvWhatsApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:layout_marginBottom="@dimen/margin_40dp"
+                android:drawableEnd="@drawable/whatsapp"
+                android:drawablePadding="@dimen/margin_10dp"
+                android:fontFamily="@font/segoe_ui"
+                android:text="@string/contact_us_in_whatsapp"
+                android:textAllCaps="false"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_size_14sp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

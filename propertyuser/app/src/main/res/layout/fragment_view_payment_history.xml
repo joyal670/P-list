@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainViewPaymentHistory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearMainPaymentHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_90"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcvPropertyDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/white">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/roundedPropertyForPayment"
+                    android:layout_width="70dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:elevation="8dp"
+                    android:padding="@dimen/margin_1dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/building_1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize6Percent" />
+
+                <TextView
+                    android:id="@+id/tvPropertyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_2dp"
+                    android:layout_marginEnd="@dimen/margin_1dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:maxLines="2"
+                    android:text="@string/tvPropertyName"
+                    android:textColor="@color/matterhorn"
+                    android:textSize="@dimen/text_size_15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@+id/roundedPropertyForPayment"
+                    app:layout_constraintTop_toTopOf="@+id/roundedPropertyForPayment" />
+
+                <TextView
+                    android:id="@+id/tvPropertyCodePayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_6dp"
+                    android:layout_marginEnd="@dimen/margin_1dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/manrope_medium"
+                    android:maxLines="2"
+                    android:text="@string/tvPropertyCode"
+                    android:textColor="@color/gray_brown"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@+id/roundedPropertyForPayment"
+                    app:layout_constraintTop_toBottomOf="@id/tvPropertyName" />
+
+                <TextView
+                    android:id="@+id/tvRentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_6dp"
+                    android:layout_marginEnd="@dimen/margin_1dp"
+                    android:layout_marginBottom="@dimen/margin_20dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/manrope_medium"
+                    android:maxLines="1"
+                    android:text="@string/tvRentText"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/roundedPropertyForPayment"
+                    app:layout_constraintTop_toBottomOf="@id/tvPropertyCodePayment" />
+
+                <TextView
+                    android:id="@+id/tvRentAmountPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_1dp"
+                    android:layout_marginTop="@dimen/margin_6dp"
+                    android:layout_marginEnd="@dimen/margin_1dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:maxLines="1"
+                    android:text="@string/tvRentAmount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@+id/tvRentText"
+                    app:layout_constraintTop_toBottomOf="@id/tvPropertyCodePayment" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPaymentHistoryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            tools:itemCount="4"
+            tools:listitem="@layout/list_view_payment_history_item" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

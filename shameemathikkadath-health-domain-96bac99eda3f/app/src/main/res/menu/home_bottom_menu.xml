@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/myHealthFragment"
+        android:icon="@drawable/ic_my_health"
+        android:enabled="true"
+        android:title="My Health" />
+
+    <item
+
+        android:title="" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_round_account"
+        android:title="Profile" />
+</menu>

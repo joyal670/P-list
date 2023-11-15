@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/userProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_12_dp"
+        app:cardCornerRadius="@dimen/dimen_8_dp"
+        app:cardElevation="@dimen/min_margin_6_dp"
+        app:cardUseCompatPadding="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_8_dp"
+            android:paddingBottom="@dimen/dimen_16_dp"
+            tools:context=".ui.home.my_health.challenges.ChallengesFragment">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12_dp"
+                android:text="Challenges"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/font_24_sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_48_dp"
+                android:text="There are no new challenges"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/text_desc_normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView12" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_48_dp"
+                android:text="Start challenging your contacts"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/text_desc_normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView13" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/challengViewPage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12_dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView12" />
+
+
+            <ImageView
+                android:id="@+id/preButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/min_margin_6_dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/min_margin_6_dp"
+                android:src="@drawable/ic_arrow_left_circle"
+                app:layout_constraintBottom_toBottomOf="@+id/challengViewPage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/challengViewPage"
+                tools:ignore="UseAppTint" />
+
+            <ImageView
+                android:id="@+id/nextButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/min_margin_6_dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/min_margin_6_dp"
+                android:src="@drawable/ic_arrow_right_circle"
+                app:layout_constraintBottom_toBottomOf="@+id/challengViewPage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/challengViewPage"
+                tools:ignore="UseAppTint" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

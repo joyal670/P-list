@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rvDislikeMainLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_5dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dislikeBtn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_50dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/ok"
+        android:textAllCaps="false"
+        android:textColor="@color/grey4"
+        android:textSize="@dimen/text_size_14sp"
+        app:cornerRadius="@dimen/margin_24dp"
+        app:strokeColor="@color/grey4" />
+
+</LinearLayout>
+
+
+
+
+

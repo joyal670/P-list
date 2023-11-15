@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/border_rounded_top_white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_25dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sample1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_60dp"
+                android:backgroundTint="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDes">
+
+                <EditText
+                    android:id="@+id/etFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawablePadding="@dimen/margin_20dp"
+                    android:fontFamily="@font/barlow_medium"
+                    android:hint="@string/first_name"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sample2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_60dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginTop="@dimen/margin_15dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDes">
+
+                <EditText
+                    android:id="@+id/etMiddleName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawablePadding="@dimen/margin_20dp"
+                    android:fontFamily="@font/barlow_medium"
+                    android:hint="@string/middle_name"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sample3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_60dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginTop="@dimen/margin_15dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDes">
+
+                <EditText
+                    android:id="@+id/etLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawablePadding="@dimen/margin_20dp"
+                    android:fontFamily="@font/barlow_medium"
+                    android:hint="@string/last_name"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_60dp"
+                app:backgroundTint="@color/pomegranate"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                app:cornerRadius="@dimen/margin_10dp"
+                android:textSize="@dimen/text_size_16sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/barlow_semibold"
+                android:layout_marginTop="@dimen/margin_25dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

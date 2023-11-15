@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baoyz.widget.PullRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/athens_gray">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/athens_gray">
+
+        <RelativeLayout
+            android:id="@+id/sampleRel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/studentAttendanceCalender"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_400dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                app:mcv_dateTextAppearance="@style/CustomTextAppearance"
+                app:mcv_leftArrow="@drawable/ic_calender_left_arrow"
+                app:mcv_rightArrow="@drawable/ic_calender_right_arrow"
+                app:mcv_selectionColor="#00F"
+                app:mcv_showOtherDates="all" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/absentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sampleRel">
+
+            <ImageView
+                android:layout_width="@dimen/margin_18dp"
+                android:layout_height="@dimen/margin_18dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/red_circle" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_12dp"
+                android:fontFamily="@font/barlow_medium"
+                android:gravity="start|center"
+                android:text="@string/absent"
+                android:textColor="@color/dove_gray"
+                android:textSize="@dimen/text_size_18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/presentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_32dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/absentLayout">
+
+            <ImageView
+                android:layout_width="@dimen/margin_18dp"
+                android:layout_height="@dimen/margin_18dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/green_circle" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_12dp"
+                android:fontFamily="@font/barlow_medium"
+                android:gravity="start|center"
+                android:text="@string/present"
+                android:textColor="@color/dove_gray"
+                android:textSize="@dimen/text_size_18sp" />
+
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lvNoData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_20dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/no_data_error" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.baoyz.widget.PullRefreshLayout>

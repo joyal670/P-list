@@ -1,0 +1,131 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/background_round_green.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/bg_date_round_border_select.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/bg_round_border.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/bg_round_border_dotted.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/bg_round_border_red.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/bootom_navigation_selected_item_color.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/border_rounded_bottom_light_gray.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/border_rounded_light_white.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/border_rounded_light_white_two.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/border_rounded_top_white.xml" value="0.1" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/border_rounded_white.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/calendar_item_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/checkbox_selector_green.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/date_selector.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_account_user.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_arrow_drop_down_black2.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_arrow_drop_down_white.xml" value="0.24177631578947367" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_arrow_left_24dp.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_arrow_right.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_arrow_right_24dp.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_arrow_right_light_green.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_arrow_right_white.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_arrow_up.xml" value="0.24177631578947367" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_baseline_add.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_baseline_remove.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_camera_profile.xml" value="0.24177631578947367" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_change_password.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_checkbox_checked_green.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_checkbox_unchecked.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_close.xml" value="0.1" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_delete.xml" value="0.24177631578947367" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_dish_plate.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_edit.xml" value="0.24177631578947367" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_home_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_icon_gender_user.xml" value="0.24177631578947367" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_icon_map_location_arrow.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_insurance.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_logout.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_more_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_no_subcriptiom.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_notification.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_profile.xml" value="0.23941368078175895" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_profile_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_settings.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_share_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_silver_arrow_right.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_subscriptions.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_success_green.xml" value="0.24177631578947367" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_success_orange.xml" value="0.24177631578947367" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_terms_and_conditions.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/ic_twitter_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/drawable/round_btn.xml" value="0.221875" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_about_us.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_add_delivery_address.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_auth.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_checkout.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_contact_us.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_dislikes.xml" value="0.2" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_home_detailed.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_main_calender_horizontal.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_menu.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_my_profile.xml" value="0.22269736842105264" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_notification.xml" value="0.22269736842105264" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_order_confirm.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_privacy_policy.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_settings.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_subscription_history.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/activity_terms_and_conditions.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/app_bar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/calendar_item.xml" value="0.33" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/content_scrolling_details.xml" value="0.3756777691711851" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/custom_toolbar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/edit_profile.xml" value="0.2293159609120521" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/fragment_calender.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/fragment_forgot_password.xml" value="0.2" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/fragment_home.xml" value="0.3484375" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/fragment_login.xml" value="0.22" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/fragment_meals.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/fragment_more.xml" value="0.22" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/fragment_my_account.xml" value="0.2293159609120521" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/fragment_progress_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/fragment_sign_up.xml" value="0.25" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/layout_bottomsheet.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/layout_bottomsheet_change_password.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/layout_bottomsheet_select_lang.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/layout_warning.xml" value="0.2293159609120521" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/logout_layout.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/no_subscrption.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/recycerview_address.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/recycerview_address_layout.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/recycerview_dislike.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/recycerview_extras.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/recycerview_meals.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/recycerview_notification.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/recycerview_offdays.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/recycerview_selectplan_layout.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/recycerview_subscriptionhistory.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/recycle_home_image_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/recycle_home_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/recycle_home_sub_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/recycle_off_days_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/select_delivery_address.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/layout/toolbar_sub.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/joyal/AndroidStudioProjects/Protenium/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/StudioProjects/protenium-iro-hub/app/src/main/res/drawable/bg_date_round_border_complete.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/user/StudioProjects/protenium-iro-hub/app/src/main/res/drawable/bg_date_round_border_pause.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/user/StudioProjects/protenium-iro-hub/app/src/main/res/drawable/bg_date_round_border_resume.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/user/StudioProjects/protenium-iro-hub/app/src/main/res/drawable/ic_check.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/user/StudioProjects/protenium-iro-hub/app/src/main/res/drawable/ic_check_red.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/user/StudioProjects/protenium-iro-hub/app/src/main/res/drawable/ic_check_yellow.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/user/StudioProjects/protenium-iro-hub/app/src/main/res/layout/activity_subscription_history.xml" value="0.2" />
+        <entry key="..\:/Users/user/StudioProjects/protenium-iro-hub/app/src/main/res/layout/activity_subscription_history_details.xml" value="0.2" />
+        <entry key="..\:/Users/user/StudioProjects/protenium-iro-hub/app/src/main/res/layout/fragment_calender.xml" value="0.33" />
+        <entry key="..\:/Users/user/StudioProjects/protenium-iro-hub/app/src/main/res/layout/recycerview_subscriptionhistory.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

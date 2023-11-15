@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/athens_gray">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:paddingTop="@dimen/margin_10dp"
+            android:paddingBottom="@dimen/margin_10dp">
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="0dp"
+                android:layout_weight=".25"
+                android:fontFamily="@font/heebo_medium"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Token"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="0dp"
+                android:layout_weight=".25"
+                android:fontFamily="@font/heebo_medium"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="2500"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="0dp"
+                android:layout_weight=".25"
+                android:fontFamily="@font/heebo_medium"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="11/19/2021"
+                android:textSize="@dimen/text_size_14sp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"/>
+
+            <ImageView
+                android:id="@+id/tvDays"
+                android:layout_width="0dp"
+                android:layout_weight=".25"
+                android:fontFamily="@font/heebo_medium"
+                android:gravity="center"
+                android:maxLines="1"
+                android:src="@drawable/ic_baseline_insert_drive_file_24"
+                android:text="2 Days"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="0dp"
+                android:layout_weight=".25"
+                android:fontFamily="@font/heebo_medium"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="UnPaid"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

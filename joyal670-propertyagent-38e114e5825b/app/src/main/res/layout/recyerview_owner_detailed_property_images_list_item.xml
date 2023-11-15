@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recyerview_details_adapter_building_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_20dp"
+    android:layout_marginBottom="@dimen/margin_15dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_3dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/margin_5dp">
+
+        <ImageView
+            android:id="@+id/recyerview_details_adapter_building_image"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/margin_80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sapmle_building" />
+
+        <TextView
+            android:id="@+id/recyerview_details_adapter_building_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_3dp"
+            android:fontFamily="@font/heebo_medium"
+            android:text="@string/occupied"
+            android:textColor="@color/color_accent_green"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_25dp"
+            android:background="@drawable/bubble_receive"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/recyerview_details_adapter_building_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_30dp"
+                android:fontFamily="@font/heebo_medium"
+                android:paddingStart="@dimen/margin_16dp"
+                android:paddingTop="@dimen/margin_8dp"
+                android:paddingEnd="@dimen/margin_16dp"
+                android:paddingBottom="@dimen/margin_8dp"
+                android:text="@string/Appartment"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPropertyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:fontFamily="@font/heebo_medium"
+            android:text="@string/property_name"
+            android:textColor="@color/color_accent_grey"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heebo_bold"
+                android:text="@string/property_cod"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5dp"
+                android:layout_marginEnd="@dimen/margin_5dp"
+                android:fontFamily="@font/heebo_bold"
+                android:text="@string/full_collen"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_11sp" />
+
+            <TextView
+                android:id="@+id/tvPropertyCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heebo_bold"
+                android:text="@string/_2545220"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_11sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recyclerview_occupied1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heebo_medium"
+                android:text="@string/occupied_from"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5dp"
+                android:layout_marginEnd="@dimen/margin_5dp"
+                android:fontFamily="@font/heebo_bold"
+                android:text="@string/full_collen"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_11sp" />
+
+            <TextView
+                android:id="@+id/tvOccupiedFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heebo_medium"
+                android:text="@string/_28_11_2020"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_10sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recyclerview_occupied2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heebo_medium"
+                android:text="@string/occupied_to"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5dp"
+                android:layout_marginEnd="@dimen/margin_5dp"
+                android:fontFamily="@font/heebo_bold"
+                android:text="@string/full_collen"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_11sp" />
+
+            <TextView
+                android:id="@+id/tvOccupiedTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heebo_medium"
+                android:text="@string/_28_11_2020"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recyclerview_vacant1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heebo_medium"
+                android:text="@string/how_many_times_rented_out"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5dp"
+                android:layout_marginEnd="@dimen/margin_5dp"
+                android:fontFamily="@font/heebo_bold"
+                android:text="@string/full_collen"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_13sp" />
+
+            <TextView
+                android:id="@+id/tvRentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/heebo_medium"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/_01"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recyclerview_vacant2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heebo_medium"
+                android:text="@string/vacant_since"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5dp"
+                android:layout_marginEnd="@dimen/margin_5dp"
+                android:fontFamily="@font/heebo_bold"
+                android:text="@string/full_collen"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_11sp" />
+
+            <TextView
+                android:id="@+id/tvVacant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heebo_medium"
+                android:text="@string/_28_11_2020"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/recyerview_details_adapter_dividerView"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:layout_marginBottom="@dimen/margin_7dp"
+        android:background="@color/color_accent_grey_light_new2" />
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+rootProject.name = "NComforts Agent"
+include ':app'

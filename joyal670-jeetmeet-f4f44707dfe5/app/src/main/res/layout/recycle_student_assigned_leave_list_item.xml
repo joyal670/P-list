@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/athens_gray">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:layout_marginBottom="@dimen/margin_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_20dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvLeaveTitile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/annual_leave"
+                android:textColor="@color/dove_gray"
+                android:gravity="start"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_gravity="start|center"
+                android:textSize="@dimen/text_size_14sp"
+                android:fontFamily="@font/barlow_medium"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvNoOfDays"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/_10_days"
+                android:textColor="@color/gray"
+                android:gravity="end|center"
+                android:textSize="@dimen/text_size_14sp"
+                android:fontFamily="@font/barlow_medium"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

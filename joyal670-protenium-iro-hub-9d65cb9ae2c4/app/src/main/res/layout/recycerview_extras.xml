@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_5dp"
+    android:layout_marginBottom="@dimen/margin_5dp">
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/materialRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:gravity="end|center"
+        android:maxLines="1"
+        android:paddingStart="@dimen/margin_5dp"
+        android:paddingEnd="@dimen/margin_5dp"
+        android:singleLine="true"
+        android:text="name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_5dp"
+        android:layout_marginEnd="@dimen/margin_5dp"
+        android:fontFamily="@font/segoe_ui"
+        android:gravity="start|center"
+        android:text="@string/left_open"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintBottom_toBottomOf="@id/materialRadioButton"
+        app:layout_constraintStart_toEndOf="@id/materialRadioButton"
+        app:layout_constraintTop_toTopOf="@id/materialRadioButton" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvKWD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_3dp"
+        android:layout_marginEnd="@dimen/margin_3dp"
+        android:fontFamily="@font/segoe_ui"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="@string/kwd"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvLeft"
+        app:layout_constraintStart_toEndOf="@id/tvLeft"
+        app:layout_constraintTop_toTopOf="@id/tvLeft" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_3dp"
+        android:layout_marginEnd="@dimen/margin_3dp"
+        android:fontFamily="@font/segoe_ui"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="@string/_0"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvKWD"
+        app:layout_constraintStart_toEndOf="@id/tvKWD"
+        app:layout_constraintTop_toTopOf="@id/tvKWD" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_3dp"
+        android:layout_marginEnd="@dimen/margin_3dp"
+        android:fontFamily="@font/segoe_ui"
+        android:gravity="start|center"
+        android:text="@string/right_open"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvPrice"
+        app:layout_constraintStart_toEndOf="@id/tvPrice"
+        app:layout_constraintTop_toTopOf="@id/tvPrice" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_5dp"
+        android:layout_marginEnd="@dimen/margin_5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/removeBtn"
+            android:layout_width="@dimen/margin_40dp"
+            android:layout_height="@dimen/margin_35dp"
+            android:layout_gravity="center"
+            app:cornerRadius="@dimen/margin_5dp"
+            app:icon="@drawable/ic_baseline_remove"
+            app:iconGravity="textStart"
+            app:iconPadding="-0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/countBtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="@dimen/margin_60dp"
+            android:layout_height="@dimen/margin_40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:gravity="center"
+            android:maxLines="1"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:text="0"
+            android:textAllCaps="false"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_10sp"
+            app:cornerRadius="@dimen/margin_5dp"
+            app:strokeColor="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addBtn"
+            android:layout_width="@dimen/margin_40dp"
+            android:layout_height="@dimen/margin_35dp"
+            android:layout_gravity="center"
+            app:cornerRadius="@dimen/margin_5dp"
+            app:icon="@drawable/ic_baseline_add"
+            app:iconGravity="textStart"
+            app:iconPadding="-0dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

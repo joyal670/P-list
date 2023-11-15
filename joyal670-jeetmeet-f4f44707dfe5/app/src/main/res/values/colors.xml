@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pomegranate">#EE2424</color>
+    <color name="color_accent">#525252</color>
+    <color name="white">#FFFFFF</color>
+    <color name="alto">#DCD9D9</color>
+    <color name="black">#000000</color>
+    <color name="de_york">#6AC58C</color>
+    <color name="torch_red">#FB0007</color>
+    <color name="burnt_sienna">#F47458</color>
+    <color name="dorado">#5B5B5B</color>
+    <color name="dove_gray">#656565</color>
+    <color name="athens_gray">#E9EBEE</color>
+    <color name="ship_gray">#46454A</color>
+    <color name="silver">#C8C8C8</color>
+    <color name="alto_dark">#D6D6D6</color>
+    <color name="gray">#8C8C8C</color>
+    <color name="flush_orange">#FF7A00</color>
+    <color name="light_white2">#F1F1F1</color>
+    <color name="onahau">#CCE9FF</color>
+
+    <color name="today_border">#e4e4e4</color>
+    <color name="today_background">#85f7f7f7</color>
+    <color name="colorPrimary">#5DA7A3</color>
+    <color name="secundaryTextColor">#757575</color>
+    <color name="primaryTextColor">#4d4d4d</color>
+    <color name="colorHover">#30818181</color>
+    <color name="light_white4">#F8F8F8</color>
+    <color name="azure_radiance">#008FFD</color>
+    <color name="killarney">#366A45</color>
+    <color name="comet">#5A5A7E</color>
+    <color name="comet_light">#B4B4BC</color>
+    <color name="jewel">#1C7234</color>
+
+    <color name="dark_blue">#322F5C</color>
+    <color name="mine_shaft">#282828</color>
+    <color name="yellow">#F59C1A</color>
+    <color name="textView_grey">#828282</color>
+    <color name="textView_dark">#505050</color>
+
+    <color name="forest_green">#06B106</color>>
+
+</resources>

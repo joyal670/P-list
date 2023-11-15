@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/customtoolbar_calender"
+        android:icon="@drawable/ic_group_calender_green"
+        android:title="@string/calendar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/customtoolbar_notification"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="@string/request"
+        app:showAsAction="always" />
+</menu>

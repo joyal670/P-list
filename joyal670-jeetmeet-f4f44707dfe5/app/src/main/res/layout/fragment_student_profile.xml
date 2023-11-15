@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baoyz.widget.PullRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pomegranate">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/athens_gray">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_30dp"
+            android:descendantFocusability="blocksDescendants">
+
+            <View
+                android:id="@+id/sampleView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_70dp"
+                android:background="@color/pomegranate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/sampleFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/sampleView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sampleView">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivStudentProfile"
+                    android:layout_width="@dimen/margin_120dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="@dimen/margin_16dp"
+                    android:elevation="@dimen/margin_5dp"
+                    android:src="@drawable/ic_profile_user"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="@dimen/margin_6dp" />
+
+                <ImageView
+                    android:id="@+id/ivStudentProfileUpdateBtn"
+                    android:layout_width="@dimen/margin_50dp"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="@dimen/margin_16dp"
+                    android:elevation="@dimen/margin_10dp"
+                    app:srcCompat="@drawable/ic_gallery" />
+            </FrameLayout>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/sampleLiner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/barlow_semibold"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/siobhan_l_seal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18sp"
+                app:layout_constraintEnd_toEndOf="@+id/sampleFrame"
+                app:layout_constraintStart_toStartOf="@+id/sampleFrame"
+                app:layout_constraintTop_toBottomOf="@+id/sampleFrame" />
+
+            <ImageView
+                android:id="@+id/ivEditName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/sampleLiner"
+                app:layout_constraintStart_toEndOf="@+id/sampleLiner"
+                app:layout_constraintTop_toTopOf="@+id/sampleLiner"
+                app:srcCompat="@drawable/ic_edit" />
+
+            <!--
+                    <LinearLayout
+                        android:id="@+id/sampleLiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="@+id/sampleFrame"
+                        app:layout_constraintStart_toStartOf="@+id/sampleFrame"
+                        app:layout_constraintTop_toBottomOf="@id/sampleFrame">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/barlow_semibold"
+                            android:text="@string/siobhan_l_seal"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/margin_15dp"
+                            app:srcCompat="@drawable/ic_edit" />
+
+                    </LinearLayout>
+            -->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvStudentRegNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_3dp"
+                android:fontFamily="@font/barlow_regular"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/reg_no_12345"
+                android:textColor="@color/dorado"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintEnd_toEndOf="@+id/sampleLiner"
+                app:layout_constraintStart_toStartOf="@+id/sampleLiner"
+                app:layout_constraintTop_toBottomOf="@id/sampleLiner" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/sampleCardView1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_80dp"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/margin_40dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvStudentRegNo">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivParentPic"
+                        android:layout_width="@dimen/margin_50dp"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:src="@drawable/ic_profile_user"
+                        app:civ_border_color="@color/pomegranate"
+                        app:civ_border_width="@dimen/margin_2dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvStudentParentName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/barlow_semibold"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:text="@string/madhu_pk"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_18sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:fontFamily="@font/barlow_regular"
+                            android:gravity="start"
+                            android:text="@string/parent"
+                            android:textColor="@color/dove_gray"
+                            android:textSize="@dimen/text_size_14sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/sampleCardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                app:cardCornerRadius="@dimen/margin_25dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sampleCardView1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10dp"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:text="@string/gender"
+                            android:textColor="@color/dove_gray" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvStudentGender"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:orientation="vertical"
+                            android:text="@string/male"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10dp"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:text="@string/classs"
+                            android:textColor="@color/dove_gray" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvStudentClass"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:orientation="vertical"
+                            android:text="@string/_4"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10dp"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:text="@string/division"
+                            android:textColor="@color/dove_gray" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvStudentDivision"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:orientation="vertical"
+                            android:text="@string/a"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10dp"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:text="@string/roll_no"
+                            android:textColor="@color/dove_gray" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvStudentRollNo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:orientation="vertical"
+                            android:text="@string/_12"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10dp"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:text="@string/dob"
+                            android:textColor="@color/dove_gray" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvStudentDob"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:orientation="vertical"
+                            android:text="@string/_14_12_2020"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:layout_marginBottom="@dimen/margin_40dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10dp"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:text="@string/phone"
+                            android:textColor="@color/dove_gray" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvStudentPhone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:orientation="vertical"
+                            android:text="@string/_971_897867565612"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/sampleCardView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_40dp"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                app:cardCornerRadius="@dimen/margin_25dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sampleCardView2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10dp"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:text="@string/email"
+                            android:textColor="@color/dove_gray" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvStudentEmail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:orientation="vertical"
+                            android:text="@string/student_gmail_com"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10dp"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:text="@string/secondary_phone_no"
+                            android:textColor="@color/dove_gray" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvStudentSecndPhone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:orientation="vertical"
+                            android:text="@string/_971_2542458856"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10dp"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:text="@string/address"
+                            android:textColor="@color/dove_gray" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvStudentAddress"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:orientation="vertical"
+                            android:text="@string/kollamvalapil"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10dp"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:text="@string/place"
+                            android:textColor="@color/dove_gray" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvStudentPlace"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:orientation="vertical"
+                            android:text="@string/ernakulam"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10dp"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:text="@string/post_code"
+                            android:textColor="@color/dove_gray" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvStudentPostCode"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:orientation="vertical"
+                            android:text="@string/_683542"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10dp"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:text="@string/blood_group"
+                            android:textColor="@color/dove_gray" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvStudentBloodGrp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:orientation="vertical"
+                            android:text="@string/o"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10dp"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:text="@string/state"
+                            android:textColor="@color/dove_gray" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvStudentState"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:orientation="vertical"
+                            android:text="@string/kerala"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10dp"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:text="@string/country"
+                            android:textColor="@color/dove_gray" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvStudentCountry"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:orientation="vertical"
+                            android:text="@string/india"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:layout_marginBottom="@dimen/margin_40dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10dp"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:text="@string/nationality"
+                            android:textColor="@color/dove_gray" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvStudentNationality"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="start"
+                            android:orientation="vertical"
+                            android:text="@string/antarctica"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</com.baoyz.widget.PullRefreshLayout>
+

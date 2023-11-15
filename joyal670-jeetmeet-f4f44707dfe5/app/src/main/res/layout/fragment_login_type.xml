@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".start_up.auth.fragment.LoginTypeFragment">
+
+    <ImageView
+        android:id="@+id/ivStudentParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_student_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_50dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/studentBtn"
+        android:layout_width="@dimen/margin_180dp"
+        android:layout_height="@dimen/margin_60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivStudentParent"
+        android:layout_marginTop="@dimen/margin_40dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/student"
+        app:strokeColor="@color/black"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/margin_5dp"
+        android:textSize="@dimen/text_size_16sp"
+        android:fontFamily="@font/barlow_medium"
+        android:textAllCaps="false"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/parentBtn"
+        android:layout_width="@dimen/margin_180dp"
+        android:layout_height="@dimen/margin_60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/studentBtn"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:backgroundTint="@color/white"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="@color/dorado"
+        android:text="@string/parent"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/margin_5dp"
+        android:textSize="@dimen/text_size_16sp"
+        android:fontFamily="@font/barlow_medium"
+        android:textAllCaps="false"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

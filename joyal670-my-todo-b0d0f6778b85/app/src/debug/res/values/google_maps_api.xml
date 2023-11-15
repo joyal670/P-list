@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=E4:83:E3:8E:B9:1B:D6:A7:60:79:ED:9A:76:16:57:8B:62:CC:F9:96%3Bcom.mytodo.mytodo.ui.main
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.mytodo.mytodo.ui.main
+
+    SHA-1 certificate fingerprint:
+    E4:83:E3:8E:B9:1B:D6:A7:60:79:ED:9A:76:16:57:8B:62:CC:F9:96
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">YOUR_KEY_HERE</string>
+</resources>

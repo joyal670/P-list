@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:seek="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_large"
+        tools:context=".ui.profile_set_up.StepTwoFragment">
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/step_four"
+            android:textColor="@color/text_color_dark"
+            android:textSize="@dimen/text_large_heading"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:text="@string/your_height"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_desc_steps"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_head" />
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:src="@drawable/ic_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_max="56dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc"
+            app:layout_constraintWidth_max="56dp" />
+
+        <LinearLayout
+            android:id="@+id/container_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo">
+
+            <TextView
+                android:id="@+id/tv_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="0"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/text_extra_large"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_extra_extra_small"
+                android:text="@string/cm"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/text_desc"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--    <RelativeLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/container_height">-->
+
+        <ImageView
+            android:id="@+id/ivTriangle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:rotation="270"
+            android:src="@drawable/drawable_triangle"
+            app:layout_constraintBottom_toBottomOf="@+id/container_height"
+            app:layout_constraintStart_toEndOf="@+id/container_height"
+            app:layout_constraintTop_toTopOf="@+id/container_height" />
+
+        <com.iroid.healthdomain.ui.utils.SimpleRulerView
+            android:id="@+id/simple_ruler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:rotation="270"
+            app:layout_constraintBottom_toBottomOf="@+id/container_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivTriangle"
+            app:layout_constraintTop_toTopOf="@+id/container_height"
+            seek:highlightColor="@color/color_pink"
+            seek:intervalDistance="19dp"
+            seek:intervalValue="0.1"
+            seek:maxValue="200.0"
+            seek:minValue="0.0"
+            seek:retainLength="100"
+            seek:rulerColor="@color/color_pink"
+            seek:textColor="@color/text_color_light" />
+
+        <View
+            android:layout_width="@dimen/dimen_200_dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="@id/ivTriangle"
+            app:layout_constraintTop_toTopOf="@id/ivTriangle" />
+
+
+        <!--        <View-->
+        <!--            android:layout_width="80dp"-->
+        <!--            android:layout_alignParentStart="true"-->
+        <!--            android:background="@drawable/white_gradient_start"-->
+        <!--            android:layout_height="match_parent"/>-->
+
+        <!--        <View-->
+        <!--            android:layout_width="80dp"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:background="@drawable/white_gradient_end"-->
+        <!--            android:layout_height="match_parent"/>-->
+
+        <!--    </RelativeLayout>-->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/bt_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_extra_extra_small"
+            android:src="@drawable/ic_tick"
+            app:backgroundTint="@color/text_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tint="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?android:attr/selectableItemBackground"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/margin_7dp"
+        android:paddingBottom="@dimen/margin_7dp"
+        android:src="@drawable/ic_search" />
+
+    <TextView
+        android:id="@+id/tvSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_5dp"
+        android:layout_marginEnd="@dimen/margin_15dp"
+        android:fontFamily="@font/heebo_regular"
+        android:gravity="center"
+        android:paddingTop="@dimen/margin_7dp"
+        android:paddingBottom="@dimen/margin_7dp"
+        android:text="@string/search"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_13sp" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/sdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:queryHint="@string/search"
+        app:iconifiedByDefault="false"
+        app:closeIcon="@drawable/ic_baseline_close_24"
+        android:visibility="gone"/>
+
+</LinearLayout>

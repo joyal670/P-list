@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool"
+        layout="@layout/toolbar_main" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etBankName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:background="@drawable/edit_text_boarder"
+                android:ellipsize="end"
+                android:fontFamily="@font/heebo_regular"
+                android:hint="@string/bankname"
+                android:maxLines="1"
+                android:padding="@dimen/margin_14dp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <EditText
+                android:id="@+id/etBranchName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:background="@drawable/edit_text_boarder"
+                android:ellipsize="end"
+                android:fontFamily="@font/heebo_regular"
+                android:hint="@string/branchname"
+                android:maxLines="1"
+                android:padding="@dimen/margin_14dp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <EditText
+                android:id="@+id/etAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:background="@drawable/edit_text_boarder"
+                android:ellipsize="end"
+                android:fontFamily="@font/heebo_regular"
+                android:hint="@string/accountnumber"
+                android:maxLines="1"
+                android:padding="@dimen/margin_14dp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <EditText
+                android:id="@+id/etIFSCCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:background="@drawable/edit_text_boarder"
+                android:ellipsize="end"
+                android:fontFamily="@font/heebo_regular"
+                android:hint="@string/biccode"
+                android:maxLines="1"
+                android:padding="@dimen/margin_14dp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <EditText
+                android:id="@+id/etAccountName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:background="@drawable/edit_text_boarder"
+                android:ellipsize="end"
+                android:fontFamily="@font/heebo_regular"
+                android:hint="@string/account_holder_name"
+                android:maxLines="1"
+                android:padding="@dimen/margin_14dp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addAccountBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_60dp"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:backgroundTint="@color/primary_color"
+                android:fontFamily="@font/heebo_medium"
+                android:text="@string/add_account"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

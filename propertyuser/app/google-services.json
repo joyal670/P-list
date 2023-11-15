@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "314355155444",
+    "project_id": "baybeenuserapp",
+    "storage_bucket": "baybeenuserapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314355155444:android:33e6d049c5b8d03356b9a1",
+        "android_client_info": {
+          "package_name": "com.property.propertyuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314355155444-rrjuisfru6b6o4ak555877j3rlgcval5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.property.propertyuser",
+            "certificate_hash": "ece7fd5459389343c902121d1e4be449a0c65852"
+          }
+        },
+        {
+          "client_id": "314355155444-jhsntqovvfkvdfgd4ssn217c0l1scgnm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGDmapEb9IxuKaugPqfYp_tCF34-nfLeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314355155444-jhsntqovvfkvdfgd4ssn217c0l1scgnm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

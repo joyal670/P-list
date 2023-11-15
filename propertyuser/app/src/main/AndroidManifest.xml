@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.property.propertyuser">
+    <!--
+         <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_maps_key" />
+    -->
+    <queries>
+        <package android:name="com.whatsapp" />
+    </queries>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".base.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_app"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_configuration"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PropertyUser.NoActionBar"
+        tools:targetApi="n">
+        <activity
+            android:name=".ui.main.home.dashboard.DashboardActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_launcher_foreground" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/green_solid" />
+
+        <activity
+            android:name=".ui.main.rating.RatingActivity"
+            android:exported="true" />
+        <activity android:name=".ui.main.home.search_property.SearchPropertyActivity" />
+        <activity android:name=".ui.main.property_details.packages2.PackagesActivity" />
+        <activity android:name=".ui.main.notification.NotificationActivity" />
+        <activity android:name=".ui.main.event.book_event.EventBookingActivity" />
+        <activity android:name=".ui.main.side_menu.feedback.FeedbackActivity" />
+        <activity android:name=".ui.main.side_menu.privacy_policy.PrivacyPolicyActivity" />
+        <activity android:name=".ui.main.side_menu.legal_information.LegalInformationActivity" />
+        <activity android:name=".ui.main.side_menu.about_us.AboutUsActivity" />
+        <activity android:name=".ui.main.side_menu.faq.FAQActivity" />
+        <activity android:name=".ui.main.side_menu.user_profile.ProfileActivity" />
+        <activity android:name=".ui.main.home.property_image_view.PropertyImageViewActivity" />
+        <activity
+            android:name=".ui.main.property_details.packages.PackageActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.main.home.events_see_all.EventsSeeAllActivity" />
+        <activity
+            android:name=".ui.main.favorites.FavoritePropertyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name=".ui.main.my_property.view_details.generate_ticket_vacate_request.GenerateTicketVacateRequestActivity" />
+        <activity android:name=".ui.main.home.scanner.QrScannerActivity" />
+        <activity android:name=".ui.main.terms_of_stay.TermsofStayActivity" />
+        <activity android:name=".ui.main.payment.PaymentActivity" />
+        <activity android:name=".ui.main.event.event_booking_slides.EventBookingSlideActivity" />
+        <activity
+            android:name=".ui.main.event.event_details.EventDetailsActivity"
+            android:label="@string/title_activity_event_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PropertyUser.NoActionBar.NoActionBar" />
+        <activity android:name=".ui.main.side_menu.SideMenuActivity" />
+        <activity android:name=".ui.main.my_property.view_details.vacate_request.VacateRequestActivity" />
+        <activity android:name=".ui.main.maintenance.status_details.StatusDetailsActivity" />
+        <activity android:name=".ui.main.maintenance.success.SuccessActivity" />
+        <activity android:name=".ui.main.my_property.view_details.service_details.ServiceDetailsActivity" />
+        <activity android:name=".ui.main.maintenance.MaintenanceActivity" />
+        <activity android:name=".ui.main.my_property.view_details.ViewDetailsActivity" />
+        <activity android:name=".ui.main.my_property.MyPropertyActivity" />
+        <activity android:name=".ui.main.map_and_nearby.MapAndNearByActivity" />
+        <activity android:name=".ui.main.booking.BookingActivity" />
+        <activity android:name=".ui.main.sale_and_rent_details.SaleAndRentActivity" />
+        <activity
+            android:name=".ui.main.property_details.PropertyDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PropertyUser.NoActionBar.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="siaaha.com"
+                    android:pathPrefix="/property/"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.main.filter.FilterActivity" />
+        <activity android:name=".ui.startup.auth.AuthActivity" />
+        <activity android:name=".ui.startup.welcome_slider.WelcomeSliderActivity" />
+        <activity
+            android:name=".ui.main.home.HomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".ui.startup.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PropertyUser.SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.startup.auth.otp.OtpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <!--
+   <service
+            android:name="com.property.propertyuser.firebase_message.MyFirebaseMessagingService"
+            android:exported="false"
+            tools:ignore="Instantiable">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="com.property.propertyuser_push_notify_new" />
+
+        <receiver
+            android:name=".utils.broadcastreceiver.MyBroadcastReceiver"
+            android:exported="true"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.codepath.fileprovider.user"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileprovider" />
+        </provider>
+
+        <service
+            android:name=".firebase_message.PushNotification"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

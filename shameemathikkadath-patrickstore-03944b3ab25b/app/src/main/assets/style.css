@@ -1,0 +1,102 @@
+
+
+.container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(90deg);
+  animation: rotate 2s cubic-bezier(0.16, 0.15, 0.07, 0.88) infinite;
+}
+.loader span {
+  position: absolute;
+  height: 0;
+  width: 0;
+  display: inline-flex;
+  border: 2rem solid #ca8b35;
+  box-sizing: border-box;
+  z-index: -1;
+  border-radius: 50px;
+  border-bottom-color: transparent;
+}
+.loader span:nth-child(1) {
+  top: -3rem;
+  left: -3rem;
+  transform: rotate(-45deg);
+  animation: spanRotate1 2s cubic-bezier(0.16, 0.15, 0.07, 0.88) infinite;
+}
+.loader span:nth-child(2) {
+  top: -3rem;
+  right: -3rem;
+  transform: rotate(45deg);
+  animation: spanRotate2 2s cubic-bezier(0.16, 0.15, 0.07, 0.88) infinite;
+}
+.loader span:nth-child(3) {
+  bottom: -3rem;
+  left: -3rem;
+  transform: rotate(-135deg);
+  animation: spanRotate3 2s cubic-bezier(0.16, 0.15, 0.07, 0.88) infinite;
+}
+.loader span:nth-child(4) {
+  bottom: -3rem;
+  right: -3rem;
+  transform: rotate(135deg);
+  animation: spanRotate4 2s cubic-bezier(0.16, 0.15, 0.07, 0.88) infinite;
+}
+
+@keyframes spanRotate1 {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50%, 100% {
+    transform: rotate(315deg);
+  }
+}
+@keyframes spanRotate2 {
+  0% {
+    transform: rotate(45deg);
+  }
+  50%, 100% {
+    transform: rotate(405deg);
+  }
+}
+@keyframes spanRotate3 {
+  0% {
+    transform: rotate(-135deg);
+  }
+  50%, 100% {
+    transform: rotate(225deg);
+  }
+}
+@keyframes spanRotate4 {
+  0% {
+    transform: rotate(135deg);
+  }
+  50%, 100% {
+    transform: rotate(495deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+}

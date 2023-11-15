@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_10dp"
+    app:cardElevation="@dimen/margin_10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16dp">
+
+        <com.property.propertyuser.utils.RoundRectCornerImageView
+            android:id="@+id/roundedRentalPropertyImage"
+            android:layout_width="113dp"
+            android:layout_height="96dp"
+            android:background="@color/colorGrey"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPropertyName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_1dp"
+            android:background="@color/colorGrey"
+            android:ellipsize="end"
+            android:fontFamily="@font/manrope_semibold"
+            android:maxLines="2"
+            android:textColor="@color/matterhorn"
+            android:textSize="@dimen/text_size_15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/roundedRentalPropertyImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPropertyCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_6dp"
+            android:layout_marginEnd="@dimen/margin_1dp"
+            android:background="@color/colorGrey"
+            android:ellipsize="end"
+            android:fontFamily="@font/manrope_medium"
+            android:maxLines="2"
+            android:textColor="@color/gray_brown"
+            android:textSize="@dimen/text_size_13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/roundedRentalPropertyImage"
+            app:layout_constraintTop_toBottomOf="@id/tvPropertyName" />
+
+        <TextView
+            android:id="@+id/tvRentText"
+            android:layout_width="@dimen/margin_80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_6dp"
+            android:layout_marginEnd="@dimen/margin_1dp"
+            android:background="@color/colorGrey"
+            android:ellipsize="end"
+            android:fontFamily="@font/manrope_medium"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_13sp"
+            app:layout_constraintStart_toEndOf="@+id/roundedRentalPropertyImage"
+            app:layout_constraintTop_toBottomOf="@id/tvPropertyCode" />
+
+        <TextView
+            android:id="@+id/tvRentAmount"
+            android:layout_width="@dimen/margin_100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_1dp"
+            android:layout_marginTop="@dimen/margin_6dp"
+            android:layout_marginEnd="@dimen/margin_1dp"
+            android:background="@color/colorGrey"
+            android:ellipsize="end"
+            android:fontFamily="@font/manrope_semibold"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/tvRentText"
+            app:layout_constraintTop_toBottomOf="@id/tvPropertyCode" />
+
+        <TextView
+            android:id="@+id/tvNextDueDate"
+            android:layout_width="@dimen/margin_70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_6dp"
+            android:layout_marginEnd="@dimen/margin_1dp"
+            android:background="@color/colorGrey"
+            android:ellipsize="end"
+            android:fontFamily="@font/manrope_medium"
+            android:maxLines="2"
+            android:textColor="@color/gray_brown"
+            android:textSize="@dimen/text_size_13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/roundedRentalPropertyImage"
+            app:layout_constraintTop_toBottomOf="@id/tvRentText" />
+
+        <TextView
+            android:id="@+id/tvViewDetails"
+            android:layout_width="@dimen/margin_120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_1dp"
+            android:background="@color/colorGrey"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:fontFamily="@font/manrope_bold"
+            android:foreground="?selectableItemBackground"
+            android:maxLines="1"
+            android:textColor="@color/green_light_1"
+            android:textSize="@dimen/text_size_14sp"
+            app:layout_constraintStart_toEndOf="@+id/roundedRentalPropertyImage"
+            app:layout_constraintTop_toBottomOf="@id/tvNextDueDate" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnServiceRequest"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            android:fontFamily="@font/manrope_bold"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13sp"
+            app:backgroundTint="@color/colorGrey"
+            app:cornerRadius="@dimen/radius_6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvViewDetails"
+            app:strokeColor="@color/green_light_1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVacateRequest"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            android:fontFamily="@font/manrope_bold"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13sp"
+            app:backgroundTint="@color/colorGrey"
+            app:cornerRadius="@dimen/radius_6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnServiceRequest"
+            app:layout_constraintTop_toBottomOf="@id/tvViewDetails"
+            app:strokeColor="@color/green_light_1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

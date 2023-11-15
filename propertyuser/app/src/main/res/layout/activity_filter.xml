@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintMainFilterLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.filter.FilterActivity">
+
+    <include layout="@layout/toolbar_filter" />
+
+    <LinearLayout
+        android:id="@+id/linearNoPropertyFoundFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_56dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/includeNoPropertyFound"
+            layout="@layout/layout_no_property_found"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/includeNoInternetMainFilter"
+        layout="@layout/layout_no_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_56dp"
+        android:visibility="gone" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearFilterList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_56dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/linearBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.8"
+            android:background="@drawable/home_blur_bg"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFilterPropertyList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:itemCount="3"
+            tools:listitem="@layout/list_home_property_item" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedMainFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_56dp"
+        android:fillViewport="true"
+        android:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/btnToogleRent"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:drawableLeft="@drawable/ic_tick_white"
+                    android:fontFamily="@font/manrope_bold"
+                    android:text="@string/toogleRent"
+                    android:textColor="@color/green_light_1"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <Button
+                    android:id="@+id/btnToogleBuy"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:drawableLeft="@drawable/ic_tick_white"
+                    android:fontFamily="@font/manrope_bold"
+                    android:text="@string/toogleBuy"
+                    android:textColor="@color/green_light_1"
+                    android:textSize="@dimen/text_size_14sp" />
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <TextView
+                android:id="@+id/etLocationAddress"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:background="@drawable/bg_round_border_gray"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_map_pin"
+                android:drawablePadding="@dimen/margin_20dp"
+                android:focusable="false"
+                android:fontFamily="@font/manrope_semibold"
+                android:gravity="start|center_vertical"
+                android:hint="@string/choose_place"
+                android:paddingLeft="@dimen/margin_15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+            <ImageView
+                android:id="@+id/iv_line"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:layerType="software"
+                android:src="@drawable/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnResidential" />
+
+            <TextView
+                android:id="@+id/tvPropertyType"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:fontFamily="@font/manrope_bold"
+                android:text="@string/tvPropertyType"
+                android:textColor="@color/light_black_gray"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etLocationAddress" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnResidential"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:fontFamily="@font/manrope_bold"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="@string/btnResidential"
+                android:textAllCaps="false"
+                android:textColor="@color/green_light_1"
+                android:textSize="@dimen/text_size_13sp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="@dimen/radius_7dp"
+                app:icon="@drawable/ic_tick_white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPropertyType"
+                app:strokeColor="@color/green_light_1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCommercial"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                android:fontFamily="@font/manrope_bold"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="@string/btnCommercial"
+                android:textAllCaps="false"
+                android:textColor="@color/green_light_1"
+                android:textSize="@dimen/text_size_13sp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="@dimen/radius_7dp"
+                app:icon="@drawable/ic_tick_white"
+                app:layout_constraintStart_toEndOf="@+id/btnResidential"
+                app:layout_constraintTop_toBottomOf="@id/tvPropertyType"
+                app:strokeColor="@color/green_light_1" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPropertyType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_line"
+                tools:itemCount="2"
+                tools:listitem="@layout/list_property_type_items" />
+
+            <TextView
+                android:id="@+id/tvRentalFrequency"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:fontFamily="@font/manrope_bold"
+                android:text="@string/tvRentalFrequency"
+                android:textColor="@color/light_black_gray"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvPropertyType" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRentalFrequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvRentalFrequency"
+                app:spanCount="3"
+                tools:itemCount="10"
+                tools:listitem="@layout/list_property_type_items" />
+
+            <TextView
+                android:id="@+id/tvPriceRange"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:fontFamily="@font/manrope_bold"
+                android:text="@string/tvPriceRange"
+                android:textColor="@color/light_black_gray"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvRentalFrequency" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:id="@+id/priceRangeSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:stepSize="20000.0"
+                android:valueFrom="0.0"
+                android:valueTo="5000000.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPriceRange"
+                app:values="@array/initial_range_slider_values" />
+
+            <TextView
+                android:id="@+id/tvPriceMinRange"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/margin_40dp"
+                android:fontFamily="@font/manrope_bold"
+                android:text="@string/tvPriceMinRange"
+                android:textColor="@color/green_light_1"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintStart_toStartOf="@+id/priceRangeSlider"
+                app:layout_constraintTop_toTopOf="@+id/priceRangeSlider" />
+
+            <TextView
+                android:id="@+id/tvPriceMaxRange"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/margin_40dp"
+                android:fontFamily="@font/manrope_bold"
+                android:text="@string/tvPriceMaxRange"
+                android:textColor="@color/green_light_1"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintEnd_toEndOf="@+id/priceRangeSlider"
+                app:layout_constraintTop_toTopOf="@+id/priceRangeSlider" />
+
+            <TextView
+                android:id="@+id/tvBedRooms"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:fontFamily="@font/manrope_bold"
+                android:text="@string/tvBedRooms"
+                android:textColor="@color/light_black_gray"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPriceMinRange" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBedRooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvBedRooms"
+                tools:itemCount="2"
+                tools:listitem="@layout/list_property_type_items" />
+
+            <TextView
+                android:id="@+id/tvBaths"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:fontFamily="@font/manrope_bold"
+                android:text="@string/tvBaths"
+                android:textColor="@color/light_black_gray"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvBedRooms" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBaths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvBaths"
+                tools:itemCount="2"
+                tools:listitem="@layout/list_property_type_items" />
+
+            <TextView
+                android:id="@+id/tvAreaRange"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:fontFamily="@font/manrope_bold"
+                android:text="@string/tvAreaRange"
+                android:textColor="@color/light_black_gray"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvBaths" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:id="@+id/areaRangeSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:stepSize="50.0"
+                android:valueFrom="0.0"
+                android:valueTo="10000.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAreaRange"
+                app:values="@array/initial_range_slider_values2" />
+
+            <TextView
+                android:id="@+id/tvAreaInitialRange"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/margin_40dp"
+                android:fontFamily="@font/manrope_bold"
+                android:text="@string/tvPriceInitialRange"
+                android:textColor="@color/green_light_1"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintStart_toStartOf="@+id/areaRangeSlider"
+                app:layout_constraintTop_toTopOf="@+id/areaRangeSlider" />
+
+            <TextView
+                android:id="@+id/tvAreaFinalRange"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/margin_40dp"
+                android:fontFamily="@font/manrope_bold"
+                android:text="@string/tvPriceFinalRange"
+                android:textColor="@color/green_light_1"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintEnd_toEndOf="@+id/areaRangeSlider"
+                app:layout_constraintTop_toTopOf="@+id/areaRangeSlider" />
+
+            <TextView
+                android:id="@+id/tvFurnishing"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:fontFamily="@font/manrope_bold"
+                android:text="@string/tvFurnishing"
+                android:textColor="@color/light_black_gray"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAreaInitialRange" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvFurnishing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvFurnishing"
+                tools:itemCount="2"
+                tools:listitem="@layout/list_property_type_items" />
+
+            <TextView
+                android:id="@+id/tvAvailability"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:fontFamily="@font/manrope_bold"
+                android:text="@string/tvAvailability"
+                android:textColor="@color/light_black_gray"
+                android:textSize="@dimen/text_size_14sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvFurnishing" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAvailability"
+                tools:itemCount="2"
+                tools:listitem="@layout/list_property_type_items" />
+
+            <TextView
+                android:id="@+id/tvAmenities"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:fontFamily="@font/manrope_bold"
+                android:text="@string/tvAmenities"
+                android:textColor="@color/light_black_gray"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvAvailability" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAmenities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAmenities"
+                tools:itemCount="2"
+                tools:listitem="@layout/list_property_type_items" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnApply"
+                android:layout_width="178dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:fontFamily="@font/manrope_bold"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="@string/btnApply"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14sp"
+                app:backgroundTint="@color/green_light_1"
+                app:cornerRadius="@dimen/radius_22dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rvAmenities"
+                app:strokeColor="@color/green_dark_1"
+                app:strokeWidth="@dimen/margin_2dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

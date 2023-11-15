@@ -1,0 +1,101 @@
+<resources>
+
+    <string name="app_name">Health Domain</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Activity title strings -->
+    <string name="title_activity_login">Welcome</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_initial_profile_setup">Profile Setup</string>
+    <!-- End Activity title strings -->
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="phone_number_fragment_label">Login</string>
+    <string name="otp_fragment_label">Verify</string>
+    <string name="step_one_fragment_label">Step 1</string>
+    <string name="step_two_fragment_label">Step 2</string>
+    <string name="step_three_fragment_label">Step 3</string>
+    <string name="step_four_fragment_label">Step 4</string>
+    <!-- End Strings used for fragments for navigation -->
+
+    <!-- Strings used in LoginActivity-->
+    <string name="create_your_account">Create Your Account</string>
+    <string name="enter_your_phone_number">Please enter your <b>phone number</b> then we will send <b>OTP</b> to verify you.</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="hint_enter_phone">Enter your phone number</string>
+
+    <string name="verify_code">Verify Code</string>
+    <string name="click_sms">Check your SMS inbox, we have send you the code at </string>
+    <!--    <b>+91 0000000000</b>-->
+    <string name="verify">Verify</string>
+    <string name="did_not_receive_the_code">Didn\'t received the code?</string>
+    <string name="resend"><u>Resend Code</u></string>
+    <!--End Strings used in LoginActivity-->
+
+    <!-- Strings used in Profile Set Up -->
+    <string name="step_one">Step 1/4</string>
+    <string name="hi_name_and_age">Hi! What is your name and age?</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_age">Enter your age</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="step_two">Step 2/4</string>
+    <string name="your_blood_group">Your blood group</string>
+    <string name="o_positive">O+</string>
+    <string name="o_negative">O-</string>
+    <string name="a_positive">A+</string>
+    <string name="a_negative">A-</string>
+    <string name="b_positive">B+</string>
+    <string name="b_negative">B-</string>
+    <string name="ab_positive">AB+</string>
+    <string name="ab_negative">AB-</string>
+
+    <string name="step_three">Step 3/4</string>
+    <string name="your_weight">Your weight</string>
+    <string name="kg">kg</string>
+
+    <string name="step_four">Step 4/4</string>
+    <string name="your_height">Your height</string>
+    <string name="cm">Ft</string>
+
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="done">Done</string>
+    <!--End Strings used in Profile Set Up -->
+
+    <!-- Others -->
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="sample_date">11/02/2021</string>
+    <string name="today_s_hds_score">today\'s hd score</string>
+    <string name="well_done">Well done</string>
+    <string name="your_fitness_status_is_bad">Your fitness status is Bad</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="health_tips">Health Tips</string>
+    <string name="health_tip_des"><![CDATA[Challenge your friends and win 25 challenges to become HDA(Heath Domain Achiever) Status]]></string>
+    <string name="steps">Steps</string>
+    <string name="edit_your_details">Edit your Details</string>
+    <string name="update">Update</string>
+    <string name="alert">Alert</string>
+    <string name="log_out">Logout</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="challenges_for_you">Challenges for you</string>
+    <string name="accept">ACCEPT</string>
+    <string name="decline">DECLINE</string>
+    <string name="past_challenges">PAST CHALLENGES</string>
+    <string name="notification">Notifications</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+
+    <!--End Others -->
+
+
+</resources>

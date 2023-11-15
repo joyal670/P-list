@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/athens_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/athens_gray"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:weightSum="2">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvClass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:layout_marginStart="@dimen/margin_27dp"
+            android:layout_gravity="center"
+            android:text="@string/class_4_a"
+            android:textColor="@color/textView_grey"
+            android:textSize="@dimen/text_size_13sp"
+            android:fontFamily="@font/barlow_regular"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvSubjectCode"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginEnd="@dimen/margin_27dp"
+            android:text="@string/subject_code_101"
+            android:textColor="@color/textView_grey"
+            android:textSize="@dimen/text_size_13sp"
+            android:fontFamily="@font/barlow_regular"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/margin_10dp"
+        android:layout_margin="@dimen/margin_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_marginEnd="@dimen/margin_5dp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject_name1"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:textColor="@color/textView_grey"
+                    android:gravity="start"
+                    android:fontFamily="@font/barlow_regular"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvSubjectName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mathe_matics"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/textView_grey"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/margin_3dp"
+                    android:fontFamily="@font/barlow_bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/teacher"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:textColor="@color/textView_grey"
+                    android:gravity="start"
+                    android:fontFamily="@font/barlow_regular"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvTeacherName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/k_sarath_vincent_p_muhammed_pk_anil_vk"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/textView_grey"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/margin_3dp"
+                    android:fontFamily="@font/barlow_bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_10dp"
+                android:paddingEnd="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject_author"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/textView_grey"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/barlow_regular"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_collen"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/textView_grey"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:layout_marginStart="@dimen/margin_10dp"
+
+                    android:fontFamily="@font/barlow_bold"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvSubjectAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/test_author"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/textView_grey"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/barlow_bold"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_10dp"
+                android:paddingEnd="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pass_mark"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/textView_grey"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/barlow_regular"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_collen"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/textView_grey"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:layout_marginStart="@dimen/margin_10dp"
+
+                    android:fontFamily="@font/barlow_bold"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvPassMark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_20"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/textView_grey"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/barlow_bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_10dp"
+                android:paddingEnd="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/final_mark"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/textView_grey"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/barlow_regular"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_collen"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/textView_grey"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:layout_marginStart="@dimen/margin_10dp"
+
+                    android:fontFamily="@font/barlow_bold"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvFinalMark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_50"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/textView_grey"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/barlow_bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_10dp"
+                android:paddingEnd="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noteq"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/textView_grey"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/barlow_regular"/>
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contrary_to_popular_belief_lorem_ipsum_is_not_simply_random_text_it_has_roots_in_a_piece_of"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/textView_grey"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:layout_marginEnd="@dimen/margin_8dp"
+                    android:fontFamily="@font/barlow_regular"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

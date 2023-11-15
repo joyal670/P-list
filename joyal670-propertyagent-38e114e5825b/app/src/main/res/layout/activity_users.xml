@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_accent_grey_background">
+
+    <include layout="@layout/toolbar_main" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
+        app:tabBackground="@color/white"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/color_accent_green"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorHeight="@dimen/margin_5dp"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="@color/color_accent_grey" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/tabs" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

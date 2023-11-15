@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/margin_10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvPropertyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/heebo_regular"
+            android:gravity="start"
+            android:background="@color/colorGrey"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="@dimen/margin_150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_3dp"
+                android:fontFamily="@font/heebo_regular"
+                android:gravity="start"
+                android:background="@color/colorGrey"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvPropertyCode"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_3dp"
+                android:layout_marginTop="@dimen/margin_3dp"
+                android:layout_marginEnd="@dimen/margin_3dp"
+                android:fontFamily="@font/heebo_regular"
+                android:gravity="start"
+                android:background="@color/colorGrey"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvPropertyType"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:fontFamily="@font/heebo_regular"
+            android:gravity="start|center"
+            android:background="@color/colorGrey"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/margin_18dp"
+                android:layout_height="@dimen/margin_18dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_5dp"
+                android:background="@color/colorGrey"
+                tools:ignore="ContentDescription" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvLocation"
+                android:layout_width="@dimen/margin_100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:ellipsize="end"
+                android:gravity="start|center"
+                android:fontFamily="@font/heebo_regular"
+                android:maxLines="1"
+                android:background="@color/colorGrey"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvNoOfApartments"
+            android:layout_width="@dimen/margin_150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:fontFamily="@font/heebo_regular"
+            android:gravity="start|center"
+            android:background="@color/colorGrey"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvOccupied"
+                android:layout_width="@dimen/margin_100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heebo_regular"
+                android:gravity="start|center"
+                android:background="@color/colorGrey"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_13sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_5dp"
+                android:layout_marginTop="@dimen/margin_2dp"
+                android:layout_marginEnd="@dimen/margin_5dp"
+                android:layout_marginBottom="@dimen/margin_2dp"
+                android:background="@color/colorGrey" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvVacant"
+                android:layout_width="@dimen/margin_100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heebo_regular"
+                android:gravity="start|center"
+                android:background="@color/colorGrey"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvAmenities"
+            android:layout_width="@dimen/margin_150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:fontFamily="@font/heebo_semibold"
+            android:gravity="start|center"
+            android:background="@color/colorGrey"
+            android:textColor="@color/text_dark_grey"
+            android:textSize="@dimen/text_size_16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

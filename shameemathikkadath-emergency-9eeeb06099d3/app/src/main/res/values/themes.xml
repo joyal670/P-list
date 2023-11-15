@@ -1,0 +1,326 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_200</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="title22">
+        <item name="android:textColor">@color/black_1</item>
+        <item name="fontFamily">@font/inter_semi_bold</item>
+        <item name="android:textSize">@dimen/text_size_22sp</item>
+    </style>
+    <style name="title19">
+        <item name="android:textColor">@color/black_1</item>
+        <item name="fontFamily">@font/inter_semi_bold</item>
+        <item name="android:textSize">@dimen/text_size_19sp</item>
+    </style>
+
+    <style name="edit18">
+        <item name="android:textColor">@color/edit_text_black</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:textColorHint">@color/edit_text_black</item>
+    </style>
+
+    <style name="text_13sp">
+        <item name="android:textColor">@color/edit_text_black</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">@dimen/text_size_13sp</item>
+        <item name="android:textColorHint">@color/edit_text_black</item>
+    </style>
+
+
+    <style name="submit_button_icon" parent="ThemeOverlay.Material3.Button">
+        <item name="icon">@drawable/ic_outline_arrow_forward_24</item>
+        <item name="iconTint">@color/purple_200</item>
+        <item name="iconGravity">textEnd</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="backgroundTint">@color/red_color</item>
+        <item name="cornerRadius">@dimen/margin_8dp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="elevation">8dp</item>
+
+    </style>
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+    <style name="white_button" parent="ThemeOverlay.Material3.Button">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/black_1</item>
+        <item name="backgroundTint">@color/purple_200</item>
+        <item name="cornerRadius">@dimen/margin_8dp</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="elevation">@dimen/dimen_8dp</item>
+
+    </style>
+
+    <style name="sub_title_16_regular">
+        <item name="android:textColor">@color/light_black</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="alpha">0.7</item>
+        <item name="textAllCaps">false</item>
+    </style>
+    <style name="sub_title_16_regular_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+    <style name="sub_title_16_red_semi_bold">
+        <item name="android:textColor">@color/red_color</item>
+        <item name="fontFamily">@font/inter_semi_bold</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="sub_title_26_wh_regular">
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">@dimen/dimen_26dp</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="accepted_button" parent="ThemeOverlay.Material3.Button">
+        <item name="icon">@drawable/ic_outline_arrow_forward_24</item>
+        <item name="iconTint">@color/purple_200</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="backgroundTint">@color/accepted_color</item>
+        <item name="cornerRadius">@dimen/margin_16dp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="elevation">@dimen/dimen_8dp</item>
+
+    </style>
+    <style name="accepted_button2" parent="ThemeOverlay.Material3.Button">
+        <item name="icon">@drawable/ic_outline_arrow_forward_24</item>
+        <item name="iconTint">@color/purple_200</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="backgroundTint">@color/accepted_color</item>
+        <item name="cornerRadius">@dimen/margin_44dp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="elevation">@dimen/dimen_8dp</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="title24">
+        <item name="android:textColor">@color/black_1</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">@dimen/text_size_24sp</item>
+    </style>
+
+    <style name="sub_title14">
+        <item name="android:textColor">@color/black_1</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="alpha">0.5</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+    </style>
+    <style name="reject_button" parent="ThemeOverlay.Material3.Button">
+        <item name="icon">@drawable/ic_reject</item>
+        <item name="iconTint">@color/white</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="backgroundTint">@color/red_color</item>
+        <item name="cornerRadius">@dimen/margin_16dp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="elevation">@dimen/dimen_8dp</item>
+
+    </style>
+    <style name="reject_button2" parent="ThemeOverlay.Material3.Button">
+        <item name="icon">@drawable/ic_reject</item>
+        <item name="iconTint">@color/white</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="backgroundTint">@color/red_color</item>
+        <item name="cornerRadius">@dimen/margin_44dp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="elevation">@dimen/dimen_8dp</item>
+
+    </style>
+    <style name="editButton" parent="ThemeOverlay.Material3.Button">
+        <item name="icon">@drawable/ic_icon_feather_edit</item>
+        <item name="iconTint">@color/editButtonColor</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/editButtonColor</item>
+        <item name="backgroundTint">@color/editBg</item>
+        <item name="cornerRadius">@dimen/dimen_68dp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+
+
+    </style>
+    <style name="CustomDialogTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="sub_title24">
+        <item name="android:textColor">@color/edit_text_black</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">@dimen/text_size_24sp</item>
+    </style>
+    <style name="red_button_normal" parent="ThemeOverlay.Material3.Button">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="backgroundTint">@color/red_color</item>
+        <item name="cornerRadius">@dimen/margin_8dp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="elevation">@dimen/dimen_8dp</item>
+
+    </style>
+    <style name="title20">
+        <item name="android:textColor">@color/black_1</item>
+        <item name="fontFamily">@font/inter_semi_bold</item>
+        <item name="android:textSize">@dimen/text_size_20sp</item>
+    </style>
+
+    <style name="reject_button3" parent="ThemeOverlay.Material3.Button">
+        <item name="icon">@drawable/ic_reject</item>
+        <item name="iconTint">@color/white</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="backgroundTint">@color/red_color</item>
+        <item name="cornerRadius">@dimen/margin_8dp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="elevation">@dimen/dimen_8dp</item>
+
+    </style>
+    <style name="accepted_button3" parent="ThemeOverlay.Material3.Button">
+        <item name="icon">@drawable/ic_outline_arrow_forward_24</item>
+        <item name="iconTint">@color/purple_200</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="backgroundTint">@color/accepted_color</item>
+        <item name="cornerRadius">@dimen/margin_8dp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="elevation">@dimen/dimen_8dp</item>
+
+    </style>
+    <style name="complete_button" parent="ThemeOverlay.Material3.Button">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="backgroundTint">@color/complete_button_color</item>
+        <item name="cornerRadius">@dimen/margin_8dp</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="elevation">@dimen/dimen_8dp</item>
+
+    </style>
+    <style name="complete_button1" parent="ThemeOverlay.Material3.Button">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="backgroundTint">@color/accepted_color</item>
+        <item name="cornerRadius">@dimen/margin_8dp</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="elevation">@dimen/dimen_8dp</item>
+
+    </style>
+    <style name="transfer_button" parent="ThemeOverlay.Material3.Button">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="backgroundTint">@color/accepted_color</item>
+        <item name="cornerRadius">@dimen/margin_8dp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="elevation">@dimen/dimen_8dp</item>
+
+    </style>
+    <style name="button_ambulance" parent="ThemeOverlay.Material3.Button">
+        <item name="icon">@drawable/ic_icon_feather_external_link</item>
+        <item name="iconTint">@color/white</item>
+        <item name="iconGravity">textEnd</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="backgroundTint">@color/red_color</item>
+        <item name="cornerRadius">@dimen/margin_16dp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="elevation">@dimen/dimen_8dp</item>
+
+    </style>
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+        <item name="android:minHeight">18dp</item>
+        <item name="android:maxHeight">18dp</item>
+    </style>
+    <style name="ThemeOverlay.App.BottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ShoppingList.BottomSheetDialog</item>
+    </style>
+    <style name="ShoppingList.BottomSheetDialog" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="backgroundTint">@android:color/transparent</item>
+    </style>
+</resources>

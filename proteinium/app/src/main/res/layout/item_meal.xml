@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardMain"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        android:layout_height="0dp"
+        app:cardCornerRadius="@dimen/margin_16dp"
+        app:strokeWidth="@dimen/dp1"
+        android:backgroundTint="#F5F5F5"
+        android:background="#F5F5F5">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10dp">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcImage"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintDimensionRatio="h,1:1"
+                android:layout_height="0dp"
+                android:backgroundTint="#F5F5F5"
+                android:background="#F5F5F5">
+                <ImageView
+                    android:id="@+id/ivFood"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/food"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <TextView
+                android:id="@+id/tvFoodName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingStart="@dimen/margin_8dp"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:textAlignment="viewStart"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="@string/low_carb"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_12sp"
+                app:layout_constraintTop_toBottomOf="@+id/mcImage"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:id="@+id/tvDescriptionContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/segoe_ui"
+                android:gravity="start"
+                android:paddingStart="@dimen/margin_8dp"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="@string/classic_ceasar_salad"
+                android:textColor="@color/light_black1"
+                android:textSize="@dimen/text_size_12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFoodName"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/tvTagExpand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:fontFamily="@font/segoe_ui"
+                android:gravity="start|center"
+                android:paddingStart="@dimen/margin_8dp"
+                android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua_ut_enim_ad_minim_veniam_quis_nostrud_exercitation_ullamco_laboris_nisi_ut_aliquip_ex_ea_commodo_consequat_duis_aute_irure_dolor_in_reprehenderit_in_voluptate_velit_esse_cillum_dolore_eu_fugiat_nulla_pariatur"
+                android:textColor="@color/green2"
+                android:textSize="@dimen/text_size_10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionContent"
+                tools:ignore="RtlSymmetry" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

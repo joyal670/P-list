@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVerifyPhone"
+                android:text="@string/tvVerifyPhone"
+                android:textSize="@dimen/text_size_18sp"
+                android:fontFamily="@font/manrope_semibold"
+                android:textColor="@color/light_black_gray"
+                android:layout_marginTop="@dimen/margin_64dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvVerificationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_7dp"
+                android:fontFamily="@font/manrope_regular"
+                android:text="@string/tvVerificationText"
+                android:textColor="@color/light_black_gray"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvVerifyPhone" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_50dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvVerificationText">
+
+                <EditText
+                    android:id="@+id/otp_box1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_round_with_border"
+                    android:fontFamily="@font/heebo_bold"
+                    android:textDirection="locale"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/text_size_18sp" />
+
+                <EditText
+                    android:id="@+id/otp_box2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:background="@drawable/bg_round_with_border"
+                    android:fontFamily="@font/heebo_bold"
+                    android:textDirection="locale"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/text_size_18sp" />
+
+                <EditText
+                    android:id="@+id/otp_box3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:background="@drawable/bg_round_with_border"
+                    android:fontFamily="@font/heebo_bold"
+                    android:textDirection="locale"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/text_size_18sp" />
+
+                <EditText
+                    android:id="@+id/otp_box4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:background="@drawable/bg_round_with_border"
+                    android:fontFamily="@font/heebo_bold"
+                    android:textDirection="locale"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/text_size_18sp" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_26dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout"
+                android:id="@+id/constraintResendotp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_dont_receive_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/manrope_bold"
+                    android:text="@string/tv_dont_receive_code"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                <TextView
+                    android:id="@+id/tvResendCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:clickable="true"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/manrope_bold"
+                    android:text="@string/tvResendCode"
+                    android:textColor="@color/green_solid"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_dont_receive_code"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnVerify"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:fontFamily="@font/heebo_bold"
+                android:text="@string/btnVerify"
+                android:textAllCaps="false"
+                android:maxLines="1"
+                android:minLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16sp"
+                app:backgroundTint="@color/green_light_2"
+                app:cornerRadius="@dimen/radius_7dp"
+                android:layout_marginTop="@dimen/margin_44dp"
+                android:layout_marginStart="@dimen/margin_30dp"
+                android:layout_marginEnd="@dimen/margin_30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/constraintResendotp"
+                app:strokeColor="@color/green_light_2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

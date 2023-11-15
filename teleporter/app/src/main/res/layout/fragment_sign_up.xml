@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/spacing_huge"
+    android:paddingStart="@dimen/spacing_huge"
+    tools:context="com.ashtechlabs.teleporter.ui.login.fragments.login.LoginFragment">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        style="@style/RoundedEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_huge"
+        android:drawablePadding="@dimen/padding_normal"
+        android:drawableStart="@drawable/ic_username"
+        android:hint="@string/user_name"
+        android:imeOptions="actionNext"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/etMobileNumber"
+        style="@style/RoundedEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:drawableStart="@drawable/ic_mobile"
+        android:hint="@string/mobile_no"
+        android:imeOptions="actionDone"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        style="@style/RoundedEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:drawableStart="@drawable/ic_mail"
+        android:hint="@string/email"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/btSignUp"
+        style="@style/RoundedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:text="@string/sign_up"
+        android:textAllCaps="true" />
+
+
+    <TextView
+        android:id="@+id/tvAlreadyHadAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:text="@string/already_account"
+        android:textColor="@color/gray_light"
+        android:textSize="@dimen/font_normal" />
+
+
+</LinearLayout>

@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lv1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_140dp"
+        android:background="@color/pomegranate"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivDrawerProfile"
+            android:layout_width="@dimen/margin_80dp"
+            android:layout_height="@dimen/margin_80dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:src="@drawable/sample_profile"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="@dimen/margin_2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_medium"
+                android:gravity="start"
+                android:text="@string/hello"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12sp" />
+
+            <TextView
+                android:id="@+id/tvDashboardName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:fontFamily="@font/barlow_medium"
+                android:gravity="start"
+                android:text="@string/siobhan_l_seal"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lv1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginBottom="@dimen/margin_30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/dashboard_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_20dp"
+                    android:layout_height="@dimen/margin_20dp"
+                    app:srcCompat="@drawable/ic_dashboard" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStudentDashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:fontFamily="@font/barlow_medium"
+                    android:gravity="start|center"
+                    android:text="@string/dashboard"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/personal_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="?selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_25dp"
+                    android:layout_height="@dimen/margin_25dp"
+                    app:srcCompat="@drawable/ic_person" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvPersonal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    android:drawableEnd="@drawable/ic_arrow_down_grey"
+                    android:fontFamily="@font/barlow_medium"
+                    android:gravity="start|center"
+                    android:text="@string/personal"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_personal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_50dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_50dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStudentProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/my_profile"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStudentDiaries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/my_diaries"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStaffDirectory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/staff_directory"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStudentCalender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/calender"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvLeaveApplication"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    android:background="?selectableItemBackground"
+                    android:drawableEnd="@drawable/ic_arrow_down_grey"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/leave_application"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <LinearLayout
+                    android:id="@+id/layout_leave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvStudentAssignedLeave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_7dp"
+                        android:background="?selectableItemBackground"
+                        android:fontFamily="@font/barlow_medium"
+                        android:padding="@dimen/margin_5dp"
+                        android:text="@string/assigned_leave"
+                        android:textColor="@color/dove_gray"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvStudentLeaveApply"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_7dp"
+                        android:background="?selectableItemBackground"
+                        android:fontFamily="@font/barlow_medium"
+                        android:padding="@dimen/margin_5dp"
+                        android:text="@string/leave_apply"
+                        android:textColor="@color/dove_gray"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lvAcadamic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="?selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_25dp"
+                    android:layout_height="@dimen/margin_25dp"
+                    app:srcCompat="@drawable/ic_academic" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvAcadamic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    android:drawableEnd="@drawable/ic_arrow_down_grey"
+                    android:fontFamily="@font/barlow_medium"
+                    android:gravity="start|center"
+                    android:text="@string/academic"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_academic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_50dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_50dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStudentAssignment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/assignment"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStudentSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/subject"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStudentLibrary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/library"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:visibility="gone" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStudentTimeTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/time_table"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStudentAttendance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/attendance"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStudentEvents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/events"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lvlibrary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="?selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_25dp"
+                    android:layout_height="@dimen/margin_25dp"
+                    app:srcCompat="@drawable/ic_library" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvlibrary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    android:drawableEnd="@drawable/ic_arrow_down_grey"
+                    android:fontFamily="@font/barlow_medium"
+                    android:gravity="start|center"
+                    android:text="@string/library"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_library"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_50dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_50dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStudentRequestBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/request_books"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStudentIssuedBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/issued_books"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lvMockTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="?selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_25dp"
+                    android:layout_height="@dimen/margin_25dp"
+                    app:srcCompat="@drawable/ic_icon_feather_book" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvMockTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    android:drawableEnd="@drawable/ic_arrow_down_grey"
+                    android:fontFamily="@font/barlow_medium"
+                    android:gravity="start|center"
+                    android:text="@string/mock_test"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_mock_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_50dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_50dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStudentTestScheduled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/test_scheduled"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStudentTestResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/test_result"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lvexam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="?selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_25dp"
+                    android:layout_height="@dimen/margin_25dp"
+                    app:srcCompat="@drawable/ic_exam_mode" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvExam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    android:drawableEnd="@drawable/ic_arrow_down_grey"
+                    android:fontFamily="@font/barlow_medium"
+                    android:gravity="start|center"
+                    android:text="@string/exam"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_exam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_50dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_50dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rvStudentExamSchedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/exam_scheduled"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStudentAttendExam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/attend_exam"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStudentExamResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="@font/barlow_medium"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="@string/exam_result"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tvStudentOnlineClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="?selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_25dp"
+                    android:layout_height="@dimen/margin_25dp"
+                    app:srcCompat="@drawable/ic_online_class" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    android:fontFamily="@font/barlow_medium"
+                    android:gravity="start|center"
+                    android:text="@string/online_class"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/tvStudentLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginBottom="@dimen/margin_200dp"
+                android:background="?selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_25dp"
+                    android:layout_height="@dimen/margin_25dp"
+                    app:srcCompat="@drawable/ic_log_out" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    android:fontFamily="@font/barlow_medium"
+                    android:gravity="start|center"
+                    android:text="@string/logout"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

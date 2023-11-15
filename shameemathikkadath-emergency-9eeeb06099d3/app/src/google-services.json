@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "953432349364",
+    "project_id": "emergency-ef60b",
+    "storage_bucket": "emergency-ef60b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953432349364:android:ed6602df51c236752695e1",
+        "android_client_info": {
+          "package_name": "com.iroid.emergency"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953432349364-rtuchdabp6dng3b1dvset8aevg1i042e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iroid.emergency",
+            "certificate_hash": "6933b67357449bdb4290586e7e2309cd81b36976"
+          }
+        },
+        {
+          "client_id": "953432349364-iof9pueam0p2tog6uo0vo56a0d36t984.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADgYXLxCZSu_UY-g8kPCrL03urYyaEdRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953432349364-iof9pueam0p2tog6uo0vo56a0d36t984.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

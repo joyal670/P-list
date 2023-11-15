@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">infopreneur14.com</domain>
+        <domain includeSubdomains="true">162.144.93.119</domain>
+        <domain includeSubdomains="true">3.6.98.217</domain>
+    </domain-config>
+</network-security-config>

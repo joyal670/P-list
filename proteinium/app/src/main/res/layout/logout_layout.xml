@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<com.google.android.material.card.MaterialCardView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="@dimen/margin_15dp"
+app:cardCornerRadius="@dimen/margin_7dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<ImageView
+android:id="@+id/ivCloseLogout"
+android:layout_width="@dimen/margin_30dp"
+android:layout_height="@dimen/margin_30dp"
+android:layout_gravity="end"
+android:layout_marginTop="@dimen/margin_20dp"
+android:layout_marginEnd="@dimen/margin_20dp"
+android:padding="@dimen/margin_5dp"
+android:src="@drawable/ic_close" />
+
+<TextView
+    android:id="@+id/tvMessage"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:layout_marginTop="@dimen/margin_10dp"
+android:fontFamily="@font/segoe_ui"
+android:gravity="center"
+android:text="@string/are_you_sure_you_want_to_log_out"
+android:textSize="@dimen/text_size_16sp" />
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginBottom="@dimen/margin_25dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/okBtnLogout"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="@dimen/margin_130dp"
+                    android:layout_height="@dimen/margin_55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:text="@string/ok"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:backgroundTint="@color/colorPrimary"
+                    app:cornerRadius="@dimen/margin_20dp" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/cancelBtnLogout"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="@dimen/margin_130dp"
+                    android:layout_height="@dimen/margin_55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/grey4"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:cornerRadius="@dimen/margin_20dp"
+                    app:strokeColor="@color/grey4" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

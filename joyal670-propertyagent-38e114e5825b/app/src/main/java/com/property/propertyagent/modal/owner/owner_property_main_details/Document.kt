@@ -1,0 +1,7 @@
+package com.property.propertyagent.modal.owner.owner_property_main_details
+
+data class Document(
+    val document: String,
+    val property_id: Int,
+    val type: Int
+)

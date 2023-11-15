@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_15dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_15dp"
+        android:background="@color/color_accent_grey_light_new2" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5dp"
+        android:padding="@dimen/margin_10dp">
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_weight=".3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heebo_medium"
+                    android:gravity="center"
+                    android:text="@string/_20_10_2020"
+                    android:textColor="@color/color_accent_grey_light_new"
+                    android:textSize="@dimen/text_size_11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:gravity="center"
+                    android:text="@string/_10_00am"
+                    android:textColor="@color/color_accent_grey_light_new"
+                    android:textSize="@dimen/text_size_11sp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight=".3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvPaymentType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heebo_medium"
+                    android:gravity="center"
+                    android:text="@string/expense"
+                    android:textColor="@color/color_accent_grey_light_new"
+                    android:textSize="@dimen/text_size_11sp" />
+
+                <TextView
+                    android:id="@+id/tvAmountValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heebo_bold"
+                    android:gravity="center"
+                    android:text="@string/sar_50_00"
+                    android:textColor="@color/color_accent_red"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/indivigual_payment_payBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/color_accent_green"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/pay_now"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:visibility="gone"
+                    app:cornerRadius="@dimen/margin_15dp" />
+
+                <LinearLayout
+                    android:id="@+id/indivigual_payment_paiedLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_check_circle_green" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:fontFamily="@font/heebo_bold"
+                        android:gravity="center"
+                        android:text="@string/payed"
+                        android:textColor="@color/color_accent_green"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight=".3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/indivigual_payment_detailsTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_14dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:gravity="end"
+                    android:text="@string/details"
+                    android:textColor="@color/color_accent_grey_new"
+                    android:textSize="@dimen/text_size_12sp" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_margin="@dimen/margin_5dp"
+         android:padding="@dimen/margin_10dp"
+         android:weightSum="3">
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:orientation="vertical">
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:fontFamily="@font/heebo_medium"
+                 android:text="@string/_20_10_2020"
+                 android:gravity="start"
+                 android:textColor="@color/color_accent_grey_light_new"
+                 android:textSize="@dimen/text_size_11sp" />
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:fontFamily="@font/heebo_medium"
+                 android:text="@string/_10_00am"
+                 android:gravity="start"
+                 android:layout_marginTop="@dimen/margin_4dp"
+                 android:textColor="@color/color_accent_grey_light_new"
+                 android:textSize="@dimen/text_size_11sp" />
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:orientation="vertical">
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:fontFamily="@font/heebo_medium"
+                 android:text="@string/expense"
+                 android:gravity="end"
+                 android:textColor="@color/color_accent_grey_light_new"
+                 android:textSize="@dimen/text_size_11sp" />
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:fontFamily="@font/heebo_bold"
+                 android:text="@string/sar_50_00"
+                 android:gravity="end"
+                 android:textColor="@color/color_accent_red"
+                 android:textSize="@dimen/text_size_13sp" />
+
+             <com.google.android.material.button.MaterialButton
+                 android:id="@+id/indivigual_payment_payBtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="@dimen/margin_40dp"
+                 android:layout_gravity="end"
+                 android:layout_marginStart="@dimen/margin_15dp"
+                 app:cornerRadius="@dimen/margin_15dp"
+                 android:text="@string/pay_now"
+                 android:textColor="@color/white"
+                 android:fontFamily="@font/heebo_medium"
+                 android:textAllCaps="false"
+                 android:textSize="@dimen/text_size_12sp"
+                 android:backgroundTint="@color/color_accent_green"/>
+
+             <LinearLayout
+                 android:id="@+id/indivigual_payment_paiedLayout"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="end"
+                 android:orientation="horizontal">
+
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:src="@drawable/ic_check_circle_green"/>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/heebo_bold"
+                     android:text="@string/payed"
+                     android:gravity="end"
+                     android:layout_marginStart="@dimen/margin_10dp"
+                     android:textColor="@color/color_accent_green"
+                     android:textSize="@dimen/text_size_13sp" />
+
+             </LinearLayout>
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="1">
+
+             <TextView
+                 android:id="@+id/indivigual_payment_detailsTv"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:fontFamily="@font/heebo_medium"
+                 android:text="@string/details"
+                 android:gravity="end"
+                 android:layout_marginEnd="@dimen/margin_14dp"
+                 android:textColor="@color/color_accent_grey_new"
+                 android:textSize="@dimen/text_size_12sp" />
+
+         </LinearLayout>
+
+     </LinearLayout>-->
+
+</LinearLayout>

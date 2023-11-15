@@ -1,0 +1,17 @@
+<androidx.cardview.widget.CardView android:layout_width="160dp"
+    android:layout_height="116dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/constraintTop"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginBottom="@dimen/margin_small">
+
+    <ImageView
+        android:id="@+id/roundedImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dummy_deal"
+        android:scaleType="centerCrop" />
+</androidx.cardview.widget.CardView>

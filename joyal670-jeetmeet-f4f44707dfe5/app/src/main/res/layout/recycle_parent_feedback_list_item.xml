@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/athens_gray"
+    android:orientation="vertical">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_7dp"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        android:fontFamily="@font/barlow_regular"
+        android:gravity="start"
+        android:text="@string/date_2021_04_09"
+        android:textColor="@color/dove_gray"
+        android:textSize="@dimen/text_size_13sp" />
+
+    <com.google.android.material.card.MaterialCardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        app:cardCornerRadius="@dimen/margin_10dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:fontFamily="@font/barlow_semibold"
+                    android:gravity="start"
+                    android:text="@string/note"
+                    android:textColor="@color/dove_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <com.prongbang.eptv.ExpandableTextView
+                    android:id="@+id/tvParentDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/barlow_regular"
+                    android:textColor="@color/textView_grey"
+                    app:collapsedMaxLines="2"
+                    app:autoDuration="true"
+                    android:layout_marginTop="@dimen/margin_7dp"
+                    app:duration="200"
+                    android:layout_marginEnd="@dimen/margin_7dp"
+                    android:text="@string/lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industry_s_standard_dummy_text_ever_since" />
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvParentMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:background="?selectableItemBackground"
+                    android:textColor="@color/dove_gray"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="@dimen/margin_7dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_marginTop="@dimen/margin_3dp"
+                    android:fontFamily="@font/barlow_bold"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/margin_7dp"
+                        android:layout_height="@dimen/margin_2dp"
+                        android:layout_marginEnd="@dimen/margin_7dp"
+                        android:background="@color/alto_dark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_7dp"
+
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/editBtn"
+                            android:layout_width="@dimen/margin_65dp"
+                            android:layout_height="@dimen/margin_45dp"
+                            android:fontFamily="@font/barlow_medium"
+                            android:text="@string/edit"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_14sp"
+                            app:backgroundTint="@color/flush_orange"
+                            app:cornerRadius="@dimen/margin_5dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/deleteBtn"
+                            android:layout_width="@dimen/margin_86dp"
+                            android:layout_height="@dimen/margin_45dp"
+                            android:layout_marginStart="@dimen/margin_10dp"
+                            android:fontFamily="@font/barlow_medium"
+                            android:text="@string/delete"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_14sp"
+                            app:backgroundTint="@color/pomegranate"
+                            app:cornerRadius="@dimen/margin_5dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
+

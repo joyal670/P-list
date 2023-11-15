@@ -1,0 +1,30 @@
+package com.property.propertyagent.modal.owner.owner_property_listing
+
+data class OwnerPropertyList(
+	val sellingPrice: Any,
+	val country: String,
+	val agentId: Any,
+	val city: String,
+	val ownerId: Int,
+	val latitude: Any,
+	val rating: String,
+	val description: String,
+	val createdAt: String,
+	val rent: Any,
+	val propertyTo: Int,
+	val zipCode: Int,
+	val frequency: Any,
+	val furnished: Int,
+	val updatedAt: String,
+	val propertyRegNo: String,
+	val id: Int,
+	val state: String,
+	val occupied: Int,
+	val longitude: Any,
+	val streetAddress1: String,
+	val mrp: Any,
+	val streetAddress2: String,
+	val category: Int,
+	val isFeatured: Int,
+	val status: Int
+)

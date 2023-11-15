@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_2dp"
+    android:background="@drawable/bg_round_border"
+    android:padding="@dimen/margin_5dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/PropertNameAdapter_name"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:layout_weight="0.30"
+                android:fontFamily="@font/heebo_medium"
+                android:gravity="start"
+                android:maxLength="25"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/PropertNameAdapter_propertyId"
+                android:layout_width="0dp"
+                android:layout_weight="0.20"
+                android:fontFamily="@font/heebo_medium"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/PropertNameAdapter_dueAmt"
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:fontFamily="@font/heebo_medium"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="@dimen/text_size_14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/PropertNameAdapter_callBtn"
+                android:layout_weight="0.07"
+                android:backgroundTint="@color/color_accent_green"
+                android:fontFamily="@font/heebo_medium"
+                android:gravity="center"
+                android:text="@string/call"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_12sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

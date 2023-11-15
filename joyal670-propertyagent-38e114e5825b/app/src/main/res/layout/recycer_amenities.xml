@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/ChkAmenities"
+        style="@style/CustomCheckbox02"
+        android:layout_width="@dimen/margin_25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_5dp"
+        android:height="@dimen/margin_25dp"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/ivAmenities"
+        android:layout_width="@dimen/margin_40dp"
+        android:layout_height="@dimen/margin_25dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_5dp"
+        android:layout_marginEnd="@dimen/margin_5dp"
+        android:src="@drawable/ic_group_ac" />
+
+    <TextView
+        android:id="@+id/typeAmenities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_5dp"
+        android:layout_marginEnd="@dimen/margin_5dp"
+        android:fontFamily="@font/heebo_medium"
+        android:gravity="center"
+        android:text="@string/central_air_conditioner"
+        android:textColor="@color/color_accent_grey_light_new"
+        android:textSize="@dimen/text_size_13sp" />
+
+</LinearLayout>

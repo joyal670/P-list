@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/Home_fragment">
+
+    <fragment
+        android:id="@+id/Home_fragment"
+        android:name="com.ncomfortsagent.ui.main.home.home.fragment.MyPropertyFragment"
+        android:label=""
+        tools:layout="@layout/fragment_my_property" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/Map_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Map_fragment"
+        android:name="com.ncomfortsagent.ui.main.home.home.fragment.EnquiryFragment"
+        android:label="Map View"
+        tools:layout="@layout/fragment_enquiry" >
+
+    </fragment>
+
+</navigation>

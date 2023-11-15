@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/athens_gray"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="@dimen/margin_10dp"
+        app:cardElevation="0dp"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:layout_marginBottom="@dimen/margin_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="@dimen/margin_60dp"
+                    android:autoSizeTextType="uniform"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:textColor="@color/dove_gray"
+                    android:gravity="start"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:fontFamily="@font/barlow_medium"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:gravity="start"
+                    android:layout_marginStart="@dimen/margin_6dp"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/dove_gray"
+                    android:layout_marginEnd="@dimen/margin_6dp"
+                    android:fontFamily="@font/barlow_semibold"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvSubjectName"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mathematics"
+                    android:gravity="start"
+                    android:layout_marginStart="@dimen/margin_2dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/dove_gray"
+                    android:fontFamily="@font/barlow_semibold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:text="@string/teacher"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:textColor="@color/dove_gray"
+                    android:gravity="start"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:fontFamily="@font/barlow_medium"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:gravity="start"
+                    android:layout_marginStart="@dimen/margin_6dp"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/dove_gray"
+                    android:layout_marginEnd="@dimen/margin_6dp"
+                    android:fontFamily="@font/barlow_semibold"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvTeacherName"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/k_sarath_vincent_p_muhammed_pk_anil_vk_lithin_km"
+                    android:gravity="start"
+                    android:layout_marginStart="@dimen/margin_2dp"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/dove_gray"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:fontFamily="@font/barlow_semibold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
+

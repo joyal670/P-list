@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginEnd="@dimen/margin_40dp">
+
+    <ImageView
+        android:id="@+id/ivIconFetured"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_bed"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPropertyDetailsFeatured"
+        android:text="@string/tvPropertyDetailsBedCount"
+        android:fontFamily="@font/heebo_semibold"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".proteiniumdietapp.ui.start_up.auth.signup.VerifyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivBackVerifiy"
+            android:src="@drawable/ic_arrow_back_toolbar24"
+            app:tint="@color/black"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:padding="@dimen/margin_10dp"
+            android:clickable="true"
+            android:background="?selectableItemBackground"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/verify"
+            android:gravity="center"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:textSize="@dimen/text_size_30sp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/margin_24dp"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_30dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_30dp"
+            android:fontFamily="@font/segoe_ui"
+            android:text="@string/otp_has_been_sent_to_your_registered_email_id"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_15sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginEnd="@dimen/margin_20dp">
+
+            <EditText
+                android:id="@+id/otp1"
+                android:layout_width="@dimen/margin_70dp"
+                android:layout_height="@dimen/margin_65dp"
+                android:background="@drawable/border_rounded_light_white_one"
+                android:fontFamily="@font/segoe_ui"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/light_black"
+                app:layout_constraintEnd_toStartOf="@+id/otp2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/otp2"
+                android:layout_width="@dimen/margin_70dp"
+                android:layout_height="@dimen/margin_65dp"
+                android:background="@drawable/border_rounded_light_white_one"
+                android:fontFamily="@font/segoe_ui"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/light_black"
+                app:layout_constraintEnd_toStartOf="@+id/otp3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/otp1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/otp3"
+                android:layout_width="@dimen/margin_70dp"
+                android:layout_height="@dimen/margin_65dp"
+                android:background="@drawable/border_rounded_light_white_one"
+                android:fontFamily="@font/segoe_ui"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/light_black"
+                app:layout_constraintEnd_toStartOf="@+id/otp4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/otp2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/otp4"
+                android:layout_width="@dimen/margin_70dp"
+                android:layout_height="@dimen/margin_65dp"
+                android:background="@drawable/border_rounded_light_white_one"
+                android:fontFamily="@font/segoe_ui"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/light_black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/otp3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitOtpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_60dp"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14sp"
+            app:backgroundTint="@color/color_main"
+            app:cornerRadius="@dimen/radius_24dp"
+            android:layout_marginStart="@dimen/margin_30dp"
+            android:layout_marginEnd="@dimen/margin_30dp"
+            app:strokeColor="@color/color_main"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoe_ui"
+                android:text="@string/didn_t_receive_code"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text_size_15sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:text="@string/resend"
+                android:layout_marginStart="@dimen/margin_5dp"
+                android:layout_marginEnd="@dimen/margin_5dp"
+                android:textColor="@color/grey4"
+                android:textSize="@dimen/text_size_15sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

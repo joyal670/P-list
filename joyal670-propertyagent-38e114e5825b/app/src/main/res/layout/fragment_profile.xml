@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_110dp"
+                        android:background="@color/color_accent_green">
+
+                        <TextView
+                            android:id="@+id/headerfrg_tvedit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/radius_20dp"
+                            android:fontFamily="@font/heebo_medium"
+                            android:gravity="end"
+                            android:text="@string/edit"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_14sp" />
+
+                    </LinearLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profilefrg_CircularImageView"
+                        android:layout_width="108dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-56dp"
+                        android:background="@drawable/circular_image"
+                        android:padding="@dimen/margin_4dp"
+                        android:src="@drawable/ic_static_user" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/profilefrg_UploadImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_18dp"
+                            android:layout_marginEnd="@dimen/margin_8dp"
+                            android:layout_marginBottom="@dimen/margin_15dp"
+                            android:backgroundTint="@color/color_accent_green"
+                            android:fontFamily="@font/heebo_medium"
+                            android:text="@string/change_image"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            app:cornerRadius="@dimen/radius_15dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnRemoveImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_8dp"
+                            android:layout_marginTop="@dimen/margin_18dp"
+                            android:layout_marginBottom="@dimen/margin_15dp"
+                            android:backgroundTint="@color/color_accent_grey"
+                            android:fontFamily="@font/heebo_medium"
+                            android:text="@string/remove"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            app:cornerRadius="@dimen/radius_15dp" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:backgroundTint="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_15dp"
+                            android:layout_marginBottom="@dimen/margin_10dp"
+                            android:backgroundTint="@color/white"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/heebo_medium"
+                                android:text="@string/full_name"
+                                android:textColor="@color/color_accent_grey_light"
+                                android:textSize="@dimen/text_size_13sp" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_16dp"
+                                android:layout_marginTop="@dimen/margin_12dp"
+                                android:layout_marginEnd="@dimen/margin_16dp"
+                                android:backgroundTint="@color/white"
+                                app:hintEnabled="false"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent">
+
+                                <EditText
+                                    android:id="@+id/etProfileName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:drawablePadding="@dimen/margin_20dp"
+                                    android:fontFamily="@font/heebo_regular"
+                                    android:gravity="start"
+                                    android:hint="@string/name"
+                                    android:importantForAutofill="no"
+                                    android:textAlignment="viewStart"
+                                    tools:ignore="TextFields" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_12dp"
+                                android:fontFamily="@font/heebo_medium"
+                                android:text="@string/email_id"
+                                android:textColor="@color/color_accent_grey_light"
+                                android:textSize="@dimen/text_size_13sp" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_16dp"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:layout_marginEnd="@dimen/margin_16dp"
+                                android:backgroundTint="@color/white"
+                                app:hintEnabled="false"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent">
+
+                                <EditText
+                                    android:id="@+id/etProfileEmail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:drawablePadding="@dimen/margin_20dp"
+                                    android:fontFamily="@font/heebo_regular"
+                                    android:gravity="start"
+                                    android:hint="@string/email_id"
+                                    android:importantForAutofill="no"
+                                    android:inputType="textEmailAddress"
+                                    android:textAlignment="viewStart" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_12dp"
+                                android:fontFamily="@font/heebo_medium"
+                                android:text="@string/mobile_number"
+                                android:textColor="@color/color_accent_grey_light"
+                                android:textSize="@dimen/text_size_13sp" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_16dp"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:layout_marginEnd="@dimen/margin_16dp"
+                                android:backgroundTint="@color/white"
+                                app:hintEnabled="false"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent">
+
+                                <EditText
+                                    android:id="@+id/etProfileMobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:drawablePadding="@dimen/margin_20dp"
+                                    android:fontFamily="@font/heebo_regular"
+                                    android:gravity="start"
+                                    android:hint="@string/mobile_number"
+                                    android:importantForAutofill="no"
+                                    android:inputType="number"
+                                    android:textAlignment="viewStart" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_12dp"
+                                android:fontFamily="@font/heebo_medium"
+                                android:text="@string/Upload_ID"
+                                android:textColor="@color/color_accent_grey_light"
+                                android:textSize="@dimen/text_size_13sp" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_16dp"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:layout_marginEnd="@dimen/margin_16dp"
+                                android:backgroundTint="@color/white"
+                                app:hintEnabled="false"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent">
+
+                                <EditText
+                                    android:id="@+id/profilefrg_uploadIDTv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:drawableEnd="@drawable/ic_attachment"
+                                    android:drawablePadding="@dimen/margin_20dp"
+                                    android:fontFamily="@font/heebo_regular"
+                                    android:gravity="start"
+                                    android:hint="@string/user_id"
+                                    android:importantForAutofill="no"
+                                    android:textAlignment="viewStart"
+                                    tools:ignore="TextFields" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_40dp"
+                        android:background="@color/color_accent_grey_background">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_15dp"
+                            android:layout_marginTop="@dimen/margin_12dp"
+                            android:fontFamily="@font/heebo_medium"
+                            android:text="@string/bank_details"
+                            android:textColor="@color/color_accent_grey_light"
+                            android:textSize="@dimen/text_size_14sp" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_15dp"
+                            android:layout_marginBottom="@dimen/margin_10dp"
+                            android:backgroundTint="@color/white"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_12dp"
+                                android:fontFamily="@font/heebo_medium"
+                                android:text="@string/account_number"
+                                android:textColor="@color/color_accent_grey_light"
+                                android:textSize="@dimen/text_size_13sp" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_16dp"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:layout_marginEnd="@dimen/margin_16dp"
+                                android:backgroundTint="@color/white"
+                                app:hintEnabled="false"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent">
+
+                                <EditText
+                                    android:id="@+id/etUserAccountNumber"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:drawablePadding="@dimen/margin_20dp"
+                                    android:fontFamily="@font/heebo_regular"
+                                    android:gravity="start"
+                                    android:hint="@string/account_number"
+                                    android:importantForAutofill="no"
+                                    android:inputType="number"
+                                    android:textAlignment="viewStart" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_12dp"
+                                android:fontFamily="@font/heebo_medium"
+                                android:text="@string/bank_name"
+                                android:textColor="@color/color_accent_grey_light"
+                                android:textSize="@dimen/text_size_13sp" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_16dp"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:layout_marginEnd="@dimen/margin_16dp"
+                                android:backgroundTint="@color/white"
+                                app:hintEnabled="false"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent">
+
+                                <EditText
+                                    android:id="@+id/etUserBankName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:drawablePadding="@dimen/margin_20dp"
+                                    android:fontFamily="@font/heebo_regular"
+                                    android:gravity="start"
+                                    android:hint="@string/bank_name"
+                                    android:importantForAutofill="no"
+                                    android:inputType="text"
+                                    android:textAlignment="viewStart" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_12dp"
+                                android:fontFamily="@font/heebo_medium"
+                                android:text="@string/ifsc_code"
+                                android:textColor="@color/color_accent_grey_light"
+                                android:textSize="@dimen/text_size_13sp" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_16dp"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:layout_marginEnd="@dimen/margin_16dp"
+                                android:backgroundTint="@color/white"
+                                app:hintEnabled="false"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent">
+
+                                <EditText
+                                    android:id="@+id/etUserBankIFSC"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:drawablePadding="@dimen/margin_20dp"
+                                    android:fontFamily="@font/heebo_regular"
+                                    android:gravity="start"
+                                    android:hint="@string/ifsc_code"
+                                    android:importantForAutofill="no"
+                                    android:textAlignment="viewStart"
+                                    tools:ignore="TextFields" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnUpdateProfileDetails"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_18dp"
+                                android:layout_marginBottom="@dimen/margin_15dp"
+                                android:backgroundTint="@color/color_accent_green"
+                                android:fontFamily="@font/heebo_medium"
+                                android:text="@string/update"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

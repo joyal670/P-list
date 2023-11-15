@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearSubThree"
+        android:orientation="vertical"
+       >
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            app:cardCornerRadius="@dimen/radius_22dp"
+            app:cardElevation="@dimen/margin_8dp"
+            android:layout_marginBottom="30dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Media -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp"
+                    android:background="@drawable/bg_green_radial"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvPropertyAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tvPropertyAmount"
+                        android:textSize="@dimen/text_size_24sp"
+                        android:fontFamily="@font/manrope_extrabold"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/tvPropertyDiscountAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tvDiscountAmount"
+                        android:textSize="@dimen/text_size_20sp"
+                        android:fontFamily="@font/manrope_semibold"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/tvPropertyDurationType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tvPropertyDurationType"
+                        android:textSize="@dimen/text_size_16sp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rvPackageDescriptionList"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
+                        android:layout_marginEnd="@dimen/margin_16dp"
+                        tools:itemCount="6"
+                        tools:listitem="@layout/list_package_description_item"/>
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="150dp"
+                        android:layout_height="55dp"
+                        android:id="@+id/btnSelect"
+                        android:fontFamily="@font/manrope_bold"
+                        android:text="@string/btnSelect"
+                        android:textAllCaps="false"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_16sp"
+                        app:backgroundTint="@color/green_light_1"
+                        app:cornerRadius="@dimen/radius_22dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_20dp"
+                        android:layout_marginBottom="@dimen/margin_10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+

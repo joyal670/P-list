@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.property.propertyagent">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <queries>
+        <package android:name="com.whatsapp" />
+    </queries>
+
+    <application
+        android:name=".base.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_app_foreground"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_app_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PropertyAgentMaterial.NoActionBar"
+        tools:targetApi="n">
+        <activity android:name=".owner_panel.ui.main.sidemenu.change_password.ForgotPasswordActivity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner"/>
+        <activity android:name=".agent_panel.ui.main.sidemenu.property.building_view_details.AgentBuildingApartmentDetailsActivity"/>
+        <activity android:name=".agent_panel.ui.main.sidemenu.property.building_view_details.BuildingViewDetailsActivity" />
+        <activity android:name=".agent_panel.ui.main.sidemenu.property.propertybook.PayFullPaymentActivity" />
+        <activity android:name=".agent_panel.ui.main.sidemenu.property.propertydetails.edit_apartment.EditApartment2Activity" />
+        <activity android:name=".agent_panel.ui.main.sidemenu.property.propertydetails.edit_apartment.EditApartment1Activity" />
+        <activity
+            android:name=".owner_panel.ui.main.sidemenu.change_password.OwnerChangePasswordActivity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.home.addproperty.activity.AddPropertyMainPageCopy"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.home.notification.activity.NotificationOwner"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity android:name=".start_up.no_internet.NoInternetActivity" />
+        <activity
+            android:name=".owner_panel.ui.main.home.property.building_details_list.add_apartment.AddApartmentPage2Activity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.home.property.building_details_list.add_apartment.AddApartmentPage1Activity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.home.addproperty.activity.AddPropertyMainPage"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.home.home.activity.SearchPropertyActivity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity android:name=".agent_panel.ui.main.sidemenu.property.terms_and_stay.TermsAndStayActivity" />
+        <activity android:name=".owner_panel.ui.main.sidemenu.maintenance.status.status_details.make_payment.PaymentActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".start_up.google_map.PropertyMapsActivity"
+            android:label="@string/title_activity_property__maps" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".agent_panel.ui.main.sidemenu.property.propertyrentetails.PropertyRentDetailsActivity" />
+        <activity android:name=".agent_panel.ui.main.sidemenu.property.viewpackages.PackageActivity" />
+        <activity android:name=".start_up.welcome_slider.WelcomeSliderActivity" />
+        <activity
+            android:name=".owner_panel.ui.main.home.home.homePropertyDetailedPages.activity.HomePropertyDetailedActivity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity android:name=".agent_panel.ui.main.sidemenu.property.propertyviewdetails.PropertyViewDetailsActivity" />
+        <activity android:name=".agent_panel.ui.main.sidemenu.property.propertydetails.PropertyDetailsPage3Activity" />
+        <activity android:name=".agent_panel.ui.main.sidemenu.property.propertydetails.PropertyDetailsPage2Activity" />
+        <activity android:name=".agent_panel.ui.main.sidemenu.property.propertydetails.PropertyDetailsPage1Activity" />
+        <activity android:name=".agent_panel.ui.main.sidemenu.property.ownerdetails.OwnerDetailedActivity" />
+        <activity android:name=".agent_panel.ui.main.sidemenu.property.propertybook.PropertyBookActivity" />
+        <activity android:name=".agent_panel.ui.main.sidemenu.property.propertyappointment.PropertyAppointmentActivity" />
+        <activity
+            android:name=".owner_panel.ui.main.sidemenu.profile.activity.OwnerProfileActivity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.sidemenu.reports.ReportsActivity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.sidemenu.maintenance.status.status_details.activity.StatusDetailedActivity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.sidemenu.maintenance.success.ServiceSuccessActivity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.sidemenu.maintenance.service.service_detailed_page.activity.ServiceDetailedActivity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.sidemenu.maintenance.MaintenanceActivity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".owner_panel.ui.main.sidemenu.ownerservice.OwnerServiceActivity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.home.payment.payment_history.activity.PaymentHistoryActivity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.home.addproperty.activity.AddPropertyPage3"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.home.addproperty.activity.AddPropertyPage2"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.home.addproperty.activity.AddPropertyPage1"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.home.payment.payment_history_details.activity.PaymentDetailsActivity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.home.property.property_main_details.PropertyMainDetailedActivity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.home.property.building_details_list.activity.PropertyOwnerBuildingDetailedActivity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner" />
+        <activity
+            android:name=".owner_panel.ui.main.home.home.activity.HomeOwnerActivity"
+            android:theme="@style/Theme.PropertyAgentMaterial.NoActionBarOwner"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".agent_panel.ui.main.home.myclient.owner.OwnerActivity" />
+        <activity android:name=".agent_panel.ui.main.home.myclient.owner.details.OwnerPropertyViewDetailedActivity" />
+        <activity android:name=".agent_panel.ui.main.home.myclient.users.UsersActivity" />
+        <activity android:name=".agent_panel.ui.main.home.myclient.users.details.UsersPropertyViewDetailedActivity" />
+        <activity android:name=".agent_panel.ui.main.home.home.HomeActivity" />
+        <activity android:name=".agent_panel.ui.main.sidemenu.profile.ProfileActivity" />
+        <activity
+            android:name=".start_up.auth.activity.AuthActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".start_up.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--<service
+            android:name=".cloud_messaging.MyFirebaseMessagingService"
+            android:exported="false"
+            tools:ignore="Instantiable">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>-->
+
+        <service
+            android:name=".cloud_messaging.PushNotification"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

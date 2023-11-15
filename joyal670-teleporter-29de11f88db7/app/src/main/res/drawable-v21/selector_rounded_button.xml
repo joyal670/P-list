@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/roundedButtonSelect">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/roundedButtonNormal" />
+            <corners
+                android:bottomLeftRadius="@dimen/rounded_edit_text_corner_radius"
+                android:bottomRightRadius="@dimen/rounded_edit_text_corner_radius"
+                android:topLeftRadius="@dimen/rounded_edit_text_corner_radius"
+                android:topRightRadius="@dimen/rounded_edit_text_corner_radius" />
+        </shape>
+    </item>
+</ripple>

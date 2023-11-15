@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.proteinium.proteiniumdietapp.ui.main.home.home.home_fragment.HomeFragment"
+        android:label="@string/title_nill"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_calender"
+        android:name="com.proteinium.proteiniumdietapp.ui.main.home.calender.fragment.CalenderFragment"
+        android:label="@string/title_nill"
+        tools:layout="@layout/fragment_calender" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.proteinium.proteiniumdietapp.ui.main.home.myaccount.myaccount_fragment.MyAccountFragment"
+        android:label="@string/title_nill"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/navigation_more"
+        android:name="com.proteinium.proteiniumdietapp.ui.main.home.more.more_fragment.MoreFragment"
+        android:label="@string/title_nill"
+        tools:layout="@layout/fragment_more" />
+
+</navigation>

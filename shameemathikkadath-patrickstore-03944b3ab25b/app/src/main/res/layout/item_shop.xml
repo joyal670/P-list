@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llShop"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <ImageView
+              android:id="@+id/ivShop"
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:scaleType="centerCrop"
+              android:src="@drawable/dummy_shop"/>
+
+      </LinearLayout>
+    <TextView
+        android:id="@+id/tvStore"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_shop_name"
+        android:singleLine="true"
+        style="@style/text_view_small"/>
+    <TextView
+        android:id="@+id/tvDec"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_address"
+        android:minLines="3"
+        android:maxLines="3"
+        style="@style/text_view_regular"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/margin_very_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_count"
+            android:textStyle="bold"
+            android:singleLine="true"
+            style="@style/text_view_small"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_products"
+            android:singleLine="true"
+            style="@style/text_view_small_regular"/>
+    </LinearLayout>
+
+</LinearLayout>

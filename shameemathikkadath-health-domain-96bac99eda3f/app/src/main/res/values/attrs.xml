@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+    </declare-styleable>
+
+    <attr name="min_value" format="integer" />
+    <attr name="max_value" format="integer" />
+
+    <attr name="long_height_height_ratio" format="fraction" />
+    <attr name="short_height_height_ratio" format="fraction" />
+
+    <attr name="ruler_text_color" format="color" />
+    <attr name="ruler_text_size" format="dimension" />
+
+    <attr name="indicator_interval" format="dimension" />
+    <attr name="indicator_color" format="color" />
+    <attr name="indicator_width" format="dimension" />
+
+    <attr name="notch_color" format="color" />
+
+    <declare-styleable name="RulerView">
+        <attr name="min_value" />
+        <attr name="max_value" />
+
+        <attr name="long_height_height_ratio" />
+        <attr name="short_height_height_ratio" />
+
+        <attr name="ruler_text_color" />
+        <attr name="ruler_text_size" />
+
+        <attr name="indicator_interval" />
+        <attr name="indicator_color" />
+        <attr name="indicator_width" />
+    </declare-styleable>
+
+    <declare-styleable name="RulerValuePicker">
+
+        <attr name="min_value" />
+        <attr name="max_value" />
+
+        <attr name="long_height_height_ratio" />
+        <attr name="short_height_height_ratio" />
+
+        <attr name="ruler_text_color" />
+        <attr name="ruler_text_size" />
+
+        <attr name="indicator_interval" />
+        <attr name="indicator_color" />
+        <attr name="indicator_width" />
+
+        <!-- Color of the top notch -->
+        <attr name="notch_color" />
+    </declare-styleable>
+
+    <declare-styleable name="simpleRulerView">
+        <attr name="highlightColor" format="color|reference" />
+        <attr name="rulerColor" format="color|reference" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="intervalDistance" format="dimension" />
+        <attr name="intervalValue" format="float" />
+        <attr name="maxValue" format="float" />
+        <attr name="minValue" format="float" />
+        <attr name="textSize" format="dimension" />
+        <attr name="rulerLineWidth" format="dimension" />
+        <attr name="retainLength" format="integer"/>
+    </declare-styleable>
+
+</resources>

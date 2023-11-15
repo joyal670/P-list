@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivImg"
+        android:layout_width="@dimen/margin_50dp"
+        android:layout_height="@dimen/margin_50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:layout_marginStart="@dimen/margin_10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_profile_user"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:layout_marginEnd="@dimen/margin_32dp"
+        android:orientation="vertical"
+        android:background="@drawable/border_rounded_chat"
+        app:layout_constraintStart_toEndOf="@id/ivImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTeacherMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/heebo_regular"
+            android:padding="16dp"
+            android:text="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/msgDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/heebo_medium"
+        android:text="10_00_am"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:layout_marginStart="@dimen/margin_15dp"
+        android:textSize="@dimen/text_size_10sp"
+        android:textColor="@color/dove_gray"
+        app:layout_constraintStart_toStartOf="@id/linearLayout7"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

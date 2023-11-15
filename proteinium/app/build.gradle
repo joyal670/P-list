@@ -1,0 +1,211 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion "30.0.3"
+    bundle {
+        language {
+            // Specifies that the app bundle should not support
+            // configuration APKs for language resources. These
+            // resources are instead packaged with each base and
+            // dynamic feature APK.
+            enableSplit = false
+        }
+    }
+    defaultConfig {
+        applicationId "com.proteinium.proteiniumdietapp"
+        minSdkVersion 24
+        targetSdkVersion 32
+        versionCode 22
+        versionName "1.0.21"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // For Kotlin projects
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+}
+
+dependencies {
+
+    implementation 'com.google.firebase:firebase-messaging:21.1.0'
+    def googleLocationVersion = "17.0.0"
+    def googleMapsVersion = "17.0.0"
+
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.6.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:30.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation "androidx.dynamicanimation:dynamicanimation:1.0.0"
+
+    //material component
+    implementation 'com.google.android.material:material:1.3.0'
+
+    //MultiDex
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //CardView
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    //RecyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-beta01'
+
+    //jetpack-navigation-architecture
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.3'
+   // implementation 'com.google.firebase:firebase-analytics:18.0.0'
+
+    //dotidicator
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+
+    //circular imageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    //data
+    implementation 'android.arch.lifecycle:extensions:2.2.0'
+    implementation 'com.amitshekhar.android:rx2-android-networking:1.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.18'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    //CoroutinesSingleNetworkCallViewModel
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.6"
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.2'
+
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0'
+    implementation "androidx.room:room-runtime:2.2.6"
+
+    //multi  dex
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //material component
+    implementation 'com.google.android.material:material:1.3.0'
+
+    //Android image slider
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+
+    //lottie reward animation
+    implementation 'com.airbnb.android:lottie:3.5.0'
+
+    //rounded rectangle dot indicator
+    implementation 'com.github.zhpanvip:viewpagerindicator:1.0.7'
+
+    //qrcode scanner
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+
+    // permission
+    implementation 'com.github.fondesa:kpermissions:3.1.3'
+
+    //custom dropdown spinner
+    implementation "com.github.skydoves:powerspinner:1.1.7"
+
+    //Upload image
+    implementation 'com.github.dhaval2404:imagepicker:1.7.5'
+    implementation 'com.github.florent37:inline-activity-result-kotlin:1.0.4'
+
+    //language changer
+    implementation 'com.zeugmasolutions.localehelper:locale-helper-android:1.1.4'
+
+    //shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    // rating bar
+    implementation 'com.github.whinc:ratingbar:1.1.1'
+
+    //calendar
+    implementation 'com.github.prolificinteractive:material-calendarview:2.0.1'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.3.0'
+
+    //Asymmetricgridview
+    implementation 'com.felipecsl.asymmetricgridview:library:2.0.1'
+
+    //Animation
+    implementation 'com.github.gayanvoice:android-animations-kotlin:1.0.1'
+
+    // flex box for auto sizing recycerview
+    implementation 'com.google.android:flexbox:2.0.1'
+
+    implementation 'com.github.AhmMhd:SeeMoreTextView-Android:1.0.0'
+    implementation 'com.github.josinSbazin:android_ExpandableLayout:0.8'
+
+    implementation 'joda-time:joda-time:2.9.7'
+    //coil
+    implementation("io.coil-kt:coil:1.1.1")
+
+    //loader
+    implementation 'com.wang.avi:library:2.1.3'
+
+    //swiprefresh
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+    // Fatoorah SDK(Payment Gateway)
+    implementation 'com.myfatoorah:myfatoorah:2.2.6'
+
+    //firbase
+    implementation 'ru.semper-viventem.backdrop:backdrop:0.1.5_x'
+    implementation 'com.google.firebase:firebase-invites:17.0.0'
+    implementation 'com.google.firebase:firebase-dynamic-links-ktx:19.1.0'
+    implementation 'com.google.firebase:firebase-perf:19.0.7'
+    implementation 'com.google.firebase:firebase-messaging:21.1.0'
+    implementation platform('com.google.firebase:firebase-bom:28.2.0')
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.fuzz-productions:RatingBar:1.0.6'
+
+    //rating bar
+    implementation 'com.github.ome450901:SimpleRatingBar:1.4.0'
+
+    //image viewer
+    implementation "com.github.stfalcon:stfalcon-imageviewer:1.0.1"
+
+    //Expandable layout
+    implementation 'com.github.cachapa:ExpandableLayout:2.9.2'
+
+
+    //Playcore
+    implementation("com.google.android.play:core-ktx:1.8.1")
+}

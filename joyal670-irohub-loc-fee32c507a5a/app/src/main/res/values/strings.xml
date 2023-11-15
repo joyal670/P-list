@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Student</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoiam95YWw5OCIsImEiOiJja3F0aGdpZTcyNHBlMm5vNHN5MzI0ZHowIn0.G29atx82Lhr-q_A33Zw2NA</string>
+
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/margin_8dp"
+    android:layout_marginTop="@dimen/margin_5dp"
+    android:layout_marginBottom="@dimen/margin_5dp"
+    app:cardBackgroundColor="@color/light_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_10dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="@dimen/margin_90dp"
+            android:layout_height="@dimen/margin_90dp"
+            app:cardCornerRadius="@dimen/margin_8dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/food2"
+                android:scaleType="centerCrop"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/low_carb"
+                android:textSize="@dimen/text_size_14sp"
+                android:gravity="start|top"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:textColor="@color/green4"/>
+
+            <TextView
+                android:id="@+id/tvDec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/classic_ceasar_salad"
+                android:textSize="@dimen/text_size_12sp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:gravity="start"
+                android:fontFamily="@font/segoe_ui"
+                android:textColor="@color/light_black"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llratingFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.willy.ratingbar.ScaleRatingBar
+                    android:id="@+id/ratingFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:layout_gravity="center"
+                    app:srb_clearRatingEnabled="true"
+                    app:srb_clickable="false"
+                    app:srb_drawableEmpty="@drawable/empty"
+                    app:srb_drawableFilled="@drawable/fill"
+                    app:srb_isIndicator="true"
+                    app:srb_scrollable="false"
+                    app:srb_starHeight="10dp"
+                    app:srb_starPadding="2dp"
+                    app:srb_starWidth="10dp"
+                    app:srb_stepSize="0.5" />
+                <TextView
+                    android:id="@+id/tvAverage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_4_5"
+                    android:textSize="@dimen/text_size_8sp"
+                    android:gravity="start|center"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:textColor="@color/light_black"/>
+
+                <TextView
+                    android:id="@+id/tvRateFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rate_food"
+                    android:textSize="@dimen/text_size_10sp"
+                    android:gravity="start|center"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:textColor="@color/blue"/>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ingredientsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredients_and_macros"
+                android:textSize="@dimen/text_size_10sp"
+                android:textAllCaps="false"
+                app:cornerRadius="@dimen/margin_8dp"
+                android:gravity="start"
+                android:layout_gravity="start"
+                app:iconGravity="textEnd"
+                android:fontFamily="@font/segoe_ui"/>
+
+
+            <TextView
+                android:id="@+id/tvCalenderExpandText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua_ut_enim_ad_minim_veniam_quis_nostrud_exercitation_ullamco_laboris_nisi_ut_aliquip_ex_ea_commodo_consequat_duis_aute_irure_dolor_in_reprehenderit_in_voluptate_velit_esse_cillum_dolore_eu_fugiat_nulla_pariatur"
+                android:textSize="@dimen/text_size_12sp"
+                android:gravity="start|center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/segoe_ui"
+                android:textColor="@color/grey4"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

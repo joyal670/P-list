@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="userModel"
+            type="com.iroid.healthdomain.data.model_class.index.PendingChallenge" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_20_dp"
+        android:gravity="center"
+        android:padding="@dimen/dimen_20_dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dimen_16_dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dimen_15_dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    loadCircularImage="@{userModel.opponent_profile_pic}"
+                    android:layout_marginTop="48dp"
+                    android:backgroundTint="@color/color_grey"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@tools:sample/avatars" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_thunder"
+                    app:layout_constraintBottom_toBottomOf="@id/profileImageOpponent"
+                    app:layout_constraintEnd_toStartOf="@id/profileImageOpponent"
+                    app:layout_constraintStart_toEndOf="@id/profileImage"
+                    app:layout_constraintTop_toTopOf="@id/profileImage" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImageOpponent"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="48dp"
+                    android:backgroundTint="@color/color_grey"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@tools:sample/avatars" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_4_dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileImage">
+
+                    <ImageButton
+                        android:layout_width="@dimen/dimen_16_dp"
+                        android:layout_height="@dimen/dimen_16_dp"
+                        android:layout_margin="@dimen/margin_2dp"
+                        android:background="@drawable/ic_diamond" />
+
+                    <ImageButton
+                        android:layout_width="@dimen/dimen_16_dp"
+                        android:layout_height="@dimen/dimen_16_dp"
+                        android:layout_margin="@dimen/margin_2dp"
+                        android:background="@drawable/ic_diamond" />
+
+                    <ImageButton
+                        android:layout_width="@dimen/dimen_16_dp"
+                        android:layout_height="@dimen/dimen_16_dp"
+                        android:layout_margin="@dimen/margin_2dp"
+                        android:background="@drawable/ic_diamond" />
+
+                    <ImageButton
+                        android:id="@+id/image4"
+                        android:layout_width="@dimen/dimen_16_dp"
+                        android:layout_height="@dimen/dimen_16_dp"
+                        android:layout_margin="@dimen/margin_2dp"
+                        android:background="@drawable/ic_diamond" />
+
+                    <ImageButton
+                        android:id="@+id/image5"
+                        android:layout_width="@dimen/dimen_16_dp"
+                        android:layout_height="@dimen/dimen_16_dp"
+                        android:layout_margin="@dimen/margin_2dp"
+                        android:background="@drawable/ic_diamond" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutOpponent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_4_dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileImage">
+
+                    <ImageButton
+                        android:layout_width="@dimen/dimen_16_dp"
+                        android:layout_height="@dimen/dimen_16_dp"
+                        android:layout_margin="@dimen/margin_2dp"
+                        android:background="@drawable/ic_diamond" />
+
+                    <ImageButton
+                        android:layout_width="@dimen/dimen_16_dp"
+                        android:layout_height="@dimen/dimen_16_dp"
+                        android:layout_margin="@dimen/margin_2dp"
+                        android:background="@drawable/ic_diamond" />
+
+                    <ImageButton
+                        android:layout_width="@dimen/dimen_16_dp"
+                        android:layout_height="@dimen/dimen_16_dp"
+                        android:layout_margin="@dimen/margin_2dp"
+                        android:background="@drawable/ic_diamond" />
+
+                    <ImageButton
+                        android:id="@+id/image4Opponent"
+                        android:layout_width="@dimen/dimen_16_dp"
+                        android:layout_height="@dimen/dimen_16_dp"
+                        android:layout_margin="@dimen/margin_2dp"
+                        android:background="@drawable/ic_diamond" />
+
+                    <ImageButton
+                        android:id="@+id/image5Opponent"
+                        android:layout_width="@dimen/dimen_16_dp"
+                        android:layout_height="@dimen/dimen_16_dp"
+                        android:layout_margin="@dimen/margin_2dp"
+                        android:background="@drawable/ic_diamond" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/materialTextView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_16_sp"
+                    android:text="@{userModel.oponentname}"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+                    app:layout_constraintStart_toStartOf="@id/linearLayout3"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/materialTextViewOpponent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_16_sp"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayoutOpponent"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayoutOpponent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButton"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/min_margin_6_dp"
+                    android:backgroundTint="@color/light_blue_600"
+                    app:layout_constraintEnd_toEndOf="@id/materialTextView4"
+                    app:layout_constraintStart_toStartOf="@id/materialTextView4"
+                    app:layout_constraintTop_toBottomOf="@+id/materialTextView4" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButtonOpponent"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/min_margin_6_dp"
+                    android:backgroundTint="@color/light_blue_600"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="@id/materialTextViewOpponent"
+                    app:layout_constraintStart_toStartOf="@id/materialTextViewOpponent"
+                    app:layout_constraintTop_toBottomOf="@+id/materialTextView4" />
+
+                <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="@dimen/dimen_20_dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/materialButtonOpponent"
+                    app:rpbBackgroundColor="@color/white"
+                    app:rpbCornerRadius="20dp"
+                    app:rpbProgress="0"
+                    app:rpbProgressColor="@color/color_btn_red"
+                    app:rpbShowProgressText="false" />
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="25dp"
+                    android:text="WON"
+                    android:typeface="normal"
+                    android:textStyle="bold"
+                    android:textColor="@color/txt_bg_green"
+                    android:textAllCaps="true"
+                    android:textSize="23sp"
+                    app:layout_constraintTop_toBottomOf="@id/progressBar"/>
+
+
+                <ImageView
+                    android:id="@+id/ivLike"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_like_new"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/lv1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvStatus" />
+
+                <LinearLayout
+                    android:id="@+id/lv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@id/ivLike"
+                    app:layout_constraintEnd_toStartOf="@id/ivLike"
+                    app:layout_constraintTop_toTopOf="@id/ivLike">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@color/color_btn_red"
+                        app:cardBackgroundColor="@color/color_btn_red" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@color/color_btn_red"
+                        app:cardBackgroundColor="@color/color_btn_red" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@color/color_btn_red"
+                        app:cardBackgroundColor="@color/color_btn_red" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@id/ivLike"
+                    app:layout_constraintStart_toEndOf="@id/ivLike"
+                    app:layout_constraintTop_toTopOf="@id/ivLike">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@color/color_btn_red"
+                        app:cardBackgroundColor="@color/color_btn_red" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@color/color_btn_red"
+                        app:cardBackgroundColor="@color/color_btn_red" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@color/color_btn_red"
+                        app:cardBackgroundColor="@color/color_btn_red" />
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</layout>

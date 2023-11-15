@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".proteiniumdietapp.ui.main.home.calender.meals_selection.fragments.MealsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include android:id="@+id/noMeals"
+        android:visibility="gone"
+        layout="@layout/no_meals"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mailLayout"
+        android:visibility="visible"
+        android:paddingBottom="@dimen/margin_16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/rvMeals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/recycerview_meals" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</FrameLayout>

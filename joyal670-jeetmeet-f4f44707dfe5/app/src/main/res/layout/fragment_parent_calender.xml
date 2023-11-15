@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baoyz.widget.PullRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="@dimen/margin_40dp"
+                android:layout_height="@dimen/margin_40dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_profile_user"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvStudentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/nil"
+                app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
+                app:layout_constraintStart_toEndOf="@+id/circleImageView"
+                app:layout_constraintTop_toTopOf="@+id/circleImageView" />
+
+
+            <com.skydoves.powerspinner.PowerSpinnerView
+                android:id="@+id/student_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_round_border"
+                android:fontFamily="@font/barlow_light"
+                android:gravity="center"
+                android:hint="@string/select_student"
+                android:paddingStart="@dimen/margin_8dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="@dimen/margin_4dp"
+                android:paddingBottom="@dimen/margin_10dp"
+                android:text="@string/select_student"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textDirection="locale"
+                android:textSize="@dimen/text_size_13sp"
+                android:theme="@style/ToolbarTheme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spinner_arrow_gravity="end"
+                app:spinner_arrow_tint="@color/gray"
+                app:spinner_divider_color="@color/gray"
+                app:spinner_divider_show="true"
+                app:spinner_divider_size="0.5dp"
+                app:spinner_popup_animation="dropdown"
+                app:spinner_popup_background="@color/white"
+                app:spinner_popup_elevation="14dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/studentCalender"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_400dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topLayout"
+            app:mcv_dateTextAppearance="@style/CustomTextAppearance"
+            app:mcv_leftArrow="@drawable/ic_calender_left_arrow"
+            app:mcv_rightArrow="@drawable/ic_calender_right_arrow"
+            app:mcv_selectionColor="#00F"
+            app:mcv_showOtherDates="all" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvstudentAssignment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/studentCalender"
+            tools:itemCount="2"
+            tools:listitem="@layout/recycle_student_assignment_list_item" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.baoyz.widget.PullRefreshLayout>

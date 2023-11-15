@@ -1,0 +1,236 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+android {
+    compileSdkVersion 31
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.property.propertyuser"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            buildConfigField 'String', 'BASE_URL', "\"https://jsonplaceholder.typicode.com/todos/1/\""
+        }
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    def googleLocationVersion = "17.0.0"
+    def googleMapsVersion = "17.0.0"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:30.0.0'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation "androidx.dynamicanimation:dynamicanimation:1.0.0"
+   /* //flexbox layout
+    implementation 'com.google.android:flexbox:2.0.1'*/
+    //material component
+    implementation 'com.google.android.material:material:1.4.0'
+
+    //Dagger
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-compiler:$hilt_version"
+    implementation 'androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03'
+    kapt 'androidx.hilt:hilt-compiler:1.0.0-alpha03'
+
+    //MultiDex
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //CardView
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    //RecyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha06'
+
+    //jetpack-navigation-architecture
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.1'
+    implementation 'com.google.firebase:firebase-analytics:18.0.0'
+
+
+    //dotidicator
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+    implementation 'me.relex:circleindicator:2.1.4'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation("com.github.bumptech.glide:okhttp3-integration:4.11.0") {
+        exclude group: 'glide-parent'
+    }
+    implementation 'com.github.bumptech.glide:annotations:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation  'com.yarolegovich:discrete-scrollview:1.5.1'
+
+
+    //data
+    implementation 'android.arch.lifecycle:extensions:2.2.0'
+    implementation 'androidx.activity:activity-ktx:1.1.0'
+
+    implementation 'com.amitshekhar.android:rx2-android-networking:1.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.18'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    //CoroutinesSingleNetworkCallViewModel
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.6"
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.2'
+    /*implementation "com.squareup.okhttp3:okhttp:4.7.2"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.7.2"*/
+
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation "androidx.room:room-runtime:2.2.5"
+
+    //multi  dex
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //material component
+    //implementation 'com.google.android.material:material:1.3.0-alpha02'
+
+    //Android image slider
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+
+    //expandable text view
+    implementation 'com.github.josinSbazin:android_ExpandableLayout:0.8'
+
+    // Google location
+    implementation "com.google.android.gms:play-services-location:$googleLocationVersion"
+    implementation "com.google.android.gms:play-services-maps:$googleMapsVersion"
+    implementation "com.google.android.libraries.places:places:1.1.0"
+    
+    //google auth
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+
+
+    //firebase
+    implementation platform('com.google.firebase:firebase-bom:26.1.1')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    //Timeline-View
+    implementation 'com.github.vipulasri:timelineview:1.1.5'
+
+    //lottie reward animation
+    implementation 'com.airbnb.android:lottie:3.5.0'
+    //rounded rectangle dot indicator
+    implementation 'com.github.zhpanvip:viewpagerindicator:1.0.7'
+    //qrcode scanner
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+    //scanner permission
+    implementation 'com.github.fondesa:kpermissions:3.1.3'
+    //permission
+    implementation 'com.github.fondesa:kpermissions:3.1.3'
+    //shadow image
+    implementation 'com.lijiankun24:shadowlayout:1.1.0'
+    //floating action cutom
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+    //custom dropdown spinner
+    implementation "com.github.skydoves:powerspinner:1.1.7"
+    //map utils
+    implementation "com.google.maps.android:android-maps-utils:0.4+"
+
+    //Upload image
+    implementation 'com.github.dhaval2404:imagepicker:1.7.5'
+    implementation 'com.github.florent37:inline-activity-result-kotlin:1.0.4'
+    
+    //shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    implementation "com.github.chrisbanes:PhotoView:2.1.3"
+    //image viewer new
+    implementation "com.github.stfalcon:stfalcon-imageviewer:1.0.1"
+
+    //image compressor
+    implementation 'id.zelory:compressor:3.0.0'
+
+    //chrome custom tabs
+    implementation "androidx.browser:browser:1.0.0"
+
+    //crashlytics
+    implementation platform('com.google.firebase:firebase-bom:28.2.0')
+
+    // Declare the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    //facebook login
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+
+    //video player
+    implementation 'com.github.HamidrezaAmz:MagicalExoPlayer:2.0.7'
+
+    implementation("io.coil-kt:coil:1.4.0")
+
+    //Expandable layout
+    implementation 'com.github.cachapa:ExpandableLayout:2.9.2'
+
+    //Ken burns view
+    implementation 'com.flaviofaria:kenburnsview:1.0.7'
+
+    //Loading button
+    implementation 'com.marozzi.roundbutton:round-button:1.0.7'
+
+    //Walk through
+    implementation 'com.github.bolaware:Walk-Through-Onboarder:v1.0'
+
+    //Continues image scroll
+    implementation 'com.github.Cutta:ContinuousScrollableImageView:1.0'
+
+    //ToolTip
+    implementation 'com.github.sephiroth74:android-target-tooltip:release-2.0.5'
+
+    //YouTube Player
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:11.0.1'
+
+}

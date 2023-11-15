@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/container"
+    android:visibility="gone"
+    tools:context=".owner_panel.ui.main.home.property.property_main_details.PropertyMainDetailedActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bartwo"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.PropertyAgentMaterial.NoActionBar.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingtoolbar_ownertwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:descendantFocusability="blocksDescendants"
+            app:titleEnabled="false"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:clickable="true"
+            app:toolbarId="@+id/toolbar">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vpPropertyDetailsImageSlidertwo"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <ImageView
+                android:id="@+id/green_flag"
+                android:layout_width="@dimen/margin_20dp"
+                android:layout_height="@dimen/margin_30dp"
+                android:layout_gravity="end|top"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:scaleY="1.1"
+                android:src="@drawable/ic_green_flag" />
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/dotsIndicatorDetailstwo"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                app:dotsColor="@color/color_accent_grey_light_new2"
+                app:dotsCornerRadius="5dp"
+                app:dotsSize="9dp"
+                app:dotsSpacing="4dp"
+                app:dotsWidthFactor="2.0"
+                app:progressMode="false"
+                app:selectedDotColor="@color/blue_background" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_ownertwo"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ToolbarTheme"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/Theme.PropertyAgentMaterial.NoActionBar.PopupOverlay"
+                app:titleTextColor="@color/white">
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_scrolling_building" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

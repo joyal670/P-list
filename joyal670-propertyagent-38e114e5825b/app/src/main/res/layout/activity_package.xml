@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".agent_panel.ui.main.sidemenu.property.viewpackages.PackageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <include layout="@layout/toolbar_main" />
+
+        <include
+            android:id="@+id/llEmptyData"
+            layout="@layout/layout_empty_data"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewpagerPackage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/indicatorPackage"
+                android:layout_width="wrap_content"
+                android:layout_height="9dp"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                app:dotsColor="@color/lightGray"
+                app:dotsCornerRadius="5dp"
+                app:dotsSize="25dp"
+                app:dotsSpacing="4dp"
+                app:dotsWidthFactor="1.0"
+                app:progressMode="false"
+                app:selectedDotColor="@color/green_solid" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

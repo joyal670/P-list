@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_owner.xml"
+    app:startDestination="@+id/navigation_home_owner">
+
+    <fragment
+        android:id="@+id/navigation_home_owner"
+        android:name="com.property.propertyagent.owner_panel.ui.main.home.home.fragment.HomeOwnerFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home_owner" />
+
+    <fragment
+        android:id="@+id/navigation_property_owner"
+        android:name="com.property.propertyagent.owner_panel.ui.main.home.property.fragment.PropertyOwnerFragment"
+        android:label="@string/property"
+        tools:layout="@layout/fragment_property_owner" />
+
+    <fragment
+        android:id="@+id/navigation_payment_owner"
+        android:name="com.property.propertyagent.owner_panel.ui.main.home.payment.payment_fragment.fragment.PaymentOwnerFragment"
+        android:label="@string/payment"
+        tools:layout="@layout/fragment_payment_owner" />
+
+    <fragment
+        android:id="@+id/navigation_notifications_owner"
+        android:name="com.property.propertyagent.owner_panel.ui.main.home.notification.fragment.OwnerNotificationFragment"
+        android:label="@string/notification"
+        tools:layout="@layout/fragment_notification_owner" />
+
+</navigation>

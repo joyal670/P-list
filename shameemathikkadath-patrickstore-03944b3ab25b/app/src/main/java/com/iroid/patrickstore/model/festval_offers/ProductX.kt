@@ -1,0 +1,33 @@
+package com.iroid.patrickstore.model.festval_offers
+
+data class ProductX(
+    val __v: Int,
+    val actualPrice: Double,
+    val adminCommission: Double,
+    val adminCommissionAmount: Double,
+    val canSubtractStock: Boolean,
+    val category: String,
+    val costPrice: Int,
+    val description: String,
+    val discountDateFrom: String,
+    val discountDateTo: String,
+    val franchiseCommissionAmount: Double,
+    val franchiseId: String,
+    val id: String,
+    val imgUrl: List<ImgUrl>,
+    val isApproved: Boolean,
+    val isEnabled: Boolean,
+    val isRejected: Boolean,
+    val maxDiscount: Int,
+    val maxQuantity: Int,
+    val minQunatity: Int,
+    val name: String,
+    val options: List<Option>,
+    val productId: Int,
+    val quantity: Int,
+    val reviews: List<Any>,
+    val sellerId: String,
+    val shopAmount: Double,
+    val shopDiscount: Double,
+    val type: String
+)

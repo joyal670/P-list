@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:visibility="gone"
+    tools:context=".agent_panel.ui.main.sidemenu.property.building_view_details.AgentBuildingApartmentDetailsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_barAgent"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.PropertyAgentMaterial.NoActionBar.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingtoolbar_Agent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false"
+            app:toolbarId="@+id/toolbar_agent">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vpPropertyDetailsImageSliderAgent"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
+
+            <ImageView
+                android:id="@+id/green_flag"
+                android:layout_width="@dimen/margin_20dp"
+                android:layout_height="@dimen/margin_30dp"
+                android:layout_gravity="end|top"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:scaleY="1.1"
+                android:src="@drawable/ic_green_flag"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="0dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnShare"
+                    style="?attr/borderlessButtonStyle"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:layout_marginBottom="0dp"
+                    android:paddingBottom="0dp"
+                    app:icon="@drawable/ic_share_outlined"
+                    app:iconTint="@color/brown_light" />
+
+                <ImageView
+                    android:id="@+id/ivBrownLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margin_2dp"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:layout_marginEnd="@dimen/margin_2dp"
+                    android:layout_marginBottom="0dp"
+                    android:paddingBottom="0dp"
+                    android:src="@drawable/ic_vertical_line_brown"
+                    tools:ignore="ContentDescription" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDownload"
+                    style="?attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:paddingBottom="0dp"
+                    android:text="@string/btnDownload"
+                    android:textAllCaps="false"
+                    android:textColor="@color/brown_light"
+                    android:textSize="@dimen/text_size_10sp"
+                    app:icon="@drawable/ic_pdf_download"
+                    app:iconSize="@dimen/margin_20dp"
+                    app:iconTint="@color/brown_light" />
+            </LinearLayout>
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/dotsIndicatorDetailsAgent"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="@dimen/margin_16dp"
+                app:dotsColor="@color/color_accent_grey_light_new2"
+                app:dotsCornerRadius="5dp"
+                app:dotsSize="9dp"
+                app:dotsSpacing="4dp"
+                app:dotsWidthFactor="2.0"
+                app:progressMode="false"
+                app:selectedDotColor="@color/color_accent_green" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_agent"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ToolbarTheme"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/Theme.PropertyAgentMaterial.NoActionBar.PopupOverlay"
+                app:titleTextColor="@color/white">
+
+                <ImageView
+                    android:id="@+id/imageViewShareKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_scrolling_view_property_details" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

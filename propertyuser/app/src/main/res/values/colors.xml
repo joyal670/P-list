@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_200">#009639</color>
+    <color name="green_500">#00822B</color>
+    <color name="green_700">#00822B</color>
+    <color name="gray_200">#383443</color>
+    <color name="gray_91">#E8E8E8</color>
+    <color name="green_solid">#009639</color>
+    <color name="green_light">#D2F2DF</color>
+    <color name="green_light1">#D5F7E3</color>
+    <color name="green_light_1">#329E60</color>
+    <color name="green_light_2">#22BD64</color>
+    <color name="green_light_3">#90D5AD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_white">#F4F4F4</color>
+    <color name="light_white_1">#EBEBEB</color>
+    <color name="green_dark">#00541F</color>
+    <color name="green_dark_1">#007A2F</color>
+    <color name="green_dark_2">#329E60</color>
+    <color name="black_gray">#383443</color>
+    <color name="light_black_gray">#5A5A5A</color>
+    <color name="light_black_gray1">#5F5F5F</color>
+    <color name="brown_light">#828282</color>
+    <color name="lightGray">#C1C1C1</color>
+    <color name="lightGray1">#9B9B9B</color>
+    <color name="lightGray2">#909090</color>
+    <color name="lightGray3">#707070</color>
+    <color name="lightGray4">#8A8A8A</color>
+    <color name="black_light">#303030</color>
+    <color name="black_light1">#454545</color>
+    <color name="dark_gray">#636363</color>
+    <color name="dark_gray1">#6A6A6A</color>
+    <color name="dark_gray3">#3B3B3B</color>
+    <color name="dark_gray4">#575757</color>
+    <color name="dark_gray5">#A9A9A9</color>
+    <color name="dark_gray7">#444444</color>
+    <color name="gray_brown">#7B7B7B</color>
+    <color name="yellow">#F2C94C</color>
+    <color name="yellow_1">#FFBA1B</color>
+    <color name="red_1">#FA4A4A</color>
+    <color name="black">#000000</color>
+    <color name="black1">#A9000000</color>
+    <color name="silver">#CCCCCC</color>
+    <color name="dark_gray2">#6A6A6A</color>
+    <color name="gray_32">#525252</color>
+    <color name="brown">#5B5B5B</color>
+    <color name="bright_orange">#F2994A</color>
+    <color name="white_1">#EEEEEE</color>
+    <color name="gray_90">#E5E5E5</color>
+    <color name="matterhorn">#505050</color>
+    <color name="white_smoke">#F1F1F1</color>
+    <color name="flamingo">#EB5757</color>
+    <color name="grey">#7C7C7C</color>
+    <color name="grey1">#777777</color>
+    <color name="blue">#3F6AA4</color>
+    <color name="skyblue">#2F80ED</color>
+    <color name="pink">#CA25D9</color>
+    <color name="dark_gray6">#6B6B6B</color>
+    <color name="night_rider">#353535</color>
+    <color name="system_ui_scrim_light1">#EBF6F8</color>
+    <!--<color name="system_ui_scrim_light">#F5FDF8</color>
+    <color name="system_ui_scrim_dark">#C3000000</color>-->
+    <color name="system_ui_scrim_light">#A3ffffff</color>
+    <color name="system_ui_scrim_dark">#C3000000</color>
+
+    <color name="status_bar_scrim">@color/system_ui_scrim_light</color>
+
+    <color name="dialogBackground">#60000000</color>
+
+    <color name="color_accent_red_dark">#FB0007</color>
+    <color name="color_accent_green">#6AC58C</color>
+    <color name="color_accent_red">#F47458</color>
+
+    <color name="colorGrey">#dddddd</color>
+    <color name="cardBackground">#F9F9F9</color>
+    <color name="cardText">#363636</color>
+
+</resources>

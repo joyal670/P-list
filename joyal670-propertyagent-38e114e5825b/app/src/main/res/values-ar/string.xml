@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">خاصية</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="email_id">بريد الالكتروني هوية شخصية</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="forgot_password">هل نسيت كلمة السر</string>
+    <string name="sent_link">الارتباط المرسل</string>
+    <string name="call">يتصل</string>
+    <string name="start">يبدأ</string>
+    <string name="lorem_ipsum">لوريم إيبسوم هو ببساطة نص شكلي يستخدم في صناعة الطباعة والتنضيد.</string>
+    <string name="name">اسم</string>
+    <string name="mobile_number">متحرك رقم</string>
+    <string name="Upload_ID">تحميل هوية شخصية</string>
+    <string name="bank_details">بنك تفاصيل</string>
+    <string name="card_number">رقم البطاقة</string>
+    <string name="cvv">CVV</string>
+    <string name="ifsc_code">كود IFSC</string>
+    <string name="expiry_date">تاريخ الانتهاء</string>
+    <string name="user_id">المستعمل هوية شخصية</string>
+    <string name="old_password">كلمة المرور القديمة</string>
+    <string name="new_password">كلمة مرور جديدة</string>
+    <string name="confirm_new_password">تأكيد كلمة المرور الجديدة</string>
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="profile">حساب تعريفي</string>
+    <string name="my_property">ممتلكاتي</string>
+    <string name="ChangePassword">تغيير كلمة المرور</string>
+    <string name="my_earnings">أجوري</string>
+    <string name="total_earnings">الأرباح الكلية</string>
+    <string name="request">طلب</string>
+    <string name="earning_details">تفاصيل الكسب</string>
+    <string name="filter">منقي</string>
+    <string name="property_code">خاصية رمز  :</string>
+    <string name="rented_out_this_property">استأجر هذا العقار</string>
+    <string name="view_property">رأي خاصية</string>
+    <string name="payment_details">دفع تفاصيل</string>
+    <string name="InHandCash">نقد في اليد</string>
+    <string name="SAR">ريال سعودي 0</string>
+    <string name="users">المستعمل</string>
+    <string name="Ongoing">جاري التنفيذ</string>
+    <string name="Completed">منجز</string>
+    <string name="property_name">خاصية اسم</string>
+    <string name="profile_name">اسم الشخصية</string>
+    <string name="OngoingDeal">صفقة جارية</string>
+    <string name="appartment_for_rent">عقار للإيجار</string>
+    <string name="appartment_for_sale">عقار للبيع</string>
+    <string name="features">سمات</string>
+    <string name="Bookingdetails">الحجز تفاصيل</string>
+    <string name="select_checkin_date">يختار تحقق في تاريخ</string>
+    <string name="select_checkout_date">المحدد الدفع تاريخ</string>
+    <string name="reservation_amount">حجز مقدار</string>
+    <string name="Status">حالة</string>
+    <string name="PaymentMode">دفع الوضع</string>
+    <string name="online_banking">الخدمات المصرفية عبر الإنترنت</string>
+    <string name="VisitProperty">زيارة الممتلكات</string>
+    <string name="CompletedDeal">صفقة مكتملة</string>
+    <string name="UserContract">المستعمل عقد</string>
+    <string name="read_contract">اقرأ العقد</string>
+    <string name="contract_period">عقد فترة :</string>
+    <string name="to">ل</string>
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="my_profile">ملفي</string>
+    <string name="my_properties">ممتلكاتي</string>
+    <string name="in_hand_cash">في اليد النقدية</string>
+    <string name="qr_reader">قارئ QR</string>
+    <string name="upload_license">تحميل رخصة</string>
+    <string name="feedback">ردود الفعل</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="client">عميل</string>
+    <string name="my_task">مهمتي</string>
+    <string name="open">افتح</string>
+    <string name="close">قريب</string>
+    <string name="owner">صاحب</string>
+    <string name="OwnerName">صاحب اسم</string>
+    <string name="owner_name">صاحب اسم</string>
+    <string name="owner_contract">صاحب عقد</string>
+    <string name="owner_register">صاحب يسجل</string>
+    <string name="property_registered">خاصية مسجل</string>
+    <!--  <string name="complete">اكتمال</string>-->
+    <string name="edit_details">عدل التفاصيل</string>
+    <string name="pending">الرصيد</string>
+    <string name="lorem_ipsum_new">لوريم إيبسوم هو ببساطة نص شكلي في صناعة الطباعة والتنضيد. لوريم إيبسوم هو ببساطة نص شكلي في صناعة الطباعة والتنضيد.</string>
+    <string name="notification">تنبيه</string>
+    <string name="heading">عنوان</string>
+    <string name="receive">يستلم</string>
+    <string name="not_receive">لا تستلم</string>
+    <string name="PropertyAppointment">خاصية ميعاد</string>
+    <string name="RentalProperty">تأجير خاصية</string>
+    <string name="view_property_details">رأي خاصية تفاصيل</string>
+    <string name="Pricing">التسعير</string>
+    <string name="Rent">تأجير</string>
+    <string name="SecurityDeposit">حماية الوديعة</string>
+    <string name="ReservationBookingAmount">مبلغ الحجز / الحجز</string>
+    <string name="visitor_name">اسم الزائر</string>
+    <string name="view_profile">رأي حساب تعريفي</string>
+    <string name="visit_status">حالة الزيارة</string>
+    <string name="visit_started">بدأت الزيارة</string>
+    <string name="property_visited">تمت زيارة الممتلكات</string>
+    <string name="proceed_to_book">انتقل إلى الكتاب</string>
+    <string name="pay_reservation_amount">دفع مبلغ الحجز</string>
+    <string name="request_for_contract">طلب عقد</string>
+    <string name="full_payment_key_handover">الدفع الكامل / تسليم المفتاح</string>
+    <string name="not_interested">غير مهتم</string>
+    <string name="view_packages">رأي الحزم</string>
+    <string name="BookProperty">كتاب خاصية</string>
+    <string name="choose_package">يختار الحزم</string>
+    <string name="reservation_amount_new">مبلغ الحجز</string>
+    <string name="payment_method">دفع طريقة</string>
+    <string name="if_net_banking_banking"># إذا صافي المصرفية / المصرفية</string>
+    <string name="if_cash"># إذا كاش</string>
+    <string name="upload_bill">تحميل مشروع قانون</string>
+    <string name="pending_amount">المبلغ المعلق :</string>
+    <string name="check_in_date">تاريخ الدخول</string>
+    <string name="_28_11_2020" tools:ignore="TypographyDashes">28-11-2020</string>
+    <string name="check_out_date">موعد انتهاء الأقامة</string>
+    <string name="number_of_payments">عدد الدفعات</string>
+    <string name="view_details">رأي تفاصيل</string>
+    <string name="payable_months">الأشهر المستحقة الدفع</string>
+    <string name="january_payment_2020">دفعة يناير 2020</string>
+    <string name="payed">مدفوع</string>
+    <string name="june_payment_2020">دفعة يونيو 2020</string>
+    <string name="january_payment_2021">دفعة يناير 2021</string>
+    <string name="upload_documents">تحميل وثائق</string>
+    <string name="request_contract">طلب عقد</string>
+    <string name="edit">يحرر</string>
+    <string name="MyProperty">ممتلكاتي</string>
+    <string name="anne_e_chavez">آن إي شافيز</string>
+    <string name="anneechavez_dayrep_com">anneechavez@dayrep.com</string>
+    <string name="full_collen">:</string>
+    <string name="_04">04</string>
+    <string name="p_12345">P 12345</string>
+    <string name="sar_10_000">SAR 10,000</string>
+    <string name="sar_4_500">SAR 4,500</string>
+    <string name="sar_20_000">صار ٢٠,٠٠٠</string>
+    <string name="sar_10000">صار ١٠٠٠٠</string>
+    <string name="_2bkh">2BKH</string>
+    <string name="_4_5">4.5</string>
+    <string name="_125_rating">125 Rating</string>
+    <string name="al_quwaiiyah">Al Quwaiiyah</string>
+    <string name="_03">03</string>
+    <string name="_115_sq_m">115 sq. M.</string>
+    <string name="fully">تماما</string>
+    <string name="_02">02</string>
+    <string name="_15_05_2021" tools:ignore="TypographyDashes">15 - 05 - 2021</string>
+    <string name="_50">50</string>
+    <string name="total_assigned_properties">إجمالي الخصائص المعينة</string>
+    <string name="zone">منطقة</string>
+    <string name="today_s_appoinment">موعد اليوم:</string>
+    <string name="_10">10</string>
+    <string name="location">موقع</string>
+    <string name="type">اكتب</string>
+    <string name="time">زمن</string>
+    <string name="rent_overdue">تأخر الإيجار</string>
+    <string name="property_id">خاصية هوية شخصية</string>
+    <string name="due_amount">بسبب مقدار</string>
+    <string name="view_all">رأي الجميع</string>
+    <string name="completed_tasks">المهام المكتملة</string>
+    <string name="full_name">ممتلىء اسم</string>
+    <string name="paid_by">مدفوعة</string>
+    <string name="jayanth">Jayanth</string>
+    <string name="sar_1000">SAR 1000</string>
+    <string name="building_name">بناء اسم</string>
+    <string name="request_from">طلب من</string>
+    <string name="user">المستعمل</string>
+    <string name="task_heading">عنوان المهمة</string>
+    <string name="_20_05_2020" tools:ignore="TypographyDashes">20 - 05 - 2020</string>
+    <string name="_5_20_pm">5:20 pm</string>
+    <string name="xxx">xxx</string>
+    <string name="_15_05_2020" tools:ignore="TypographyDashes">15 - 05 - 2020</string>
+    <string name="apartment_for_rent">خاصية إلى تأجير</string>
+    <string name="buraydah_52385_saudi_arabia">Buraydah 52385 saudi arabia</string>
+    <!--    <string name="completed">منجز</string>-->
+    <string name="exitapp">مخرج</string>
+    <string name="areyousure"> هل أنت واثق </string>
+    <string name="riyadh">مدينة الرياض</string>
+    <string name="_10_00am">10:00 ص</string>
+    <string name="start_tour">يبدأ رحلة</string>
+    <string name="my_request">طلبي</string>
+    <string name="my_client">عميلي</string>
+    <string name="p_1234">P-1234</string>
+    <string name="start_visit">يبدأ يزور</string>
+    <string name="edit_submit_details">تحرير / إرسال التفاصيل</string>
+    <string name="property_verified">خاصية تم التحقق</string>
+    <string name="visit_property">يزور خاصية</string>
+    <string name="thomasmbain_dayrep_com">ThomasMBain@dayrep.com</string>
+    <string name="add_tiltle">أضف عنوانا</string>
+    <string name="save">يحفظ</string>
+    <string name="update">تحديث</string>
+    <string name="calendar">التقويم</string>
+    <string name="demo_gmail_com">demo@gmail.com</string>
+    <string name="property">خاصية</string>
+    <string name="payment">دفع</string>
+    <string name="commercial">تجاري</string>
+    <string name="residential">سكني</string>
+    <string name="filtter">منقي</string>
+    <string name="buildings">البنايات</string>
+    <string name="_2545220">#2545220</string>
+    <string name="residential_building">مبنى سكني</string>
+    <string name="net_worth">تأجير قيمة</string>
+    <string name="sar_200_00">صار ٢٠٠.٠٠ </string>
+    <string name="income">تلقى</string>
+    <string name="sar_520_00">SAR 520.00</string>
+    <string name="outstanding_deu">آخر المستحقات</string>
+    <string name="sar_845_00">SAR 845.00</string>
+    <string name="sar_4587_00">SAR 4587.00</string>
+    <string name="vacant">شاغر</string>
+    <string name="_06">06</string>
+    <string name="hide_appartment">شقة مخفية</string>
+    <string name="occupied">احتل</string>
+    <string name="Appartment">شقة</string>
+    <string name="number_of_appartments">عدد الشقق</string>
+    <string name="left_param">(</string>
+    <string name="right_param">)</string>
+    <string name="occupied_properties">الممتلكات المحتلة</string>
+    <string name="vacant_properties">عقارات شاغرة</string>
+    <string name="revenue">إيرادات</string>
+    <string name="sar_50_00">صار ٥٠.٠٠</string>
+    <string name="occupied_from">المحتلة من</string>
+    <string name="occupied_to">المحتلة ل</string>
+    <string name="add_property">أضف خاصية</string>
+    <string name="nill">""</string>
+    <string name="search">بحث</string>
+    <string name="how_many_times_rented_out">كم مرة مؤجرة</string>
+    <string name="vacant_since">شاغر منذ ذلك الحين</string>
+
+
+    <string-array name="pakeges_list">
+        <item name="pakage 1" />
+        <item name="pakage 2" />
+        <item name="pakage 3" />
+        <item name="pakage 4" />
+    </string-array>
+    <string name="title_activity_scrolling">نشاط التمرير</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="rebecca_f_triggs">Rebecca F. Triggs</string>
+    <string name="agent">وكيل</string>
+    <string name="chat">دردشة</string>
+    <string name="view_contract">عرض العقد</string>
+    <string name="view">رأي</string>
+    <string name="property_pricing">تسعير الممتلكات</string>
+    <string name="rent_amount">مقدار الايجار</string>
+    <string name="rental_frequency">عدد مرات التأجير</string>
+    <string name="one_month">شهر واحد</string>
+    <string name="management_charge">تهمة الإدارة</string>
+    <string name="service_charge">تكلفة الخدمة</string>
+    <string name="others">الآخرين</string>
+    <string name="maintenance_service">خدمة الصيانة</string>
+    <string name="free_services">خدمات مجانية</string>
+    <string name="download_report">تنزيل التقرير</string>
+    <string name="download_interest_report">تنزيل تقرير الاهتمامات</string>
+    <string name="payment_history">تاريخ الدفع</string>
+    <string name="other_expenses">نفقات أخرى</string>
+    <string name="rent_details">تفاصيل الإيجار</string>
+    <string name="teams_of_stay">شروط البقاء</string>
+    <string name="al_majma_ah_15362_saudi_arabia">أل معجمه ١٥٣٦٢, سعودي عربية</string>
+    <string name="aed_250_000">AED 250,000</string>
+    <string name="rent_start">بداية الإيجار</string>
+    <string name="payment_period">فترة الدفع</string>
+    <string name="every_month">كل شهر</string>
+    <string name="payment_amount">مبلغ الدفع</string>
+    <string name="aed_250_00">AED 250.00</string>
+    <string name="last_payment">الدفعة الأخيرة</string>
+    <string name="view_payment_history">عرض تاريخ الدفع</string>
+    <string name="payment_date">تاريخ الدفع</string>
+    <string name="payment_time">وقت الدفع</string>
+    <string name="monthly_rent">الإيجار الشهري</string>
+    <string name="service">الخدمات</string>
+    <string name="sar_50_000">صار ٥٠.٠٠</string>
+    <string name="service_details">تفاصيل الخدمة</string>
+    <string name="plubbing_service">خدمة السباكة</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="wiring">الأسلاك</string>
+    <string name="service_tax">ضريبة الخدمة</string>
+    <string name="sub_total">المجموع الفرعي</string>
+    <string name="sar_140_00">- صار ١٤٠.٠٠</string>
+    <string name="gst">ضريبة السلع والخدمات</string>
+    <string name="total">مجموع</string>
+    <string name="sar_130_00">صار ١٣٠.٠٠</string>
+    <string name="payment_received">تم استلام الدفعة</string>
+    <string name="sale">تخفيض السعر</string>
+    <string name="lorem_ipsum_has_been_the_industry_s_standard_dummy_text_ever_since_the_1500s_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_type_specimen_book">Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing">Lorem Ipsum is simply dummy text of the printing</string>
+    <string name="property_to">ملكية ل</string>
+    <string name="buy">يشترى</string>
+    <string name="property_category">فئة الملكية</string>
+    <string name="property_type">نوع الملكية</string>
+    <string name="select_type">اختر صنف</string>
+    <string name="property_addres">عنوان العقار</string>
+    <string name="street_address_1">عنوان الشارع 1</string>
+    <string name="street_address_2">عنوان الشارع 2</string>
+    <string name="city">مدينة</string>
+    <string name="state_province">الولاية / المقاطعة</string>
+    <string name="zip_postal">الرمز البريدي</string>
+    <string name="country">بلد</string>
+    <string name="property_details">تفاصيل اوضح</string>
+    <string name="number_of_floors">عدد الطوابق</string>
+    <string name="number_of_apartments">عدد الشقق</string>
+    <string name="area_sq_ft">Area( Sq.ft)</string>
+    <string name="amenities">وسائل الراحة</string>
+    <string name="central_air_conditioner">تكييف مركزي</string>
+    <string name="parcking_space">أماكن لوقوف السيارات</string>
+    <string name="lobby_in_building">اللوبي في المبنى</string>
+    <string name="gym_or_health_club">صالة رياضية أو نادي صحي</string>
+    <string name="swimming_pool">حمام السباحة</string>
+    <string name="building">بناء</string>
+    <string name="health_and_fitness">الصحة و اللياقة</string>
+    <string name="next">التالى</string>
+    <string name="back">عودة</string>
+    <string name="no_of_bedrooms">عدد غرف النوم</string>
+    <string name="no_of_bathrooms">عدد الحمامات</string>
+    <string name="floor_plans">خطط المبنى</string>
+    <string name="property_images">صور الملكية</string>
+    <string name="property_videos">مقاطع فيديو الملكية</string>
+    <string name="submit">إرسال</string>
+    <string name="hide">إخفاء</string>
+    <string name="expense">مصروف</string>
+    <string name="pay_now">ادفع الآن</string>
+    <string name="details">تفاصيل</string>
+    <string name="request_service">الخدمة المطلوبة</string>
+    <string name="service_request">طلب خدمة</string>
+    <string name="appliance_repair">إصلاح الأجهزة</string>
+    <string name="date_amp_time"><![CDATA[Date & Time :]]></string>
+    <string name="address">عنوان   :</string>
+    <string name="akshya_nagar_1st_block_1st_cross_rammurthy_nagar_bangalore_560016">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</string>
+    <string name="details_new">تفاصيل :</string>
+    <string name="accept">قبول</string>
+    <string name="reject">رفض</string>
+    <string name="services">خدمات</string>
+    <string name="search_properties">خصائص البحث</string>
+    <string name="_05">05</string>
+    <string name="number_of_properties">عدد الخصائص</string>
+
+    <string name="under_maintenance">تحت الصيانة</string>
+    <string name="_01">01</string>
+    <string name="statistics">الإحصاء</string>
+    <string name="month">شهر</string>
+    <string name="report">نقل</string>
+    <string name="search_here">ابحث هنا</string>
+    <string name="electricians">اختصاصي بالكهرباء</string>
+    <string name="choose">أختر</string>
+    <string name="selected_service">خدمة مختارة</string>
+    <string name="service_full_name">الاسم الكامل للخدمة</string>
+    <string name="change">يتغيرون</string>
+    <string name="date">تاريخ</string>
+    <string name="upload_image">تحميل الصور</string>
+    <string name="description">وصف</string>
+    <string name="choose_file">اختر ملف</string>
+    <string name="address_new">عنوان</string>
+    <string name="request_has_been_successfully">تم الطلب بنجاح</string>
+    <string name="view_status">عرض الحالة</string>
+    <string name="order_id">رقم التعريف الخاص بالطلب</string>
+    <string name="service_name">اسم الخدمة</string>
+
+    <string name="requst_has_been_send">تم إرسال الطلب</string>
+    <string name="_225111">#225111</string>
+    <string name="cleaning_service">خدمة التنظيف</string>
+    <string name="Search_service">خدمات البحث</string>
+    <string name="from_time">من عند</string>
+    <string name="to_time">إلى</string>
+    <string name="_5_00pm">5:00pm</string>
+    <string name="cancel_request">إلغاء الطلب</string>
+    <string name="request_has_been_send">تم إرسال الطلب</string>
+    <string name="ready_for_estimate">جاهز للتقدير</string>
+    <string name="reports">التقارير</string>
+    <string name="vacant_report">تقرير شاغر</string>
+    <string name="income_on_property_name">الدخل على اسم العقار</string>
+    <string name="aed_200">AED 200</string>
+    <string name="enter_the_amount">أدخل المبلغ</string>
+    <string name="checkin_date">تاريخ الدخول</string>
+    <string name="checkout_date">موعد انتهاء الأقامة</string>
+    <string name="btnDownload">تحميل</string>
+    <string name="property_code_fullcollen">كود الملكية:</string>
+    <string name="sar_520_00_strike"><strike>SAR 520.00</strike></string>
+    <string name="other_packages">حزم أخرى</string>
+    <string name="_125_rating_underline"><u>125 Rating</u></string>
+    <string name="features_underline"><u>الميزات</u></string>
+    <string name="tvLocationDescription">وصف</string>
+    <string name="tvAmenities">وسائل الراحة</string>
+    <string name="watchman">رجل مراقبة</string>
+    <string name="_20_10_2020">20/10/2020</string>
+    <string name="lorem_ipsum_has_been_the_industry_s_standard_dummy_text_ever_since_the_1500s_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_typespecimen_book">Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="expand">وسعت</string>
+    <string name="tvMainTitleOne">العنوان الرئيسي</string>
+    <string name="tvSkip">تخطى</string>
+    <string name="tvDiscountAmount"><strike>AED 250,000</strike></string>
+    <string name="tvPropertyDurationType">الإيجار الأسبوعي</string>
+    <string name="tvDescription">فقط ادفع لمدة 5 أيام واحصل على إقامة لمدة يومين مجانًا</string>
+    <string name="select">تحديد</string>
+    <string name="weekly">أسبوعي</string>
+    <string name="monthly">شهريا</string>
+    <string name="sixMonths">6 Months</string>
+    <string name="yearly">سنوي</string>
+    <string name="packages">الحزم</string>
+    <string name="amount">كمية</string>
+    <string name="tvSecurityDeposit">مبلغ التأمين</string>
+    <string name="tvSecurityDepositAmount">SAR 180,00,000</string>
+    <string name="tvInstantRefund">استرداد فوري</string>
+    <string name="tvInstantRefundCondition" tools:ignore="TypographyDashes">قابلة للاسترداد بالكامل خلال 1-7 أيام من إخلائها في حالتها الأصلية</string>
+    <string name="tvMaintenanceFee">رسوم الصيانة</string>
+    <string name="tvMaintenanceFeeAmount">SAR 180,00,000</string>
+    <string name="tvMaintenanceFeeCondition">سيكون إجمالي 3 عمليات صيانة مجانية للمستخدم على أي خدمة صالحة لمدة عام واحد</string>
+    <string name="tvMElectricityBill">فاتورة الكهرباء</string>
+    <string name="tvMElectricityBillAmount">SAR 10,00,000</string>
+    <string name="tvMElectricityBillCondition">Lorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum</string>
+    <string name="price">السعر</string>
+    <string name="tvEMIAvailable">EMI متاح</string>
+    <string name="checkboxEMI_1">6 Month</string>
+    <string name="checkboxEMI_2">12 Month</string>
+    <string name="tvEMICalculate">6 X  SAR 42,666.00000</string>
+    <string name="tvEMICalculateAmount">25,5996.0</string>
+    <string name="tvEMIInterestRate">سعر الفائدة</string>
+    <string name="_9">9%</string>
+    <string name="task_name">اسم المهمة</string>
+    <string name="estimated_coast">الساحل المقدر:</string>
+    <string name="_100">100</string>
+    <string name="select_option">حدد الخيار</string>
+    <string name="title_activity_property__maps">خريطة</string>
+    <string name="rent">تأجير</string>
+    <string name="show">تبين</string>
+    <string name="show_appartment">عرض الشقة</string>
+    <string name="maintenance">اعمال صيانة</string>
+    <string name="success">نجاح</string>
+    <string name="arabic">عربى</string>
+    <string name="select_lang">Select Language</string>
+    <string name="english">English</string>
+    <string name="homearbic">English</string>
+    <string name="owner_s">المالك</string>
+    <string name="user_s">المستخدم</string>
+    <string name="choose_options">اختر الخيارات</string>
+    <string name="exit">مخرج</string>
+    <string name="are_you_sure">هل أنت متأكد ؟</string>
+    <string name="no">لا</string>
+    <string name="yes">نعم</string>
+
+    <string name="no_internet">الرجاء التحقق من اتصال الانترنت الخاص بك</string>
+    <string name="address_is_required">العنوان مطلوب</string>
+    <string name="select_property_type">حدد نوع الخاصية</string>
+    <string name="something_went_wrong">هناك خطأ ما</string>
+    <string name="please_add_atleast_one_amineites">الرجاء إضافة واحدة على الأقل من وسائل الراحة</string>
+    <string name="account_number">رقم حساب</string>
+    <string name="bank_name">اسم البنك</string>
+    <string name="upload">تحميل</string>
+    <string name="updated_successfully">تم التحديث بنجاح</string>
+    <string name="select_documents">حدد المستندات</string>
+    <string name="camera">آلة تصوير</string>
+    <string name="gallery">صالة عرض</string>
+    <string name="documents">وثائق</string>
+    <string name="pleasefillalldetails">يرجى ملء جميع التفاصيل</string>
+    <string name="goodtogo">جاهز للمضي</string>
+    <string name="pleasefillallfileds">لو سمحت أملأ كل الحقول</string>
+    <string name="thisfiledisrequird">هذا الحقل مطلوب</string>
+    <string name="please_click_back_to_exit">الرجاء النقر فوق "رجوع" مرة أخرى للخروج</string>
+    <string name="furnished_type">نوع الفرش</string>
+
+    <string name="select_country">حدد الدولة</string>
+    <string name="select_state">اختر ولايه</string>
+    <string name="select_city">اختر مدينة</string>
+    <string name="select_zipcode">حدد الرمز البريدي</string>
+    <string name="add_appartement_details">إضافة تفاصيل الشقة</string>
+    <string name="etLocation">موقع</string>
+    <string name="etExpectedAmount">المبلغ المتوقع</string>
+
+    <string name="something_wrong">هناك خطأ ما</string>
+    <string name="unknown_host_error">خطأ مضيف غير معروف</string>
+    <string name="data_empty">بيانات فارغة</string>
+    <string name="internal_server_error">خطأ في الخادم الداخلي</string>
+    <string name="old_password_required">كلمة المرور القديمة مطلوبة</string>
+    <string name="new_password_required">مطلوب كلمة مرور جديدة</string>
+    <string name="confirm_password_required">مطلوب تأكيد كلمة المرور</string>
+    <string name="password_must_be_same">يجب أن تكون كلمة المرور الجديدة وتأكيد كلمة المرور متطابقتين</string>
+    <string name="name_required">الاسم مطلوب</string>
+    <string name="email_required">البريد الإلكتروني (مطلوب</string>
+    <string name="phone_required">رقم الهاتف مطلوب</string>
+    <string name="accountnumber_required">رقم الحساب مطلوب</string>
+    <string name="bankname_required">اسم البنك مطلوب</string>
+    <string name="bankifsc_required">مطلوب رمز IFSC</string>
+
+    <string name="complete">اكتمال</string>
+
+    <string name="apartment_for_sale">عقار للبيع</string>
+    <string name="sar">صار</string>
+    <string name="uploaded">تم الرفع</string>
+    <string name="date_required">التاريخ مطلوب</string>
+    <string name="checkindate_lessthan_checkout">يجب أن يكون تاريخ تسجيل الوصول أقل من تاريخ المغادرة</string>
+    <string name="upload_file">الرجاء تحميل الملف</string>
+    <string name="add_no_of_payments">الرجاء إضافة عدد المدفوعات</string>
+    <string name="tvUploadDocumentsText">تحميل المستندات</string>
+    <string name="btnAttachFile">أرفق ملف</string>
+    <string name="empty_property_id">معرف الخاصية فارغ</string>
+    <string name="semifurnished">نصف</string>
+    <string name="not_furnished">لا</string>
+    <string name="tvPropertyText">ملكية</string>
+    <string name="spPropertyToHint">اختر خاصية</string>
+    <string name="property_details_missing">تفاصيل الخاصية مفقودة</string>
+    <string name="time_required">يرجى توفير الوقت</string>
+    <string name="choose_property">الرجاء اختيار خاصية</string>
+    <string name="description_required">الرجاء إضافة بعض الوصف</string>
+    <string name="add_images">الرجاء إضافة بعض الصور</string>
+    <string name="tvStatusText">"حالة :"</string>
+    <string name="tvStatus_send">"تم إرسال الطلب"</string>
+
+    <string name="tvStatus_inspection_completed">اكتمل التفتيش</string>
+    <string name="tvStatus_payment_done">تم الدفع</string>
+    <string name="tvStatus_completed">مكتمل</string>
+    <string name="tvStatus_cancelled">ألغيت</string>
+    <string name="admin_approval">موافقة المسؤول</string>
+
+    <string name="tvPaymentOptionsText">خيارات الدفع</string>
+    <string name="checkBoxBank">الدفع المصرفية</string>
+    <string name="termsofstay">شروط البقاء</string>
+    <string name="tvUploadPaymentBill">تحميل فاتورة الدفع</string>
+    <string name="tvUploadPaymentfile">إرفاق ملف الدفع</string>
+    <string name="checkboxCash">السيولة النقدية</string>
+    <string name="tvUploadCashBill">تحميل الفاتورة</string>
+    <string name="tvUploadCashfile">إرفاق إيصال نقدي</string>
+    <string name="btnSendFile">يرسل</string>
+    <string name="accepted">وافقت</string>
+    <string name="rejected">مرفوض</string>
+    <string name="tvTime">حدد الوقت</string>
+    <string name="title_required">عنوان مطلوبة</string>
+    <string name="tvDateRequest">التاريخ  :</string>
+    <string name="tvTimeRequest">الوقت    :</string>
+    <string name="etPropertyName">اسم الخاصية</string>
+    <string name="property_name_required">اسم الخاصية مطلوب</string>
+    <string name="enter_expected_amount">الرجاء إضافة المبلغ المتوقع</string>
+    <string name="tvTimeHome">زمن</string>
+    <string name="sq_m">متر مربع</string>
+    <string name="change_image">تغيير الصورة</string>
+    <string name="apartment_rent">عقار للإيجار</string>
+    <string name="apartment_sale">عقار للبيع</string>
+    <string name="received">تم الاستلام</string>
+    <string name="add">يضيف</string>
+    <string name="add_commission">إضافة العمولة:</string>
+    <string name="add_commission2">أضف العمولة</string>
+    <string name="enter_amount">أدخل المبلغ</string>
+    <string name="oops">وجه الفتاة!</string>
+    <string name="no_data_to_view">لا توجد بيانات لعرضها</string>
+    <string name="propertycode">كود الملكية</string>
+    <string name="propertytype">نوع الملكية</string>
+
+    <string name="hello_blank_fragment">مرحبا جزء فارغ</string>
+    <string name="request_has_been_sent_successfully">تم إرسال الطلب بنجاح</string>
+    <string name="property_list">قائمة الممتلكات</string>
+    <string name="builder">باني</string>
+    <string name="apartment">شقة</string>
+    <string name="add_cover_image">أضف صورة الغلاف</string>
+    <string name="property_name_is_required">اسم الخاصية مطلوب</string>
+    <string name="street_address_is_required">عنوان الشارع مطلوب</string>
+    <string name="some_fields_are_missing">بعض الحقول مفقودة</string>
+    <string name="building_image_is_required">مطلوب صورة المبنى</string>
+    <string name="status">حالة :</string>
+    <string name="please_select_furnished_type">الرجاء تحديد نوع مفروش</string>
+    <string name="please_add_atleast_one_property_images">الرجاء إضافة صورة خاصية واحدة على الأقل</string>
+    <string name="location_is_required">الموقع مطلوب</string>
+    <string name="select_property">حدد خاصية</string>
+    <string name="email_is_required">البريد الالكتروني مطلوب</string>
+    <string name="password_is_required">كلمة المرور مطلوبة</string>
+    <string name="_0">0</string>
+    <string name="property_cod">كود الملكية</string>
+    <string name="no_apartments_to_view">لا توجد شقق لعرضها</string>
+    <string name="sorry_we_are_currently_not_providing_this_service">عذرا نحن لا نقدم هذه الخدمة حاليا</string>
+    <string name="no_properties_are_available_for_service">لا توجد خصائص متاحة للخدمة</string>
+    <string name="collapse">انهيار</string>
+    <string name="bad_request">اقتراح غير جيد</string>
+    <string name="unauthorized">غير مصرح</string>
+    <string name="building_details">تفاصيل البناء</string>
+    <string name="whoops">عذرًا</string>
+    <string name="income_on">الدخل على</string>
+    <string name="year">عام</string>
+    <string name="try_again">حاول مجددا</string>
+    <string name="file_not_found">لم يتم العثور على الملف</string>
+    <string name="editing">التحرير</string>
+    <string name="status_pending">الحالة: قيد الإنتظار</string>
+    <string name="verified">تم التحقق</string>
+    <string name="approved">وافق</string>
+    <string name="hai">هاي</string>
+    <string name="bookproperty">حجز الملكية</string>
+    <string name="choose_payment">اختر دفعة</string>
+    <string name="if_net_banking">إذا كان صافي المصرفية /الخدمات المصرفية</string>
+    <string name="ifcash">إذا كان نقدا</string>
+    <string name="pick_date">اختر التاريخ</string>
+    <string name="lobby">اللوبي في المبنى</string>
+    <string name="overall_report">التقرير العام</string>
+    <string name="occupied_report">تقرير مشغول</string>
+    <string name="please_confirm_th_payment">يرجى تأكيد الدفع</string>
+    <string name="no_notifications">لا يوجد إشعار الآن!</string>
+    <string name="contact_not_found">العقد غير موجود</string>
+    <string name="property_for">الملكية ل</string>
+    <string name="select_property_category">حدد فئة الخاصية</string>
+    <string name="tvNoInternet">لا انترنت</string>
+    <string name="tvConnection">اتصال</string>
+    <string name="tvPleaseCheckInternet">يرجى التحقق من اتصالك بالإنترنت وحاول مرة أخرى</string>
+    <string name="btnTryAgain">حاول مجددا</string>
+    <string name="oldPasswordIsRequired">كلمة المرور القديمة مطلوبة</string>
+    <string name="newPasswordIsRequired">مطلوب كلمة مرور جديدة</string>
+    <string name="confirmPasswordIsRequired">تأكيد كلمة المرور مطلوب</string>
+    <string name="passwordNotMatched">كلمة المرور غير متطابقة</string>
+    <string name="total_amount">المبلغ الإجمالي</string>
+    <string name="will_get_in_touch_shortly">سوف نتواصل قريبا</string>
+    <string name="requestSentSuccessfully">تم إرسال الطلب بنجاح</string>
+    <string name="inspectionCompletedSuccessfully">اكتمل التفتيش بنجاح</string>
+    <string name="paymentDoneSuccessfully">تم الدفع بنجاح</string>
+    <string name="workCompletedSuccessfully">اكتمل العمل بنجاح</string>
+
+    <string name="completed">مكتمل</string>
+    <string name="denied">رفض</string>
+    <string name="remove">يزيل</string>
+
+    <string name="pendingForAproval">الملكية في انتظار الموافقة</string>
+    <string name="propertyApproved">تمت الموافقة على العقار</string>
+    <string name="propertyRejected">خاصية مرفوضة</string>
+    <string name="propertyForRent">عقار للإيجار</string>
+    <string name="propertyForSale">عقار للبيع</string>
+    <string name="sarValue">صار</string>
+
+    <string name="furnished">مفروشة، مد، زود :</string>
+    <string name="occupied_head">احتل :</string>
+
+    <string name="oops1">وجه الفتاة..!</string>
+    <string name="no_properties_available">لا توجد خصائص متاحة</string>
+    <string name="no_payment_history">لا يوجد تاريخ دفع</string>
+
+    <string name="verify">التحقق</string>
+    <string name="apartment_details">تفاصيل الشقة</string>
+    <string name="cover_images">صور الغلاف</string>
+    <string name="apartments">شقق سكنية</string>
+
+    <string name="meet_beybaan">قابل بيبان</string>
+    <string name="beybaan_strives_to_guide_you_in_finding_and_managing_properties_facility_management_operations_and_more_we_also_act_as_a_one_stop_destination_for_apartments_hotels_villas_compound_office_spaces_and_showrooms_but_that_s_not_all">تسعى شركة بيبان جاهدة لإرشادك في العثور على العقارات وإدارتها ، وإدارة المرافق ، والعمليات ، والمزيد. نعمل أيضًا كوجهة واحدة للشقق والفنادق والفيلات والمجمعات السكنية والمكاتب وصالات العرض. لكن هذا ليس كل شيء!</string>
+    <string name="find_your_dream_home">ابحث عن منزل أحلامك</string>
+    <string name="getting_your_hands_on_the_perfect_home_is_often_a_dream_for_many_but_with_beybaan_you_can_make_this_dream_a_reality_find_spacious_cozy_and_luxurious_living_spaces_within_your_budget">غالبًا ما يكون وضع يديك على المنزل المثالي حلمًا للكثيرين. لكن مع بيبان ، يمكنك تحويل هذا الحلم إلى حقيقة. ابحث عن مساحات معيشة فسيحة ومريحة وفاخرة في حدود ميزانيتك.</string>
+    <string name="our_passion">حماسنا</string>
+    <string name="being_a_property_owner_can_be_exhausting_at_times_as_you_have_many_things_on_your_plate_beybaan_lets_you_save_your_time_and_energy_by_taking_care_of_it_from_marketing_a_property_to_managing_it_we_do_it_all_our_team_of_professionals_covers_maintenance_landscaping_security_customer_care_business_and_technical_services_so_that_at_the_end_of_the_day_you_will_be_the_boss">قد يكون كونك مالكًا للعقار مرهقًا في بعض الأحيان ، لأن لديك العديد من الأشياء على صحنك. يتيح لك بيبان توفير وقتك وطاقتك من خلال الاهتمام بها. من تسويق عقار إلى إدارته ، نقوم بكل شيء. يغطي فريق المحترفين لدينا الصيانة ، والمناظر الطبيعية ، والأمن ، وخدمة العملاء ، والأعمال التجارية ، والخدمات الفنية حتى تكون أنت الرئيس في نهاية اليوم.</string>
+    <string name="individualProperty">الملكية الفردية</string>
+    <string name="property_booked">عقار محجوز</string>
+    <string name="success_request">تم طلبه بنجاح</string>
+    <string name="reservation_payed">مبلغ الحجز المدفوع</string>
+    <string name="waiting_for_approval">بانتظار الموافقة</string>
+
+    <string name="request_for_verification">طلب التحقق</string>
+    <string name="confirm_verification">تأكيد التحقق</string>
+    <string name="cancel">يلغي</string>
+    <string name="confirm">يتأكد</string>
+    <string name="once_you_have_submit_for_verification_you_will_not_able_to_edit_or_remove_any_apartment_from_the_list">بمجرد تقديمك للتحقق ، لن تتمكن من تعديل أو إزالة أي شقة من القائمة</string>
+    <string name="please_stay_in_the_page_while_processing_video">يرجى عدم تنفيذ أي إجراء أثناء معالجة الفيديو</string>
+
+    <string name="building_code">رمز البناء :</string>
+    <string name="fileNotFound">لم يتم العثور على الملف</string>
+    <string name="restartIsRequired">مطلوب إعادة التشغيل ليصبح ساري المفعول</string>
+    <string name="restart">اعادة البدء</string>
+    <string name="wouldYouLikeToRestart">هل ترغب في إعادة التشغيل</string>
+    <string name="ratings">التقييمات</string>
+
+    <string name="checkin_date_static">"          تاريخ الوصول"</string>
+    <string name="checkout_date_static">"          موعد انتهاء الأقامة"</string>
+    <string name="get_started">إنجليزي</string>
+
+    <string name="default_package">الحزمة الافتراضية</string>
+    <string name="are_you_sure_you_want_to_logout">هل أنت متأكد أنك تريد تسجيل الخروج؟</string>
+    <string name="service_management">إدارة الخدمات</string>
+    <string name="requested_service">الخدمة المطلوبة</string>
+    <string name="no_appointment_available">لا يوجد موعد متاح</string>
+    <string name="no_rent_overdue">لا إيجار متأخر</string>
+    <string name="no_pending_task">لا توجد مهمة معلقة</string>
+    <string name="no_completed_task">لا توجد مهمة مكتملة</string>
+    <string name="tap_one_day_to_add_a_task">اضغط على يوم واحد لإضافة مهمة</string>
+    <string name="no_requests_found">لم يتم العثور على طلبات</string>
+    <string name="no_new_messages">لا توجد رسائل جديدة</string>
+    <string name="show_less">Show Less</string>
+    <string name="show_more">Show More</string>
+
+    <string name="currently_no_requested_service_from_users">حاليا لا توجد خدمة مطلوبة من المستخدمين</string>
+    <string name="no_payments_yet">لا مدفوعات حتى الان</string>
+
+
+</resources>

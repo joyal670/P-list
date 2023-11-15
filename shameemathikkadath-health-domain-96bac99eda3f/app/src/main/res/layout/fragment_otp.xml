@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.iroid.healthdomain.data.dummyModel.PhoneModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_large"
+        tools:context=".ui.login.OTPFragment">
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:text="@string/verify_code"
+            android:textColor="@color/text_color_dark"
+            android:textSize="@dimen/text_large_heading"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tv_desc"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:text="@{@string/click_sms+model.number}"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_desc"
+            app:layout_constraintBottom_toTopOf="@id/otp_view"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/otp_view"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:inputType="number"
+            android:itemBackground="@color/bg_et_phone_number"
+            android:textSize="@dimen/text_otp"
+            android:textStyle="bold"
+            app:cursorColor="@color/color_pink"
+            app:cursorWidth="2dp"
+            app:itemCount="4"
+            app:itemHeight="@dimen/otp_view_ht"
+            app:itemRadius="4dp"
+            app:itemSpacing="@dimen/margin_small"
+            app:itemWidth="@dimen/otp_view_ht"
+            app:layout_constraintBottom_toTopOf="@id/bt_verify"
+            app:layout_constraintEnd_toEndOf="@+id/bt_verify"
+            app:layout_constraintStart_toStartOf="@+id/bt_verify"
+            app:lineColor="@color/line_otp"
+            app:lineWidth="2dp"
+            app:viewType="rectangle" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@drawable/selector_button_pink"
+            android:maxWidth="@dimen/button_max_width"
+            android:minWidth="@dimen/button_max_width"
+            android:text="@string/verify"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_count_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="(00:00)"
+            android:visibility="invisible"
+            android:textColor="@color/text_color_dark"
+            android:textSize="@dimen/text_desc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bt_verify" />
+
+        <TextView
+            android:id="@+id/tv_not_reveived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="@string/did_not_receive_the_code"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_desc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_count_down" />
+
+        <TextView
+            android:id="@+id/tv_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_extra_extra_small"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:text="@string/resend"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_desc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_not_reveived" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

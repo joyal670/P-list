@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/athens_gray"
+    tools:context=".ui.main.parent_panel.sidemenu.personal.students.ParentStudentProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_30dp"
+        android:descendantFocusability="blocksDescendants">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/imageCard"
+            android:layout_width="@dimen/margin_120dp"
+            android:layout_height="@dimen/margin_120dp"
+            app:cardCornerRadius="@dimen/margin_60dp"
+            app:cardElevation="@dimen/margin_16dp"
+            app:layout_constraintBottom_toTopOf="@+id/sampleCardView3"
+            app:layout_constraintEnd_toEndOf="@+id/sampleCardView3"
+            app:layout_constraintStart_toStartOf="@+id/sampleCardView3"
+            app:layout_constraintTop_toTopOf="@+id/sampleCardView3">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivProfilePic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_profile_user" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/sampleCardView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_80dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            app:cardCornerRadius="@dimen/margin_25dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_24dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:layout_marginTop="@dimen/margin_56dp"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_10dp"
+                    android:weightSum="2">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/barlow_medium"
+                        android:gravity="start"
+                        android:text="@string/subject"
+                        android:textColor="@color/dove_gray" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvSubject"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/barlow_medium"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_10dp"
+                    android:weightSum="2">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/barlow_medium"
+                        android:gravity="start"
+                        android:text="@string/test_name"
+                        android:textColor="@color/dove_gray" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvExamCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/barlow_medium"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_10dp"
+                    android:weightSum="2">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/barlow_medium"
+                        android:gravity="start"
+                        android:text="@string/class_amp_division"
+                        android:textColor="@color/dove_gray" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvClass"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/barlow_medium"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_10dp"
+                    android:weightSum="2">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/barlow_medium"
+                        android:gravity="start"
+                        android:text="@string/total_question"
+                        android:textColor="@color/dove_gray" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvques"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/barlow_medium"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_10dp"
+                    android:weightSum="2">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/barlow_medium"
+                        android:gravity="start"
+                        android:text="@string/total_mark"
+                        android:textColor="@color/dove_gray" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvMark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/barlow_medium"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_10dp"
+                    android:weightSum="2">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/barlow_medium"
+                        android:gravity="start"
+                        android:text="@string/total_time"
+                        android:textColor="@color/dove_gray" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/barlow_medium"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/instructionCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            app:cardCornerRadius="@dimen/margin_25dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/sampleCardView3"
+            app:layout_constraintStart_toStartOf="@+id/sampleCardView3"
+            app:layout_constraintTop_toBottomOf="@+id/sampleCardView3">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_12dp"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10dp"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/barlow_medium"
+                    android:gravity="start"
+                    android:text="@string/please_read_instruction_carefully"
+                    android:textColor="@color/pomegranate" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvInstructions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:fontFamily="@font/barlow_medium"
+                    android:gravity="start"
+                    android:orientation="vertical"
+                    android:textColor="@color/dove_gray" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startExamButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_60dp"
+            android:layout_marginTop="@dimen/margin_56dp"
+            android:backgroundTint="@color/pomegranate"
+            android:fontFamily="@font/barlow_medium"
+            android:text="@string/start_exam"
+            android:textAllCaps="false"
+            app:cornerRadius="@dimen/margin_50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/instructionCardView"
+            app:layout_constraintStart_toStartOf="@+id/instructionCardView"
+            app:layout_constraintTop_toBottomOf="@+id/instructionCardView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_2dp"
+    android:background="@drawable/bg_round_border"
+    android:padding="@dimen/margin_5dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/PropertLocationAdapter_location"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/margin_2dp"
+                android:layout_weight="0.30"
+                android:fontFamily="@font/heebo_medium"
+                android:gravity="start"
+                android:maxLength="25"
+                android:text=""
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/PropertLocationAdapter_type"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:fontFamily="@font/heebo_medium"
+                android:gravity="start"
+                android:text=""
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/PropertLocationAdapter_start_time"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:fontFamily="@font/heebo_medium"
+                android:gravity="start"
+                android:text=""
+                android:textSize="@dimen/text_size_14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/PropertLocationAdapter_startbtn"
+                android:backgroundTint="@color/color_accent_green"
+                android:fontFamily="@font/heebo_medium"
+                android:text="@string/start_tour"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_12sp" />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

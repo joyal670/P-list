@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_20dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/margin_90dp"
+            android:layout_height="@dimen/margin_80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/lv1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@id/imageView3">
+
+            <TextView
+                android:id="@+id/tvPropertyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/heebo_medium"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/text_dark_grey"
+                android:textSize="@dimen/text_size_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvApartments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/heebo_regular"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/text_dark_grey"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvOccupied"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:fontFamily="@font/heebo_regular"
+                    android:text=""
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:id="@+id/tvVacant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:fontFamily="@font/heebo_regular"
+                    android:text=""
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/text_size_13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:el_duration="1000"
+            app:el_expanded="true"
+            app:el_parallax="0.5"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lv1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSubBuilding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="3"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_sub_building" />
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/hideBtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:fontFamily="@font/heebo_regular"
+            android:text="@string/hide"
+            android:textAllCaps="false"
+            android:textColor="@color/de_york"
+            android:textSize="@dimen/text_size_13sp"
+            app:cornerRadius="@dimen/margin_20dp"
+            app:layout_constraintStart_toStartOf="@id/imageView3"
+            app:layout_constraintTop_toBottomOf="@id/expandable_layout"
+            app:strokeColor="@color/de_york" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/viewDetailsBtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            android:fontFamily="@font/heebo_regular"
+            android:text="@string/viewDetails"
+            android:textAllCaps="false"
+            android:textColor="@color/color_accent_grey"
+            android:textSize="@dimen/text_size_13sp"
+            app:cornerRadius="@dimen/margin_20dp"
+            app:layout_constraintStart_toEndOf="@id/hideBtn"
+            app:layout_constraintTop_toBottomOf="@id/expandable_layout"
+            app:strokeColor="@color/color_accent_grey" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:background="@color/seperator_light" />
+
+
+</androidx.cardview.widget.CardView>

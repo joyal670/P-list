@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/sale_Lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/tvEmiDuration"
+            style="@style/CustomCheckbox02"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_26dp"
+            android:checked="true"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:fontFamily="@font/heebo_semibold"
+            android:paddingStart="@dimen/margin_5dp"
+            android:paddingEnd="@dimen/margin_5dp"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_16sp"
+            app:buttonTint="@color/green_solid" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_3dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvEmiCalc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_30dp"
+
+                android:layout_weight=".5"
+                android:fontFamily="@font/heebo_regular"
+                android:gravity="start"
+                android:textColor="@color/color_accent_grey_light_new"
+                android:textSize="@dimen/text_size_12sp" />
+
+            <TextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:layout_weight=".5"
+                android:fontFamily="@font/heebo_regular"
+                android:gravity="end"
+                android:textColor="@color/color_accent_grey_light_new"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llInterest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_30dp"
+                android:layout_marginTop="@dimen/margin_3dp"
+                android:fontFamily="@font/heebo_regular"
+                android:text="@string/tvEMIInterestRate"
+                android:textColor="@color/color_accent_grey_light_new"
+                android:textSize="@dimen/text_size_12sp" />
+
+            <TextView
+                android:id="@+id/tvInterestRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5dp"
+                android:layout_marginTop="@dimen/margin_3dp"
+                android:fontFamily="@font/heebo_semibold"
+                android:textColor="@color/grey_background"
+                android:textSize="@dimen/text_size_12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDescriptionSale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_30dp"
+            android:layout_marginTop="@dimen/margin_3dp"
+            android:fontFamily="@font/heebo_regular"
+            android:textColor="@color/color_accent_grey_light_new"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="@dimen/margin_30dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:background="@drawable/dotted_line_vertical"
+            android:layerType="software" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

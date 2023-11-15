@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.home.my_health.history_and_activity.history.HistoryFragment">
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/historyTabLayout"
+            app:tabIndicatorHeight="2dp"
+            app:tabIndicatorColor="@color/color_pink"
+            app:tabSelectedTextColor="@color/color_pink"
+            app:tabTextColor="@color/color_grey"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:tabTextAppearance="@style/CustomToolbarTheme"
+            app:tabMode="fixed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/historyViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_200_dp"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/historyTabLayout" />
+
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:checkedButton="@id/button"
+            app:selectionRequired="true"
+            android:visibility="gone"
+            android:id="@+id/toggleButtonGroup"
+            app:layout_constraintEnd_toEndOf="@+id/historyViewPager"
+            app:layout_constraintStart_toStartOf="@+id/historyViewPager"
+            app:layout_constraintTop_toBottomOf="@+id/historyViewPager">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/week"
+                android:textAllCaps="false"
+                app:strokeColor="@color/toggle_strock_selector"
+                app:backgroundTint="@color/toggle_button_selector"
+                android:textColor="@color/toggle_text_selector" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button2"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/month"
+                android:textAllCaps="false"
+                app:strokeColor="@color/toggle_strock_selector"
+                app:backgroundTint="@color/toggle_button_selector"
+                android:textColor="@color/toggle_text_selector" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button3"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year"
+                android:textAllCaps="false"
+                app:strokeColor="@color/toggle_strock_selector"
+                app:backgroundTint="@color/toggle_button_selector"
+                android:textColor="@color/toggle_text_selector" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

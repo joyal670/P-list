@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_main"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_sub"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/border_rounded_top_white">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_80dp"
+                android:focusableInTouchMode="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_25dp"
+                    android:layout_marginStart="@dimen/margin_30dp"
+                    android:layout_marginEnd="@dimen/margin_30dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/add_delivery_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:textAlignment="viewStart"
+                        android:hint="@string/governorate"
+                        android:focusable="false"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down_black"/>
+
+                    <EditText
+                        android:id="@+id/etArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:hint="@string/area"
+                        android:textAlignment="viewStart"
+                        android:focusable="false"
+                        android:gravity="start"
+                        android:inputType="textMultiLine"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down_black"/>
+                    <EditText
+                        android:id="@+id/etBlock"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:inputType="text"
+                        android:hint="@string/block"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        android:textSize="@dimen/text_size_14sp"/>
+                    <EditText
+                        android:id="@+id/et_street"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:hint="@string/street"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        android:inputType="text"
+                        android:textSize="@dimen/text_size_14sp"/>
+
+                    <EditText
+                        android:id="@+id/et_avenue"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:hint="@string/avenue"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        android:textSize="@dimen/text_size_14sp"/>
+
+
+
+
+                    <EditText
+                        android:id="@+id/et_building"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:hint="@string/building"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        android:inputType="text"
+                        android:textSize="@dimen/text_size_14sp"/>
+
+                    <EditText
+                        android:id="@+id/et_floor"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:hint="@string/floor"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        android:inputType="number"
+                        android:textSize="@dimen/text_size_14sp"/>
+
+                    <EditText
+                        android:id="@+id/et_appartment"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:hint="@string/appartment"
+                        android:gravity="start"
+                        android:textAlignment="viewStart"
+                        android:inputType="text"
+                        android:textSize="@dimen/text_size_14sp"/>
+
+                    <EditText
+                        android:id="@+id/et_direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50dp"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:hint="@string/additional_direction"
+                        android:gravity="start"
+                        android:textAlignment="viewStart"
+                        android:inputType="text"
+                        android:textSize="@dimen/text_size_14sp"/>
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchDefaultAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:textAllCaps="false"
+                        android:checked="true"
+                        android:text="@string/switchMaterial"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:fontFamily="@font/segoe_ui"
+                        />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSubmitAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:gravity="center"
+                android:text="@string/tvsubmit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14sp"
+                app:cornerRadius="@dimen/margin_24dp"
+                app:strokeColor="@color/black" />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

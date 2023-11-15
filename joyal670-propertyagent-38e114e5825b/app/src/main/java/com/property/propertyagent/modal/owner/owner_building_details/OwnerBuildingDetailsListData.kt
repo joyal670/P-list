@@ -1,0 +1,25 @@
+package com.property.propertyagent.modal.owner.owner_building_details
+
+data class OwnerBuildingDetailsListData(
+    val appartments_count : Int ,
+    val building_apartments : List<OwnerBuildingDetailsListBuildingApartment> ,
+    val city : String ,
+    val city_rel : OwnerBuildingDetailsListCityRel ,
+    val documents : List<OwnerBuildingDetailsListDocument> ,
+    val id : Int ,
+    val type_id : Int ,
+    val income : String ,
+    val is_builder : Int ,
+    val is_featured : Int ,
+    val net_worth : String ,
+    val occupied : Int ,
+    val outstanding_due : String ,
+    val pending : String ,
+    val property_name : String ,
+    val property_reg_no : String ,
+    val property_to : Int ,
+    val vacated : Int ,
+    val status : Int ,
+    val contract_owner : String ,
+    val owner_confirmation : Int ,
+)

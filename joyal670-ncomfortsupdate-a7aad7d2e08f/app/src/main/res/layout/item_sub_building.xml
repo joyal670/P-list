@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/margin_10dp"
+    android:padding="@dimen/margin_10dp"
+    app:cardElevation="@dimen/margin_3dp"
+    android:elevation="@dimen/margin_3dp"
+    android:layout_marginTop="@dimen/margin_10dp"
+    android:layout_marginBottom="@dimen/margin_10dp"
+    android:layout_marginStart="@dimen/margin_5dp"
+    android:layout_marginEnd="@dimen/margin_5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivBuildingImage"
+                android:layout_width="@dimen/margin_100dp"
+                android:layout_height="@dimen/margin_75dp"
+                android:scaleType="centerCrop"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:src="@drawable/no_image" />
+
+            <TextView
+                android:id="@+id/tvBuildingStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_3dp"
+                android:fontFamily="@font/heebo_medium"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_10sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_25dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:background="@drawable/bubble_receive"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvBuildingType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/margin_16dp"
+                    android:paddingTop="@dimen/margin_8dp"
+                    android:paddingEnd="@dimen/margin_16dp"
+                    android:paddingBottom="@dimen/margin_8dp"
+                    android:text="Apartment"
+                    android:textColor="@color/color_accent_grey"
+                    android:textSize="@dimen/text_size_10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:background="@color/color_accent_grey_light_new2" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

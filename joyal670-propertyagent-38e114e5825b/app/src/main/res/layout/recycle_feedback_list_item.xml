@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_5dp"
+    android:layout_marginBottom="@dimen/margin_2dp"
+    android:background="@color/white"
+    app:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_5dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/item_feedback_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.8"
+                android:fontFamily="@font/heebo_medium"
+                android:gravity="start"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/color_accent_grey_light"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <ImageView
+                android:id="@+id/item_feedback_hide_icon"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_25dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin_3dp"
+                android:layout_weight=".2"
+                android:src="@drawable/ic_vector_hyphen"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/item_feedback_plus_icon"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_25dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin_3dp"
+                android:layout_weight=".2"
+                android:src="@drawable/ic_plus"
+                android:visibility="visible"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_feedback_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:fontFamily="@font/heebo_medium"
+            android:text=""
+            android:textColor="@color/color_accent_grey"
+            android:textSize="@dimen/text_size_11sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/item_feedback_profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivProfileImage"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="-5dp"
+                android:padding="@dimen/margin_5dp"
+                android:src="@drawable/ic_color_line_user"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProfileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heebo_bold"
+                    android:text="@string/profile_name"
+                    android:textColor="@color/color_accent_grey"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:id="@+id/item_feedback_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/email_id"
+                    android:textColor="@color/color_accent_grey"
+                    android:textSize="@dimen/text_size_13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_feedback_profile_layout_image"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center|end"
+            android:layout_marginTop="-45dp"
+            android:padding="@dimen/margin_5dp"
+            android:src="@drawable/ic_whatsapp"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

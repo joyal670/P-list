@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvskip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:text="Skip"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/border_rounded_light_white"
+        android:hint="@string/name"
+        android:paddingLeft="35dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/border_rounded_light_white"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="35dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/border_rounded_light_white"
+        android:gravity="start|center"
+        android:hint="@string/gender"
+        android:paddingLeft="35dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/border_rounded_light_white"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingLeft="35dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/confirmpassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/border_rounded_light_white"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:paddingLeft="35dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/phoneno"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/border_rounded_light_white"
+        android:hint="@string/phone_number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingLeft="35dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/alternativeno"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/border_rounded_light_white"
+        android:hint="@string/alternative_number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingLeft="35dp"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/chkTermsAndConditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="12dp"
+        android:buttonTint="@color/colorPrimary"
+        android:text="@string/agree_terms_and_condition" />
+
+    <Button
+        android:id="@+id/signup2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_round_green"
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</LinearLayout>

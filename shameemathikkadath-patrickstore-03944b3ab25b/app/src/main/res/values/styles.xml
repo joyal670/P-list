@@ -1,0 +1,175 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="toolbar_right_style">
+        <item name="android:layout_gravity">center_vertical|right</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+    <style name="toolbar_left_style">
+        <item name="android:layout_gravity">center_vertical|left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    //Toolbar
+    <style name="Title_Style" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_medium</item>
+    </style>
+
+    //Edit Text
+    <style name="edit_text_style" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_regular</item>
+    </style>
+
+    //Button
+    <style name="btn_text_style" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_medium</item>
+    </style>
+    <style name="btn_text_style_login" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_medium</item>
+    </style>
+
+    //TextView
+    <style name="text_view_normal_style" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_regular</item>
+    </style>
+    <style name="text_view_medium_style" parent="">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_medium</item>
+    </style>
+    <style name="text_view_medium_primary_style" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_medium</item>
+    </style>
+    <style name="text_view_medium_white_medium" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_medium</item>
+    </style>
+    <style name="text_view_semi_bold" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_semi_bold</item>
+    </style>
+    <style name="text_view_regular" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_regular</item>
+    </style>
+    <style name="text_view_small" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_semi_bold</item>
+    </style>
+    <style name="text_view_medium" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/roboto_medium</item>
+    </style>
+    <style name="text_view_medium_white" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_semi_bold</item>
+    </style>
+    <style name="text_view_small_regular" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_regular</item>
+    </style>
+    <style name="text_view_very_small" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_semi_bold</item>
+    </style>
+    <style name="text_view_18sp" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_semi_bold</item>
+    </style>
+    <style name="text_view_normal_black" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_semi_bold</item>
+    </style>
+
+    //TabLayout
+    <style name="TabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/colorBlackTransparent</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/barlow_semi_bold</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    //Rating bar
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorGreen</item>
+        <item name="colorControlActivated">@color/colorBlackTransparent</item>
+    </style>
+    <style name="NavigationTheme" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">02dp</item>
+    </style>
+
+
+    //progress bar
+    <style name="MyProgressBarTwo" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="colorButtonNormal">#f50057</item>
+        <item name="colorControlActivated">@color/colorGreen</item>
+        <item name="colorControlHighlight">#ff6d00</item>
+        <item name="android:progressDrawable">@drawable/progress_layer</item>
+        <item name="android:minWidth">200dp</item>
+    </style>
+
+    //bottom sheet
+    <style name="ThemeOverlay.App.BottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Shopping.BottomSheetDialog</item>
+    </style>
+
+    <style name="Shopping.BottomSheetDialog" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.PatrickStore.SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+</resources>

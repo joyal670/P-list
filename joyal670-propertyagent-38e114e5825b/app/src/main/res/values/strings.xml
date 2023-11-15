@@ -1,0 +1,749 @@
+<resources>
+    <string name="app_name">Property</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="sent_link">Sent Link</string>
+    <string name="call">Call</string>
+    <string name="start">Start</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="Upload_ID">Upload ID</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="card_number">Card Number</string>
+    <string name="cvv">CVV</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="user_id">User ID</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="profile">Profile</string>
+    <string name="my_property">My Property</string>
+    <string name="ChangePassword">Change Password</string>
+    <string name="my_earnings">My Earnings</string>
+    <string name="total_earnings">Total Earnings</string>
+    <string name="request">Request</string>
+    <string name="earning_details">Earning Details</string>
+    <string name="filter">Filter</string>
+    <string name="property_code">Property Code : </string>
+    <string name="rented_out_this_property">Rented out this property</string>
+    <string name="view_property">View Property</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="InHandCash">Cash In Hand </string>
+    <string name="SAR">SAR 0</string>
+    <string name="users">User\'s</string>
+    <string name="Ongoing">Ongoing</string>
+    <string name="property_name">Property Name</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="OngoingDeal">Ongoing Deal</string>
+    <string name="appartment_for_rent">Property for Rent</string>
+    <string name="appartment_for_sale">Property for Sale</string>
+    <string name="features">Features</string>
+    <string name="Bookingdetails">Booking Details</string>
+    <string name="select_checkin_date">Select Checkin Date</string>
+    <string name="select_checkout_date">Select Checkout Date</string>
+    <string name="reservation_amount">Reservation Amount</string>
+    <string name="Status">Status</string>
+    <string name="PaymentMode">Payment Mode</string>
+    <string name="online_banking">Online Banking</string>
+    <string name="VisitProperty">Visit Property</string>
+    <string name="CompletedDeal">Completed Deal</string>
+    <string name="UserContract">User Contract</string>
+    <string name="read_contract">Read Contract</string>
+    <string name="contract_period">Contract Period : </string>
+    <string name="to">to</string>
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_properties">My Properties</string>
+    <string name="in_hand_cash">In Hand Cash</string>
+    <string name="qr_reader">QR Reader</string>
+    <string name="upload_license">Upload License</string>
+    <string name="feedback">Feedback</string>
+    <string name="logout">Logout</string>
+    <string name="client">Client</string>
+    <string name="my_task">My Task</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="owner">Owner</string>
+    <string name="OwnerName">Owner Name</string>
+    <string name="owner_name">Owner Name</string>
+    <string name="owner_contract">Owner Contract</string>
+    <string name="owner_register">Owner Register</string>
+    <string name="property_registered">Property Registered</string>
+    <string name="complete">Complete</string>
+    <string name="edit_details">Edit Details</string>
+    <string name="pending">Balance</string>
+    <string name="lorem_ipsum_new">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="notification">Notification</string>
+    <string name="heading">Heading</string>
+    <string name="receive">Receive</string>
+    <string name="not_receive">Not Receive</string>
+    <string name="PropertyAppointment">Property Appointment</string>
+    <string name="RentalProperty">Rental Property</string>
+    <string name="view_property_details">View Property Details</string>
+    <string name="Pricing">Pricing</string>
+    <string name="Rent">Rent</string>
+    <string name="SecurityDeposit">Security Deposit</string>
+    <string name="ReservationBookingAmount">Reservation / Booking Amount </string>
+    <string name="visitor_name">Visitor Name</string>
+    <string name="view_profile">View Profile</string>
+    <string name="visit_status">Visit Status</string>
+    <string name="visit_started">Visit Started</string>
+    <string name="property_visited">Property Visited</string>
+    <string name="proceed_to_book">Proceed to Book</string>
+    <string name="pay_reservation_amount">Pay Reservation Amount</string>
+    <string name="request_for_contract">Request for Contract</string>
+    <string name="full_payment_key_handover">Full Payment / Key Handover</string>
+    <string name="not_interested">Not Interested</string>
+    <string name="view_packages">View Packages</string>
+    <string name="BookProperty">Book Property</string>
+    <string name="choose_package">Choose Package</string>
+    <string name="reservation_amount_new">Reservation Amount</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="if_net_banking_banking"># If Net Banking / Banking</string>
+    <string name="if_cash"># If Cash</string>
+    <string name="upload_bill">Upload Bill</string>
+    <string name="pending_amount">Pending Amount :</string>
+    <string name="check_in_date">Check in Date</string>
+    <string name="_28_11_2020">28-11-2020</string>
+    <string name="check_out_date">Check out Date</string>
+    <string name="number_of_payments">Number of Payments</string>
+    <string name="view_details">View Details</string>
+    <string name="payable_months">Payable Months</string>
+    <string name="january_payment_2020">January Payment 2020</string>
+    <string name="payed">Paid</string>
+    <string name="june_payment_2020">June Payment 2020</string>
+    <string name="january_payment_2021">January Payment 2021</string>
+    <string name="upload_documents">Upload Documents</string>
+    <string name="request_contract">Request Contract</string>
+    <string name="edit">Edit</string>
+    <string name="MyProperty">My Property</string>
+    <string name="anne_e_chavez">Anne E. Chavez</string>
+    <string name="anneechavez_dayrep_com">anneechavez@dayrep.com</string>
+    <string name="full_collen">:</string>
+    <string name="_04">04</string>
+    <string name="p_12345">P 12345</string>
+    <string name="sar_10_000">SAR 10,000</string>
+    <string name="sar_4_500">SAR 4,500</string>
+    <string name="sar_20_000">SAR 20,000</string>
+    <string name="sar_10000">SAR 0.00</string>
+    <string name="_2bkh">2BKH</string>
+    <string name="_4_5">4.5</string>
+    <string name="_125_rating">125 Rating</string>
+    <string name="al_quwaiiyah">Al Quwaiiyah</string>
+    <string name="_03">03</string>
+    <string name="_115_sq_m">115 sq. M.</string>
+    <string name="fully">Fully</string>
+    <string name="_02">02</string>
+    <string name="_15_05_2021">15 - 05 - 2021</string>
+    <string name="_50">50</string>
+    <string name="total_assigned_properties">Total Assigned Properties</string>
+    <string name="zone">Zone</string>
+    <string name="today_s_appoinment">Today\'s Appointment :</string>
+    <string name="_10">10</string>
+    <string name="location">Location</string>
+    <string name="type">Type</string>
+    <string name="time">Time</string>
+    <string name="rent_overdue">Rent Overdue</string>
+    <string name="property_id">Property ID</string>
+    <string name="due_amount">Due Amount</string>
+    <string name="view_all">View All</string>
+    <string name="completed_tasks">Completed Tasks</string>
+    <string name="full_name">Full Name</string>
+    <string name="paid_by">Paid by</string>
+    <string name="jayanth">Jayanth</string>
+    <string name="sar_1000">SAR 1000</string>
+    <string name="building_name">Building Name</string>
+    <string name="request_from">Request from</string>
+    <string name="user">User</string>
+    <string name="task_heading">Task Heading</string>
+    <string name="_20_05_2020">20 - 05 - 2020</string>
+    <string name="_5_20_pm">5:20 pm</string>
+    <string name="xxx">xxx</string>
+    <string name="_15_05_2020">15 - 05 - 2020</string>
+    <string name="apartment_for_rent">Property for rent</string>
+    <string name="buraydah_52385_saudi_arabia">Buraydah 52385 saudi arabia</string>
+    <string name="completed">Completed</string>
+    <string name="exitapp">Exit</string>
+    <string name="areyousure"> Are you sure</string>
+    <string name="riyadh">Riyadh</string>
+    <string name="_10_00am">10:00 am</string>
+    <string name="start_tour">Start Tour</string>
+    <string name="my_request">My Request</string>
+    <string name="my_client">My Client</string>
+    <string name="p_1234">P-1234</string>
+    <string name="start_visit">Start Visit</string>
+    <string name="edit_submit_details">Edit/Submit Details</string>
+    <string name="property_verified">Property Verified</string>
+    <string name="visit_property">Visit Property</string>
+    <string name="thomasmbain_dayrep_com">ThomasMBain@dayrep.com</string>
+    <string name="add_tiltle">Add title</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="calendar">Calender</string>
+    <string name="demo_gmail_com">demo@gmail.com</string>
+    <string name="property">Property</string>
+    <string name="payment">Payment</string>
+    <string name="commercial">Commercial</string>
+    <string name="residential">Residential</string>
+    <string name="filtter">Filter</string>
+    <string name="buildings">Buildings</string>
+    <string name="_2545220">#2545220</string>
+    <string name="residential_building">Residential Building</string>
+    <string name="net_worth">Rent Value</string>
+    <string name="sar_200_00">SAR 200.00</string>
+    <string name="income">Received</string>
+    <string name="sar_520_00">SAR 520.00</string>
+    <string name="outstanding_deu">Last dues</string>
+    <string name="sar_845_00">SAR 845.00</string>
+    <string name="sar_4587_00">SAR 4587.00</string>
+    <string name="vacant">Vacant</string>
+    <string name="_06">06</string>
+    <string name="hide_appartment">Hide Appartment</string>
+    <string name="occupied">Occupied</string>
+    <string name="Appartment">Appartment</string>
+    <string name="number_of_appartments">Number of Appartments</string>
+    <string name="left_param">(</string>
+    <string name="right_param">)</string>
+    <string name="occupied_properties">Occupied Properties</string>
+    <string name="vacant_properties">Vacant Properties</string>
+    <string name="revenue">Revenue</string>
+    <string name="sar_50_00">SAR 50.00</string>
+    <string name="occupied_from">Occupied from</string>
+    <string name="occupied_to">Occupied to</string>
+    <string name="add_property">Add Property</string>
+    <string name="nill">""</string>
+    <string name="search">Search</string>
+    <string name="how_many_times_rented_out">How many times rented out</string>
+    <string name="vacant_since">Vacant since</string>
+
+
+    <string-array name="pakeges_list">
+        <item name="pakage 1" />
+        <item name="pakage 2" />
+        <item name="pakage 3" />
+        <item name="pakage 4" />
+    </string-array>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="rebecca_f_triggs">Rebecca F. Triggs</string>
+    <string name="agent">Agent</string>
+    <string name="chat">Chat</string>
+    <string name="view_contract">View Contract</string>
+    <string name="view">View</string>
+    <string name="property_pricing">Property Pricing</string>
+    <string name="rent_amount">Rent amount</string>
+    <string name="rental_frequency">Rental Frequency</string>
+    <string name="one_month">One Month</string>
+    <string name="management_charge">Management charge</string>
+    <string name="service_charge">Service charge</string>
+    <string name="others">Others</string>
+    <string name="maintenance_service">Maintenance Service</string>
+    <string name="free_services">Free services</string>
+    <string name="download_report">Download Report</string>
+    <string name="download_interest_report">Download Interest Report</string>
+    <string name="payment_history">Payment History</string>
+    <string name="other_expenses">Other Expenses</string>
+    <string name="rent_details">Rent Details</string>
+    <string name="teams_of_stay">Terms of Stay</string>
+    <string name="al_majma_ah_15362_saudi_arabia">Al Majmaah 15362, Saudi Arabia</string>
+    <string name="aed_250_000">AED 250,000</string>
+    <string name="rent_start">Rent Start</string>
+    <string name="payment_period">Payment Period</string>
+    <string name="every_month">Every Month</string>
+    <string name="payment_amount">Payment Amount</string>
+    <string name="aed_250_00">AED 250.00</string>
+    <string name="last_payment">Last Payment</string>
+    <string name="view_payment_history">View Payment History</string>
+    <string name="payment_date">Payment Date</string>
+    <string name="payment_time">Payment Time</string>
+    <string name="monthly_rent">Monthly Rent</string>
+    <string name="service">Service</string>
+    <string name="sar_50_000">-SAR 50.00</string>
+    <string name="service_details">Service Details</string>
+    <string name="plubbing_service">Plumbing Service</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="wiring">Wiring</string>
+    <string name="service_tax">Service TAX</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="sar_140_00">- SAR 140.00</string>
+    <string name="gst">GST</string>
+    <string name="total">TOTAL</string>
+    <string name="sar_130_00">SAR 130.00</string>
+    <string name="payment_received">Payment Received</string>
+    <string name="sale">Sale</string>
+    <string name="lorem_ipsum_has_been_the_industry_s_standard_dummy_text_ever_since_the_1500s_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_type_specimen_book">Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing">Lorem Ipsum is simply dummy text of the printing</string>
+    <string name="property_to">Property to</string>
+    <string name="buy">Buy</string>
+    <string name="property_category">Property Category</string>
+    <string name="property_type">Property Type</string>
+    <string name="select_type">Select Type</string>
+    <string name="property_addres">Property Address</string>
+    <string name="street_address_1">Street Address 1</string>
+    <string name="street_address_2">Street Address 2</string>
+    <string name="city">City</string>
+    <string name="state_province">State / Province</string>
+    <string name="zip_postal">Zip / Postal</string>
+    <string name="country">Country</string>
+    <string name="property_details">Property Details</string>
+    <string name="number_of_floors">Number of Floors</string>
+    <string name="number_of_apartments">Number of Apartments</string>
+    <string name="area_sq_ft">Area( Sq.ft)</string>
+    <string name="amenities">Amenities</string>
+    <string name="central_air_conditioner">Central Air Conditioner</string>
+    <string name="parcking_space">Parcking Space</string>
+    <string name="lobby_in_building">Lobby In Building</string>
+    <string name="gym_or_health_club">Gym or Health Club</string>
+    <string name="swimming_pool">Swimming Pool</string>
+    <string name="building">Building</string>
+    <string name="health_and_fitness">Health and Fitness</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="no_of_bedrooms">no of bedrooms</string>
+    <string name="no_of_bathrooms">no of bathrooms</string>
+    <string name="floor_plans">Floor Plans</string>
+    <string name="property_images">Property Images</string>
+    <string name="property_videos">Property Videos</string>
+    <string name="submit">Submit</string>
+    <string name="hide">Hide</string>
+    <string name="expense">Expense</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="details">Details</string>
+    <string name="request_service">Requested Service</string>
+    <string name="service_request">Service Request</string>
+    <string name="appliance_repair">Appliance Repair</string>
+    <string name="date_amp_time"><![CDATA[Date & Time :]]></string>
+    <string name="address">Address   : </string>
+    <string name="akshya_nagar_1st_block_1st_cross_rammurthy_nagar_bangalore_560016">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</string>
+    <string name="details_new">Details :</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="services">Services</string>
+    <string name="search_properties">Search Properties</string>
+    <string name="_05">05</string>
+    <string name="number_of_properties">Number of Properties</string>
+
+    <string name="under_maintenance">Under Maintenance</string>
+    <string name="_01">01</string>
+    <string name="statistics">Statistics</string>
+    <string name="month">Month</string>
+    <string name="report">Report</string>
+    <string name="search_here">Search Here</string>
+    <string name="electricians">Electricians</string>
+    <string name="choose">Choose</string>
+    <string name="selected_service">Selected Service</string>
+    <string name="service_full_name">Service Full Name</string>
+    <string name="change">Change</string>
+    <string name="date">Date</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="description">Description</string>
+    <string name="choose_file">Choose File</string>
+    <string name="address_new">Address</string>
+    <string name="request_has_been_successfully">Request has been Successfully</string>
+    <string name="view_status">View Status</string>
+    <string name="order_id">Order ID</string>
+    <string name="service_name">Service Name</string>
+
+    <string name="requst_has_been_send">Request has been Send</string>
+    <string name="_225111">#225111</string>
+    <string name="cleaning_service">Cleaning Service</string>
+    <string name="Search_service">Search Services</string>
+    <string name="from_time">From</string>
+    <string name="to_time">To</string>
+    <string name="_5_00pm">5:00pm</string>
+    <string name="cancel_request">Cancel Request</string>
+    <string name="request_has_been_send">Request has been Send</string>
+    <string name="ready_for_estimate">Ready for Estimate</string>
+    <string name="reports">Reports</string>
+    <string name="vacant_report">Vacant Report</string>
+    <string name="income_on_property_name">Income On Property name</string>
+    <string name="aed_200">AED 200</string>
+    <string name="enter_the_amount">Enter the amount</string>
+    <string name="checkin_date">Check in Date</string>
+    <string name="checkout_date">Check out Date</string>
+    <string name="btnDownload">Download</string>
+    <string name="property_code_fullcollen">Property Code  :</string>
+    <string name="sar_520_00_strike"><strike>SAR 520.00</strike></string>
+    <string name="other_packages">Other Packages</string>
+    <string name="_125_rating_underline"><u>125 Rating</u></string>
+    <string name="features_underline"><u>Features</u></string>
+    <string name="tvLocationDescription">Description</string>
+    <string name="tvAmenities">Amenities</string>
+    <string name="watchman">Watchman</string>
+    <string name="_20_10_2020">20/10/2020</string>
+    <string name="lorem_ipsum_has_been_the_industry_s_standard_dummy_text_ever_since_the_1500s_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_typespecimen_book">Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="expand">Expand</string>
+    <string name="tvMainTitleOne">Main Title</string>
+    <string name="tvSkip">Skip</string>
+    <string name="tvDiscountAmount"><strike>AED 250,000</strike></string>
+    <string name="tvPropertyDurationType">Weekly Rent</string>
+    <string name="tvDescription">Just Pay For 5 Days And Get 2 Day Stay For Free</string>
+    <string name="select">Select</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="sixMonths">6 Months</string>
+    <string name="yearly">Yearly</string>
+    <string name="packages">Packages</string>
+    <string name="amount">Amount</string>
+    <string name="tvSecurityDeposit">Security Deposit</string>
+    <string name="tvSecurityDepositAmount">SAR 180,00,000</string>
+    <string name="tvInstantRefund">Instant Refund</string>
+    <string name="tvInstantRefundCondition">fully refundable within 1-7 days of vacated in original condition</string>
+    <string name="tvMaintenanceFee">Maintenance Fee</string>
+    <string name="tvMaintenanceFeeAmount">SAR 180,00,000</string>
+    <string name="tvMaintenanceFeeCondition">a total of 3 maintenance will be free to the user on any  service valid for 1 year</string>
+    <string name="tvMElectricityBill">Electricity Bill</string>
+    <string name="tvMElectricityBillAmount">SAR 10,00,000</string>
+    <string name="tvMElectricityBillCondition">Lorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum</string>
+    <string name="price">Price</string>
+    <string name="tvEMIAvailable">EMI Available</string>
+    <string name="checkboxEMI_1">6 Month</string>
+    <string name="checkboxEMI_2">12 Month</string>
+    <string name="tvEMICalculate">6 X  SAR 42,666.00000</string>
+    <string name="tvEMICalculateAmount">25,5996.0</string>
+    <string name="tvEMIInterestRate">Interest Rate</string>
+    <string name="_9">9%</string>
+    <string name="task_name">Task Name</string>
+    <string name="estimated_coast">Estimated cost :</string>
+    <string name="_100">100</string>
+    <string name="select_option">Select option</string>
+    <string name="title_activity_property__maps">Map</string>
+    <string name="rent">Rent</string>
+    <string name="show">Show</string>
+    <string name="show_appartment">Show Apartment</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="success">Success</string>
+    <string name="arabic">عربي</string>
+    <string name="select_lang">Select Language</string>
+    <string name="english">English</string>
+    <string name="homearbic">عربى</string>
+    <string name="owner_s">Owner\'s</string>
+    <string name="user_s">USER\'s</string>
+    <string name="choose_options">Choose Options</string>
+    <string name="exit">Exit</string>
+    <string name="are_you_sure">Are you sure ?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+
+    <string name="address_is_required">Address is required</string>
+    <string name="select_property_type">Select Property Type</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="please_add_atleast_one_amineites">Please add at least one Amenities</string>
+    <string name="account_number">Account number</string>
+    <string name="bank_name">Bank name</string>
+    <string name="upload">Upload</string>
+    <string name="updated_successfully">Updated successfully</string>
+    <string name="select_documents">Select Documents</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="documents">Documents</string>
+    <string name="pleasefillalldetails">Please fill all details</string>
+    <string name="goodtogo">Good to go</string>
+    <string name="pleasefillallfileds">Please fill all fields</string>
+    <string name="thisfiledisrequird">This filed is required</string>
+    <string name="please_click_back_to_exit">Please click BACK again to exit</string>
+    <string name="furnished_type">Furnished Type</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_state">Select State</string>
+    <string name="select_city">Select City</string>
+    <string name="select_zipcode">Select ZipCode</string>
+    <string name="add_appartement_details">Add Appartement Details</string>
+    <string name="etLocation">Location</string>
+    <string name="etExpectedAmount">Expected Amount</string>
+
+    <string name="no_internet">Please check your internet connection</string>
+    <string name="something_wrong">Something went wrong</string>
+    <string name="unknown_host_error">Unknown Host Error</string>
+    <string name="data_empty">Empty Data</string>
+    <string name="internal_server_error">Internal Server Error</string>
+    <string name="old_password_required">Old password required</string>
+    <string name="new_password_required">New password required</string>
+    <string name="confirm_password_required">Confirm password required</string>
+    <string name="password_must_be_same">New password and Confirm password must be same</string>
+    <string name="name_required">Name required</string>
+    <string name="email_required">Email required</string>
+    <string name="phone_required">Phone number required</string>
+    <string name="accountnumber_required">Account number required</string>
+    <string name="bankname_required">Bank name required</string>
+    <string name="bankifsc_required">IFSC code required</string>
+    <string name="apartment_for_sale">Property for sale</string>
+    <string name="sar">SAR</string>
+    <string name="uploaded">Uploaded</string>
+    <string name="date_required">Date Required</string>
+    <string name="checkindate_lessthan_checkout">CheckIn date should be less than CheckOut date</string>
+    <string name="upload_file">Please upload file</string>
+    <string name="add_no_of_payments">Please add number of payments</string>
+    <string name="tvUploadDocumentsText">Upload Documents</string>
+    <string name="btnAttachFile">Attach File</string>
+    <string name="empty_property_id">Property Id is Empty</string>
+    <string name="semifurnished">Semi</string>
+    <string name="not_furnished">Not</string>
+    <string name="tvPropertyText">Property</string>
+    <string name="spPropertyToHint">Choose Property</string>
+    <string name="property_details_missing">Missing property details</string>
+    <string name="time_required">Please provide time</string>
+    <string name="choose_property">Please choose a property</string>
+    <string name="description_required">Please add some description</string>
+    <string name="add_images">Please add some images</string>
+    <string name="tvStatusText">"Status : "</string>
+    <string name="tvStatus_send">"Request has been Sent "</string>
+
+    <string name="tvStatus_inspection_completed">Inspection completed </string>
+    <string name="tvStatus_payment_done">Payment done</string>
+    <string name="tvStatus_completed">Completed </string>
+    <string name="tvStatus_cancelled">Cancelled</string>
+
+    <string name="tvPaymentOptionsText">PAYMENT OPTIONS</string>
+    <string name="checkBoxBank">Bank Payment</string>
+    <string name="termsofstay">Terms of Stay</string>
+    <string name="tvUploadPaymentBill">UPLOAD PAYMENT BILL</string>
+    <string name="tvUploadPaymentfile">Attach Payment File</string>
+    <string name="checkboxCash">Cash</string>
+    <string name="tvUploadCashBill">UPLOAD BILL</string>
+    <string name="tvUploadCashfile">Attach Cash receipt</string>
+    <string name="btnSendFile">SEND</string>
+    <string name="accepted">Accepted</string>
+    <string name="rejected">Rejected</string>
+    <string name="tvTime">Select Time</string>
+    <string name="title_required">Title Required</string>
+    <string name="tvDateRequest">Date &#160;:</string>
+    <string name="tvTimeRequest">Time&#160;:</string>
+    <string name="etPropertyName">Property Name</string>
+    <string name="property_name_required">Property name required</string>
+    <string name="enter_expected_amount">Please add expected amount</string>
+    <string name="tvTimeHome">Time</string>
+    <string name="sq_m">sq.M</string>
+    <string name="change_image">Change Image</string>
+    <string name="apartment_rent">Property for Rent</string>
+    <string name="apartment_sale">Property for Sale</string>
+    <string name="received">Received</string>
+    <string name="add">Add</string>
+    <string name="add_commission">Add Commission :</string>
+    <string name="add_commission2">Add Commission</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="oops">Oops!</string>
+    <string name="no_data_to_view">No Data to View</string>
+    <string name="propertycode">Property Code</string>
+    <string name="propertytype">Property Type</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="request_has_been_sent_successfully">Request has been sent successfully</string>
+    <string name="property_list">Property List</string>
+    <string name="builder">Builder</string>
+    <string name="apartment">Apartment</string>
+    <string name="add_cover_image">Add Cover Image</string>
+    <string name="property_name_is_required">Property Name is Required</string>
+    <string name="street_address_is_required">Street Address is Required</string>
+    <string name="some_fields_are_missing">Some Fields are missing</string>
+    <string name="building_image_is_required">Building Image is required</string>
+    <string name="status">Status :</string>
+    <string name="please_select_furnished_type">Please select furnished type</string>
+    <string name="please_add_atleast_one_property_images">Please add atleast one property image</string>
+    <string name="location_is_required">Location is required</string>
+    <string name="select_property">Select Property</string>
+    <string name="email_is_required">Email is Required</string>
+    <string name="password_is_required">Password is Required</string>
+    <string name="_0">0</string>
+    <string name="property_cod">Property Code</string>
+    <string name="no_apartments_to_view">No Apartments to View</string>
+    <string name="sorry_we_are_currently_not_providing_this_service">Sorry we are currently not providing this service</string>
+    <string name="no_properties_are_available_for_service">No properties are available for service</string>
+    <string name="collapse">Collapse</string>
+    <string name="bad_request">Bad Request</string>
+    <string name="unauthorized">Unauthorized</string>
+    <string name="building_details">Building Details</string>
+    <string name="whoops">Whoops</string>
+    <string name="income_on">Income On</string>
+    <string name="year">Year</string>
+    <string name="try_again">Try Again</string>
+    <string name="file_not_found">File not found</string>
+    <string name="editing">Editing</string>
+    <string name="status_pending">Status : Pending</string>
+    <string name="verified">Verified</string>
+    <string name="approved">Approved</string>
+    <string name="hai">Hai</string>
+    <string name="bookproperty">Book Property</string>
+    <string name="choose_payment">Choose a Payment</string>
+    <string name="if_net_banking">If Net Banking / Banking</string>
+    <string name="ifcash">If Cash</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="lobby">Lobby In Building</string>
+    <string name="overall_report">Overall Report</string>
+    <string name="occupied_report">Occupied Report</string>
+    <string name="please_confirm_th_payment">Please Confirm the payment</string>
+    <string name="no_notifications">No Notices Right Now!</string>
+    <string name="contact_not_found">Contract not found</string>
+    <string name="property_for">Property For</string>
+    <string name="select_property_category">Select Property Category</string>
+    <string name="tvNoInternet">No Internet</string>
+    <string name="tvConnection">Connection</string>
+    <string name="tvPleaseCheckInternet">Please check your internet connection and try again</string>
+    <string name="btnTryAgain">Try Again</string>
+    <string name="oldPasswordIsRequired">Old Password is Required</string>
+    <string name="newPasswordIsRequired">New Password is Required</string>
+    <string name="confirmPasswordIsRequired">Confirm Password is Required</string>
+    <string name="passwordNotMatched">Password not matched</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="will_get_in_touch_shortly">Will get in touch shortly</string>
+    <string name="requestSentSuccessfully">Request sent successfully</string>
+    <string name="inspectionCompletedSuccessfully">Inspection completed successfully</string>
+    <string name="paymentDoneSuccessfully">Payment done successfully</string>
+    <string name="workCompletedSuccessfully">Work completed successfully</string>
+
+    <string name="Completed">Completed</string>
+    <string name="admin_approval">Admin Approval</string>
+    <string name="denied">Denied</string>
+    <string name="remove">Remove</string>
+    <string name="pendingForAproval">Property pending for approval</string>
+    <string name="propertyApproved">Property Approved</string>
+    <string name="propertyRejected">Property Rejected</string>
+    <string name="propertyForRent">Property for Rent</string>
+    <string name="propertyForSale">Property for Sale</string>
+    <string name="sarValue">SAR</string>
+    <string name="oops1">Oops..!</string>
+    <string name="no_properties_available">No properties available</string>
+    <string name="no_payment_history">No Payment History</string>
+    <string name="furnished">Furnished :</string>
+    <string name="occupied_head">Occupied :</string>
+    <string name="verify">Verify</string>
+    <string name="apartment_details">Apartment Details</string>
+    <string name="cover_images">Cover Images</string>
+    <string name="apartments">Apartments</string>
+    <string name="meet_beybaan">Meet Beybaan</string>
+    <string name="beybaan_strives_to_guide_you_in_finding_and_managing_properties_facility_management_operations_and_more_we_also_act_as_a_one_stop_destination_for_apartments_hotels_villas_compound_office_spaces_and_showrooms_but_that_s_not_all">Beybaan strives to guide you in finding and managing properties, facility management, operations, and more. We also act as a one-stop destination for apartments, hotels, villas, compound, office spaces and showrooms. But that’s not all!</string>
+    <string name="find_your_dream_home">Find Your Dream Home</string>
+    <string name="getting_your_hands_on_the_perfect_home_is_often_a_dream_for_many_but_with_beybaan_you_can_make_this_dream_a_reality_find_spacious_cozy_and_luxurious_living_spaces_within_your_budget">Getting your hands on the perfect home is often a dream for many. But with Beybaan, you can make this dream a reality. Find spacious, cozy and luxurious living spaces within your budget.</string>
+    <string name="our_passion">Our Passion</string>
+    <string name="being_a_property_owner_can_be_exhausting_at_times_as_you_have_many_things_on_your_plate_beybaan_lets_you_save_your_time_and_energy_by_taking_care_of_it_from_marketing_a_property_to_managing_it_we_do_it_all_our_team_of_professionals_covers_maintenance_landscaping_security_customer_care_business_and_technical_services_so_that_at_the_end_of_the_day_you_will_be_the_boss">Being a property owner can be exhausting at times, as you have many things on your plate. Beybaan lets you save your time and energy by taking care of it. From marketing a property to managing it, we do it all. Our team of professionals covers maintenance, landscaping, security, customer care, business, and technical services so that at the end of the day, you will be the boss.</string>
+    <string name="individualProperty">Individual Property</string>
+    <string name="request_for_verification">Request for Verification</string>
+    <string name="confirm_verification">Confirm Verification</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="once_you_have_submit_for_verification_you_will_not_able_to_edit_or_remove_any_apartment_from_the_list">Once you have submit for verification, you will not able to edit or remove any apartment from the list</string>
+    <string name="please_stay_in_the_page_while_processing_video">Please do not perform any action, while processing video</string>
+    <string name="property_booked">Property Booked</string>
+    <string name="success_request">Successfully Requested</string>
+    <string name="reservation_payed">Reservation Amount Paid</string>
+    <string name="waiting_for_approval">Waiting for approval</string>
+    <string name="building_code">Building Code :</string>
+    <string name="fileNotFound">File not found</string>
+    <string name="restartIsRequired">Restart is required to take effect</string>
+    <string name="restart">Restart</string>
+    <string name="wouldYouLikeToRestart">Would you like to Restart</string>
+    <string name="ratings">Ratings</string>
+    <string name="checkin_date_static">"          Checkin Date"</string>
+    <string name="checkout_date_static">"          Checkout Date"</string>
+    <string name="get_started">Get Started</string>
+    <string name="default_package">Default Package</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="service_management">Service Management</string>
+    <string name="requested_service">Requested Service</string>
+    <string name="no_appointment_available">No Appointment Available</string>
+    <string name="no_rent_overdue">No Rent Overdue</string>
+    <string name="no_pending_task">No Pending Task</string>
+    <string name="no_completed_task">No Completed Task</string>
+    <string name="tap_one_day_to_add_a_task">Tap one day to add a task</string>
+    <string name="no_requests_found">No Requests Found</string>
+    <string name="no_new_messages">no new messages</string>
+    <string name="show_less">Show Less</string>
+    <string name="show_more">Show More</string>
+    <string name="currently_no_requested_service_from_users">Currently no requested service from users</string>
+    <string name="no_payments_yet">No Payments Yet</string>
+
+</resources>

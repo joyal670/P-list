@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sample_subscription"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/margin_20dp"
+    android:paddingTop="@dimen/margin_15dp"
+    android:paddingEnd="@dimen/margin_20dp"
+    android:paddingBottom="@dimen/margin_15dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/margin_100dp"
+        android:layout_height="@dimen/margin_100dp"
+        android:layout_margin="@dimen/margin_3dp"
+
+        app:cardCornerRadius="@dimen/margin_10dp">
+
+        <ImageView
+            android:id="@+id/ivSubscriptionHistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sample_profile" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_12dp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSubscriptionHistoryId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoe_ui"
+                android:gravity="start"
+                android:text="@string/_178545869"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:drawablePadding="@dimen/text_size_10sp"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:gravity="start"
+                android:padding="@dimen/spacing_small"
+                android:text="@string/completed"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/segoe_ui"
+            android:gravity="start"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <TextView
+            android:id="@+id/tvSubscriptionHistoryCategoryPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/segoe_ui"
+            android:gravity="start|top"
+            android:maxLines="1"
+            android:text="@string/weight_loss_2_meals_day"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13sp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rvsubscriptionHistoryViewDetailsBtn"
+            android:layout_width="@dimen/margin_140dp"
+            android:layout_height="@dimen/margin_45dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/margin_2dp"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:gravity="center"
+            android:text="@string/view_details"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12sp"
+            app:backgroundTint="@color/black"
+            app:cornerRadius="@dimen/margin_10dp"
+            app:strokeColor="@color/black" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

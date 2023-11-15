@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <FrameLayout
+                android:id="@+id/frameLogin"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/ic_loginbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/ivLogoLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="@dimen/margin_77dp"
+                    android:src="@drawable/login_img1"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/tvWelcomeTitleLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/heebo_bold"
+                android:text="@string/sign_in"
+                android:textColor="@color/offblack"
+                android:textSize="@dimen/text_size_22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLogin" />
+
+            <com.alimaddi.segmentedbutton.SegmentedButtonGroup
+                android:id="@+id/segBtn"
+                android:layout_width="250dp"
+                android:layout_height="@dimen/margin_45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@color/white"
+                android:elevation="2dp"
+                app:borderColor="@color/sliver"
+                app:borderWidth="1dp"
+                app:dividerPadding="10dp"
+                app:dividerWidth="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvWelcomeTitleLogin"
+                app:position="0"
+                app:radius="@dimen/margin_10dp"
+                app:ripple="true"
+                app:rippleColor="@color/white"
+                app:selectedBackground="@color/color_accent_green">
+
+                <com.alimaddi.segmentedbutton.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_45dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/heebo_medium"
+                    android:padding="10dp"
+                    app:drawableGravity="top"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/agent"
+                    app:textColor="@color/black"
+                    app:textSize="@dimen/text_size_12sp" />
+
+                <com.alimaddi.segmentedbutton.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_45dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/heebo_medium"
+                    android:padding="10dp"
+                    app:drawableGravity="top"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/owner"
+                    app:textColor="@color/black"
+                    app:textSize="@dimen/text_size_12sp" />
+
+            </com.alimaddi.segmentedbutton.SegmentedButtonGroup>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:backgroundTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/segBtn">
+
+                <EditText
+                    android:id="@+id/fragment_login_email_etx"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="@dimen/margin_20dp"
+                    android:fontFamily="@font/heebo_regular"
+                    android:hint="@string/email_id"
+                    android:inputType="textEmailAddress"
+                    tools:ignore="Autofill" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:backgroundTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tilEmail"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/fragment_login_password_etx"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="@dimen/margin_20dp"
+                    android:fontFamily="@font/heebo_regular"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    tools:ignore="Autofill" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvForgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:fontFamily="@font/heebo_medium"
+                android:text="@string/forgot_password"
+                android:textColor="@color/color_accent_red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tilPassword" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvloginbtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_60dp"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                android:backgroundTint="@color/color_accent_green"
+                android:fontFamily="@font/heebo_medium"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:cornerRadius="@dimen/margin_7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvForgot" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

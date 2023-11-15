@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9F2FF"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_2dp"
+            android:layout_marginBottom="@dimen/margin_2dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_50dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/propertyfrg_owner_commercial"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:paddingStart="@dimen/margin_10dp"
+                    android:paddingTop="@dimen/margin_10dp"
+                    android:paddingEnd="@dimen/margin_10dp"
+                    android:paddingBottom="@dimen/margin_10dp"
+                    android:text="@string/commercial"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_accent_green"
+                    android:textSize="@dimen/text_size_12sp"
+                    app:cornerRadius="@dimen/margin_20dp"
+                    app:strokeColor="@color/color_accent_green" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/propertyfrg_owner_residential"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:paddingStart="@dimen/margin_10dp"
+                    android:paddingEnd="@dimen/margin_10dp"
+                    android:text="@string/residential"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_accent_grey"
+                    android:textSize="@dimen/text_size_12sp"
+                    app:cornerRadius="@dimen/margin_20dp"
+                    app:strokeColor="@color/color_accent_grey" />
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/property_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin_5dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_20dp"
+                        android:layout_height="@dimen/margin_20dp"
+                        android:layout_gravity="center|end"
+                        android:layout_marginEnd="@dimen/margin_7dp"
+                        android:gravity="center|end"
+                        android:src="@drawable/ic_vector_filter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/margin_40dp"
+                        android:layout_gravity="center|end"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:fontFamily="@font/heebo_medium"
+                        android:gravity="end|center"
+                        android:text="@string/filtter"
+                        android:textColor="@color/color_accent_grey_light_new"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <ImageView
+                        android:id="@+id/filterIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/margin_22dp"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginEnd="@dimen/margin_8dp"
+                        android:gravity="start"
+                        android:src="@drawable/ic_group_error" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/lv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:fontFamily="@font/heebo_medium"
+            android:text="@string/buildings"
+            android:textColor="@color/color_accent_grey_light_new"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_7dp"
+            android:layout_marginEnd="@dimen/margin_15dp"
+            android:background="#8FC8F9" />
+
+    </LinearLayout>
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lv1"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCommercial"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layoutAnimation="@anim/layout_animation"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </com.baoyz.widget.PullRefreshLayout>
+
+    <include
+        android:id="@+id/llEmptyData1"
+        layout="@layout/layout_no_property"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv1"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

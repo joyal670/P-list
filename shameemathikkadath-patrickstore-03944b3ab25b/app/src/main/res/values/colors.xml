@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#FEC126</color>
+    <color name="colorPrimary">#FEC126</color>
+    <color name="colorAccent">#616161</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#262626</color>
+    <color name="colorBlue">#354C9A</color>
+    <color name="colorRed">#FF6465</color>
+    <color name="default_grey">#2E2E2E</color>
+    <color name="colorBlackTransparent">#80262626</color>
+    <color name="colorTabSelected">#FF0000</color>
+    <color name="colorGreen">#039508</color>
+    <color name="lightGray">#C1C1C1</color>
+    <color name="white_smoke">#F1F1F1</color>
+    <color name="colorBg">#F7F7F7</color>
+    <color name="colorGrey">#D2D2D2</color>
+    <color name="dark_gray2">#6A6A6A</color>
+    <color name="colorVeryLightGrey">#F7F8FB</color>
+    <color name="colorLightGrey">#656565</color>
+    <color name="colorDarkGrey">#616161</color>
+    <color name="colorPreview">#AFAFAF</color>
+    <color name="colorTag">#8D8D8D</color>
+    <color name="colorAdr">#F2F2F2</color>
+    <color name="colorLocation">#212121</color>
+    <color name="colorSignUp">#EFF2F3</color>
+    <color name="colorImg">#F3F3F3</color>
+    <color name="colorGreen2">#00AF06</color>
+    <color name="colorText2">#343434</color>
+    <color name="color_accent_green">#6AC58C</color>
+    <color name="color_orange">#FFA500</color>
+    <color name="colorLoc">#FEC126</color>
+    <color name="colorGrayStroke">#C5C5C5</color>
+    <color name="dot_color">#000000</color>
+    <color name="color_grey3">#F2F2F2</color>
+
+</resources>

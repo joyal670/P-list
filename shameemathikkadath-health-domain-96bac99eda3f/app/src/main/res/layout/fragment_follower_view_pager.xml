@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.profile.view_pager.FollowerViewPagerFragment">
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/followTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabIndicatorColor="@color/color_pink"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="@color/color_pink"
+            app:tabTextAppearance="@style/CustomToolbarTheme"
+            app:tabTextColor="@color/color_grey" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_margin="@dimen/dimen_12_dp"
+            android:id="@+id/followViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/followTabLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

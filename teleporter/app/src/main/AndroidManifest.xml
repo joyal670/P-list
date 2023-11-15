@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ashtechlabs.teleporter">
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="com.ashtechlabs.teleporter.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:name=".TeleporterApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icon_mark_start" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="c3c1264d90c9033cb4cac77191cb3953914bca93" />
+
+        <activity
+            android:name=".ui.splash.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.dashboard.courier_dashboard.DriverDashBoardActivity"
+            android:label="@string/teleport"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.dashboard.trucking_dashdoard.TruckingDashBoardActivity"
+            android:label="@string/teleport"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.dashboard.courier_dashboard.faq.Faq"
+            android:label="@string/faq"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.trucking_dashdoard.faq.TruckingFaq"
+            android:label="@string/faq"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.courier_dashboard.pending_jobs.DriverPendingJobActivity"
+            android:label="@string/my_customer"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".ui.dashboard.trucking_dashdoard.pending_jobs.TruckingPendingJobActivity"
+            android:label="@string/my_customer"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.dashboard.cargo_dashboard.pending_jobs.VendorPendingJobsActivity"
+            android:label="@string/my_customer"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.dashboard.storage_dashboard.pending_jobs.WarehousePendingJobActivity"
+            android:label="@string/my_customer"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.dashboard.storage_dashboard.notifications.WarehouseNotificationActivity"
+            android:label="@string/notify"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.courier_dashboard.notifications.CourierNotificationActivity"
+            android:label="@string/notify"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.trucking_dashdoard.notifications.TruckingNotificationActivity"
+            android:label="@string/notify"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.cargo_dashboard.notifications.CargoNotificationActivity"
+            android:label="@string/notify"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.storage_dashboard.profile.WareHouseProfileActivity"
+            android:label="@string/my_account"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.cargo_dashboard.profile.VendorProfileActivity"
+            android:label="@string/my_account"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.courier_dashboard.profile.DriverProfileActivity"
+            android:label="@string/my_account"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.courier_dashboard.BookingDetailDriverActivity"
+            android:label="@string/teleport"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.trucking_dashdoard.BookingDetailTruckingActivity"
+            android:label="@string/teleport"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.cargo_dashboard.BookingDetailVendorActivity"
+            android:label="@string/teleport"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.CreateAccountActivity"
+            android:label="@string/teleport"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.storage_dashboard.WareHouseDashBoardActivity"
+            android:label="@string/teleport"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.dashboard.cargo_dashboard.CargoDashBoardActivity"
+            android:label="@string/teleport"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.signup.RegisterVendorActivity"
+            android:label="@string/register"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.Dashboard_Main"
+            android:label="@string/teleport"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.signup.RegisterDriverActivity"
+            android:label="@string/register"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.signup.RegisterTruckingActivity"
+            android:label="@string/register"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.pricing.PricingActivity"
+            android:label="@string/pricing"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.reviews.ReviewActivity"
+            android:label="@string/review"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.signup.RegisterWarehouseActivity"
+            android:label="@string/register"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <!-- android:name="com.google.android.maps.v2.API_KEY"-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCCgmTYHMKtqS4bDonfWH0dWDMqHYnQ0lE" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service android:name=".cloud_messaging.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+       <!-- <service android:name=".cloud_messaging.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        &lt;!&ndash; [END firebase_iid_service] &ndash;&gt;
+        <service
+            android:name=".cloud_messaging.MyJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+-->
+        <activity
+            android:name=".ui.dashboard.trucking_dashdoard.update_rate.UpdateRateTruckingActivity"
+            android:label="@string/update_rate"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".ui.dashboard.courier_dashboard.update_rate.UpdateRateDriverActivity"
+            android:label="@string/title_activity_update_rate_driver"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".ui.dashboard.cargo_dashboard.update_rate.UpdateRateVendorActivity"
+            android:label="@string/title_activity_update_rate_vendor"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".ui.dashboard.storage_dashboard.update_rate.UpdateRateWarehouseActivity"
+            android:label="@string/title_activity_update_rate_warehouse"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".ui.dashboard.courier_dashboard.order_info_detail.OrderDetailDriverActivity"
+            android:label="@string/title_activity_order_detail_driver"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.cargo_dashboard.order_info_detail.OrderDetailVendorActivity"
+            android:label="@string/title_activity_order_detail_vendor"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.storage_dashboard.order_info_detail.OrderInfoDetailsWareHouse"
+            android:label="@string/title_activity_ware_house_order_info_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.cargo_dashboard.update_track_trace.DeliveryMileStoneActivity"
+            android:label="@string/title_activity_delivery_mile_stone"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".declared_orders.DeclaredOrdersActivity"
+            android:label="@string/declared_orders"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.trucking_dashdoard.profile.TruckingProfileActivity"
+            android:label="@string/my_account"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+
+        <activity
+            android:name=".ui.dashboard.trucking_dashdoard.order_info_detail.OrderDetailTruckingActivity"
+            android:label="@string/declared_orders"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.storage_dashboard.storage_spaces.StorageSpacesActivity"
+            android:label="@string/title_manage_warehouse"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.trucking_dashdoard.vehicle_type.VehicleTypeActivity"
+            android:label="@string/vehicle_type"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.dashboard.trucking_dashdoard.vehicle_type.type.VehicleSelectActivity"
+            android:label="@string/select_vehicle"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActionBar" />
+
+    </application>
+
+</manifest>

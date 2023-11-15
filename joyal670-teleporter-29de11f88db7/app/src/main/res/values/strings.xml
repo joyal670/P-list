@@ -1,0 +1,501 @@
+<resources>
+    <string name="app_name">TelePorter</string>
+    <string name="app_id">1737231403233470</string>
+
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_forgot_password">Forgot Password</string>
+
+    <string name="error_message_network">Network error</string>
+    <string name="teleport">Teleporter</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_login">Login</string>
+
+    <string name="api_key">AIzaSyCCgmTYHMKtqS4bDonfWH0dWDMqHYnQ0lE</string>
+
+    <string name="user_name">User Name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="mobile_no">Mobile Number</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="submit">Submit</string>
+    <string name="register">Register</string>
+    <string name="accept">Accept</string>
+    <string name="start_service">Start Service</string>
+    <string name="end_service">End Service</string>
+    <string name="reject">Reject</string>
+    <string name="view_order">View Order</string>
+    <string name="map_view">Map View</string>
+    <string name="update">Update</string>
+    <string name="update_order">Update Order</string>
+    <string name="update_rate">Update Rate</string>
+    <string name="create_account">Create Account</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="already_account">Already have an account?</string>
+    <string name="face_book_login">Facebook Login</string>
+    <string name="g_plus_login">Google Plus Login</string>
+    <string name="service">Choose Your Service</string>
+    <string name="warehouse">Warehouse Owners</string>
+    <string name="driver">Drivers</string>
+    <string name="vendor">Vendors &amp; Partners</string>
+    <string name="loading">Loading....</string>
+
+    <!-- Button text -->
+    <string name="enter_phone">Enter Phone</string>
+    <string name="update_phone">Update your Phone number with Teleport</string>
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+
+    <string name="delivery">Delivery</string>
+    <string name="courier">Courier</string>
+    <string name="movers_and_pickers">Movers &amp; Pickers</string>
+    <string name="cargo">Cargo</string>
+    <string name="cargo_type">Cargo Type</string>
+    <string name="storage">Storage</string>
+    <string name="grocery">Grocery</string>
+    <string name="food_delivery">Food delivery</string>
+
+    <string name="parcel">Parcel</string>
+    <string name="docs">Docs</string>
+    <string name="plants_and_pets">Plants &amp; Pets</string>
+    <string name="fragile">Fragile</string>
+    <string name="others">Others</string>
+
+    <string name="from">From</string>
+    <string name="storage_type">Storage type</string>
+    <string name="cbm">CBM</string>
+    <string name="validity">Validity</string>
+    <string name="enter_from">Enter From Address</string>
+    <string name="to">To</string>
+    <string name="enter_to">Enter To Address</string>
+    <string name="Select">Select</string>
+    <string name="weight">Weight</string>
+    <string name="unit">Unit</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="send_request">Send Request</string>
+
+
+    <string name="support">Support</string>
+    <string name="chat">Chat</string>
+    <string name="close">Close</string>
+    <string name="call">Call</string>
+
+    <string name="choose_ur_service">CHOOSE YOUR SERVICE</string>
+
+    <string name="select_delivery_location">Select Delivery Location</string>
+    <string name="select_weight_unit">Select Weight Unit</string>
+    <string name="select_delivery_date">Select Delivery Date</string>
+
+    <string name="home">Home</string>
+    <string name="my_account">My Account</string>
+    <string name="my_chat">My Chat</string>
+    <string name="pricing">Pricing</string>
+    <string name="review">Review</string>
+    <string name="declared_orders">Declared Orders</string>
+    <string name="storage_spaces">Storage Spaces</string>
+    <string name="title_manage_warehouse">Manage Warehouse</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="chat_with_expert">Chat with Expert</string>
+    <string name="customer_support">Customer support</string>
+    <string name="about">About</string>
+    <string name="no_orders_found">No orders found!</string>
+    <string name="no_pending_jobs">No pending jobs!</string>
+    <string name="refer_a_friend">Refer a friend</string>
+    <string name="transportation">Select Mode Of Transportation</string>
+    <string name="service_mode">Service Mode</string>
+    <string name="delivary">Delivery Location</string>
+    <string name="select_service">Select Service</string>
+    <string name="select_vehicle">Select Vehicle</string>
+    <string name="select_date">Select Date</string>
+    <string name="warehouse_details">Warehouse Details</string>
+    <string name="vehicle_details">Vehicle Details</string>
+    <string name="storage_details">Storage Details</string>
+    <string name="warehouse_image">Add warehouse Image</string>
+    <string name="trade_licence_details">Trade Licence Details</string>
+    <string name="movers">Mover &amp; Packer</string>
+    <string name="trucking">Trucking</string>
+    <string name="upload">Upload</string>
+    <string name="upload_image">Upload image</string>
+    <string name="delivary_type">Delivery Type</string>
+    <string name="courier_type">Courier Type</string>
+    <string name="delivary_amount">Delivery Amount</string>
+    <string name="hazardous">Hazardous</string>
+
+    <string name="transit_time">Transit Time</string>
+    <string name="send">Send</string>
+    <string name="reset">Reset</string>
+    <string name="my_rating">My Rating</string>
+    <string name="offers">Offers</string>
+    <string name="my_customer">Pending Jobs</string>
+    <string name="notify">Notification</string>
+    <string name="storagetype">Storage Type</string>
+    <string name="location">Location</string>
+    <string name="select_warehouse">Select Warehouse</string>
+    <string name="location_name">Location Name</string>
+    <string name="warehouse_name">Warehouse Name</string>
+    <string name="vehicle_number">Vehicle number</string>
+    <string name="logout">Log Out</string>
+    <string name="faq">FAQ</string>
+    <string name="no_order_found">No Order Found!</string>
+    <string name="load">Load Details</string>
+    <string name="total">Total Weight and Volume</string>
+    <string name="delivery_location">Delivery Location</string>
+    <string name="pick_up_date">Pickup Date</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="pickup_address">Pick Address</string>
+    <string name="payment_mode"> Payment Mode</string>
+
+
+    <string-array name="array_driver_service">
+        <item>1 Ton Pickup</item>
+        <item>3 Ton Reefer</item>
+        <item>3 Ton Close Body Pickup</item>
+        <item>3 Ton Open Body Pickup</item>
+        <item>7 Ton Close Body Truck</item>
+        <item>7 Ton Open Body Truck</item>
+        <item>10 Ton Truck</item>
+        <item>40 Feet Container Truck</item>
+        <item>40 Feet Open Body Truck</item>
+        <item>60 Feet Truck</item>
+        <item>40 Feet Reefer Truck</item>
+        <item>Bulker Truck</item>
+        <item>Low Bed Truck</item>
+        <item>Tanker Truck</item>
+        <item>Tripper Truck</item>
+        <item>Bikes</item>
+    </string-array>
+
+
+    <string-array name="array_warehouse_service">
+
+        <item>Self Storage (For personal &amp; small Business  Needs )	</item>
+        <item>Agriculture(Fruits &amp; vegetables)</item>
+        <item>Apparel</item>
+        <item>Automobiles &amp; Motorcycles</item>
+        <item>Spare Parts</item>
+        <item>Art &amp; craft</item>
+        <item>Beauty &amp; personal Care</item>
+        <item>Chemicals</item>
+        <item>Electronics &amp; Electricals</item>
+        <item>Furniture</item>
+        <item>Others</item>
+
+
+    </string-array>
+
+
+    <string-array name="array_partner_service">
+        <item>Freight forwarders</item>
+        <item>Movers &amp; Packers</item>
+        <item>3PL</item>
+        <item>Courrier Service</item>
+        <item>Parcel Service</item>
+        <item>Freelancer</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="array_delivery">
+        <item>Docs</item>
+        <item>Parcel</item>
+        <item>Food</item>
+        <item>Grocery</item>
+        <item>Plants &amp; Pets</item>
+        <item>Fragile</item>
+        <item>Others</item>
+
+    </string-array>
+    <string-array name="upload_array_list">
+        <item>Camera</item>
+        <item>Cancel</item>
+
+    </string-array>
+
+    <string-array name="array_payment">
+        <item>Cash on delivery</item>
+        <item>Credit/Debit Card</item>
+        <item>PayPal</item>
+
+    </string-array>
+
+<!--    <string-array name="array_commodity">
+        <item>Agriculture (Fruits and Vegetables)</item>
+        <item>Apparel</item>
+        <item>Automobiles &amp; Motorcycles</item>
+        <item>Arts &amp; Crafts</item>
+        <item>Beauty &amp; Personal Care</item>
+        <item>Chemicals</item>
+        <item>Others</item>
+    </string-array>-->
+
+    <string-array name="array_commodity_copy">
+        <item>Auto</item>
+        <item>Auto parts &amp; Accessories</item>
+        <item>Consumer Electronics</item>
+        <item>Spare Parts</item>
+        <item>Home Appliance</item>
+        <item>Raw Material</item>
+        <item>Baby Products</item>
+        <item>Eyewear &amp; Accessories</item>
+        <item>Footwear</item>
+        <item>Garment, Textile &amp; Clothing Accessories</item>
+        <item>Gifts &amp; Premiums</item>
+        <item>Handbags &amp; Travel Goods</item>
+        <item>Household products</item>
+        <item>Jewelers</item>
+        <item>Lighting Products</item>
+        <item>Sporting Goods</item>
+        <item>Watch &amp; Clock</item>
+        <item>Cosmetic</item>
+        <item>Frozen products</item>
+        <item>Deep Frozen Products</item>
+        <item>Aircon Products</item>
+        <item>Dry Products</item>
+        <item>Alcohol Products</item>
+        <item>Tobacco</item>
+        <item>Bonded Goods</item>
+        <item>FMCG-NON FOOD</item>
+        <item>Chemical , DG , perfume</item>
+        <item>Raw Material &amp; Material Parts</item>
+        <item>Building Material , Hardware &amp; Machinery</item>
+        <item>Milk Powder</item>
+        <item>Diapers</item>
+        <item>Medical Equipments</item>
+        <item>Health Care product -Non Edible</item>
+        <item>Drug</item>
+        <item>Books &amp; printed Items</item>
+        <item>Furniture &amp; Furnishing</item>
+        <item>Toys &amp; Games</item>
+        <item>Documents</item>
+        <item>Energy</item>
+        <item>Hospitality</item>
+        <item>Aviation</item>
+        <item>Supply Chain</item>
+        <item>Transportation</item>
+        <item>Arts &amp; Antiquities</item>
+        <item>Minerals</item>
+        <item>Marine</item>
+        <item>Others(Please specify)</item>
+    </string-array>
+
+
+    <string-array name="array_unit">
+        <item>Kg/cm</item>
+        <item>LBS/cm</item>
+        <item>Pounds/cm</item>
+        <item>Kg/mm</item>
+        <item>LBS/mm</item>
+        <item>Pounds/mm</item>
+
+    </string-array>
+
+    <string-array name="array_type">
+        <item>Personal</item>
+        <item>Commercials</item>
+
+    </string-array>
+
+  <string-array name="array_service">
+        <item>Door to Door</item>
+        <item>Port to Port</item>
+        <item>Door to Port</item>
+        <item>Port to Door</item>
+
+    </string-array>
+
+
+    <string-array name="array_currency">
+        <item>AED United Arab Emirates dirham</item>
+        <item>USD US Dollar</item>
+        <item>EUR EURO</item>
+        <item>GBP British Pound</item>
+        <item>CAD Canadian Dollar</item>
+        <item>AUD Australian Dollar</item>
+        <item>NZD New Zealand Doar</item>
+        <item>LKR Sri Lankan Rupee</item>
+        <item>PHP Philippine Peso</item>
+        <item>MYR Malaysian Ringgit</item>
+
+    </string-array>
+
+    <string-array name="sea_status">
+        <item>Order Processing</item>
+        <item>Picked Up</item>
+        <item>CFS (Container Freight Station) Arrival</item>
+        <item>CFS (Container Freight Station) discharge</item>
+        <item>Arrival at Port of Discharge</item>
+        <item>Dispatched From Port of discharge</item>
+        <item>Arrival at CFS (Container Freight Station)</item>
+        <item>DO Collection</item>
+        <item>Delivered To Customer</item>
+    </string-array>
+
+    <string-array name="air_status">
+        <item>Order Processing</item>
+        <item>Picked Up</item>
+        <item>ULD (unit load device) Station Arrival</item>
+        <item>ULD (unit load device) Station discharge</item>
+        <item>Arrival at Port of Discharge</item>
+        <item>Dispatched From Port of discharge</item>
+        <item>Arrival at ULD (unit load device) Station</item>
+        <item>DO Collection</item>
+        <item>Delivered To Customer</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_update_rate_driver">Update Rate</string>
+    <string name="title_activity_update_rate_vendor">Update Rate</string>
+    <string name="title_activity_update_rate_warehouse">Update Rate</string>
+    <string name="title_activity_order_detail_driver">Order Detail</string>
+    <string name="title_activity_order_detail_vendor">OrderDetailVendorActivity</string>
+
+
+    <string name="commodity_value">Commodity and Value</string>
+    <string name="select_commodity">Select Commodity</string>
+    <string name="select_type">Select Type</string>
+    <string name="enter_value">Enter Value</string>
+    <string name="currency">Currency</string>
+    <string name="select_currency">Select Currency</string>
+    <string name="add_view_warehouse">ADD / VIEW STORAGE</string>
+    <string name="add_warehouse">ADD STORAGE</string>
+    <string name="add_vehicle">ADD VEHICLE</string>
+    <string name="bt_select_vehicle">SELECT VEHICLE</string>
+    <string name="manage_warehouse">MANAGE WAREHOUSE</string>
+    <string name="manage_vehicle">MANAGE VEHICLES</string>
+    <string name="enter_gross_weight">Enter gross weight</string>
+    <string name="select_unit">Select unit</string>
+    <string name="height">Height</string>
+    <string name="width">Width</string>
+    <string name="breadth">Breadth</string>
+    <string name="accessorial_charges">Accessorial Charges</string>
+    <string name="commodity_detail">Commodity Detail</string>
+    <string name="order_number">Order Number</string>
+    <string name="commodity_description">Commodity Description</string>
+    <string name="add_insurance">Add Insurance</string>
+    <string name="insurance_added">Insurance applied</string>
+    <string name="insurance">Insurance Details</string>
+    <string name="insurance_precentage">Insurance %</string>
+    <string name="capacity">Capacity(CBM)</string>
+    <string name="space_available">Space available(CBM)</string>
+    <string name="name">Name</string>
+    <string name="min_amount">Min Amount</string>
+    <string name="expiry_date">Expiry date</string>
+    <string name="view_available_storage">view available storage</string>
+
+    <string name="delivery_date">Delivery Date</string>
+    <string name="bt_continue">Continue</string>
+    <string name="title_activity_ware_house_order_info_details">WareHouseOrderInfoDetails</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="space_required">Space Required</string>
+    <string name="in_cbm">In CBM</string>
+    <string name="goods_type">Goods Type</string>
+
+    <string name="shipment_option">Shipment Option</string>
+
+    <string name="storage_location">Storage Location</string>
+    <string name="title_activity_delivery_mile_stone">Delivery Mile Stone</string>
+
+
+    <string name="orderprocessing">Order Processing</string>
+    <string name="pickedup">Picked Up</string>
+    <string name="containerstationarrival">CFS (Container Freight Station) Arrival</string>
+    <string name="containerstationdischarge">CFS (Container Freight Station) discharge</string>
+    <string name="arrivaldischarge">Arrival at Port of Discharge</string>
+    <string name="dispatchdischarge">dispatched From Port of discharge</string>
+    <string name="arrivalcfs">Arrival at CFS (Container Freight Station)</string>
+    <string name="collection">DO Collection</string>
+    <string name="deliveredtocustomer">Delivered To Customer</string>
+    <string name="other_comment">Send Customer message</string>
+    <string name="delivery_delay">Your order will be delayed. Please call our Support team</string>
+
+
+    <string name="uld_stationarrival"> ULD (unit load device) Station Arrival</string>
+    <string name="uld_stationdischarge">ULD (unit load device) Station discharge</string>
+    <string name="arrival_at_station">Arrival at ULD (unit load device) Station</string>
+
+    <string name="door_to_door">Door to Door</string>
+    <string name="port_to_port">Port to Port</string>
+    <string name="port_to_door">Port to Door</string>
+    <string name="door_to_port">Door to Port</string>
+    <string name="days">Days</string>
+    <string name="rate_card">Rate Card</string>
+    <string name="cbm_available">CBM Available</string>
+    <string name="per_cbm_available">Per CBM Amount</string>
+
+    <string name="general">General</string>
+    <string name="perishable">Perishable</string>
+
+    <string name="pickup">1 Ton Pickup</string>
+    <string name="pickup_truck">1 Ton Truck</string>
+    <string name="reefer">3 Ton Reefer</string>
+    <string name="reefer_ton">3 Ton Truck</string>
+    <string name="close_body_pickup">3 Ton Close Body Pickup</string>
+    <string name="open_body_pickup">3 Ton Open Body Pickup</string>
+    <string name="close_body_truck">7 Ton Close Body Truck</string>
+    <string name="ton_truck">7 Ton Truck</string>
+    <string name="open_body_truck">7 Ton Open Body Truck</string>
+    <string name="ten_truck">10 Ton Truck</string>
+    <string name="container_truck">40 Feet Container Truck</string>
+    <string name="feet_open_body_truck">40 Feet Open Body Truck</string>
+    <string name="feet_truck">60 Feet Truck</string>
+    <string name="feet_reefer_truck">40 Feet Reefer Truck</string>
+    <string name="bulker_truck">Bulker Truck</string>
+    <string name="bed_truck">Low Bed Truck</string>
+    <string name="tanker_truck">Tanker Truck</string>
+    <string name="trippet_truck">Tripper Truck</string>
+    <string name="bikes">Bikes</string>
+    <string name="van_km_m">800KG, 2.4M</string>
+    <string name="truck_10_kg_m">1500KG, 3.0M</string>
+    <string name="truck_14_kg_m">3000KG, 4.2M</string>
+    <string name="truck_28_kg_m">6000KG, 7.0M</string>
+    <string name="bikes_desc">Food Delivery and Small Parcels</string>
+    <string name="van_desc">Good for: Small parcels ,boxes ,small funiture and pets</string>
+    <string name="truck_10_desc">Good for: 1 Bedroom, multiple matresses, 3-seater couch</string>
+    <string name="truck_14_desc">Good for: 2 Bedrooms, multiple sofas, dining table and chairs</string>
+    <string name="truck_24_desc">Good for: 3+ bedrooms, office furniture, and boats</string>
+
+    <string name="packageweight">Package Weight</string>
+    <string name="packagedimensions">Package dimension</string>
+    <string name="packing">Pagkage Type</string>
+    <string name="qty">Qty</string>
+
+    <string-array name="packing_type">
+        <item>Cartons</item>
+        <item>Bundles</item>
+        <item>Drums</item>
+        <item>Bale</item>
+        <item>Sack</item>
+        <item>Box</item>
+        <item>Unit</item>
+        <item>Piece</item>
+        <item>Wooden Box</item>
+        <item>Wooden Case</item>
+        <item>Package</item>
+        <item>Crate</item>
+        <item>Cases</item>
+        <item>Pallet</item>
+    </string-array>
+
+    <string-array name="package_unit">
+        <item>Cms</item>
+        <item>Mts</item>
+        <item>Feet</item>
+    </string-array>
+
+    <string-array name="package_weight_unit">
+        <item>Kgs</item>
+        <item>Grams</item>
+        <item>Pounds</item>
+    </string-array>
+
+</resources>

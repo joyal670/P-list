@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ashtechlabs.teleporter.ui.dashboard.cargo_dashboard.update_track_trace.DeliveryMileStoneActivity"
+    tools:showIn="@layout/activity_delivery_mile_stone">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/spacing_small"
+            android:paddingEnd="@dimen/spacing_large"
+            android:paddingStart="@dimen/spacing_large"
+            android:paddingTop="@dimen/spacing_small">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/rounded_bg_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_larger">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_large"
+                        android:drawablePadding="@dimen/padding_normal"
+                        android:gravity="center_vertical"
+                        android:text="Update track and trace"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_large" />
+
+
+                    <LinearLayout
+                        android:id="@+id/Lay_sea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_normal"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="@dimen/spacing_normal"
+                                android:background="@color/gray_light" />
+
+
+                            <RadioGroup
+                                android:id="@+id/rg_sea"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/rb_order"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/orderprocessing"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_pickup1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/pickedup"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_cfs"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/containerstationarrival"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+
+                                <RadioButton
+                                    android:id="@+id/rb_discharge"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/containerstationdischarge"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_arrival"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/arrivaldischarge"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_dispatched"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/dispatchdischarge"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_freight"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/arrivalcfs"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_do"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/collection"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_delivered"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/deliveredtocustomer"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <!--<RadioButton-->
+                                    <!--android:id="@+id/rb_delay_in_delivery_sea"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:buttonTint="@color/gray_light"-->
+                                    <!--android:text="@string/delivery_delay"-->
+                                    <!--android:textColor="@color/gray_light"-->
+                                    <!--android:textSize="@dimen/font_medium" />-->
+
+                                <RadioButton
+                                    android:id="@+id/rb_other_sea"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/other_comment"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lay_air"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_normal"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="@dimen/spacing_normal"
+                                android:background="@color/gray_light" />
+
+
+                            <RadioGroup
+                                android:id="@+id/rg_air"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/rb_Sorder"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/orderprocessing"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_pickup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/pickedup"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_Suld"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/uld_stationarrival"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+
+                                <RadioButton
+                                    android:id="@+id/rb_Sulddischarge"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/uld_stationdischarge"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_Sarrival"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/arrivaldischarge"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_Sdispatched"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/dispatchdischarge"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_arrivalULD"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/arrival_at_station"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_docllect"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/collection"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_customer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/deliveredtocustomer"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+                            <!--    <RadioButton
+                                    android:id="@+id/rb_delay_in_delivery_air"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/delivery_delay"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />-->
+
+                                <RadioButton
+                                    android:id="@+id/rb_other_air"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/gray_light"
+                                    android:text="@string/other_comment"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_medium" />
+
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/containerOther"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/rounded_bg_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="-2dp"
+                        android:src="@drawable/ic_subscibe_arrow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bck_perishable">
+
+                        <EditText
+                            android:id="@+id/etMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/padding_normal"
+                            android:imeOptions="actionDone"
+                            android:inputType="textMultiLine"
+                            android:text="Your order will be delayed. Please call our Support team"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_medium" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/btMakePayment"
+                style="@style/RoundedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:text="Update"
+                android:textAllCaps="true" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "354896754388",
+    "project_id": "healthdomain",
+    "storage_bucket": "healthdomain.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354896754388:android:81496e39b037be5174ed41",
+        "android_client_info": {
+          "package_name": "com.iroid.healthdomain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "354896754388-3jghnk1n7ivn95lehe0l63d4j5ljfu3m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iroid.healthdomain",
+            "certificate_hash": "6933b67357449bdb4290586e7e2309cd81b36976"
+          }
+        },
+        {
+          "client_id": "354896754388-ovo8pf4geann73u9pm30n1a1iciv7ij1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACsfvdsYjRc16F4w6VjgUOO3KxMUGrqyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "354896754388-ovo8pf4geann73u9pm30n1a1iciv7ij1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

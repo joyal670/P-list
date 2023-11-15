@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_5dp"
+        android:weightSum="2">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/barlow_medium"
+            android:gravity="start"
+            android:text="@string/advanceAmount"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvAdvance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/barlow_semibold"
+            android:gravity="start"
+            android:text=""
+            android:textColor="@color/dove_gray"
+            android:textSize="@dimen/text_size_14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_5dp"
+        android:weightSum="2">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/barlow_medium"
+            android:gravity="start"
+            android:text="@string/depositAmount"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDeposit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/barlow_semibold"
+            android:gravity="start"
+            android:text=""
+            android:textColor="@color/dove_gray"
+            android:textSize="@dimen/text_size_14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@color/pomegranate"/>
+
+    <LinearLayout
+        android:id="@+id/sampleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_10dp"
+        android:paddingTop="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:visibility="visible"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_regular"
+                android:gravity="start"
+                android:text="@string/advance_balance"
+                android:textColor="@color/dove_gray"
+                android:textSize="@dimen/text_size_13sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvAdvanceBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_3dp"
+                android:fontFamily="@font/barlow_bold"
+                android:text=""
+                android:textColor="@color/dove_gray"
+                android:textSize="@dimen/text_size_14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_regular"
+                android:gravity="start"
+                android:text="@string/total"
+                android:textColor="@color/dove_gray"
+                android:textSize="@dimen/text_size_13sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_3dp"
+                android:fontFamily="@font/barlow_bold"
+                android:text=""
+                android:textColor="@color/dove_gray"
+                android:textSize="@dimen/text_size_14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_regular"
+                android:gravity="start"
+                android:text="@string/sub_total"
+                android:textColor="@color/dove_gray"
+                android:textSize="@dimen/text_size_13sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvSubTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_3dp"
+                android:fontFamily="@font/barlow_bold"
+                android:text=""
+                android:textColor="@color/dove_gray"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

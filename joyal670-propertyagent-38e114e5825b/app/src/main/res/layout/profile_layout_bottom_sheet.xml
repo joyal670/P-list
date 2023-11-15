@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/border_rounded_top_white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/margin_35dp"
+            android:layout_height="@dimen/margin_35dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_25dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:src="@drawable/ic_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_25dp"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civProfilePicRequestDialog"
+                android:layout_width="@dimen/margin_100dp"
+                android:layout_height="@dimen/margin_100dp"
+                android:src="@drawable/sample_profile"
+                app:civ_border_color="@color/color_accent_red_button"
+                app:civ_border_width="2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvProfileNameRequestDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:fontFamily="@font/heebo_bold"
+                android:maxLines="1"
+                android:text="@string/jayanth"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16sp"
+                app:layout_constraintStart_toEndOf="@+id/civProfilePicRequestDialog"
+                app:layout_constraintTop_toTopOf="@id/civProfilePicRequestDialog" />
+
+            <TextView
+                android:id="@+id/tvUserTypeRequestDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:fontFamily="@font/heebo_medium"
+                android:text="@string/user"
+                android:textColor="@color/color_accent_grey"
+                android:textSize="@dimen/text_size_12sp"
+                app:layout_constraintStart_toStartOf="@+id/tvProfileNameRequestDialog"
+                app:layout_constraintTop_toBottomOf="@id/tvProfileNameRequestDialog" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:background="@color/color_accent_grey_light_new2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/civProfilePicRequestDialog" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ivPhoneRequestDialog"
+                android:layout_width="@dimen/margin_150dp"
+                android:layout_height="@dimen/margin_60dp"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/heebo_semibold"
+                android:maxLines="1"
+                android:text="Call"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_11sp"
+                app:backgroundTint="@color/green_light_1"
+                app:cornerRadius="@dimen/_10sdp"
+                app:icon="@drawable/ic_phoneoutgoing"
+                app:iconGravity="textStart"
+                app:iconTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/civProfilePicRequestDialog" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ivWhatsappRequestDialog"
+                android:layout_width="@dimen/margin_150dp"
+                android:layout_height="@dimen/margin_60dp"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/heebo_semibold"
+                android:maxLines="1"
+                android:text="Message"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_11sp"
+                app:backgroundTint="@color/green_light_1"
+                app:cornerRadius="@dimen/_10sdp"
+                app:icon="@drawable/ic_whatsapp"
+                app:iconGravity="textStart"
+                app:iconTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/civProfilePicRequestDialog" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+
+
+

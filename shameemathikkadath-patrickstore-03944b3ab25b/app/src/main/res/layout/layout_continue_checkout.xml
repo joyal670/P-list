@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/llPrevNext"
+    android:elevation="16dp"
+    android:background="@drawable/shadow"
+    android:gravity="center">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContinue"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_weight="1"
+        android:drawablePadding="8dp"
+        android:insetBottom="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetLeft="0dp"
+        app:cornerRadius="0dp"
+        app:rippleColor="@color/colorPrimary"
+        android:backgroundTint="@color/colorWhite"
+        app:fontFamily="@font/barlow_semi_bold"
+        android:text="@string/continue_shopping"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_normal" />
+
+    <Button
+        android:id="@+id/btnCheckout"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_weight="1"
+        android:insetBottom="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetLeft="0dp"
+        app:cornerRadius="0dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawablePadding="8dp"
+        app:fontFamily="@font/barlow_semi_bold"
+        android:layout_gravity="center"
+        android:text="@string/checkout"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_normal" />
+
+</LinearLayout>

@@ -1,0 +1,1368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_main" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btAdd"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingEnd="@dimen/spacing_large"
+            android:paddingStart="@dimen/spacing_large"
+            android:scrollbarStyle="outsideInset">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/one_ton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="@dimen/rounded_bg_corner_radius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_rounded_bg"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_rounded_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/padding_larger">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_pickup" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/padding_large"
+                                    android:layout_marginStart="@dimen/padding_large"
+                                    android:background="@color/roundedButtonNormal" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/pickup_truck"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_large" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/van_km_m"
+                                            android:textColor="@color/roundedButtonNormal"
+                                            android:textSize="@dimen/font_small"
+                                            android:visibility="gone" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/padding_normal"
+                                        android:text="@string/van_desc"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/font_small"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/iv_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="@dimen/padding_small"
+                                android:src="@drawable/arrow"
+                                android:tint="@color/white" />
+                        </RelativeLayout>
+
+                        <net.cachapa.expandablelayout.ExpandableLayout
+                            android:id="@+id/ex_one_ton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/padding_large"
+                            android:layout_marginStart="@dimen/padding_large"
+                            app:el_duration="1000"
+                            app:el_expanded="false"
+                            app:el_parallax="0.5">
+
+                            <RadioGroup
+                                android:id="@+id/rg_one"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin"
+                                android:layout_marginStart="@dimen/margin"
+                                android:layout_marginTop="@dimen/padding_small"
+                                android:orientation="vertical">
+
+
+                                <RadioButton
+                                    android:id="@+id/rb_oneOne"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:padding="@dimen/padding_normal"
+                                    android:text="Close body"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_oneTwo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:paddingBottom="@dimen/padding_normal"
+                                    android:paddingStart="@dimen/padding_normal"
+                                    android:text="Open Body"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+
+                            </RadioGroup>
+                        </net.cachapa.expandablelayout.ExpandableLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/three_ton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="@dimen/rounded_bg_corner_radius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_rounded_bg"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_rounded_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/padding_larger">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_pickup" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/padding_large"
+                                    android:layout_marginStart="@dimen/padding_large"
+                                    android:background="@color/roundedButtonNormal" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/reefer_ton"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_large" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/van_km_m"
+                                            android:textColor="@color/roundedButtonNormal"
+                                            android:textSize="@dimen/font_small"
+                                            android:visibility="gone" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/padding_normal"
+                                        android:text="@string/van_desc"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/font_small"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/iv_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="@dimen/padding_small"
+                                android:src="@drawable/arrow"
+                                android:tint="@color/white" />
+
+                        </RelativeLayout>
+
+                        <net.cachapa.expandablelayout.ExpandableLayout
+                            android:id="@+id/ex_three_ton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/padding_large"
+                            android:layout_marginStart="@dimen/padding_large"
+                            app:el_duration="1000"
+                            app:el_expanded="false"
+                            app:el_parallax="0.5">
+
+                            <RadioGroup
+                                android:id="@+id/rg_three"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin"
+                                android:layout_marginStart="@dimen/margin"
+                                android:layout_marginTop="@dimen/padding_small"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/rb_threeOne"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:padding="@dimen/padding_normal"
+                                    android:text="Reefer"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+
+                                <RadioButton
+                                    android:id="@+id/rb_threeTwo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:paddingBottom="@dimen/padding_normal"
+                                    android:paddingStart="@dimen/padding_normal"
+                                    android:text="Close body"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_threeThree"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:paddingBottom="@dimen/padding_normal"
+                                    android:paddingStart="@dimen/padding_normal"
+                                    android:text="Open Body"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+
+                            </RadioGroup>
+                        </net.cachapa.expandablelayout.ExpandableLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/seven_ton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="@dimen/rounded_bg_corner_radius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_rounded_bg"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_rounded_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/padding_larger">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_pickup" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/padding_large"
+                                    android:layout_marginStart="@dimen/padding_large"
+                                    android:background="@color/roundedButtonNormal" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/ton_truck"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_large" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/van_km_m"
+                                            android:textColor="@color/roundedButtonNormal"
+                                            android:textSize="@dimen/font_small"
+                                            android:visibility="gone" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/padding_normal"
+                                        android:text="@string/van_desc"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/font_small"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/iv_three"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="@dimen/padding_small"
+                                android:src="@drawable/arrow"
+                                android:tint="@color/white" />
+                        </RelativeLayout>
+
+                        <net.cachapa.expandablelayout.ExpandableLayout
+                            android:id="@+id/ex_seven_ton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/padding_large"
+                            android:layout_marginStart="@dimen/padding_large"
+                            app:el_duration="1000"
+                            app:el_expanded="false"
+                            app:el_parallax="0.5">
+
+                            <RadioGroup
+                                android:id="@+id/rg_seven"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin"
+                                android:layout_marginStart="@dimen/margin"
+                                android:layout_marginTop="@dimen/padding_small"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/rb_sevenOne"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:padding="@dimen/padding_normal"
+                                    android:text="Reefer"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+
+                                <RadioButton
+                                    android:id="@+id/rb_sevenTwo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:paddingBottom="@dimen/padding_normal"
+                                    android:paddingStart="@dimen/padding_normal"
+                                    android:text="Close body"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_sevenThree"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:paddingBottom="@dimen/padding_normal"
+                                    android:paddingStart="@dimen/padding_normal"
+                                    android:text="Open Body"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_sevenFour"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:paddingBottom="@dimen/padding_normal"
+                                    android:paddingStart="@dimen/padding_normal"
+                                    android:text="With Crane"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+
+                            </RadioGroup>
+                        </net.cachapa.expandablelayout.ExpandableLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ten_ton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="@dimen/rounded_bg_corner_radius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_rounded_bg"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_rounded_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/padding_larger">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_pickup" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/padding_large"
+                                    android:layout_marginStart="@dimen/padding_large"
+                                    android:background="@color/roundedButtonNormal" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/ten_truck"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_large" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/van_km_m"
+                                            android:textColor="@color/roundedButtonNormal"
+                                            android:textSize="@dimen/font_small"
+                                            android:visibility="gone" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/padding_normal"
+                                        android:text="@string/van_desc"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/font_small"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/iv_four"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="@dimen/padding_small"
+                                android:src="@drawable/arrow"
+                                android:tint="@color/white" />
+                        </RelativeLayout>
+
+                        <net.cachapa.expandablelayout.ExpandableLayout
+                            android:id="@+id/ex_ten_ton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/padding_large"
+                            android:layout_marginStart="@dimen/padding_large"
+                            app:el_duration="1000"
+                            app:el_expanded="false"
+                            app:el_parallax="0.5">
+
+                            <RadioGroup
+                                android:id="@+id/rg_ten"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin"
+                                android:layout_marginStart="@dimen/margin"
+                                android:layout_marginTop="@dimen/padding_small"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/rb_tenOne"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:padding="@dimen/padding_normal"
+                                    android:text="Reefer"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+
+                                <RadioButton
+                                    android:id="@+id/rb_tenTwo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:paddingBottom="@dimen/padding_normal"
+                                    android:paddingStart="@dimen/padding_normal"
+                                    android:text="Close body"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_tenThree"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:paddingBottom="@dimen/padding_normal"
+                                    android:paddingStart="@dimen/padding_normal"
+                                    android:text="Open Body"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+
+                            </RadioGroup>
+                        </net.cachapa.expandablelayout.ExpandableLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fourty_ton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="@dimen/rounded_bg_corner_radius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_rounded_bg"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_rounded_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/padding_larger">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_pickup" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/padding_large"
+                                    android:layout_marginStart="@dimen/padding_large"
+                                    android:background="@color/roundedButtonNormal" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/container_truck"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_large" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/van_km_m"
+                                            android:textColor="@color/roundedButtonNormal"
+                                            android:textSize="@dimen/font_small"
+                                            android:visibility="gone" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/padding_normal"
+                                        android:text="@string/van_desc"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/font_small"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/iv_five"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="@dimen/padding_small"
+                                android:src="@drawable/arrow"
+                                android:tint="@color/white" />
+                        </RelativeLayout>
+
+                        <net.cachapa.expandablelayout.ExpandableLayout
+                            android:id="@+id/ex_fourty_ton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/padding_large"
+                            android:layout_marginStart="@dimen/padding_large"
+                            app:el_duration="1000"
+                            app:el_expanded="false"
+                            app:el_parallax="0.5">
+
+                            <RadioGroup
+                                android:id="@+id/rg_fourty"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin"
+                                android:layout_marginStart="@dimen/margin"
+                                android:layout_marginTop="@dimen/padding_small"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/rb_fourtyOne"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:padding="@dimen/padding_normal"
+                                    android:text="Reefer"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+
+                                <RadioButton
+                                    android:id="@+id/rb_fourtyTwo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:paddingBottom="@dimen/padding_normal"
+                                    android:paddingStart="@dimen/padding_normal"
+                                    android:text="Close body"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_fourtyTree"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:paddingBottom="@dimen/padding_normal"
+                                    android:paddingStart="@dimen/padding_normal"
+                                    android:text="Open Body"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_fourtyFour"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:paddingBottom="@dimen/padding_normal"
+                                    android:paddingStart="@dimen/padding_normal"
+                                    android:text="Side Lifter"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+
+                            </RadioGroup>
+                        </net.cachapa.expandablelayout.ExpandableLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sixty_ton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="@dimen/rounded_bg_corner_radius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_rounded_bg"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_rounded_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/padding_larger">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_pickup" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/padding_large"
+                                    android:layout_marginStart="@dimen/padding_large"
+                                    android:background="@color/roundedButtonNormal" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/feet_truck"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_large" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/van_km_m"
+                                            android:textColor="@color/roundedButtonNormal"
+                                            android:textSize="@dimen/font_small"
+                                            android:visibility="gone" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/padding_normal"
+                                        android:text="@string/van_desc"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/font_small"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/iv_six"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="@dimen/padding_small"
+                                android:src="@drawable/arrow"
+                                android:tint="@color/white" />
+                        </RelativeLayout>
+
+                        <net.cachapa.expandablelayout.ExpandableLayout
+                            android:id="@+id/ex_sixty_ton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/padding_large"
+                            android:layout_marginStart="@dimen/padding_large"
+                            app:el_duration="1000"
+                            app:el_expanded="false"
+                            app:el_parallax="0.5">
+
+                            <RadioGroup
+                                android:id="@+id/rg_sixty"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin"
+                                android:layout_marginStart="@dimen/margin"
+                                android:layout_marginTop="@dimen/padding_small"
+                                android:orientation="vertical">
+
+
+                                <RadioButton
+                                    android:id="@+id/rb_sixtyOne"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:padding="@dimen/padding_normal"
+                                    android:text="Close body"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_sixtyTwo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:paddingBottom="@dimen/padding_normal"
+                                    android:paddingStart="@dimen/padding_normal"
+                                    android:text="Open Body"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_sixtyThree"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/selector_check_box"
+                                    android:paddingBottom="@dimen/padding_normal"
+                                    android:paddingStart="@dimen/padding_normal"
+                                    android:text="Side Lifter"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="@dimen/font_normal" />
+
+
+                            </RadioGroup>
+                        </net.cachapa.expandablelayout.ExpandableLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/buker_truck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="@dimen/rounded_bg_corner_radius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_rounded_bg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_larger">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_bulker" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/padding_large"
+                            android:layout_marginStart="@dimen/padding_large"
+                            android:background="@color/roundedButtonNormal" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bulker_truck"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_large" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/truck_28_kg_m"
+                                    android:textColor="@color/roundedButtonNormal"
+                                    android:textSize="@dimen/font_small"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_normal"
+                                android:text="@string/truck_24_desc"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_small"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/low_bed_truck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="@dimen/rounded_bg_corner_radius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_rounded_bg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_larger">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_lowbed" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/padding_large"
+                            android:layout_marginStart="@dimen/padding_large"
+                            android:background="@color/roundedButtonNormal" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bed_truck"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_large" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/truck_28_kg_m"
+                                    android:textColor="@color/roundedButtonNormal"
+                                    android:textSize="@dimen/font_small"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_normal"
+                                android:text="@string/truck_24_desc"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_small"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/tanker_truck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="@dimen/rounded_bg_corner_radius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_rounded_bg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_larger">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_tanker" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/padding_large"
+                            android:layout_marginStart="@dimen/padding_large"
+                            android:background="@color/roundedButtonNormal" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tanker_truck"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_large" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/truck_28_kg_m"
+                                    android:textColor="@color/roundedButtonNormal"
+                                    android:textSize="@dimen/font_small"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_normal"
+                                android:text="@string/truck_24_desc"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_small"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/tripper_truck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="@dimen/rounded_bg_corner_radius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_rounded_bg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_larger">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_tripper" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/padding_large"
+                            android:layout_marginStart="@dimen/padding_large"
+                            android:background="@color/roundedButtonNormal" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/trippet_truck"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_large" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/truck_28_kg_m"
+                                    android:textColor="@color/roundedButtonNormal"
+                                    android:textSize="@dimen/font_small"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_normal"
+                                android:text="@string/truck_24_desc"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_small"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bikes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="@dimen/rounded_bg_corner_radius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_rounded_bg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_larger">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_bikes" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/padding_large"
+                            android:layout_marginStart="@dimen/padding_large"
+                            android:background="@color/roundedButtonNormal" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bikes"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_large" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/truck_28_kg_m"
+                                    android:textColor="@color/roundedButtonNormal"
+                                    android:textSize="@dimen/font_small"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_normal"
+                                android:text="@string/bikes_desc"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_small"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <Button
+            android:id="@+id/btAdd"
+            style="@style/RoundedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/padding_large"
+            android:text="@string/bt_select_vehicle"
+            android:textAllCaps="true" />
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

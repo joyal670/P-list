@@ -1,0 +1,27 @@
+    package com.iroid.patrickstore.preference
+
+object ConstantPreference {
+    const val JWT_TOKEN="jwt_token"
+    const val IS_LOGIN="is_login"
+    const val FIRST_NAME="first_name"
+    const val LAST_NAME="last_name"
+    const val EMAIL="email"
+    const val MOBILE="mobile"
+    const val IMAGE_URL="image_url"
+    const val ADDRESS_ID="address_id"
+    const val CHALLENGED="challenged"
+    const val ADDRESS="address"
+    const val ADDRESS_PLACE="address_place"
+    const val ADDRESS_MOBILE="address_mobile"
+    const val ORDER_ID="order_id"
+    const val SELLER_ID="seller_id"
+    const val ACCEPTED="accepted"
+    const val REJECTED="rejected"
+    const val NEGOTIATED="negotiated"
+    const val PAYMENT_COD="COD"
+    const val PAYMENT_ONLINE="ONLINE"
+    const val IS_FROM_ORDER="is_from_order"
+    const val LAT="lat"
+    const val LAN="lan"
+    const val FRANCHISE_ID="franchiseId"
+}

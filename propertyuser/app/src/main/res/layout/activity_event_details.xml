@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.main.event.event_details.EventDetailsActivity"
+    android:id="@+id/coordinatorEventDetails"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/linearNodataNoInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/toolbar_main"/>
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/includeNoInternet"
+            layout="@layout/layout_no_network"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearNoDataFound"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:visibility="gone">
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/includeNoPropertyFound"
+                layout="@layout/layout_no_data_found"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_event"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height_event"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.PropertyUser.NoActionBar.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbarEvent"
+            app:titleEnabled="false"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:id="@+id/ivEventDetailsImage"
+                android:src="@drawable/placeholder_1"
+                android:scaleType="fitXY"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarCollapsingEvent"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/Theme.PropertyUser.NoActionBar.PopupOverlay"
+                android:contentInsetStart="0dp"
+                android:contentInsetLeft="0dp"
+                android:contentInsetRight="0dp"
+                android:contentInsetEnd="0dp"
+                app:contentInsetStartWithNavigation="0dp"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/eventScrollingLayout"
+        layout="@layout/item_event_details_content_scrolling" />
+
+    <LinearLayout
+        android:id="@+id/linearBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:weightSum="3">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBookNow"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:fontFamily="@font/manrope_bold"
+            android:maxLines="1"
+            android:minLines="1"
+            android:text="@string/btnBookNow2"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp"
+            app:backgroundTint="@color/green_light_1"
+            android:layout_weight="1"
+            app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent"
+            app:rippleColor="@color/white"
+            android:insetBottom="@dimen/margin_0dp"
+            android:insetTop="@dimen/margin_0dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCall"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:fontFamily="@font/manrope_bold"
+            android:maxLines="1"
+            android:minLines="1"
+            android:text="@string/btnCall"
+            android:textAllCaps="false"
+            android:textColor="@color/green_light_1"
+            android:textSize="@dimen/text_size_16sp"
+            app:backgroundTint="@color/white"
+            android:layout_weight="1"
+            app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent"
+            app:rippleColor="@color/green_light"
+            android:insetBottom="@dimen/margin_0dp"
+            android:insetTop="@dimen/margin_0dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:fontFamily="@font/manrope_bold"
+            android:maxLines="1"
+            android:minLines="1"
+            android:text="@string/btnMessage"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp"
+            app:backgroundTint="@color/brown"
+            android:layout_weight="1"
+            app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent"
+            app:rippleColor="@color/yellow"
+            android:insetBottom="@dimen/margin_0dp"
+            android:insetTop="@dimen/margin_0dp"
+
+            />
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".proteiniumdietapp.ui.main.home.calender.meals_selection.fragments.MealsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSnacks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="?attr/actionBarSize"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/light_white"
+            android:padding="@dimen/margin_5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selected_meal"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:gravity="start|center"
+                    android:fontFamily="@font/segoe_ui_semibold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minus"
+                    android:gravity="start|center"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:fontFamily="@font/segoe_ui_semibold"/>
+
+                <TextView
+                    android:id="@+id/tvSnacksstart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:gravity="start|center"
+                    android:fontFamily="@font/segoe_ui_semibold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:gravity="start|center"
+                    android:fontFamily="@font/segoe_ui_semibold"/>
+
+                <TextView
+                    android:id="@+id/tvSnacksend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/three"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:gravity="start|center"
+                    android:fontFamily="@font/segoe_ui_semibold"/>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/margin_120dp"
+                android:layout_height="@dimen/margin_55dp"
+                android:text="@string/save"
+                android:textSize="@dimen/text_size_14sp"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="end"
+                app:cornerRadius="@dimen/margin_24dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

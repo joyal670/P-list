@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white_light">#DCD9D9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color_accent">#525252</color>
+    <color name="offblack">#5D5D5D</color>
+    <color name="color_accent_red">#F47458</color>
+    <color name="color_accent_red_dark">#FB0007</color>
+    <color name="color_accent_green">#6AC58C</color>
+    <color name="color_accent_grey">#616161</color>
+    <color name="color_accent_grey_border">#838383</color>
+    <color name="color_accent_grey_new">#505050</color>
+    <color name="color_accent_grey_light">#646464</color>
+    <color name="color_accent_grey_light_new">#6E6E6E</color>
+    <color name="color_accent_grey_lighter">#8C8C8C</color>
+    <color name="color_accent_grey_lighter1">#454545</color>
+    <color name="color_accent_yellow">#EABC6B</color>
+    <color name="color_accent_grey_light_new1">#9B9B9B</color>
+    <color name="color_accent_grey_light_new2">#DDDADA</color>
+    <color name="color_accent_grey_light_new3">#EDE9E9</color>
+    <color name="color_accent_orange">#F47458</color>
+    <color name="color_accent_grey_background">#F4F4F4</color>
+    <color name="color_accent_yellow_dark">#F6A71A</color>
+    <color name="color_accent_blue">#6370F2</color>
+    <color name="color_accent_blue_statusbar">#2F80ED</color>
+    <color name="blue_background">#0E63D7</color>
+    <color name="grey_background">#373737</color>
+    <color name="color_accent_green_button">#27AE60</color>
+    <color name="color_accent_red_button">#EB5757</color>
+    <color name="green_light_1">#329E60</color>
+    <color name="green_light_2">#22BD64</color>
+    <color name="color_accent_grey_manrope">#7B7B7B</color>
+    <color name="color_accent_grey_light_line">#F4F4F4</color>
+    <color name="brown_light">#828282</color>
+    <color name="black_light1">#454545</color>
+    <color name="sliver">#CCCCCC</color>
+    <color name="color_accent_grey_light_new4">#575757</color>
+    <color name="green_solid">#009639</color>
+    <color name="green_dark_1">#007A2F</color>
+    <color name="notification_highlight">#EBFFF3</color>
+
+    //image cropper color
+    <color name="ucrop_color_toolbar">@color/color_accent_blue_statusbar</color>
+    <color name="ucrop_color_statusbar">@color/color_accent_blue_statusbar</color>
+    <color name="ucrop_color_widget_active">@color/color_accent_blue_statusbar</color>
+    <color name="night_rider">#353535</color>
+    <color name="white_smoke">#F1F1F1</color>
+    <color name="light_white">#F4F4F4</color>
+    <color name="dark_gray4">#575757</color>
+    <color name="bright_orange">#F2994A</color>
+    <color name="lightGray">#C1C1C1</color>
+    <color name="grey1">#777777</color>
+    <color name="silver">#CCCCCC</color>
+
+    <color name="light_black_gray">#5A5A5A</color>
+</resources>

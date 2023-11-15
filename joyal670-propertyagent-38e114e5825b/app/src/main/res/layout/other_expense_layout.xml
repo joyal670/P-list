@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:layout_marginEnd="@dimen/margin_15dp"
+        android:layout_marginStart="@dimen/margin_15dp"
+        app:hintEnabled="false"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/margin_20dp"
+            android:fontFamily="@font/heebo_regular"
+            android:inputType="number"
+            android:hint="@string/enter_the_amount" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/other_expese_saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:fontFamily="@font/heebo_medium"
+        android:textAllCaps="false"
+        android:layout_gravity="end"
+        android:textSize="@dimen/text_size_12sp"
+        android:layout_marginEnd="@dimen/margin_15dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:backgroundTint="@color/blue_background"/>
+
+
+
+
+</LinearLayout>

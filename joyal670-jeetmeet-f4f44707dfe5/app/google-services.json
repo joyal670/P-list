@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "630634587192",
+    "project_id": "jeetmeet-befcb",
+    "storage_bucket": "jeetmeet-befcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630634587192:android:5f460821eac3ad0f27b2cd",
+        "android_client_info": {
+          "package_name": "com.iroid.jeetmeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630634587192-3sfm4djsf31hk7smcpgeakl80mg8f48h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpx8p-cipQ3-ijym3tZSwJZTIrXUkSw-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630634587192-3sfm4djsf31hk7smcpgeakl80mg8f48h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

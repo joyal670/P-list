@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".proteiniumdietapp.ui.main.home.myaccount.subscriptionhistory.subscriptionhistorydetails.SubscriptionDetailedActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_main"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_sub"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/border_rounded_top_white">
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="@dimen/margin_80dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_25dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/segoe_ui_semibold"
+                                android:gravity="start|center"
+                                android:text="@string/proteins"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_5dp"
+                                android:layout_marginEnd="@dimen/margin_5dp"
+                                android:fontFamily="@font/segoe_ui"
+                                android:gravity="start|center"
+                                android:text="@string/left_open"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_12sp" />
+
+                            <TextView
+                                android:id="@+id/tvProteinPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/segoe_ui"
+                                android:gravity="start|center"
+                                android:text="@string/kwd_256_00"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_5dp"
+                                android:layout_marginEnd="@dimen/margin_5dp"
+                                android:fontFamily="@font/segoe_ui"
+                                android:gravity="start|center"
+                                android:text="@string/right_open"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/removeProteinsBtn"
+                                android:layout_width="@dimen/margin_40dp"
+                                android:layout_height="@dimen/margin_35dp"
+                                android:layout_gravity="center"
+                                app:cornerRadius="@dimen/margin_5dp"
+                                app:icon="@drawable/ic_baseline_remove"
+                                app:iconGravity="textStart"
+                                app:iconPadding="-0dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/proteinsCountBtn"
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="@dimen/margin_60dp"
+                                android:layout_height="@dimen/margin_40dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/margin_8dp"
+                                android:layout_marginEnd="@dimen/margin_8dp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/segoe_ui_bold"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:minWidth="0dp"
+                                android:minHeight="0dp"
+                                android:padding="0dp"
+                                android:text="@string/_50g"
+                                android:textAllCaps="false"
+                                android:textColor="@color/light_black"
+                                android:textSize="@dimen/text_size_10sp"
+                                app:cornerRadius="@dimen/margin_5dp"
+                                app:strokeColor="@color/black" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/addProteinsBtn"
+                                android:layout_width="@dimen/margin_40dp"
+                                android:layout_height="@dimen/margin_35dp"
+                                android:layout_gravity="center"
+                                app:cornerRadius="@dimen/margin_5dp"
+                                app:icon="@drawable/ic_baseline_add"
+                                app:iconGravity="textStart"
+                                app:iconPadding="-0dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/segoe_ui_semibold"
+                                android:gravity="start|center"
+                                android:text="@string/carbs"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_5dp"
+                                android:layout_marginEnd="@dimen/margin_5dp"
+                                android:fontFamily="@font/segoe_ui"
+                                android:gravity="start|center"
+                                android:text="@string/left_open"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_12sp" />
+
+                            <TextView
+                                android:id="@+id/tvCrabPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/segoe_ui"
+                                android:gravity="start|center"
+                                android:text="@string/kwd_256_00"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_5dp"
+                                android:layout_marginEnd="@dimen/margin_5dp"
+                                android:fontFamily="@font/segoe_ui"
+                                android:gravity="start|center"
+                                android:text="@string/right_open"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/removeCarbsBtn"
+                                android:layout_width="@dimen/margin_40dp"
+                                android:layout_height="@dimen/margin_35dp"
+                                android:layout_gravity="center"
+                                app:cornerRadius="@dimen/margin_5dp"
+                                app:icon="@drawable/ic_baseline_remove"
+                                app:iconGravity="textStart"
+                                app:iconPadding="-0dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/carbsCountBtn"
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="@dimen/margin_60dp"
+                                android:layout_height="@dimen/margin_40dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/margin_8dp"
+                                android:layout_marginEnd="@dimen/margin_8dp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/segoe_ui_bold"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:minWidth="0dp"
+                                android:minHeight="0dp"
+                                android:padding="0dp"
+                                android:text="@string/_50g"
+                                android:textAllCaps="false"
+                                android:textColor="@color/light_black"
+                                android:textSize="@dimen/text_size_10sp"
+                                app:cornerRadius="@dimen/margin_5dp"
+                                app:strokeColor="@color/black" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/addCarbsBtn"
+                                android:layout_width="@dimen/margin_40dp"
+                                android:layout_height="@dimen/margin_35dp"
+                                android:layout_gravity="center"
+                                app:cornerRadius="@dimen/margin_5dp"
+                                app:icon="@drawable/ic_baseline_add"
+                                app:iconGravity="textStart"
+                                app:iconPadding="-0dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/margin_16dp"
+                        android:id="@+id/tvExtras"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui_bold"
+                        android:gravity="start"
+                        android:visibility="gone"
+                        android:layout_marginBottom="@dimen/margin_10dp"
+                        android:text="@string/extras"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvExtras"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:id="@+id/llProceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:backgroundTint="@color/white"
+                android:minHeight="?attr/actionBarSize"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/margin_5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:gravity="start"
+                        android:text="@string/additional_charge"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <TextView
+                        android:id="@+id/tvTotalPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui_bold"
+                        android:gravity="start"
+                        android:layout_marginBottom="@dimen/margin_10dp"
+                        android:text="@string/kwd_5000_00"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/contentProceedBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_60dp"
+                    android:layout_gravity="center|end"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:gravity="center"
+                    android:text="@string/proceed_to_pay"
+                    android:padding="0dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:cornerRadius="@dimen/margin_24dp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

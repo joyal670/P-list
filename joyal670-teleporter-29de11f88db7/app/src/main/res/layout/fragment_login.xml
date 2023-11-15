@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ashtechlabs.teleporter.ui.login.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/service"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/font_larger" />-->
+
+    <!--<RadioGroup-->
+    <!--android:id="@+id/radioGroup"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/margin_top_radio_button"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:padding="@dimen/padding">-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/warehouse"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:button="@android:color/transparent"-->
+    <!--android:drawablePadding="@dimen/drawable_padding"-->
+    <!--android:drawableTop="@drawable/logo"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/warehouse"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/font_large" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/driver"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:button="@android:color/transparent"-->
+    <!--android:drawablePadding="@dimen/drawable_padding"-->
+    <!--android:drawableTop="@drawable/logo"-->
+    <!--android:gravity="center|top"-->
+    <!--android:text="@string/driver"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/font_large" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/vendor"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:button="@android:color/transparent"-->
+    <!--android:drawablePadding="@dimen/drawable_padding"-->
+    <!--android:drawableTop="@drawable/logo"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/vendor"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/font_large" />-->
+    <!--</RadioGroup>-->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_rounded_edit_text"
+            app:cardBackgroundColor="@color/blue_medium"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/editMobileNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/padding_normal"
+                    android:drawableStart="@drawable/ic_username"
+                    android:hint="@string/mobile_no"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:padding="@dimen/padding_large"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/padding_large"
+                    android:layout_marginEnd="@dimen/padding_large"
+                    android:background="@color/grey"
+                    android:padding="@dimen/padding_large"
+                    android:layout_height="1dp"/>
+
+                <EditText
+                    android:id="@+id/editPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/padding_normal"
+                    android:drawableStart="@drawable/ic_password"
+                    android:hint="@string/password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/padding_large"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btLogin"
+            style="@style/RoundedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_huge"
+            android:text="@string/login"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_password"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/font_normal" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="@dimen/spacing_small"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                android:textColor="@color/roundedButtonNormal"
+                android:textSize="@dimen/font_normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_10dp"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_5dp"
+        android:weightSum="2">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/barlow_medium"
+            android:gravity="start"
+            android:text="@string/type_of_exam"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTypeOfExam"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/barlow_semibold"
+            android:gravity="start"
+            android:text=": Test"
+            android:textColor="@color/dove_gray"
+            android:textSize="@dimen/text_size_14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_5dp"
+        android:weightSum="2">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/barlow_medium"
+            android:gravity="start"
+            android:text="@string/exam_name"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvExamTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/barlow_semibold"
+            android:gravity="start"
+            android:text=": Annual"
+            android:textColor="@color/dove_gray"
+            android:textSize="@dimen/text_size_14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_5dp"
+        android:weightSum="2">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/barlow_medium"
+            android:gravity="start"
+            android:text="@string/total_questions"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTotalQues"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/barlow_semibold"
+            android:gravity="start"
+            android:text=": 3"
+            android:textColor="@color/dove_gray"
+            android:textSize="@dimen/text_size_14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_5dp"
+        android:weightSum="2">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/barlow_medium"
+            android:gravity="start"
+            android:text="@string/total_mark"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTotalMark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/barlow_semibold"
+            android:gravity="start"
+            android:text=": 3"
+            android:textColor="@color/dove_gray"
+            android:textSize="@dimen/text_size_14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

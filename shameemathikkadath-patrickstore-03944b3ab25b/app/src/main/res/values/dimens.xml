@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //standard margin
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_very_small">4dp</dimen>
+    <dimen name="margin_18dp">18dp</dimen>
+
+    //standard padding
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="padding_very_small">4dp</dimen>
+    <dimen name="padding_tiny">2dp</dimen>
+
+    //image width
+    <dimen name="splash_image_height">54dp</dimen>
+    <dimen name="login_layout_width">156dp</dimen>
+
+    //additional margin
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_80dp">80dp</dimen>
+
+    //text size
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_22sp">22sp</dimen>
+    <dimen name="text_size_34dp">34sp</dimen>
+    <dimen name="text_32dp">32dp</dimen>
+
+    //image width and height
+    <dimen name="image_height">40dp</dimen>
+    <dimen name="image_width">40dp</dimen>
+    <dimen name="_10sdp">10dp</dimen>
+    <dimen name="_5sdp">5dp</dimen>
+    <dimen name="_2sdp">2dp</dimen>
+    <dimen name="_24sdp">24dp</dimen>
+    <dimen name="_12sdp">12sp</dimen>
+    <dimen name="card_height_120dp">120dp</dimen>
+    <dimen name="card_width_140dp">140dp</dimen>
+    <dimen name="btn_radius">10dp</dimen>
+    <dimen name="width_2dp">2dp</dimen>
+    <dimen name="margin_1dp">1dp</dimen>
+    <dimen name="radioud_5dp">5dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="margin_50dp">50dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_25dp">25dp</dimen>
+    <dimen name="margin_60dp">60dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="text_size_13sp">13sp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="radius_2dp">2dp</dimen>
+    <dimen name="margin_65dp">65dp</dimen>
+    <dimen name="margin_70dp">75dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_login"
+    app:startDestination="@id/PhoneNumberFragment">
+
+    <fragment
+        android:id="@+id/PhoneNumberFragment"
+        android:name="com.iroid.healthdomain.ui.login.PhoneNumberFragment"
+        android:label="@string/phone_number_fragment_label"
+        tools:layout="@layout/fragment_phone_number">
+        <action
+            android:id="@+id/action_PhoneNumberFragment_to_OTPFragment"
+            app:destination="@id/OTPFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.iroid.healthdomain.ui.login.OTPFragment"
+        android:label="@string/otp_fragment_label"
+        tools:layout="@layout/fragment_otp">
+
+        <argument
+            android:name="phone_number"
+            app:argType="string"
+            android:defaultValue="0" />
+    </fragment>
+
+</navigation>

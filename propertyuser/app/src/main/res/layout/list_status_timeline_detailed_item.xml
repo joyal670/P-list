@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/mainStatusDetailsLayout">
+
+    <com.github.vipulasri.timelineview.TimelineView
+        android:id="@+id/timeline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:markerSize="20dp"
+        app:lineWidth="3dp"
+        app:startLineColor="@color/lightGray"
+        app:endLineColor="@color/green_light_1"
+        app:lineStyle="normal"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="center_vertical"
+        app:cardBackgroundColor="@color/white"
+        app:contentPadding="15dp"
+        app:cardElevation="@dimen/margin_15dp"
+        app:cardCornerRadius="@dimen/margin_10dp"
+        android:id="@+id/timelineCard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvStatusDetailed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/manrope_bold"
+                android:maxLines="2"
+                android:text="@string/tvStatusDetailed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_13sp" />
+            <TextView
+                android:id="@+id/tvStatusDetailedDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/manrope_medium"
+                android:maxLines="2"
+                android:text="@string/tvStatusDetailedDescription"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text_size_13sp"
+                android:layout_marginTop="@dimen/margin_8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearBottom"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginEnd="@dimen/margin_16dp"
+                    android:fontFamily="@font/manrope_bold"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:text="@string/btnPay"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:backgroundTint="@color/lightGray"
+                    app:cornerRadius="@dimen/radius_20dp"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:id="@+id/tvDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:maxLines="1"
+                    android:text="@string/tvDetails"
+                    android:textColor="@color/lightGray"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:layout_gravity="center"
+                    android:background="?selectableItemBackground"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

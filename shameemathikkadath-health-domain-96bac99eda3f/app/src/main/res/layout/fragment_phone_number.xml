@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/padding_large"
+        android:layout_height="match_parent"
+        tools:context=".ui.login.PhoneNumberFragment">
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:textColor="@color/text_color_dark"
+            android:text="@string/create_your_account"
+            android:textSize="@dimen/text_large_heading"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tv_desc"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_light"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:text="@string/enter_your_phone_number"
+            android:textSize="@dimen/text_desc"
+            app:layout_constraintBottom_toTopOf="@id/ll_phone_number_container"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_phone_number_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/phone_number_layout_height"
+            android:background="@drawable/bg_phone_number"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            app:layout_constraintEnd_toEndOf="@+id/bt_get_otp"
+            app:layout_constraintStart_toStartOf="@+id/bt_get_otp"
+            app:layout_constraintBottom_toTopOf="@id/bt_get_otp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="8"
+                android:src="@drawable/flag_india"
+                android:layout_margin="@dimen/margin_extra_small"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="1dp"
+                android:background="@color/bg_line"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:layout_marginBottom="@dimen/margin_extra_small"
+                android:layout_height="match_parent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/numberEditText"
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:layout_marginStart="@dimen/margin_extra_small"
+                android:inputType="phone"
+                android:imeOptions="actionDone"
+                android:layout_marginEnd="@dimen/margin_extra_small"
+                android:maxLines="1"
+                android:hint="@string/hint_enter_phone"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_get_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@drawable/selector_button_pink"
+            android:maxWidth="@dimen/button_max_width"
+            android:minWidth="@dimen/button_max_width"
+            android:text="@string/get_otp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

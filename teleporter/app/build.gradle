@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
+    defaultConfig {
+        applicationId "com.ashtechlabs.teleporter"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 16
+        versionName "3.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        useLibrary 'org.apache.http.legacy'
+        multiDexEnabled true
+    }
+    
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+repositories {
+    mavenCentral()
+//    maven {
+//        url 'https://zendesk.artifactoryonline.com/zendesk/repo/'
+//    }
+    google()
+    maven { url 'https://maven.fabric.io/public' }
+    maven {
+        url "https://jitpack.io"
+    }
+    maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
+}
+
+dependencies {
+    //implementation 'com.android.support:support-v4:25.4.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation "junit:junit:$rootProject.junitVersion"
+    implementation "com.google.android.gms:play-services-location:$rootProject.playServicesVersion"
+    implementation "com.google.android.gms:play-services-maps:$rootProject.playServicesVersion"
+//    implementation "com.google.android.gms:play-services-places:$rootProject.playServicesVersion"
+    implementation 'com.google.android.libraries.places:places:2.3.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    // retrofit, gson
+    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.loggingInterceptorVersion"
+    implementation "de.hdodenhof:circleimageview:$rootProject.circularimage"
+    implementation "com.squareup.picasso:picasso:$rootProject.picasso"
+    implementation 'com.google.firebase:firebase-messaging:19.0.1'
+    implementation 'com.firebase:firebase-jobdispatcher:0.5.2'
+    //implementation 'com.zopim.android:sdk:1.4.2'
+    implementation group: 'com.zopim.android', name: 'sdk', version: '1.4.8'
+    implementation 'com.yqritc:android-scalablevideoview:1.0.4'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.github.Gavras:MultiLineRadioGroup:v1.0.0.4'
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true;
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'

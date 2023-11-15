@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ashtechlabs.teleporter.ui.splash.SplashScreenActivity">
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/bg_main" />-->
+    <com.yqritc.scalablevideoview.ScalableVideoView
+        android:id="@+id/splashVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/logo_margin"
+        android:layout_marginStart="@dimen/logo_margin"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo_full" />
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/gray_light"-->
+        <!--android:textSize="@dimen/font_normal"-->
+        <!--android:text="Explore Limitless"-->
+        <!--android:layout_marginBottom="@dimen/spacing_small"-->
+        <!--android:layout_alignParentBottom="true"/>-->
+
+</RelativeLayout>

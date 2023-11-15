@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarSub"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:contentInsetStart="0dp"
+            android:contentInsetEnd="0dp"
+            android:gravity="center_horizontal"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/tvSubToolbarTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/segoe_ui"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/subscription_details"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_rounded_top_white"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nestedMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_80dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_25dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableStart="@drawable/ic_coupon"
+                            android:drawablePadding="@dimen/text_size_10sp"
+                            android:fontFamily="@font/segoe_ui_semibold"
+                            android:gravity="start"
+                            android:text="@string/subscription_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_5dp"
+                            android:layout_marginEnd="@dimen/margin_5dp"
+                            android:drawablePadding="@dimen/text_size_10sp"
+                            android:fontFamily="@font/segoe_ui"
+                            android:gravity="start"
+                            android:text="@string/status"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/text_size_10sp"
+                            android:fontFamily="@font/segoe_ui_semibold"
+                            android:gravity="start"
+                            android:text="@string/fullcollen"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_12sp" />
+
+
+                        <TextView
+                            android:id="@+id/tvStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_5dp"
+                            android:layout_marginEnd="@dimen/margin_5dp"
+                            android:drawablePadding="@dimen/text_size_10sp"
+                            android:fontFamily="@font/segoe_ui_semibold"
+                            android:gravity="start"
+                            android:text="@string/completed"
+                            android:textAllCaps="true"
+                            android:textColor="@color/green1"
+                            android:textSize="@dimen/text_size_10sp" />
+
+
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_15dp">
+
+                        <TextView
+                            android:id="@+id/tvSubscriptionDetailCategoryPlan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe_ui_semibold"
+                            android:gravity="start"
+                            android:text="@string/weight_loss_2_meals_day"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_16sp"
+                            app:layout_constraintEnd_toStartOf="@+id/tvAmount"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe_ui_semibold"
+                            android:gravity="start"
+                            android:text="@string/kwd_256_00"
+                            android:textColor="@color/light_black1"
+                            android:textSize="@dimen/text_size_14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/segoe_ui_semibold"
+                                android:gravity="start"
+                                android:text="@string/duration1"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <TextView
+                                android:id="@+id/tvDuration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_5dp"
+                                android:layout_marginEnd="@dimen/margin_5dp"
+                                android:fontFamily="@font/segoe_ui_semibold"
+                                android:gravity="start"
+                                android:text="@string/_2_weeks"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/segoe_ui_semibold"
+                                android:gravity="start"
+                                android:text="@string/non_stop1"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <TextView
+                                android:id="@+id/tvNonStop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_5dp"
+                                android:layout_marginEnd="@dimen/margin_5dp"
+                                android:fontFamily="@font/segoe_ui_semibold"
+                                android:gravity="start"
+                                android:text="@string/yes"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/segoe_ui_semibold"
+                                android:gravity="start"
+                                android:text="@string/start_date"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <TextView
+                                android:id="@+id/tvStartDateValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_5dp"
+                                android:layout_marginEnd="@dimen/margin_5dp"
+                                android:fontFamily="@font/segoe_ui_semibold"
+                                android:gravity="start"
+                                android:text="@string/_1_02_01"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_14sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/segoe_ui_semibold"
+                                android:gravity="start"
+                                android:text="@string/end_date"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <TextView
+                                android:id="@+id/tvEndDateValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_5dp"
+                                android:layout_marginEnd="@dimen/margin_5dp"
+                                android:fontFamily="@font/segoe_ui_semibold"
+                                android:gravity="start"
+                                android:text="@string/_1_02_01"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        app:cardBackgroundColor="@color/light_white2"
+                        app:cardCornerRadius="@dimen/margin_8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/margin_13dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:fontFamily="@font/segoe_ui_bold"
+                                android:gravity="start"
+                                android:text="@string/delivery_address"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <TextView
+                                android:id="@+id/tvDeliveryAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_12dp"
+                                android:fontFamily="@font/segoe_ui"
+                                android:gravity="start"
+                                android:text="@string/kuwait_towers"
+                                android:textColor="@color/light_black1"
+                                android:textSize="@dimen/text_size_13sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_6dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/segoe_ui"
+                                    android:gravity="start"
+                                    android:text="@string/address"
+                                    android:textColor="@color/light_black1"
+                                    android:textSize="@dimen/text_size_13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_5dp"
+                                    android:layout_marginEnd="@dimen/margin_5dp"
+                                    android:fontFamily="@font/segoe_ui"
+                                    android:gravity="start"
+                                    android:text="@string/dasman_arabian_gulf_street"
+                                    android:textColor="@color/light_black1"
+                                    android:textSize="@dimen/text_size_13sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_6dp"
+                                android:layout_marginBottom="@dimen/margin_8dp"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/segoe_ui"
+                                    android:gravity="start"
+                                    android:text="@string/kuwait_city"
+                                    android:textColor="@color/light_black1"
+                                    android:textSize="@dimen/text_size_13sp"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/margin_5dp"
+                                    android:fontFamily="@font/segoe_ui"
+                                    android:gravity="start"
+                                    android:text="@string/telephone"
+                                    android:textColor="@color/light_black1"
+                                    android:textSize="@dimen/text_size_13sp"
+                                    android:visibility="gone" />
+                                <!--android:layout_marginStart="@dimen/margin_5dp"-->
+                                <TextView
+                                    android:id="@+id/tvPhone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/segoe_ui"
+                                    android:gravity="start"
+                                    android:text="@string/_96522444119"
+                                    android:textColor="@color/light_black1"
+                                    android:textSize="@dimen/text_size_13sp"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/margin_25dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/segoe_ui_bold"
+                        android:gravity="start"
+                        android:text="@string/payment_method"
+                        android:textColor="@color/light_black1"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        app:cardBackgroundColor="@color/light_white2"
+                        app:cardCornerRadius="@dimen/margin_8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/margin_13dp">
+
+                            <ImageView
+                                android:id="@+id/ivPayment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_10dp"
+                                android:layout_marginEnd="@dimen/margin_10dp"
+                                android:fontFamily="@font/segoe_ui_bold"
+                                android:gravity="center"
+                                android:src="@drawable/sample_visa" />
+
+                            <ImageView
+                                android:id="@+id/ivPayment2"
+                                android:layout_width="@dimen/margin_40dp"
+                                android:layout_height="@dimen/margin_20dp"
+                                android:layout_marginStart="@dimen/margin_10dp"
+                                android:layout_marginEnd="@dimen/margin_10dp"
+                                android:fontFamily="@font/segoe_ui_bold"
+                                android:gravity="center"
+                                android:src="@drawable/sample_mastercard" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/renewSubscriptionBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:layout_marginEnd="@dimen/margin_15dp"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:gravity="center"
+                android:text="@string/renew"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14sp"
+                android:visibility="gone"
+                app:cornerRadius="@dimen/margin_24dp"
+                app:strokeColor="@color/black" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

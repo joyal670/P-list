@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="text_dark_grey">#5D5D5D</color>
+    <color name="text_light_grey">#707070</color>
+    <color name="text_tab">#CFD3CE</color>
+    <color name="text_tab1">#E8E8E8</color>
+
+    <color name="primary_color">#34626C</color>
+    <color name="secondary_color">#224D56</color>
+    <color name="primary_selection_color">#3D7581</color>
+
+    <color name="de_york">#6AC58C</color>
+    <color name="torch_red">#FB0007</color>
+    <color name="burnt_sienna">#F47458</color>
+    <color name="text_yellow">#FFD482</color>
+
+    <color name="faded_gold">#C6B497</color>
+    <color name="seperator_light">#E1E1E1</color>
+    <color name="pomegranate">#EE2424</color>
+
+    <color name="light_black_gray">#5A5A5A</color>
+    <color name="silver">#CCCCCC</color>
+
+    <color name="green">#27AE60</color>
+    <color name="yellow">#FCA200</color>
+    <color name="white_light">#EDE9E9</color>
+    <color name="color_accent_grey">#616161</color>
+    <color name="material_red_500">#F44336</color>
+    <color name="color_accent_grey_light_new2">#DDDADA</color>
+    <color name="dove_gray">#656565</color>
+    <color name="grandis">#EAE3D5</color>
+    <color name="grandis1">#FFD482</color>
+    <color name="mine_shaft">#484848</color>
+    <color name="athens_gray">#E9E9E9</color>
+    <color name="colorGrey">#dddddd</color>
+
+    <color name="mine_shaft1">#454545</color>
+</resources>

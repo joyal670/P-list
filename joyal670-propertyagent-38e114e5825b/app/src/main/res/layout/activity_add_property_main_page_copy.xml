@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_main_owner" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="center|bottom"
+                android:background="@color/color_accent_blue_statusbar"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_40dp"
+                    android:layout_marginEnd="@dimen/margin_40dp"
+                    android:background="@drawable/ic_ellipse_owner" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_140dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-100dp"
+                android:src="@drawable/ic_owner_home" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_15dp"
+                android:orientation="vertical">
+
+                <com.alimaddi.segmentedbutton.SegmentedButtonGroup
+                    android:id="@+id/sgMainType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin_35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white"
+                    android:elevation="2dp"
+                    app:borderColor="@color/blue_background"
+                    app:borderWidth="1dp"
+                    app:dividerPadding="10dp"
+                    app:dividerWidth="1dp"
+                    app:position="0"
+                    app:radius="30dp"
+                    app:ripple="true"
+                    app:rippleColor="@color/white"
+                    app:selectedBackground="@color/blue_background">
+
+                    <com.alimaddi.segmentedbutton.SegmentedButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/heebo_medium"
+                        android:padding="20dp"
+                        app:drawableGravity="top"
+                        app:linesCount="1"
+                        app:selectedTextColor="@color/white"
+                        app:text="@string/building"
+                        app:textColor="@color/black"
+                        app:textSize="@dimen/text_size_12sp" />
+
+                    <com.alimaddi.segmentedbutton.SegmentedButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/heebo_medium"
+                        android:padding="20dp"
+                        app:drawableGravity="top"
+                        app:linesCount="1"
+                        app:selectedTextColor="@color/white"
+                        app:text="@string/individualProperty"
+                        app:textColor="@color/black"
+                        app:textSize="@dimen/text_size_12sp" />
+
+                </com.alimaddi.segmentedbutton.SegmentedButtonGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_50dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.7"
+                        android:fontFamily="@font/heebo_medium"
+                        android:text="@string/property_for"
+                        android:textColor="@color/color_accent_grey_light_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <com.alimaddi.segmentedbutton.SegmentedButtonGroup
+                        android:id="@+id/sgRentBuy"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/margin_30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginEnd="140dp"
+                        android:layout_weight="1.5"
+                        android:background="@color/white"
+                        android:elevation="2dp"
+                        app:borderColor="@color/blue_background"
+                        app:borderWidth="1dp"
+                        app:dividerPadding="10dp"
+                        app:dividerWidth="1dp"
+                        app:position="0"
+                        app:radius="30dp"
+                        app:ripple="true"
+                        app:rippleColor="@color/white"
+                        app:selectedBackground="@color/blue_background">
+
+                        <com.alimaddi.segmentedbutton.SegmentedButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="10dp"
+                            app:drawableGravity="top"
+                            app:selectedTextColor="@color/white"
+                            app:text="@string/Rent"
+                            app:textColor="@color/black"
+                            app:textSize="@dimen/text_size_12sp" />
+
+                        <com.alimaddi.segmentedbutton.SegmentedButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="10dp"
+                            app:drawableGravity="top"
+                            app:selectedTextColor="@color/white"
+                            app:text="@string/sale"
+                            app:textColor="@color/black"
+                            app:textSize="@dimen/text_size_12sp" />
+
+                    </com.alimaddi.segmentedbutton.SegmentedButtonGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.15"
+                        android:fontFamily="@font/heebo_medium"
+                        android:text="@string/property_type"
+                        android:textColor="@color/color_accent_grey_light_new"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <com.alimaddi.segmentedbutton.SegmentedButtonGroup
+                        android:id="@+id/sgResidentialCommercial"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/margin_35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:layout_weight="1.75"
+                        android:background="@color/white"
+                        android:elevation="2dp"
+                        app:borderColor="@color/blue_background"
+                        app:borderWidth="1dp"
+                        app:dividerPadding="10dp"
+                        app:dividerWidth="1dp"
+                        app:position="0"
+                        app:radius="30dp"
+                        app:ripple="true"
+                        app:rippleColor="@color/white"
+                        app:selectedBackground="@color/blue_background">
+
+                        <com.alimaddi.segmentedbutton.SegmentedButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="10dp"
+                            app:drawableGravity="top"
+                            app:selectedTextColor="@color/white"
+                            app:text="@string/residential"
+                            app:textColor="@color/black"
+                            app:textSize="@dimen/text_size_12sp" />
+
+                        <com.alimaddi.segmentedbutton.SegmentedButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/heebo_medium"
+                            android:padding="10dp"
+                            app:drawableGravity="top"
+                            app:selectedTextColor="@color/white"
+                            app:text="@string/commercial"
+                            app:textColor="@color/black"
+                            app:textSize="@dimen/text_size_12sp" />
+
+                    </com.alimaddi.segmentedbutton.SegmentedButtonGroup>
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/pName"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_63dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:backgroundTint="@color/white"
+                    app:hintEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/etPropertyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/margin_20dp"
+                        android:fontFamily="@font/heebo_regular"
+                        android:gravity="start"
+                        android:hint="@string/etPropertyName"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/typeSpinner"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:hint="@string/property_category">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/propertyType_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_regular"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/property_addres"
+                    android:textColor="@color/color_accent_grey_light_new"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/address1"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_63dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:backgroundTint="@color/white"
+                    app:hintEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/etxStreetAddress1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/margin_20dp"
+                        android:fontFamily="@font/heebo_regular"
+                        android:gravity="start"
+                        android:hint="@string/street_address_1"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/address2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_63dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:backgroundTint="@color/white"
+                    app:hintEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/etxStreetAddress2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/margin_20dp"
+                        android:fontFamily="@font/heebo_regular"
+                        android:gravity="start"
+                        android:hint="@string/street_address_2"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/etxLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:background="@drawable/bg_round_border"
+                    android:fontFamily="@font/heebo_regular"
+                    android:gravity="start|center"
+                    android:hint="@string/location"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/margin_20dp"
+                    android:paddingEnd="@dimen/margin_20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:visibility="visible" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/countyMain"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:hint="@string/select_country">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/country_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_regular"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/stateMain"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:hint="@string/select_state">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/state_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_regular"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cityMain"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:hint="@string/select_city">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/city_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_regular"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/zipMain"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:hint="@string/select_zipcode">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/zip_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_regular"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:gravity="start"
+                    android:text="@string/add_cover_image"
+                    android:textColor="@color/color_accent_grey_light_new"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <LinearLayout
+                    android:id="@+id/lv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/addBuildingImgBtn"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="@dimen/margin_65dp"
+                        android:layout_height="@dimen/margin_80dp"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:fontFamily="@font/heebo_bold"
+                        app:icon="@drawable/ic_plus_green"
+                        app:iconGravity="textStart"
+                        app:iconTint="@color/color_accent_green"
+                        app:strokeColor="@color/color_accent_green" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvBuildingImages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_7dp"
+                        tools:itemCount="1" />
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/add_property_nextBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:layout_marginBottom="@dimen/margin_25dp"
+                    android:backgroundTint="@color/blue_background"
+                    android:fontFamily="@font/heebo_medium"
+                    android:text="@string/complete"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

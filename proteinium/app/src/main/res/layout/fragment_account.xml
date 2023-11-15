@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context=".proteiniumdietapp.ui.main.home.myaccount.myaccount_fragment.MyAccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:id="@+id/linearMain">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMyProfile"
+                android:text="@string/tvMyProfile"
+                android:fontFamily="@font/segoe_ui"
+                android:textSize="@dimen/text_size_15sp"
+                android:textColor="@color/light_black1"
+                android:padding="@dimen/margin_5dp"
+                android:layout_marginStart="@dimen/margin_25dp"
+                android:layout_marginEnd="@dimen/margin_25dp"
+                android:layout_marginTop="@dimen/margin_40dp"
+                android:drawablePadding="@dimen/margin_20dp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:gravity="start"
+                app:drawableStartCompat="@drawable/ic_account_user"
+                app:drawableEndCompat="@drawable/ic_silver_arrow_right"
+                android:focusable="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAddress"
+                android:text="@string/my_address"
+                android:fontFamily="@font/segoe_ui"
+                android:textSize="@dimen/text_size_15sp"
+                android:textColor="@color/light_black1"
+                android:padding="@dimen/margin_5dp"
+                android:layout_marginStart="@dimen/margin_25dp"
+                android:layout_marginEnd="@dimen/margin_25dp"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:drawablePadding="@dimen/margin_20dp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:gravity="start"
+                app:drawableStartCompat="@drawable/ic_dislike_heart"
+                app:drawableEndCompat="@drawable/ic_silver_arrow_right"
+                android:focusable="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDislike"
+                android:text="@string/tvDislike"
+                android:fontFamily="@font/segoe_ui"
+                android:textSize="@dimen/text_size_15sp"
+                android:textColor="@color/light_black1"
+                android:padding="@dimen/margin_5dp"
+                android:layout_marginStart="@dimen/margin_25dp"
+                android:layout_marginEnd="@dimen/margin_25dp"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:drawablePadding="@dimen/margin_20dp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:gravity="start"
+                app:drawableStartCompat="@drawable/ic_dislike_heart"
+                app:drawableEndCompat="@drawable/ic_silver_arrow_right"
+                android:focusable="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSubscriptionHistory"
+                android:text="@string/tvSubscriptionHistory"
+                android:fontFamily="@font/segoe_ui"
+                android:textSize="@dimen/text_size_15sp"
+                android:textColor="@color/light_black1"
+                android:padding="@dimen/margin_5dp"
+                android:layout_marginStart="@dimen/margin_25dp"
+                android:layout_marginEnd="@dimen/margin_25dp"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:drawablePadding="@dimen/margin_20dp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:gravity="start"
+                app:drawableStartCompat="@drawable/ic_subscriptions"
+                app:drawableEndCompat="@drawable/ic_silver_arrow_right"
+                android:focusable="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSettings"
+                android:text="@string/tvSettings"
+                android:fontFamily="@font/segoe_ui"
+                android:textSize="@dimen/text_size_15sp"
+                android:textColor="@color/light_black1"
+                android:padding="@dimen/margin_5dp"
+                android:layout_marginStart="@dimen/margin_25dp"
+                android:layout_marginEnd="@dimen/margin_25dp"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:drawablePadding="@dimen/margin_20dp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:gravity="start"
+                app:drawableStartCompat="@drawable/ic_settings"
+                app:drawableEndCompat="@drawable/ic_silver_arrow_right"
+                android:focusable="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvLogout"
+                android:text="@string/tvLogout"
+                android:fontFamily="@font/segoe_ui"
+                android:textSize="@dimen/text_size_15sp"
+                android:textColor="@color/light_black1"
+                android:padding="@dimen/margin_5dp"
+                android:layout_marginStart="@dimen/margin_25dp"
+                android:layout_marginEnd="@dimen/margin_25dp"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:drawablePadding="@dimen/margin_20dp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:gravity="start"
+                app:drawableStartCompat="@drawable/ic_logout"
+                app:drawableEndCompat="@drawable/ic_silver_arrow_right"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

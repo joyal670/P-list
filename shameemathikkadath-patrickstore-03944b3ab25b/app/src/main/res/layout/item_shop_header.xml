@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/padding_small"
+    android:paddingEnd="@dimen/padding_small"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@+id/viewLine"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorPrimary" />
+    <ImageView
+        android:id="@+id/ivShop"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="@dimen/margin_40dp"
+        android:layout_height="@dimen/margin_40dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="@dimen/margin_small"
+        tools:ignore="RtlCompat"
+        app:layout_constraintTop_toBottomOf="@+id/viewLine"/>
+<TextView
+    android:id="@+id/tvShopName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorBlack"
+    android:fontFamily="@font/barlow_semi_bold"
+    android:textSize="@dimen/text_size_medium"
+    android:text="@string/dummy_shopping_title2"
+    app:layout_constraintStart_toEndOf="@+id/ivShop"
+    app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/barlow_regular"
+        android:textSize="@dimen/text_size_normal"
+        android:text="@string/distance_from_shop_dummy"
+        app:layout_constraintStart_toEndOf="@+id/ivShop"
+        app:layout_constraintTop_toBottomOf="@+id/tvShopName"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:fontFamily="@font/barlow_medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal"
+        app:cornerRadius="@dimen/margin_small"
+        android:text="@string/view"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
